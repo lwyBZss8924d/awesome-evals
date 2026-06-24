@@ -13,7 +13,10 @@ Most "awesome" lists are link dumps. This one is **annotated and verified**: eve
 
 **328+ curated links · 146 deep reading notes** (see [`notes/`](notes/)). Markers: 🆕 = released/updated 2025–2026 · ⚠️ = caveat. Contributions welcome — see [CONTRIBUTING](CONTRIBUTING.md).
 
+> 📘 **Playbook:** [**PATTERNS.md**](PATTERNS.md) — real, runnable code + worked examples for LLM-as-judge (aligned to humans), pass@k/pass^k, error analysis, trajectory & world-state grading, CI gating, verifiable rewards, and more.
+
 ## Contents
+- [📘 Playbook — real code & worked examples (PATTERNS.md)](PATTERNS.md)
 - [⭐ Must-read starter set (read these first)](#-must-read-starter-set-read-these-first)
 - [1 · Why we need evals](#1-why-we-need-evals)
 - [2 · "If you can eval it, you have built it" — eval ⇄ capability ⇄ RL environment](#2-if-you-can-eval-it-you-have-built-it-eval-capability-rl-environment)
