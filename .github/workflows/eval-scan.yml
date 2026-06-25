@@ -36,7 +36,7 @@ jobs:
         with:
           claude_code_oauth_token: ${{ secrets.CLAUDE_CODE_OAUTH_TOKEN }}
           settings: ".github/claude-scan-settings.json"   # scoped tool allowlist (no blanket bypass)
-          claude_args: "--max-turns 80"
+          claude_args: "--max-turns 200"
           prompt: |
             You are the autonomous curator for this repository, **Awesome Agent Evals**.
             Run a SCAN to audit and update the library with NEW, genuinely-high-quality content.
@@ -61,4 +61,14 @@ jobs:
                attribution), push, and open a PR via `gh pr create` titled "Eval scan: <N> new items (<date>)" whose body
                lists each addition with a one-line reason it clears the bar. Do not push to `main` directly.
 
-            Be rigorous and conservative — this repo's value is curation, not volume.
+            THOROUGHNESS (discovery must be exhaustive, even though inclusion stays strict):
+            - Spawn a SEPARATE Task subagent for EACH discovery seam listed in step 2 and run real web
+              searches in every one — in parallel. Do NOT conclude "nothing new" until every seam has
+              actually been searched and its results checked against the dedup set.
+            - Target surfacing ~20-40 raw candidates across all seams, THEN vet hard and keep only what
+              clears the bar. A run that does <8 searches has not been thorough — keep going.
+            - Check each known author's blog index and each podcast's recent-episodes page directly, not
+              just generic search.
+
+            Be rigorous AND exhaustive in discovery, but conservative in inclusion — this repo's value is
+            curation, not volume. Quality bar over everything; thoroughness in the search, not the list.
