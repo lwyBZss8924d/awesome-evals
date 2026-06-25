@@ -41,7 +41,7 @@ jobs:
             Optional focus for this run: "${{ github.event.inputs.focus }}" (empty = general scan).
 
             Follow the workflow documented in SCAN.md. In short:
-            1. Read README.md (and CONTRIBUTING.md for the bar) and collect every URL already listed — that is your dedup set.
+            1. Read README.md (and CONTRIBUTING.md for the bar). Collect every URL AND every entry title already listed — your dedup set. Dedup by URL **and** by close title match: never re-add a paper/talk/post that is already in the library under a different URL (e.g. arxiv vs html, or a podcast *about* a paper already listed).
             2. Discover candidates with WebSearch/WebFetch, parallelizing with Task subagents across these seams:
                - latest posts from known authors (Eugene Yan, Han-Chung Lee, Hamel Husain, Shreya Shankar,
                  Nathan Lambert, Florian Brand, Jason Liu, Cameron Wolfe, Aman Khan, Gergely Orosz, Chip Huyen, Lilian Weng);
