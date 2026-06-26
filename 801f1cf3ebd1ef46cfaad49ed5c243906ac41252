@@ -1,0 +1,24 @@
+{
+  "schema": "pouw.commit.v1",
+  "generated_at_utc": "2026-06-26T12:00:35Z",
+  "commit": "801f1cf3ebd1ef46cfaad49ed5c243906ac41252",
+  "task": "Merged fork PR #2: backfill ETL notes and machine-readable manifests for reviewed awesome-evals daily scan entries.",
+  "useful_work": [
+    "Merged ETL/deep-note files for GroundEval, EnterpriseClawBench, and BabelJudge under notes/papers/.",
+    "Merged per-resource manifests and aggregate manifests/resources.json linking README index lines, notes, source URLs, worker reasons, and review scores.",
+    "Updated README note counts and manifest pointers so the KB is searchable and machine-readable after promotion."
+  ],
+  "validation": [
+    "awesome-evals-validate-kb.zsh --check-urls: ok=true, blockers=[]; accepted_count=3; manifest_resource_count=3; all three arXiv URLs HEAD:200",
+    "awesome-evals-public-safety.zsh over repo and PR body: ok=true, finding_count=0",
+    "remote PR body safety after gh pr view: ok=true, finding_count=0",
+    "git diff --check: passed",
+    "zsh -n for workflow and automation scripts: passed",
+    "negative reviewer gate: candidate with structured evidence but no ETL note draft rejected with missing_etl_note_draft"
+  ],
+  "public_boundary": {
+    "fork_pr": "https://github.com/lwyBZss8924d/awesome-evals/pull/2",
+    "upstream_pr_created": false,
+    "local_paths_in_public_kb": false
+  }
+}
