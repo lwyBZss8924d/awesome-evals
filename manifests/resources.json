@@ -1,0 +1,49 @@
+{
+  "generated_at_utc": "2026-06-26T11:54:53Z",
+  "resource_count": 3,
+  "resources": [
+    {
+      "id": "babeljudge-measuring-llm-as-a-judge-reliability-across-languages-and-agent-trajectories",
+      "manifest_path": "manifests/resources/babeljudge-measuring-llm-as-a-judge-reliability-across-languages-and-agent-trajectories.json",
+      "note_path": "notes/papers/babeljudge-measuring-llm-as-a-judge-reliability-across-languages-and-agent-trajectories.md",
+      "readme_line": 304,
+      "readme_path": "README.md",
+      "review_decision": "accept_for_local_kb",
+      "review_total_score": 8,
+      "section": "## 8 \u00b7 LLM-as-judge & verifiers (alignment, biases, verifiable vs judgeable)",
+      "source_seam": "LLM-as-judge reliability",
+      "title": "BabelJudge: Measuring LLM-as-a-Judge Reliability Across Languages and Agent Trajectories",
+      "type": "paper/benchmark",
+      "url": "https://arxiv.org/abs/2606.22329"
+    },
+    {
+      "id": "enterpriseclawbench-benchmarking-agents-from-real-workplace-sessions",
+      "manifest_path": "manifests/resources/enterpriseclawbench-benchmarking-agents-from-real-workplace-sessions.json",
+      "note_path": "notes/papers/enterpriseclawbench-benchmarking-agents-from-real-workplace-sessions.md",
+      "readme_line": 370,
+      "readme_path": "README.md",
+      "review_decision": "accept_for_local_kb",
+      "review_total_score": 9,
+      "section": "## 9 \u00b7 Agent-specific evaluation (trajectories, tool use, multi-turn, world state, multi-agent, localization)",
+      "source_seam": "new eval benchmarks/tools",
+      "title": "EnterpriseClawBench: Benchmarking Agents from Real Workplace Sessions",
+      "type": "paper/benchmark",
+      "url": "https://arxiv.org/abs/2606.23654"
+    },
+    {
+      "id": "groundeval-a-deterministic-replacement-for-llm-as-judge-in-stateful-agent-evaluation",
+      "manifest_path": "manifests/resources/groundeval-a-deterministic-replacement-for-llm-as-judge-in-stateful-agent-evaluation.json",
+      "note_path": "notes/papers/groundeval-a-deterministic-replacement-for-llm-as-judge-in-stateful-agent-evaluation.md",
+      "readme_line": 369,
+      "readme_path": "README.md",
+      "review_decision": "accept_for_local_kb",
+      "review_total_score": 8,
+      "section": "## 9 \u00b7 Agent-specific evaluation (trajectories, tool use, multi-turn, world state, multi-agent, localization)",
+      "source_seam": "new eval benchmarks/tools",
+      "title": "GroundEval: A Deterministic Replacement for LLM-as-Judge in Stateful Agent Evaluation",
+      "type": "paper/framework",
+      "url": "https://arxiv.org/abs/2606.22737"
+    }
+  ],
+  "schema": "awesome_evals.resources_index.v1"
+}

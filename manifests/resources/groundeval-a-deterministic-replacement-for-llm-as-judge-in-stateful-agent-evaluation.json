@@ -1,0 +1,59 @@
+{
+  "author": "Jeffrey Flynt",
+  "id": "groundeval-a-deterministic-replacement-for-llm-as-judge-in-stateful-agent-evaluation",
+  "note": {
+    "path": "notes/papers/groundeval-a-deterministic-replacement-for-llm-as-judge-in-stateful-agent-evaluation.md"
+  },
+  "readme": {
+    "entry": "- **[GroundEval: A Deterministic Replacement for LLM-as-Judge in Stateful Agent Evaluation](https://arxiv.org/abs/2606.22737)** \u2014 Jeffrey Flynt \u2014 <https://arxiv.org/abs/2606.22737> \u00b7 *paper/framework* \u2014 Judge-free stateful-agent evaluator that scores searched, fetched, cited, and access-permitted evidence instead of plausible final text. \ud83c\udd95",
+    "line": 369,
+    "path": "README.md"
+  },
+  "review": {
+    "decision": "accept_for_local_kb",
+    "hard_failures": [],
+    "reviewed_at_utc": "2026-06-26T09:39:03Z",
+    "scores": {
+      "factuality": {
+        "reason": "structured evidence plus fetched source snapshot",
+        "score": 2
+      },
+      "kb_fit": {
+        "reason": "matches agent/eval KB scope",
+        "score": 2
+      },
+      "quality": {
+        "reason": "concrete eval artifacts or methodology signals present",
+        "score": 1
+      },
+      "recency": {
+        "reason": "no explicit publication date; retained as current-source candidate",
+        "score": 1
+      },
+      "source_authority": {
+        "reason": "primary repo or lab/source page",
+        "score": 2
+      }
+    },
+    "total_score": 8,
+    "url_check": {
+      "detail": "HEAD:200",
+      "ok": true
+    }
+  },
+  "schema": "awesome_evals.resource_manifest.v1",
+  "section": "## 9 \u00b7 Agent-specific evaluation (trajectories, tool use, multi-turn, world state, multi-agent, localization)",
+  "source_seam": "new eval benchmarks/tools",
+  "title": "GroundEval: A Deterministic Replacement for LLM-as-Judge in Stateful Agent Evaluation",
+  "type": "paper/framework",
+  "url": "https://arxiv.org/abs/2606.22737",
+  "worker": {
+    "candidate_reason": "Clears the bar by turning stateful evidence use into deterministic trajectory diagnostics; the paper reports cases where frontier judges scored plausible but unsupported answers highly.",
+    "evidence": "arXiv API summary: Silence, Perspective, and Counterfactual tracks evaluate searched/fetched/cited/permissioned evidence paths.",
+    "summary": "Judge-free stateful-agent evaluator that scores searched, fetched, cited, and access-permitted evidence instead of plausible final text.",
+    "url_check": {
+      "detail": "200",
+      "ok": true
+    }
+  }
+}
