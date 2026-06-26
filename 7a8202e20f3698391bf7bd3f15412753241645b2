@@ -1,0 +1,54 @@
+{
+  "schema": "pouw.v1",
+  "workflow": "awesome_evals_daily_scan",
+  "mode": "apply_report_only",
+  "business_status": "succeeded",
+  "commit": "7a8202e20f3698391bf7bd3f15412753241645b2",
+  "repo": "/Users/arthur/dev-space/knowledge-base/sources/ai-evaluation/awesome-evals",
+  "source_repo_modified": false,
+  "generated_at_utc": "2026-06-26T09:27:28Z",
+  "evidence": {
+    "run_dir": "/Users/arthur/.codex-test/automations/awesome-evals-daily-scan-worker/runs/20260626T092438Z-apply",
+    "artifacts": [
+      "source-preflight.json",
+      "current-index.json",
+      "candidate_queue.jsonl",
+      "accepted_candidates.jsonl",
+      "rejected_candidates.jsonl",
+      "vet-summary.json",
+      "report-summary.json",
+      "scan-report.md",
+      "discovery-arxiv.json",
+      "discovery-github.json",
+      "discovery-feeds.json",
+      "discovery-errors.md"
+    ],
+    "counts": {
+      "raw_candidates": 8,
+      "accepted_candidates": 3,
+      "rejected_candidates": 5
+    },
+    "accepted": [
+      "GroundEval: A Deterministic Replacement for LLM-as-Judge in Stateful Agent Evaluation",
+      "EnterpriseClawBench: Benchmarking Agents from Real Workplace Sessions",
+      "BabelJudge: Measuring LLM-as-a-Judge Reliability Across Languages and Agent Trajectories"
+    ],
+    "validation": [
+      "awesome-evals-preflight.zsh --json",
+      "awesome-evals-index.zsh --json",
+      "awesome-evals-vet.zsh --check-urls --json",
+      "awesome-evals-render-report.zsh --json",
+      "git status --short --branch --untracked-files=all"
+    ],
+    "final_git_status": "## kb/awesome-evals-daily-20260626T092435Z...origin/main",
+    "discovery_errors": [
+      "https://openai.com/news/research/ returned HTTPError: HTTP Error 403: Forbidden"
+    ]
+  },
+  "closeout": {
+    "commit_created": false,
+    "reason": "report-only scan; dispatcher owns source promotion",
+    "push_performed": false,
+    "pr_created": false
+  }
+}
