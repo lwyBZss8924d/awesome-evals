@@ -1,0 +1,23 @@
+{
+  "schema": "pouw.commit.v1",
+  "generated_at_utc": "2026-06-26T11:57:55Z",
+  "commit": "5d7265a41827f177091f962cd104e13c6668f72e",
+  "task": "Backfill ETL notes and machine-readable manifests for reviewed awesome-evals daily scan entries.",
+  "useful_work": [
+    "Added ETL/deep-note files for GroundEval, EnterpriseClawBench, and BabelJudge under notes/papers/.",
+    "Added per-resource manifests and aggregate manifests/resources.json linking README index lines, notes, source URLs, worker reasons, and review scores.",
+    "Updated README note counts and manifest pointers so the KB is searchable and machine-readable after promotion."
+  ],
+  "validation": [
+    "awesome-evals-validate-kb.zsh --check-urls: ok=true, blockers=[]; accepted_count=3; manifest_resource_count=3; all three arXiv URLs HEAD:200",
+    "awesome-evals-public-safety.zsh over repo and PR body: ok=true, finding_count=0",
+    "git diff --check: passed",
+    "zsh -n for workflow and automation scripts: passed",
+    "negative reviewer gate: candidate with structured evidence but no ETL note draft rejected with missing_etl_note_draft"
+  ],
+  "public_boundary": {
+    "fork_only": "https://github.com/lwyBZss8924d/awesome-evals",
+    "upstream_pr_created": false,
+    "local_paths_in_public_kb": false
+  }
+}
