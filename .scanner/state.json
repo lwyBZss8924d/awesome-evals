@@ -1,0 +1,266 @@
+{
+  "version": 2,
+  "last_run": "2026-06-26T13:00:00Z",
+  "sources": {
+    "eugene-yan": {
+      "type": "author_blog",
+      "url": "https://eugeneyan.com/rss/",
+      "cursor_date": "2026-06-26",
+      "seen_urls": [],
+      "item_count_median": 8,
+      "last_checked": "2026-06-26",
+      "misses": 0,
+      "runs_since_advance": 0
+    },
+    "lilian-weng": {
+      "type": "author_blog",
+      "url": "https://lilianweng.github.io/index.xml",
+      "cursor_date": "2026-06-26",
+      "seen_urls": [],
+      "item_count_median": 8,
+      "last_checked": "2026-06-26",
+      "misses": 0,
+      "runs_since_advance": 0
+    },
+    "simon-willison": {
+      "type": "author_blog",
+      "url": "https://simonwillison.net/atom/everything/",
+      "cursor_date": "2026-06-26",
+      "seen_urls": [],
+      "item_count_median": 8,
+      "last_checked": "2026-06-26",
+      "misses": 0,
+      "runs_since_advance": 0
+    },
+    "nathan-lambert": {
+      "type": "author_blog",
+      "url": "https://www.interconnects.ai/feed",
+      "cursor_date": "2026-06-26",
+      "seen_urls": [],
+      "item_count_median": 8,
+      "last_checked": "2026-06-26",
+      "misses": 0,
+      "runs_since_advance": 0
+    },
+    "han-chung-lee": {
+      "type": "author_blog",
+      "url": "https://leehanchung.github.io/blogs/",
+      "cursor_date": "2026-06-26",
+      "seen_urls": [],
+      "item_count_median": 8,
+      "last_checked": "2026-06-26",
+      "misses": 0,
+      "runs_since_advance": 0
+    },
+    "hamel-husain": {
+      "type": "author_blog",
+      "url": "https://hamel.dev/index.xml",
+      "cursor_date": "2026-06-26",
+      "seen_urls": [],
+      "item_count_median": 8,
+      "last_checked": "2026-06-26",
+      "misses": 0,
+      "runs_since_advance": 0
+    },
+    "jason-liu": {
+      "type": "author_blog",
+      "url": "https://jxnl.co/index.xml",
+      "cursor_date": "2026-06-26",
+      "seen_urls": [],
+      "item_count_median": 8,
+      "last_checked": "2026-06-26",
+      "misses": 0,
+      "runs_since_advance": 0
+    },
+    "chip-huyen": {
+      "type": "author_blog",
+      "url": "https://huyenchip.com/feed.xml",
+      "cursor_date": "2026-06-26",
+      "seen_urls": [],
+      "item_count_median": 8,
+      "last_checked": "2026-06-26",
+      "misses": 0,
+      "runs_since_advance": 0
+    },
+    "florian-brand": {
+      "type": "author_blog",
+      "url": "https://florianbrand.com/index.xml",
+      "cursor_date": "2026-06-26",
+      "seen_urls": [],
+      "item_count_median": 8,
+      "last_checked": "2026-06-26",
+      "misses": 0,
+      "runs_since_advance": 0
+    },
+    "cameron-wolfe": {
+      "type": "author_blog",
+      "url": "https://cameronrwolfe.substack.com/archive",
+      "cursor_date": "2026-06-26",
+      "seen_urls": [],
+      "item_count_median": 8,
+      "last_checked": "2026-06-26",
+      "misses": 0,
+      "runs_since_advance": 0
+    },
+    "anthropic-eng": {
+      "type": "company_blog",
+      "url": "https://www.anthropic.com/engineering",
+      "cursor_date": "2026-06-26",
+      "seen_urls": [],
+      "item_count_median": 8,
+      "last_checked": "2026-06-26",
+      "misses": 0,
+      "runs_since_advance": 0
+    },
+    "openai-news": {
+      "type": "company_blog",
+      "url": "https://openai.com/news/",
+      "cursor_date": "2026-06-26",
+      "seen_urls": [],
+      "item_count_median": 8,
+      "last_checked": "2026-06-26",
+      "misses": 0,
+      "runs_since_advance": 0
+    },
+    "cognition": {
+      "type": "company_blog",
+      "url": "https://cognition.ai/blog",
+      "cursor_date": "2026-06-26",
+      "seen_urls": [],
+      "item_count_median": 8,
+      "last_checked": "2026-06-26",
+      "misses": 0,
+      "runs_since_advance": 0
+    },
+    "braintrust": {
+      "type": "company_blog",
+      "url": "https://www.braintrust.dev/blog",
+      "cursor_date": "2026-06-26",
+      "seen_urls": [],
+      "item_count_median": 8,
+      "last_checked": "2026-06-26",
+      "misses": 0,
+      "runs_since_advance": 0
+    },
+    "sourcegraph": {
+      "type": "company_blog",
+      "url": "https://sourcegraph.com/blog",
+      "cursor_date": "2026-06-26",
+      "seen_urls": [],
+      "item_count_median": 8,
+      "last_checked": "2026-06-26",
+      "misses": 0,
+      "runs_since_advance": 0
+    },
+    "vercel-ai": {
+      "type": "company_blog",
+      "url": "https://vercel.com/blog/category/engineering",
+      "cursor_date": "2026-06-26",
+      "seen_urls": [],
+      "item_count_median": 8,
+      "last_checked": "2026-06-26",
+      "misses": 0,
+      "runs_since_advance": 0
+    },
+    "prime-intellect": {
+      "type": "company_blog",
+      "url": "https://www.primeintellect.ai/blog",
+      "cursor_date": "2026-06-26",
+      "seen_urls": [],
+      "item_count_median": 8,
+      "last_checked": "2026-06-26",
+      "misses": 0,
+      "runs_since_advance": 0
+    },
+    "benchflow": {
+      "type": "company_blog",
+      "url": "https://www.benchflow.ai/blog",
+      "cursor_date": "2026-06-26",
+      "seen_urls": [],
+      "item_count_median": 8,
+      "last_checked": "2026-06-26",
+      "misses": 0,
+      "runs_since_advance": 0
+    },
+    "cursor-blog": {
+      "type": "open_web",
+      "url": "https://www.cursor.com/blog",
+      "cursor_date": null,
+      "seen_urls": [],
+      "item_count_median": 8,
+      "last_checked": "2026-06-26",
+      "misses": 0,
+      "runs_since_advance": 0
+    },
+    "replit-blog": {
+      "type": "open_web",
+      "url": "https://blog.replit.com/",
+      "cursor_date": "2026-06-26",
+      "seen_urls": [],
+      "item_count_median": 8,
+      "last_checked": "2026-06-26",
+      "misses": 0,
+      "runs_since_advance": 0
+    },
+    "latent-space": {
+      "type": "podcast",
+      "url": "https://api.substack.com/feed/podcast/1084089.rss",
+      "cursor_date": "2026-06-26",
+      "seen_urls": [],
+      "item_count_median": 8,
+      "last_checked": "2026-06-26",
+      "misses": 0,
+      "runs_since_advance": 0
+    },
+    "vanishing-gradients": {
+      "type": "podcast",
+      "url": "https://feeds.fireside.fm/vanishinggradients/rss",
+      "cursor_date": "2026-06-26",
+      "seen_urls": [],
+      "item_count_median": 8,
+      "last_checked": "2026-06-26",
+      "misses": 0,
+      "runs_since_advance": 0
+    },
+    "mlops-community": {
+      "type": "podcast",
+      "url": "https://home.mlops.community/public/collections/podcast",
+      "cursor_date": "2026-06-26",
+      "seen_urls": [],
+      "item_count_median": 8,
+      "last_checked": "2026-06-26",
+      "misses": 0,
+      "runs_since_advance": 0
+    },
+    "arxiv-agent": {
+      "type": "benchmark",
+      "url": "http://export.arxiv.org/api/query?search_query=all:(agent+evaluation+OR+LLM-as-judge+OR+RL+environment)&sortBy=submittedDate&sortOrder=descending",
+      "cursor_date": "2026-06-26",
+      "seen_urls": [],
+      "item_count_median": 8,
+      "last_checked": "2026-06-26",
+      "misses": 0,
+      "runs_since_advance": 0
+    },
+    "inspect-releases": {
+      "type": "benchmark",
+      "url": null,
+      "cursor_date": "2026-06-26",
+      "seen_urls": [],
+      "item_count_median": 8,
+      "last_checked": "2026-06-26",
+      "misses": 0,
+      "runs_since_advance": 0
+    },
+    "hf-papers": {
+      "type": "aggregator",
+      "url": "https://huggingface.co/papers",
+      "cursor_date": "2026-06-26",
+      "seen_urls": [],
+      "item_count_median": 8,
+      "last_checked": "2026-06-26",
+      "misses": 0,
+      "runs_since_advance": 0
+    }
+  }
+}

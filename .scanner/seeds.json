@@ -1,0 +1,44 @@
+{
+  "version": 1,
+  "_note": "Human-editable source registry. One-line edit adds a source ('content is data'). feed_url = RSS/Atom/sitemap (cheapest, dated); index_url = HTML fallback; recall_critical = feedless/SPA source the scanner must never silently skip.",
+  "groups": {
+    "authors": [
+      { "id": "eugene-yan", "feed_url": "https://eugeneyan.com/rss/", "index_url": "https://eugeneyan.com/writing/" },
+      { "id": "lilian-weng", "feed_url": "https://lilianweng.github.io/index.xml", "index_url": "https://lilianweng.github.io/" },
+      { "id": "simon-willison", "feed_url": "https://simonwillison.net/atom/everything/", "index_url": "https://simonwillison.net/tags/evals/" },
+      { "id": "nathan-lambert", "feed_url": "https://www.interconnects.ai/feed", "index_url": "https://www.interconnects.ai/" },
+      { "id": "han-chung-lee", "feed_url": null, "index_url": "https://leehanchung.github.io/blogs/", "recall_critical": true },
+      { "id": "hamel-husain", "feed_url": "https://hamel.dev/index.xml", "index_url": "https://hamel.dev/blog/" },
+      { "id": "jason-liu", "feed_url": "https://jxnl.co/index.xml", "index_url": "https://jxnl.co/writing/" },
+      { "id": "chip-huyen", "feed_url": "https://huyenchip.com/feed.xml", "index_url": "https://huyenchip.com/blog/" },
+      { "id": "florian-brand", "feed_url": "https://florianbrand.com/index.xml", "index_url": "https://florianbrand.com/posts/" },
+      { "id": "cameron-wolfe", "feed_url": null, "index_url": "https://cameronrwolfe.substack.com/archive" }
+    ],
+    "company-blogs": [
+      { "id": "anthropic-eng", "feed_url": null, "index_url": "https://www.anthropic.com/engineering", "recall_critical": true },
+      { "id": "openai-news", "feed_url": null, "index_url": "https://openai.com/news/", "recall_critical": true },
+      { "id": "cognition", "feed_url": null, "index_url": "https://cognition.ai/blog" },
+      { "id": "braintrust", "feed_url": null, "index_url": "https://www.braintrust.dev/blog" },
+      { "id": "sourcegraph", "feed_url": null, "index_url": "https://sourcegraph.com/blog" },
+      { "id": "vercel-ai", "feed_url": null, "index_url": "https://vercel.com/blog/category/engineering" },
+      { "id": "prime-intellect", "feed_url": null, "index_url": "https://www.primeintellect.ai/blog" },
+      { "id": "benchflow", "feed_url": null, "index_url": "https://www.benchflow.ai/blog" }
+    ],
+    "open-web": [
+      { "id": "cursor-blog", "feed_url": null, "index_url": "https://www.cursor.com/blog", "recall_critical": true, "note": "feedless SPA; try sitemap/__NEXT_DATA__ first, then WebSearch; always poll" },
+      { "id": "replit-blog", "feed_url": null, "index_url": "https://blog.replit.com/", "recall_critical": true }
+    ],
+    "podcasts": [
+      { "id": "latent-space", "feed_url": "https://api.substack.com/feed/podcast/1084089.rss", "index_url": "https://www.latent.space/podcast" },
+      { "id": "vanishing-gradients", "feed_url": "https://feeds.fireside.fm/vanishinggradients/rss", "index_url": "https://vanishinggradients.fireside.fm/" },
+      { "id": "mlops-community", "feed_url": null, "index_url": "https://home.mlops.community/public/collections/podcast" }
+    ],
+    "benchmarks-tools": [
+      { "id": "arxiv-agent", "feed_url": "http://export.arxiv.org/api/query?search_query=all:(agent+evaluation+OR+LLM-as-judge+OR+RL+environment)&sortBy=submittedDate&sortOrder=descending", "index_url": null },
+      { "id": "inspect-releases", "feed_url": null, "index_url": null, "gh_repo": "UKGovernmentBEIS/inspect_ai", "via": "gh api" }
+    ],
+    "aggregators": [
+      { "id": "hf-papers", "feed_url": null, "index_url": "https://huggingface.co/papers" }
+    ]
+  }
+}

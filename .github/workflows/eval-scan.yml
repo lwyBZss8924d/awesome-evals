@@ -1,31 +1,38 @@
 name: Eval Scan (audit + update)
 
-# Autonomous curator: Claude Code scans for new high-quality agent-eval content,
-# vets it, and opens a PR with the additions. Runs on your Claude subscription via
-# a CLAUDE_CODE_OAUTH_TOKEN secret (generate with `claude setup-token`).
+# Autonomous daily curator (ultracode-optimized recipe v2). Claude Code scouts NEW high-signal
+# agent-eval content via per-source delta cursors, vets it ruthlessly, verifies every survivor
+# against the live page, and opens ONE review PR — or none. Runs on a Claude subscription OAuth
+# token. Full recipe: .github/scan-recipe.md. State: .scanner/. See SCAN.md.
 
 on:
   schedule:
-    - cron: "23 8 * * *"   # daily 08:23 UTC (off the :00 mark)
+    - cron: "0 13 * * *"   # daily 13:00 UTC — delta scan
+    - cron: "0 13 * * 0"   # weekly (Sun) recall backstop — cold rebaseline (no date floor)
   workflow_dispatch:
     inputs:
       focus:
-        description: "Optional focus for this run (e.g. podcasts, benchmarks, talks, a specific author)"
+        description: "Scope this run to one source group / topic (optional)"
         required: false
         default: ""
+      cold_rebaseline:
+        description: "1 = 90-day cold re-scan (recovery / first run)"
+        required: false
+        default: "0"
 
 permissions:
   contents: write
   pull-requests: write
-  id-token: write   # required by claude-code-action for OIDC
+  id-token: write
 
 concurrency:
-  group: eval-scan
-  cancel-in-progress: false
+  group: awesome-evals-scan
+  cancel-in-progress: false   # queue, never race the state files
 
 jobs:
   scan:
     runs-on: ubuntu-latest
+    timeout-minutes: 25        # prompt self-checkpoints at ~18 min
     steps:
       - uses: actions/checkout@v4
         with:
@@ -33,50 +40,18 @@ jobs:
 
       - name: Run the eval scan
         uses: anthropics/claude-code-action@v1
+        env:
+          CLAUDE_CODE_SUBAGENT_MODEL: claude-haiku-4-5   # scout/skeptic fan-out runs cheap on Haiku
         with:
           claude_code_oauth_token: ${{ secrets.CLAUDE_CODE_OAUTH_TOKEN }}
-          settings: ".github/claude-scan-settings.json"   # scoped tool allowlist (no blanket bypass)
-          claude_args: "--max-turns 200"
+          settings: ".github/claude-scan-settings.json"
+          claude_args: "--model claude-sonnet-4-6 --max-turns 90"
           prompt: |
-            You are the autonomous curator for this repository, **Awesome Agent Evals**.
-            Run a SCAN to audit and update the library with NEW, genuinely-high-quality content.
-            Optional focus for this run: "${{ github.event.inputs.focus }}" (empty = general scan).
-
-            Follow the workflow documented in SCAN.md. In short:
-            1. Read README.md (and CONTRIBUTING.md for the bar). Collect every URL AND every entry title already listed — your dedup set. Dedup by URL **and** by close title match: never re-add a paper/talk/post that is already in the library under a different URL (e.g. arxiv vs html, or a podcast *about* a paper already listed).
-            2. Discover candidates with WebSearch/WebFetch, parallelizing with Task subagents across these seams:
-               - latest posts from known authors (Eugene Yan, Han-Chung Lee, Hamel Husain, Shreya Shankar,
-                 Nathan Lambert, Florian Brand, Jason Liu, Cameron Wolfe, Aman Khan, Gergely Orosz, Chip Huyen, Lilian Weng);
-               - company engineering blogs (Anthropic, OpenAI, Cursor, Cognition, Braintrust, Arize, Langfuse,
-                 LangChain, Vercel, Sierra, Prime Intellect, BenchFlow);
-               - eval podcasts (Latent Space, Vanishing Gradients, AI That Works, MLOps Community, How I AI, Gradient Dissent);
-               - new benchmarks / evals / tools;
-               - "eval mentions inside general agent-building talks & posts" — keep only if the eval segment is genuinely good.
-            3. VET every candidate with a STRICT, non-BS bar: real data/code/method/insight. Reject SEO, marketing,
-               listicles, thin recaps, and anything already in README. When in doubt, leave it out.
-            4. For each kept item, add ONE clickable, annotated entry — `- **[Title](url)** — Author — note. 🆕` — to the
-               correct README section. Match the house format. Decode any HTML entities.
-            5. If NOTHING clears the bar, stop and make no changes.
-            6. If you added items: create a branch `scan/<YYYY-MM-DD>`, commit with a plain message (NO AI/Claude
-               attribution), push, and open a PR via `gh pr create` titled "Eval scan: <N> new items (<date>)" whose body
-               lists each addition with a one-line reason it clears the bar. Do not push to `main` directly.
-
-            THOROUGHNESS (discovery must be exhaustive, even though inclusion stays strict):
-            - Spawn a SEPARATE Task subagent for EACH discovery seam listed in step 2 and run real web
-              searches in every one — in parallel. Do NOT conclude "nothing new" until every seam has
-              actually been searched and its results checked against the dedup set.
-            - Target surfacing ~20-40 raw candidates across all seams, THEN vet hard and keep only what
-              clears the bar. A run that does <8 searches has not been thorough — keep going.
-            - Check each known author's blog index and each podcast's recent-episodes page directly, not
-              just generic search.
-
-            INCLUSION IS RUTHLESS — search wide, add almost nothing. Genuinely high-signal eval content is
-            RARE: most days there are 0-3 worthy new items, and many days ZERO. Do NOT pad to a number, and
-            do NOT add something just because the search surfaced it. Add an item ONLY if it is clearly
-            high-signal — original data, a real method/benchmark, or a hard-won war-story from a serious
-            source that a careful curator would genuinely feature. When unsure, EXCLUDE.
-            "No new items today" is the normal, successful outcome — open NO pr in that case. A PR with 1-3
-            items is typical; a 10+ item PR should only ever happen on a genuine backlog (the very first deep
-            scan), never on a routine daily run. Reject medium-signal, derivative, listicle, vendor-marketing,
-            and "fine but not notable" posts outright — a single weak entry lowers trust in the whole list.
-            Discovery is exhaustive so you never MISS a rare gem; inclusion is ruthless so the list stays signal-dense.
+            Follow the recipe in .github/scan-recipe.md EXACTLY.
+            SCAN_PHASE is unset → run the SINGLE-JOB fallback: you are the Sonnet orchestrator and own
+            inclusion + claim adjudication + the editor veto; spawn Haiku Task subagents for the Phase-1
+            scout fan-out and the Phase-2 skeptic/editor fetches (CLAUDE_CODE_SUBAGENT_MODEL is haiku).
+            COLD_REBASELINE for this run = "${{ (github.event.inputs.cold_rebaseline == '1' || github.event.schedule == '0 13 * * 0') && '1' || '0' }}".
+            Optional focus for this run: "${{ github.event.inputs.focus }}" (empty = full delta scan).
+            Honor every ABSOLUTE INVARIANT. Open a PR only if ≥1 item clears the bar; otherwise make no
+            changes and report the trustworthy-zero (or inconclusive) status.
