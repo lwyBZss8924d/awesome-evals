@@ -1,0 +1,59 @@
+{
+  "author": "Shreyas KC",
+  "id": "babeljudge-measuring-llm-as-a-judge-reliability-across-languages-and-agent-trajectories",
+  "note": {
+    "path": "notes/papers/babeljudge-measuring-llm-as-a-judge-reliability-across-languages-and-agent-trajectories.md"
+  },
+  "readme": {
+    "entry": "- **[BabelJudge: Measuring LLM-as-a-Judge Reliability Across Languages and Agent Trajectories](https://arxiv.org/abs/2606.22329)** \u2014 Shreyas KC \u2014 <https://arxiv.org/abs/2606.22329> \u00b7 *paper/benchmark* \u2014 Reliability-audit benchmark for judge position, verbosity, order, multilingual degradation, and agent-trajectory perturbation failures. \ud83c\udd95",
+    "line": 304,
+    "path": "README.md"
+  },
+  "review": {
+    "decision": "accept_for_local_kb",
+    "hard_failures": [],
+    "reviewed_at_utc": "2026-06-26T09:39:04Z",
+    "scores": {
+      "factuality": {
+        "reason": "structured evidence plus fetched source snapshot",
+        "score": 2
+      },
+      "kb_fit": {
+        "reason": "matches agent/eval KB scope",
+        "score": 2
+      },
+      "quality": {
+        "reason": "concrete eval artifacts or methodology signals present",
+        "score": 1
+      },
+      "recency": {
+        "reason": "no explicit publication date; retained as current-source candidate",
+        "score": 1
+      },
+      "source_authority": {
+        "reason": "primary repo or lab/source page",
+        "score": 2
+      }
+    },
+    "total_score": 8,
+    "url_check": {
+      "detail": "HEAD:200",
+      "ok": true
+    }
+  },
+  "schema": "awesome_evals.resource_manifest.v1",
+  "section": "## 8 \u00b7 LLM-as-judge & verifiers (alignment, biases, verifiable vs judgeable)",
+  "source_seam": "LLM-as-judge reliability",
+  "title": "BabelJudge: Measuring LLM-as-a-Judge Reliability Across Languages and Agent Trajectories",
+  "type": "paper/benchmark",
+  "url": "https://arxiv.org/abs/2606.22329",
+  "worker": {
+    "candidate_reason": "It contributes an open reliability audit framework and agent-trajectory perturbation tests rather than another generic judge prompt; useful for calibrating LLM-as-judge claims.",
+    "evidence": "arXiv API summary reports bias-penalized scores, order consistency collapse, trajectory perturbations, and package release.",
+    "summary": "Reliability-audit benchmark for judge position, verbosity, order, multilingual degradation, and agent-trajectory perturbation failures.",
+    "url_check": {
+      "detail": "200",
+      "ok": true
+    }
+  }
+}

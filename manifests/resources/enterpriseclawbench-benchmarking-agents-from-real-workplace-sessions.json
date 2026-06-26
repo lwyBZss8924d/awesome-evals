@@ -1,0 +1,59 @@
+{
+  "author": "Jincheng Zhong et al.",
+  "id": "enterpriseclawbench-benchmarking-agents-from-real-workplace-sessions",
+  "note": {
+    "path": "notes/papers/enterpriseclawbench-benchmarking-agents-from-real-workplace-sessions.md"
+  },
+  "readme": {
+    "entry": "- **[EnterpriseClawBench: Benchmarking Agents from Real Workplace Sessions](https://arxiv.org/abs/2606.23654)** \u2014 Jincheng Zhong et al. \u2014 <https://arxiv.org/abs/2606.23654> \u00b7 *paper/benchmark* \u2014 Enterprise-agent benchmark built from workplace sessions with fixtures, rewritten prompts, role/skill classes, hard rules, and semantic rubrics. \ud83c\udd95",
+    "line": 370,
+    "path": "README.md"
+  },
+  "review": {
+    "decision": "accept_for_local_kb",
+    "hard_failures": [],
+    "reviewed_at_utc": "2026-06-26T09:39:04Z",
+    "scores": {
+      "factuality": {
+        "reason": "structured evidence plus fetched source snapshot",
+        "score": 2
+      },
+      "kb_fit": {
+        "reason": "matches agent/eval KB scope",
+        "score": 2
+      },
+      "quality": {
+        "reason": "concrete eval artifacts or methodology signals present",
+        "score": 2
+      },
+      "recency": {
+        "reason": "no explicit publication date; retained as current-source candidate",
+        "score": 1
+      },
+      "source_authority": {
+        "reason": "primary repo or lab/source page",
+        "score": 2
+      }
+    },
+    "total_score": 9,
+    "url_check": {
+      "detail": "HEAD:200",
+      "ok": true
+    }
+  },
+  "schema": "awesome_evals.resource_manifest.v1",
+  "section": "## 9 \u00b7 Agent-specific evaluation (trajectories, tool use, multi-turn, world state, multi-agent, localization)",
+  "source_seam": "new eval benchmarks/tools",
+  "title": "EnterpriseClawBench: Benchmarking Agents from Real Workplace Sessions",
+  "type": "paper/benchmark",
+  "url": "https://arxiv.org/abs/2606.23654",
+  "worker": {
+    "candidate_reason": "High-signal because it describes a reproducible construction protocol for 852 tasks from real workplace sessions and argues for reporting harness-model, artifact quality, cost, runtime, and skill transfer.",
+    "evidence": "arXiv API summary and code pointer to FrontisAI/EnterpriseClawBench.",
+    "summary": "Enterprise-agent benchmark built from workplace sessions with fixtures, rewritten prompts, role/skill classes, hard rules, and semantic rubrics.",
+    "url_check": {
+      "detail": "200",
+      "ok": true
+    }
+  }
+}
