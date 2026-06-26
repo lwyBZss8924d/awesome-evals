@@ -1,0 +1,47 @@
+{
+  "schema": "pouw.git-note.v1",
+  "generated_at_utc": "2026-06-26T08:27:59Z",
+  "business_status": "succeeded",
+  "workflow": "awesome_evals_daily_scan_dry_run_closeout",
+  "repo": "/Users/arthur/dev-space/knowledge-base/sources/ai-evaluation/awesome-evals",
+  "commit_sha": "531f94725610b393985c834707bf7d8461fb1d81",
+  "note_reason": "hook closeout guard observed HEAD commit without refs/notes/commits note after dry-run audit",
+  "boundaries": {
+    "source_repo_edited": false,
+    "pushed": false,
+    "auth_files_read": false
+  },
+  "dry_run_artifacts": {
+    "run_dir": "/Users/arthur/.codex-test/automations/awesome-evals-daily-scan-worker/runs/20260626T082539Z-dry-run",
+    "source_preflight": "source-preflight.json",
+    "current_index": "current-index.json",
+    "candidate_queue": "candidate_queue.jsonl",
+    "accepted_candidates": "accepted_candidates.jsonl",
+    "rejected_candidates": "rejected_candidates.jsonl",
+    "vet_summary": "vet-summary.json",
+    "scan_report": "scan-report.md",
+    "report_summary": "report-summary.json"
+  },
+  "evidence": {
+    "initial_git_status": "## main...origin/main",
+    "final_git_status": "## main...origin/main",
+    "preflight_ok": true,
+    "preflight_blockers": 0,
+    "index_section_count": 34,
+    "index_title_count": 429,
+    "index_url_count": 449,
+    "raw_candidates": 0,
+    "accepted": 0,
+    "rejected": 0,
+    "report_mode": "report_only"
+  },
+  "validation_commands": [
+    "awesome-evals-preflight.zsh --json",
+    "awesome-evals-index.zsh --json",
+    "awesome-evals-vet.zsh --json",
+    "awesome-evals-render-report.zsh --json",
+    "git status --short --branch --untracked-files=all",
+    "git log --show-notes=commits --oneline -1"
+  ],
+  "residual_risk": "Note is local to refs/notes/commits; dry-run prompt forbade push."
+}
