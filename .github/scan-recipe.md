@@ -15,13 +15,30 @@ Today's date: run `date -u +%F` ONCE; call the value DATE and use it everywhere 
 - A 0-kept day is only a TRUSTWORTHY ZERO if the quorum holds (see PHASE 1 step 7). Otherwise it is INCONCLUSIVE and you must NOT advance failed/degraded cursors.
 
 ================================================================
+/deep-research SKILL — premium verification + discovery (USE IT, judiciously)
+================================================================
+This job runs on a Claude subscription where the **/deep-research** skill IS available. Use it as your
+deep-verification engine, cost-guarded (it is powerful and expensive):
+- VET phase: after the ruthless first cut, if there is ≥1 survivor, invoke **/deep-research ONCE on the
+  survivor batch** — adversarially fact-check each survivor's headline claim across multiple independent
+  sources and surface any contradicting or duplicate prior work. A claim /deep-research cannot corroborate
+  is UNVERIFIED → drop it. This SUPPLEMENTS (never replaces) the skeptic+editor live-page check.
+- WEEKLY cold-rebaseline only: also run /deep-research up front to map what is genuinely new in agent
+  evaluation over the lookback window, seeding discovery beyond the fixed seed list.
+- COST GUARD: at most ONE /deep-research call per run; SKIP it entirely on a 0-survivor day; never per-item.
+  If the skill is unavailable in this environment, fall back to the skeptic+editor subagents — do NOT fail the run.
+- The no-fabrication rule still binds: every stat needs a verbatim single-sentence source quote, even if
+  /deep-research surfaced it.
+
+================================================================
 PHASE 0 — ORIENT (cheap; no web)  [scout mode + single-job]
 ================================================================
 0.1 Find LIST: check `README.md`, then `research/LIBRARY.md`; use whichever holds the awesome-list body (the "🔎 Scan additions" section). Read `CONTRIBUTING.md` and, if present, `SCAN.md`, to learn the bar and EXACT entry format. (If SCAN.md is absent and LIST links to it, you MAY create it in this PR — optional, never block.)
 0.2 Learn the house format BY EXAMPLE from existing "Scan additions" entries; copy their shape EXACTLY. Current shape:
     `- **Title** — Author(s) (affiliation) — Source/Publisher — \`https://canonical-url\` · *type* (quality) — 1-3 sentence, mechanism-level why-it-clears-the-bar. 🆕`
     `type` mirrors existing labels (*blog*, *article*, *paper*, *talk*, *podcast*, *tool/repo*); when unsure, mirror the nearest existing entry — do NOT invent vocabulary. `quality` ∈ {excellent, good} ONLY.
-0.3 Build the DEDUP SET from the ENTIRE LIST (all sections). THIS, not the state file, is the truth for "already have it."
+0.3 Build the DEDUP SET from the ENTIRE LIST — BOTH `README.md` AND `MENTIONS.md` (every section of each). THIS, not the state file, is the truth for "already have it."
+0.3b TWO-FILE ROUTING (mandatory): the list is split. **README.md** = eval-FOCUSED resources (the piece is primarily about evaluation / benchmarks / judging / RL-environments). **MENTIONS.md** = resources that only MENTION evals — an agent-building post or talk that carries a genuinely good eval SEGMENT but is not eval-first. Apply this test to every kept item and append it to the CORRECT file (mirror that file's existing entry shape). NEVER put an eval-mention in README. A "mention" still must clear the ruthless bar (the eval segment itself must be high-signal), it just lives in MENTIONS.md. In your PR, note which file each addition went to.
     - URL-norm: lowercase host, drop scheme, strip leading `www.`, trailing slash, query, `#fragment`, `utm_*`. Collapse `arxiv.org/abs/<id>`=`/pdf/<id>` to key `arxiv:<id>`. Collapse `youtube.com/watch?v=<id>`=`youtu.be/<id>` to `yt:<id>`.
     - TITLE-norm: lowercase, strip punctuation/emoji.
     - Record author/org names so you can catch "same talk/paper, different host."
@@ -40,7 +57,7 @@ Spawn ONE Task subagent PER SOURCE GROUP, in parallel (issue ALL Task calls in O
   1. FETCH DIRECTLY with WebFetch — prefer RSS/Atom/sitemap.xml `feed_url` (cheapest, dated, deterministic); else `index_url`. WebSearch is a SUPPLEMENT, never primary.
   2. Extract items (title, url, date) newest-first. Keep items with date ≥ floor (or, for dateless indexes, items whose URL-norm is NOT in `seen_urls`). Drop anything in the COMPACT dedup hint or `rejected.json` (on_merits). Stop paging once clearly below floor; do NOT crawl deep history.
   3. THIN-FETCH / SPA GUARD (critical): compare parsed item_count to this source's `item_count_median` in state. If a 200-OK fetch yields 0 items, OR < 30% of median, OR the body looks like a JS shell (no article/post links, tiny text) -> mark the source `degraded` (NOT done), do NOT advance its cursor, and (for open-web/recall-critical sources) escalate to the WebSearch fallback this run. A 200-but-empty fetch is a SOFT FAILURE, never "nothing new."
-  4. The `open-web` group is the recall net for FEEDLESS/SPA/buried-eval sources (Cursor blog, Anthropic engineering, "eval section buried in a launch post"). For these: try a machine-readable surface FIRST (sitemap.xml, /feed, /rss, GitHub-pages Atom, or the page's __NEXT_DATA__/embedded JSON), THEN the rendered index. Run the supplemental WebSearch (2-3 queries with recency operators, e.g. `site:cursor.com eval`, `"agent eval" OR "LLM-as-judge"` past week) ONLY IF the direct fetch returned ≥1 at/after floor OR looked degraded/empty — SKIP the paid search on a clean quiet feed. ALWAYS poll the Cursor blog.
+  4. The `open-web` group AND every recall_critical FEEDLESS/SPA source (Cursor, Anthropic engineering, OpenAI, Replit, …) is the recall net. The cheap scout tier is UNRELIABLE at rendering JS SPAs, so for these **LEAD WITH WebSearch** (do NOT depend on fetching the SPA index): run 2-3 recency queries per source as the PRIMARY discovery, e.g. `site:cursor.com eval OR benchmark`, `site:anthropic.com/engineering eval OR benchmark`, `"agent eval" OR "LLM-as-judge" 2026` (past ~2 weeks). ALSO try a machine-readable surface (sitemap.xml, /feed, __NEXT_DATA__/embedded JSON) when one exists. A source counts as `done` if EITHER the WebSearch OR a fetch yields items checked against the dedup set — a SPA shell that WebSearch backstops is `done`, NOT `degraded`. Mark `degraded` ONLY when BOTH the fetch AND the search fail. ALWAYS poll the Cursor blog this way.
   5. BURIED-EVAL escalation: for recall-critical/open-web sources, any item whose title is a launch/announce shape ("Introducing", "Announcing", a version-number from a coding-agent vendor) is MUST-ESCALATE — fetch the POST body before the relevance gate, and pass it to Phase 2 regardless of title. Never cheap-drop a launch post on its title.
   6. LIGHT relevance gate ONLY — plausibly about evaluating LLM/agent systems (benchmarks, LLM-as-judge, eval methodology/infra, error analysis, RL-env/verifier, agent-reliability war-story) from a credible source? Do NOT deep-read, verify stats, or write annotations here. Keep borderline IN — the premium tier decides.
   7. RESILIENCE: on fetch failure (404/timeout/rate-limit), retry ONCE, then mark `failed` (cursor untouched) and CONTINUE. One dead source NEVER aborts the group. If you get an Anthropic-side 429 (your OWN model rate limit, distinct from a source 404), back off once (note it) and, if it persists, mark remaining sources in your slice `failed` and return what you have — do NOT spin.
@@ -51,7 +68,7 @@ After all Scouts return, YOU merge:
   - Concatenate candidates; re-apply dedup across groups AND against the FULL LIST: URL-norm + arxiv-id + yt-id. DATE-AWARE TITLE DEDUP — never drop on title-match ALONE: require (title-norm match) AND (same URL-norm OR same arxiv/yt id) to drop. Title matches but URL/host/date differ -> do NOT drop; carry into a "possible-dup, human-check" bucket. Recall-critical sources (cursor-blog, anthropic-eng, any open_web) are EXEMPT from title-only dedup entirely.
   - Collapse cross-source near-dupes (SAME underlying work, different skin: arxiv vs blog vs HTML; a YouTube talk vs its writeup; a podcast/thread ABOUT an already-listed paper). Prefer the PRIMARY/original. For an arxiv-id inferred from an HTML/project page: only collapse if the page TEXT literally contains that arxiv id; otherwise treat as separate.
   - Result = SURVIVOR LIST (usually 0-8). Hard-cap survivors carried into Phase 2 at 12; overflow -> `deferred` for the weekly sweep, noted in the PR/log.
-  - QUORUM CHECK: define quorum = (≥ 80% of seeds resolved `done`) AND (ALL recall-critical sources `done`). If quorum FAILS, this run is INCONCLUSIVE: you may still PR any survivors you fully verify, but you must NOT advance cursors for failed/degraded sources, and the 0-keep path must label the run INCONCLUSIVE (not a clean quiet day).
+  - QUORUM CHECK: define quorum = (≥ 60% of seeds resolved `done`) AND (every recall-critical source was ATTEMPTED via BOTH its fetch AND a WebSearch backstop — so it is `done` unless both failed). If quorum FAILS, this run is INCONCLUSIVE: you must NOT advance cursors for failed/degraded sources and must label the 0-keep path INCONCLUSIVE. CRITICAL: INCONCLUSIVE NEVER BLOCKS A PR — if you have ≥1 fully-verified survivor, ALWAYS open the PR for it regardless of quorum. A run that found and verified a real new item must ship it even if some sources degraded.
 
 SCOUT-MODE HANDOFF: write `.scanner/_artifact.json` (survivor list + per-source done/failed/degraded + observed_max_date + item_count + deferred + possible-dup bucket + quorum bool) and STOP. Do NOT verify or open a PR in scout mode.
 
