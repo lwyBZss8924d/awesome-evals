@@ -1,0 +1,16 @@
+{
+  "artifacts": {
+    "dispatcher_run_dir": "/Users/arthur/.codex/automations/awesome-evals-daily-dispatcher/runs/20260627T045227Z-apply",
+    "guardian_overlay": "/Users/arthur/.codex/automations/awesome-evals-daily-dispatcher/runs/20260627T045227Z-apply/guardian-pouw-audit.json",
+    "source_pr": "https://github.com/lwyBZss8924d/awesome-evals/pull/3"
+  },
+  "commit": "daffaaae0c0b1f45d0fc0fac08d2b431f6ecb0fc",
+  "generated_at_utc": "2026-06-27T05:00:30Z",
+  "schema": "pouw.git-note.v1",
+  "task": "Add reviewed awesome-evals resource manifests omitted by dispatcher commit scope",
+  "useful_work": [
+    "Committed aggregate and per-resource manifests for the reviewed daily KB additions.",
+    "Preserved fork-only publication boundary.",
+    "Captured the dispatcher commit-scope gap for runner hardening."
+  ]
+}
