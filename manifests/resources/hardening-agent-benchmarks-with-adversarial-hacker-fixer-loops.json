@@ -1,0 +1,59 @@
+{
+  "author": "Ziqian Zhong et al.",
+  "id": "hardening-agent-benchmarks-with-adversarial-hacker-fixer-loops",
+  "note": {
+    "path": "notes/papers/hardening-agent-benchmarks-with-adversarial-hacker-fixer-loops.md"
+  },
+  "readme": {
+    "entry": "- **[Hardening Agent Benchmarks with Adversarial Hacker-Fixer Loops](https://arxiv.org/abs/2606.08960)** \u2014 Ziqian Zhong et al. \u2014 <https://arxiv.org/abs/2606.08960> \u00b7 *paper/benchmark-audit* \u2014 Adversarial verifier-hardening study for terminal-agent benchmarks using a hacker/fixer/solver loop. \ud83c\udd95",
+    "line": 426,
+    "path": "README.md"
+  },
+  "review": {
+    "decision": "accept_for_local_kb",
+    "hard_failures": [],
+    "reviewed_at_utc": "2026-06-27T04:58:47Z",
+    "scores": {
+      "factuality": {
+        "reason": "structured evidence plus fetched source snapshot",
+        "score": 2
+      },
+      "kb_fit": {
+        "reason": "matches agent/eval KB scope",
+        "score": 2
+      },
+      "quality": {
+        "reason": "concrete eval artifacts or methodology signals present",
+        "score": 2
+      },
+      "recency": {
+        "reason": "evidence indicates 2025-2026 or actively updated source",
+        "score": 2
+      },
+      "source_authority": {
+        "reason": "primary repo or lab/source page",
+        "score": 2
+      }
+    },
+    "total_score": 10,
+    "url_check": {
+      "detail": "HEAD:200",
+      "ok": true
+    }
+  },
+  "schema": "awesome_evals.resource_manifest.v1",
+  "section": "## 10 \u00b7 Safety / adversarial evaluation (prompt injection, jailbreaks, action-authorization, benchmark auditing)",
+  "source_seam": "MCP Exa paper search + arXiv primary metadata",
+  "title": "Hardening Agent Benchmarks with Adversarial Hacker-Fixer Loops",
+  "type": "paper/benchmark-audit",
+  "url": "https://arxiv.org/abs/2606.08960",
+  "worker": {
+    "candidate_reason": "Primary arXiv metadata reports an audit of 1,968 tasks across five terminal-agent benchmarks, finding 323 hackable tasks; the proposed hacker-fixer loop drives KernelBench attack success from 62% to 0% on held-out public exploits and releases Terminal Wrench with 323 environments and 3,632 hack trajectories.",
+    "evidence": "mcp Exa result highlighted the audit, 16% hackability, loop design, and Terminal Wrench release; discovery-arxiv.json id 2606.08960 confirms the 1,968-task audit, 323 hackable tasks, KernelBench and Terminal Bench attack-rate reductions, and dataset release.",
+    "summary": "Adversarial verifier-hardening study for terminal-agent benchmarks using a hacker/fixer/solver loop.",
+    "url_check": {
+      "detail": "200",
+      "ok": true
+    }
+  }
+}

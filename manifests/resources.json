@@ -1,7 +1,21 @@
 {
-  "generated_at_utc": "2026-06-26T11:54:53Z",
-  "resource_count": 3,
+  "generated_at_utc": "2026-06-27T04:58:49Z",
+  "resource_count": 6,
   "resources": [
+    {
+      "id": "aj-bench-benchmarking-agent-as-a-judge-for-environment-aware-evaluation",
+      "manifest_path": "manifests/resources/aj-bench-benchmarking-agent-as-a-judge-for-environment-aware-evaluation.json",
+      "note_path": "notes/papers/aj-bench-benchmarking-agent-as-a-judge-for-environment-aware-evaluation.md",
+      "readme_line": 319,
+      "readme_path": "README.md",
+      "review_decision": "accept_for_local_kb",
+      "review_total_score": 10,
+      "section": "## 8 \u00b7 LLM-as-judge & verifiers (alignment, biases, verifiable vs judgeable)",
+      "source_seam": "Hugging Face paper search + project page + arXiv primary metadata",
+      "title": "AJ-Bench: Benchmarking Agent-as-a-Judge for Environment-Aware Evaluation",
+      "type": "paper/benchmark",
+      "url": "https://arxiv.org/abs/2604.18240"
+    },
     {
       "id": "babeljudge-measuring-llm-as-a-judge-reliability-across-languages-and-agent-trajectories",
       "manifest_path": "manifests/resources/babeljudge-measuring-llm-as-a-judge-reliability-across-languages-and-agent-trajectories.json",
@@ -43,6 +57,34 @@
       "title": "GroundEval: A Deterministic Replacement for LLM-as-Judge in Stateful Agent Evaluation",
       "type": "paper/framework",
       "url": "https://arxiv.org/abs/2606.22737"
+    },
+    {
+      "id": "hardening-agent-benchmarks-with-adversarial-hacker-fixer-loops",
+      "manifest_path": "manifests/resources/hardening-agent-benchmarks-with-adversarial-hacker-fixer-loops.json",
+      "note_path": "notes/papers/hardening-agent-benchmarks-with-adversarial-hacker-fixer-loops.md",
+      "readme_line": 426,
+      "readme_path": "README.md",
+      "review_decision": "accept_for_local_kb",
+      "review_total_score": 10,
+      "section": "## 10 \u00b7 Safety / adversarial evaluation (prompt injection, jailbreaks, action-authorization, benchmark auditing)",
+      "source_seam": "MCP Exa paper search + arXiv primary metadata",
+      "title": "Hardening Agent Benchmarks with Adversarial Hacker-Fixer Loops",
+      "type": "paper/benchmark-audit",
+      "url": "https://arxiv.org/abs/2606.08960"
+    },
+    {
+      "id": "weavebench-a-long-horizon-real-world-benchmark-for-computer-use-agents-with-hybrid-interface",
+      "manifest_path": "manifests/resources/weavebench-a-long-horizon-real-world-benchmark-for-computer-use-agents-with-hybrid-interface.json",
+      "note_path": "notes/papers/weavebench-a-long-horizon-real-world-benchmark-for-computer-use-agents-with-hybrid-interface.md",
+      "readme_line": 396,
+      "readme_path": "README.md",
+      "review_decision": "accept_for_local_kb",
+      "review_total_score": 10,
+      "section": "## 9 \u00b7 Agent-specific evaluation (trajectories, tool use, multi-turn, world state, multi-agent, localization)",
+      "source_seam": "MCP Exa paper search + Hugging Face Daily Papers + arXiv primary metadata",
+      "title": "WeaveBench: A Long-Horizon, Real-World Benchmark for Computer-Use Agents with Hybrid Interfaces",
+      "type": "paper/benchmark",
+      "url": "https://arxiv.org/abs/2606.09426"
     }
   ],
   "schema": "awesome_evals.resources_index.v1"

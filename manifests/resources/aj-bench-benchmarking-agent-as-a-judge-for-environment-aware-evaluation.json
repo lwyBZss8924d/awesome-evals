@@ -1,0 +1,59 @@
+{
+  "author": "Wentao Shi et al.",
+  "id": "aj-bench-benchmarking-agent-as-a-judge-for-environment-aware-evaluation",
+  "note": {
+    "path": "notes/papers/aj-bench-benchmarking-agent-as-a-judge-for-environment-aware-evaluation.md"
+  },
+  "readme": {
+    "entry": "- **[AJ-Bench: Benchmarking Agent-as-a-Judge for Environment-Aware Evaluation](https://arxiv.org/abs/2604.18240)** \u2014 Wentao Shi et al. \u2014 <https://arxiv.org/abs/2604.18240> \u00b7 *paper/benchmark* \u2014 Benchmark for judging agents that actively gather evidence across search, data systems, and GUI environments. \ud83c\udd95",
+    "line": 319,
+    "path": "README.md"
+  },
+  "review": {
+    "decision": "accept_for_local_kb",
+    "hard_failures": [],
+    "reviewed_at_utc": "2026-06-27T04:58:48Z",
+    "scores": {
+      "factuality": {
+        "reason": "structured evidence plus fetched source snapshot",
+        "score": 2
+      },
+      "kb_fit": {
+        "reason": "matches agent/eval KB scope",
+        "score": 2
+      },
+      "quality": {
+        "reason": "concrete eval artifacts or methodology signals present",
+        "score": 2
+      },
+      "recency": {
+        "reason": "evidence indicates 2025-2026 or actively updated source",
+        "score": 2
+      },
+      "source_authority": {
+        "reason": "primary repo or lab/source page",
+        "score": 2
+      }
+    },
+    "total_score": 10,
+    "url_check": {
+      "detail": "HEAD:200",
+      "ok": true
+    }
+  },
+  "schema": "awesome_evals.resource_manifest.v1",
+  "section": "## 8 \u00b7 LLM-as-judge & verifiers (alignment, biases, verifiable vs judgeable)",
+  "source_seam": "Hugging Face paper search + project page + arXiv primary metadata",
+  "title": "AJ-Bench: Benchmarking Agent-as-a-Judge for Environment-Aware Evaluation",
+  "type": "paper/benchmark",
+  "url": "https://arxiv.org/abs/2604.18240",
+  "worker": {
+    "candidate_reason": "HF and arXiv metadata report 155 tasks and 516 annotated trajectories across search, data systems, and graphical interfaces, evaluating judge-agent abilities in information acquisition, state verification, and process verification; the project page confirms the ACL 2026 paper and public data/code surface.",
+    "evidence": "hf-papers-computer-use-verifier.json surfaced id 2604.18240; arxiv-ajbench.json confirms the benchmark scope; project-pages.json for https://aj-bench.github.io/ confirms 155 tasks, 516 trajectories, ACL 2026 metadata, and project URL.",
+    "summary": "Benchmark for judging agents that actively gather evidence across search, data systems, and GUI environments.",
+    "url_check": {
+      "detail": "200",
+      "ok": true
+    }
+  }
+}
