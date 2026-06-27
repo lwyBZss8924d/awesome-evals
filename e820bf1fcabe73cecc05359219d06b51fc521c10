@@ -1,0 +1,15 @@
+{
+  "artifacts": {
+    "dispatcher_run_dir": "/Users/arthur/.codex/automations/awesome-evals-daily-dispatcher/runs/20260627T045227Z-apply",
+    "fork_pr": "https://github.com/lwyBZss8924d/awesome-evals/pull/4"
+  },
+  "commit": "e820bf1fcabe73cecc05359219d06b51fc521c10",
+  "generated_at_utc": "2026-06-27T05:01:15Z",
+  "schema": "pouw.git-note.v1",
+  "task": "Close out fork PR merge for awesome-evals manifest follow-up",
+  "useful_work": [
+    "Created and merged fork PR #4 for generated resource manifests.",
+    "Kept the upstream benchflow-ai repository out of scope.",
+    "Restored local main to the fork main branch after merge."
+  ]
+}
