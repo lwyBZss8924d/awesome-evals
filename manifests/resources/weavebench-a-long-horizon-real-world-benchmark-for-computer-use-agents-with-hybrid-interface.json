@@ -1,0 +1,59 @@
+{
+  "author": "Wanli Li et al.",
+  "id": "weavebench-a-long-horizon-real-world-benchmark-for-computer-use-agents-with-hybrid-interface",
+  "note": {
+    "path": "notes/papers/weavebench-a-long-horizon-real-world-benchmark-for-computer-use-agents-with-hybrid-interface.md"
+  },
+  "readme": {
+    "entry": "- **[WeaveBench: A Long-Horizon, Real-World Benchmark for Computer-Use Agents with Hybrid Interfaces](https://arxiv.org/abs/2606.09426)** \u2014 Wanli Li et al. \u2014 <https://arxiv.org/abs/2606.09426> \u00b7 *paper/benchmark* \u2014 Hybrid GUI/CLI/code/browser benchmark with a trajectory-aware judge for long-horizon computer-use agents. \ud83c\udd95",
+    "line": 396,
+    "path": "README.md"
+  },
+  "review": {
+    "decision": "accept_for_local_kb",
+    "hard_failures": [],
+    "reviewed_at_utc": "2026-06-27T04:58:48Z",
+    "scores": {
+      "factuality": {
+        "reason": "structured evidence plus fetched source snapshot",
+        "score": 2
+      },
+      "kb_fit": {
+        "reason": "matches agent/eval KB scope",
+        "score": 2
+      },
+      "quality": {
+        "reason": "concrete eval artifacts or methodology signals present",
+        "score": 2
+      },
+      "recency": {
+        "reason": "evidence indicates 2025-2026 or actively updated source",
+        "score": 2
+      },
+      "source_authority": {
+        "reason": "primary repo or lab/source page",
+        "score": 2
+      }
+    },
+    "total_score": 10,
+    "url_check": {
+      "detail": "HEAD:200",
+      "ok": true
+    }
+  },
+  "schema": "awesome_evals.resource_manifest.v1",
+  "section": "## 9 \u00b7 Agent-specific evaluation (trajectories, tool use, multi-turn, world state, multi-agent, localization)",
+  "source_seam": "MCP Exa paper search + Hugging Face Daily Papers + arXiv primary metadata",
+  "title": "WeaveBench: A Long-Horizon, Real-World Benchmark for Computer-Use Agents with Hybrid Interfaces",
+  "type": "paper/benchmark",
+  "url": "https://arxiv.org/abs/2606.09426",
+  "worker": {
+    "candidate_reason": "Primary arXiv and HF paper metadata report 114 tasks across 8 real-world work domains from real user requests; the companion judge inspects deliverables, files, screenshots, logs, and action traces while detecting shortcut behaviors, and the best PassRate reaches only 41.2%.",
+    "evidence": "hf-papers-computer-use-verifier.json records the paper summary and 104 HF upvotes; discovery-arxiv.json id 2606.09426 confirms task/domain counts, hybrid-interface setup, trajectory-aware judging, shortcut detection, and 41.2% best PassRate.",
+    "summary": "Hybrid GUI/CLI/code/browser benchmark with a trajectory-aware judge for long-horizon computer-use agents.",
+    "url_check": {
+      "detail": "200",
+      "ok": true
+    }
+  }
+}
