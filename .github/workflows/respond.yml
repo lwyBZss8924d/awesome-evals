@@ -27,7 +27,9 @@ jobs:
   respond:
     # Never respond to bots (skips the scanner's PRs + our own comments → no loops);
     # auto-respond to new human issues & PRs; respond to comments only when @claude is summoned.
+    # This upstream workflow requires BenchFlow's Claude credentials/OIDC setup; forks keep it inert.
     if: >
+      github.repository_owner == 'benchflow-ai' &&
       github.event.sender.type != 'Bot' &&
       (github.event_name == 'issues' ||
        github.event_name == 'pull_request_target' ||
