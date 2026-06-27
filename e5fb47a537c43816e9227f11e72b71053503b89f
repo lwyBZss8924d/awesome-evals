@@ -1,0 +1,18 @@
+{
+  "artifacts": {
+    "failed_run": "https://github.com/lwyBZss8924d/awesome-evals/actions/runs/28279299626/job/83791839365",
+    "fixed_files": [
+      ".github/workflows/respond.yml",
+      ".github/workflows/eval-scan.yml"
+    ]
+  },
+  "commit": "e5fb47a537c43816e9227f11e72b71053503b89f",
+  "generated_at_utc": "2026-06-27T05:07:12Z",
+  "schema": "pouw.git-note.v1",
+  "task": "Disable upstream Claude GitHub Actions in the awesome-evals fork",
+  "useful_work": [
+    "Traced PR #4 failure to an imported upstream Claude workflow running without the required Claude token/federation configuration in the fork.",
+    "Added repository-owner guards so the responder and scheduled scan jobs run only under benchflow-ai, not under the lwyBZss8924d fork.",
+    "Validated YAML syntax, diff whitespace, and public-safety scan before committing."
+  ]
+}
