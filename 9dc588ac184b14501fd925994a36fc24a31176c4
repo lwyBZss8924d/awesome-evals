@@ -1,0 +1,16 @@
+{
+  "artifacts": {
+    "dispatcher_run_dir": "/Users/arthur/.codex/automations/awesome-evals-daily-dispatcher/runs/20260627T045227Z-apply",
+    "kb_validation": "/Users/arthur/.codex/automations/awesome-evals-daily-dispatcher/runs/20260627T045227Z-apply/kb-validation.json",
+    "promotion_plan": "/Users/arthur/.codex/automations/awesome-evals-daily-dispatcher/runs/20260627T045227Z-apply/promotion-plan.json"
+  },
+  "commit": "9dc588ac184b14501fd925994a36fc24a31176c4",
+  "generated_at_utc": "2026-06-27T04:58:52Z",
+  "schema": "pouw.git-note.v1",
+  "task": "Promote reviewed awesome-evals candidates into local KB",
+  "useful_work": [
+    "Applied only accept_for_local_kb review decisions.",
+    "Validated URL, duplicate, and diff gates before commit.",
+    "Preserved scan/review/promotion artifacts under the dispatcher run directory."
+  ]
+}
