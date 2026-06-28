@@ -1,0 +1,107 @@
+{
+  "artifacts": {
+    "dispatcher_run_dir": "/Users/arthur/.codex/automations/awesome-evals-daily-dispatcher/runs/20260628T022142Z-apply",
+    "kb_validation": "/Users/arthur/.codex/automations/awesome-evals-daily-dispatcher/runs/20260628T022142Z-apply/kb-validation.json",
+    "promotion_plan": "/Users/arthur/.codex/automations/awesome-evals-daily-dispatcher/runs/20260628T022142Z-apply/promotion-plan.json",
+    "source_sync": "/Users/arthur/.codex/automations/awesome-evals-daily-dispatcher/runs/20260628T022142Z-apply/source-sync.json"
+  },
+  "commit": "10a8bd34cd9c3afeadeb1249840980b8fd2fc3aa",
+  "generated_at_utc": "2026-06-28T02:27:41Z",
+  "schema": "pouw.git-note.v1",
+  "task": "Promote reviewed awesome-evals candidates into local KB",
+  "upstream_sync_summary": {
+    "changed_file_count": 16,
+    "changed_files": [
+      {
+        "path": ".github/workflows/eval-scan.yml",
+        "status": "M"
+      },
+      {
+        "path": ".github/workflows/respond.yml",
+        "status": "M"
+      },
+      {
+        "path": "README.md",
+        "status": "M"
+      },
+      {
+        "path": "manifests/resources.json",
+        "status": "D"
+      },
+      {
+        "path": "manifests/resources/aj-bench-benchmarking-agent-as-a-judge-for-environment-aware-evaluation.json",
+        "status": "D"
+      },
+      {
+        "path": "manifests/resources/babeljudge-measuring-llm-as-a-judge-reliability-across-languages-and-agent-trajectories.json",
+        "status": "D"
+      },
+      {
+        "path": "manifests/resources/enterpriseclawbench-benchmarking-agents-from-real-workplace-sessions.json",
+        "status": "D"
+      },
+      {
+        "path": "manifests/resources/groundeval-a-deterministic-replacement-for-llm-as-judge-in-stateful-agent-evaluation.json",
+        "status": "D"
+      },
+      {
+        "path": "manifests/resources/hardening-agent-benchmarks-with-adversarial-hacker-fixer-loops.json",
+        "status": "D"
+      },
+      {
+        "path": "manifests/resources/weavebench-a-long-horizon-real-world-benchmark-for-computer-use-agents-with-hybrid-interface.json",
+        "status": "D"
+      },
+      {
+        "path": "notes/papers/aj-bench-benchmarking-agent-as-a-judge-for-environment-aware-evaluation.md",
+        "status": "D"
+      },
+      {
+        "path": "notes/papers/babeljudge-measuring-llm-as-a-judge-reliability-across-languages-and-agent-trajectories.md",
+        "status": "D"
+      },
+      {
+        "path": "notes/papers/enterpriseclawbench-benchmarking-agents-from-real-workplace-sessions.md",
+        "status": "D"
+      },
+      {
+        "path": "notes/papers/groundeval-a-deterministic-replacement-for-llm-as-judge-in-stateful-agent-evaluation.md",
+        "status": "D"
+      },
+      {
+        "path": "notes/papers/hardening-agent-benchmarks-with-adversarial-hacker-fixer-loops.md",
+        "status": "D"
+      },
+      {
+        "path": "notes/papers/weavebench-a-long-horizon-real-world-benchmark-for-computer-use-agents-with-hybrid-interface.md",
+        "status": "D"
+      }
+    ],
+    "commit_count": 1,
+    "commit_range": "e5fb47a537c43816e9227f11e72b71053503b89f..4cf8544a202200f959cc41b38fcafbc5abbc3520",
+    "commits": [
+      {
+        "sha": "4cf8544a202200f959cc41b38fcafbc5abbc3520",
+        "subject": "Harden responder: verify-every-number gate + no off-topic debugging (#27)"
+      }
+    ],
+    "detected_item_count": 0,
+    "detected_items": [],
+    "head_after_merge": "04ee06aa7dcead4d7c366a9700d7b244c428a69f",
+    "origin_main_after": "e5fb47a537c43816e9227f11e72b71053503b89f",
+    "origin_main_before": "e5fb47a537c43816e9227f11e72b71053503b89f",
+    "performed": true,
+    "safety_relevant_paths": [
+      ".github/workflows/eval-scan.yml",
+      ".github/workflows/respond.yml"
+    ],
+    "upstream_main_after": "4cf8544a202200f959cc41b38fcafbc5abbc3520",
+    "upstream_main_before": "ce30ffafab89aedb84b5eb70dd9489ccf699aa59"
+  },
+  "useful_work": [
+    "Applied only accept_for_local_kb review decisions.",
+    "Validated URL, duplicate, and diff gates before commit.",
+    "Preserved scan/review/promotion artifacts under the dispatcher run directory.",
+    "Synchronized upstream benchflow-ai/awesome-evals into the fork work branch before applying local KB additions."
+  ]
+}
