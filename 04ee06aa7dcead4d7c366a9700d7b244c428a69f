@@ -1,0 +1,61 @@
+{
+  "type": "pouw_note",
+  "schema_version": 1,
+  "repository": "/Users/arthur/dev-space/knowledge-base/sources/ai-evaluation/awesome-evals",
+  "commit": "04ee06aa7dcead4d7c366a9700d7b244c428a69f",
+  "business_status": "succeeded",
+  "commit_subject": "Merge remote-tracking branch 'refs/remotes/upstream/main' into kb/awesome-evals-daily-20260628T022142Z",
+  "commit_author": "Li aiguo <11715013+lwyBZss8924d@users.noreply.github.com>",
+  "commit_authored_at": "2026-06-28T10:21:46+08:00",
+  "commit_files": [
+    ".github/workflows/respond.yml"
+  ],
+  "worker_activity": {
+    "workflow": "awesome_evals_daily_scan_apply",
+    "mode": "report_only",
+    "source_repo_modified_by_worker": false,
+    "raw_count": 3,
+    "accepted_count": 3,
+    "rejected_count": 0,
+    "etl_note_drafts": 3,
+    "discovery_status": "completed_with_fallbacks"
+  },
+  "artifacts": {
+    "run_dir": "/Users/arthur/.codex-test/automations/awesome-evals-daily-scan-worker/runs/20260628T022147Z-apply",
+    "source_preflight": "/Users/arthur/.codex-test/automations/awesome-evals-daily-scan-worker/runs/20260628T022147Z-apply/source-preflight.json",
+    "current_index": "/Users/arthur/.codex-test/automations/awesome-evals-daily-scan-worker/runs/20260628T022147Z-apply/current-index.json",
+    "candidate_queue": "/Users/arthur/.codex-test/automations/awesome-evals-daily-scan-worker/runs/20260628T022147Z-apply/candidate_queue.jsonl",
+    "accepted_candidates": "/Users/arthur/.codex-test/automations/awesome-evals-daily-scan-worker/runs/20260628T022147Z-apply/accepted_candidates.jsonl",
+    "rejected_candidates": "/Users/arthur/.codex-test/automations/awesome-evals-daily-scan-worker/runs/20260628T022147Z-apply/rejected_candidates.jsonl",
+    "vet_summary": "/Users/arthur/.codex-test/automations/awesome-evals-daily-scan-worker/runs/20260628T022147Z-apply/vet-summary.json",
+    "etl_note_summary": "/Users/arthur/.codex-test/automations/awesome-evals-daily-scan-worker/runs/20260628T022147Z-apply/etl-note-summary.json",
+    "etl_note_manifest": "/Users/arthur/.codex-test/automations/awesome-evals-daily-scan-worker/runs/20260628T022147Z-apply/etl-note-manifest.json",
+    "etl_notes_dir": "/Users/arthur/.codex-test/automations/awesome-evals-daily-scan-worker/runs/20260628T022147Z-apply/etl-notes",
+    "scan_report": "/Users/arthur/.codex-test/automations/awesome-evals-daily-scan-worker/runs/20260628T022147Z-apply/scan-report.md",
+    "report_summary": "/Users/arthur/.codex-test/automations/awesome-evals-daily-scan-worker/runs/20260628T022147Z-apply/report-summary.json",
+    "discovery_errors": "/Users/arthur/.codex-test/automations/awesome-evals-daily-scan-worker/runs/20260628T022147Z-apply/discovery-errors.md"
+  },
+  "verification": [
+    {
+      "command": "git status --short --branch --untracked-files=all",
+      "result": "clean worktree; branch ahead banner only"
+    },
+    {
+      "command": "awesome-evals-preflight.zsh --json",
+      "result": "ok true; no blockers; no tracked or untracked changes"
+    },
+    {
+      "command": "awesome-evals-vet.zsh --check-urls --json",
+      "result": "candidate_count 3; accepted_count 3; rejected_count 0; all accepted URL checks returned 200"
+    },
+    {
+      "command": "awesome-evals-render-note-drafts.zsh",
+      "result": "item_count 3"
+    },
+    {
+      "command": "awesome-evals-render-report.zsh --json",
+      "result": "accepted_count 3; rejected_count 0; report rendered"
+    }
+  ],
+  "residual_risk": "This worker added only a refs/notes/commits note for the hook-observed recent HEAD commit. It did not edit source files, push, or open a PR. Discovery used fallback sources because non-interactive jina search lacked JINA_API_KEY."
+}
