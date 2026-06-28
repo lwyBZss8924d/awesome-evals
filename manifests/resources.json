@@ -1,7 +1,21 @@
 {
-  "generated_at_utc": "2026-06-27T04:58:49Z",
-  "resource_count": 6,
+  "generated_at_utc": "2026-06-28T02:27:38Z",
+  "resource_count": 9,
   "resources": [
+    {
+      "id": "agentprocessbench-diagnosing-step-level-process-quality-in-tool-using-agents",
+      "manifest_path": "manifests/resources/agentprocessbench-diagnosing-step-level-process-quality-in-tool-using-agents.json",
+      "note_path": "notes/papers/agentprocessbench-diagnosing-step-level-process-quality-in-tool-using-agents.md",
+      "readme_line": 398,
+      "readme_path": "README.md",
+      "review_decision": "accept_for_local_kb",
+      "review_total_score": 10,
+      "section": "9 \u00b7 Agent-specific evaluation (trajectories, tool use, multi-turn, world state, multi-agent, localization)",
+      "source_seam": "new eval benchmarks/tools via Exa + arXiv API + HF Papers",
+      "title": "AgentProcessBench: Diagnosing Step-Level Process Quality in Tool-Using Agents",
+      "type": "paper/benchmark",
+      "url": "https://arxiv.org/abs/2603.14465"
+    },
     {
       "id": "aj-bench-benchmarking-agent-as-a-judge-for-environment-aware-evaluation",
       "manifest_path": "manifests/resources/aj-bench-benchmarking-agent-as-a-judge-for-environment-aware-evaluation.json",
@@ -29,6 +43,20 @@
       "title": "BabelJudge: Measuring LLM-as-a-Judge Reliability Across Languages and Agent Trajectories",
       "type": "paper/benchmark",
       "url": "https://arxiv.org/abs/2606.22329"
+    },
+    {
+      "id": "claw-eval-towards-trustworthy-evaluation-of-autonomous-agents",
+      "manifest_path": "manifests/resources/claw-eval-towards-trustworthy-evaluation-of-autonomous-agents.json",
+      "note_path": "notes/papers/claw-eval-towards-trustworthy-evaluation-of-autonomous-agents.md",
+      "readme_line": 400,
+      "readme_path": "README.md",
+      "review_decision": "accept_for_local_kb",
+      "review_total_score": 10,
+      "section": "9 \u00b7 Agent-specific evaluation (trajectories, tool use, multi-turn, world state, multi-agent, localization)",
+      "source_seam": "new eval benchmarks/tools via Exa + arXiv API",
+      "title": "Claw-Eval: Towards Trustworthy Evaluation of Autonomous Agents",
+      "type": "paper/benchmark",
+      "url": "https://arxiv.org/abs/2604.06132"
     },
     {
       "id": "enterpriseclawbench-benchmarking-agents-from-real-workplace-sessions",
@@ -71,6 +99,20 @@
       "title": "Hardening Agent Benchmarks with Adversarial Hacker-Fixer Loops",
       "type": "paper/benchmark-audit",
       "url": "https://arxiv.org/abs/2606.08960"
+    },
+    {
+      "id": "traject-bench-a-trajectory-aware-benchmark-for-evaluating-agentic-tool-use",
+      "manifest_path": "manifests/resources/traject-bench-a-trajectory-aware-benchmark-for-evaluating-agentic-tool-use.json",
+      "note_path": "notes/papers/traject-bench-a-trajectory-aware-benchmark-for-evaluating-agentic-tool-use.md",
+      "readme_line": 399,
+      "readme_path": "README.md",
+      "review_decision": "accept_for_local_kb",
+      "review_total_score": 8,
+      "section": "9 \u00b7 Agent-specific evaluation (trajectories, tool use, multi-turn, world state, multi-agent, localization)",
+      "source_seam": "company research pages via Exa + curl primary page",
+      "title": "TRAJECT-Bench: A trajectory-aware benchmark for evaluating agentic tool use",
+      "type": "paper/benchmark",
+      "url": "https://www.amazon.science/publications/traject-bench-a-trajectory-aware-benchmark-for-evaluating-agentic-tool-use"
     },
     {
       "id": "weavebench-a-long-horizon-real-world-benchmark-for-computer-use-agents-with-hybrid-interface",

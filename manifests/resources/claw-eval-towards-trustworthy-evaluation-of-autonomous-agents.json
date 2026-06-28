@@ -1,0 +1,59 @@
+{
+  "author": "Claw-Eval authors",
+  "id": "claw-eval-towards-trustworthy-evaluation-of-autonomous-agents",
+  "note": {
+    "path": "notes/papers/claw-eval-towards-trustworthy-evaluation-of-autonomous-agents.md"
+  },
+  "readme": {
+    "entry": "- **[Claw-Eval: Towards Trustworthy Evaluation of Autonomous Agents](https://arxiv.org/abs/2604.06132)** \u2014 Claw-Eval authors \u2014 <https://arxiv.org/abs/2604.06132> \u00b7 *paper/benchmark* \u2014 Autonomous-agent evaluation suite with completion, safety, robustness, and auditable evidence channels. \ud83c\udd95",
+    "line": 400,
+    "path": "README.md"
+  },
+  "review": {
+    "decision": "accept_for_local_kb",
+    "hard_failures": [],
+    "reviewed_at_utc": "2026-06-28T02:27:37Z",
+    "scores": {
+      "factuality": {
+        "reason": "structured evidence plus fetched source snapshot",
+        "score": 2
+      },
+      "kb_fit": {
+        "reason": "matches agent/eval KB scope",
+        "score": 2
+      },
+      "quality": {
+        "reason": "concrete eval artifacts or methodology signals present",
+        "score": 2
+      },
+      "recency": {
+        "reason": "evidence indicates 2025-2026 or actively updated source",
+        "score": 2
+      },
+      "source_authority": {
+        "reason": "primary repo or lab/source page",
+        "score": 2
+      }
+    },
+    "total_score": 10,
+    "url_check": {
+      "detail": "HEAD:200",
+      "ok": true
+    }
+  },
+  "schema": "awesome_evals.resource_manifest.v1",
+  "section": "9 \u00b7 Agent-specific evaluation (trajectories, tool use, multi-turn, world state, multi-agent, localization)",
+  "source_seam": "new eval benchmarks/tools via Exa + arXiv API",
+  "title": "Claw-Eval: Towards Trustworthy Evaluation of Autonomous Agents",
+  "type": "paper/benchmark",
+  "url": "https://arxiv.org/abs/2604.06132",
+  "worker": {
+    "candidate_reason": "Clears the bar because it explicitly tackles trajectory-opaque grading with 300 human-verified tasks, execution traces, service-side audit logs, environment snapshots, fine-grained rubrics, and pass@k/pass^k scoring.",
+    "evidence": "arXiv abstract fetched in evidence-arxiv-selected.xml describes 300 human-verified tasks across 9 categories, three evidence channels (execution traces, audit logs, environment snapshots), 2,159 rubric items, and Completion/Safety/Robustness scoring with Average Score, Pass@k, and Pass^k.",
+    "summary": "Autonomous-agent evaluation suite with completion, safety, robustness, and auditable evidence channels.",
+    "url_check": {
+      "detail": "200",
+      "ok": true
+    }
+  }
+}

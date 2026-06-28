@@ -1,0 +1,59 @@
+{
+  "author": "Pengfei He, Zhenwei Dai, Bing He, Hui Liu, Xianfeng Tang, Hanqing Lu, Juanhui Li, Jiayuan Ding, Subhabrata Mukherjee, Suhang Wang, Yue Xing, Jiliang Tang, Benoit Dumoulin",
+  "id": "traject-bench-a-trajectory-aware-benchmark-for-evaluating-agentic-tool-use",
+  "note": {
+    "path": "notes/papers/traject-bench-a-trajectory-aware-benchmark-for-evaluating-agentic-tool-use.md"
+  },
+  "readme": {
+    "entry": "- **[TRAJECT-Bench: A trajectory-aware benchmark for evaluating agentic tool use](https://www.amazon.science/publications/traject-bench-a-trajectory-aware-benchmark-for-evaluating-agentic-tool-use)** \u2014 Pengfei He, Zhenwei Dai, Bing He, Hui Liu, Xianfeng Tang, Hanqing Lu, Juanhui Li, Jiayuan Ding, Subhabrata Mukherjee, Suhang Wang, Yue Xing, Jiliang Tang, Benoit Dumoulin \u2014 <https://www.amazon.science/publications/traject-bench-a-trajectory-aware-benchmark-for-evaluating-agentic-tool-use> \u00b7 *paper/benchmark* \u2014 Amazon Science benchmark for tool-use trajectories, tool selection, argument correctness, and dependency/order satisfaction. \ud83c\udd95",
+    "line": 399,
+    "path": "README.md"
+  },
+  "review": {
+    "decision": "accept_for_local_kb",
+    "hard_failures": [],
+    "reviewed_at_utc": "2026-06-28T02:27:36Z",
+    "scores": {
+      "factuality": {
+        "reason": "structured evidence plus fetched source snapshot",
+        "score": 2
+      },
+      "kb_fit": {
+        "reason": "matches agent/eval KB scope",
+        "score": 2
+      },
+      "quality": {
+        "reason": "concrete eval artifacts or methodology signals present",
+        "score": 1
+      },
+      "recency": {
+        "reason": "evidence indicates 2025-2026 or actively updated source",
+        "score": 2
+      },
+      "source_authority": {
+        "reason": "non-primary or less established source",
+        "score": 1
+      }
+    },
+    "total_score": 8,
+    "url_check": {
+      "detail": "HEAD:200",
+      "ok": true
+    }
+  },
+  "schema": "awesome_evals.resource_manifest.v1",
+  "section": "9 \u00b7 Agent-specific evaluation (trajectories, tool use, multi-turn, world state, multi-agent, localization)",
+  "source_seam": "company research pages via Exa + curl primary page",
+  "title": "TRAJECT-Bench: A trajectory-aware benchmark for evaluating agentic tool use",
+  "type": "paper/benchmark",
+  "url": "https://www.amazon.science/publications/traject-bench-a-trajectory-aware-benchmark-for-evaluating-agentic-tool-use",
+  "worker": {
+    "candidate_reason": "Clears the bar because it adds fine-grained trajectory diagnostics to final-answer accuracy, using high-fidelity executable tools and production-style API tasks to expose tool confusion and parameter-blind selection failure modes.",
+    "evidence": "Amazon Science page fetched in evidence-amazon-traject-bench.html states TRAJECT-Bench evaluates whether tools are selected, parameterized, and ordered correctly; it pairs executable tools with production-style APIs and reports trajectory-level diagnostics including tool selection, argument correctness, and dependency/order satisfaction.",
+    "summary": "Amazon Science benchmark for tool-use trajectories, tool selection, argument correctness, and dependency/order satisfaction.",
+    "url_check": {
+      "detail": "200",
+      "ok": true
+    }
+  }
+}
