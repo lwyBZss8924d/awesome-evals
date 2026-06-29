@@ -1,0 +1,59 @@
+{
+  "author": "Xiao Zhou, Siyue Zhang, Yilun Zhao, Jinbiao Wei, Tingyu Song, Arman Cohan, Chen Zhao",
+  "id": "gui-vs-cli-execution-bottlenecks-in-screen-only-and-skill-mediated-computer-use-agents",
+  "note": {
+    "path": "notes/papers/gui-vs-cli-execution-bottlenecks-in-screen-only-and-skill-mediated-computer-use-agents.md"
+  },
+  "readme": {
+    "entry": "- **[GUI vs. CLI: Execution Bottlenecks in Screen-Only and Skill-Mediated Computer-Use Agents](https://arxiv.org/abs/2606.24551)** \u2014 Xiao Zhou, Siyue Zhang, Yilun Zhao, Jinbiao Wei, Tingyu Song, Arman Cohan, Chen Zhao \u2014 <https://arxiv.org/abs/2606.24551> \u00b7 *paper/benchmark* \u2014 Matched desktop benchmark separating GUI grounding bottlenecks from CLI skill-interface coverage. \ud83c\udd95",
+    "line": 406,
+    "path": "README.md"
+  },
+  "review": {
+    "decision": "accept_for_local_kb",
+    "hard_failures": [],
+    "reviewed_at_utc": "2026-06-29T02:29:12Z",
+    "scores": {
+      "factuality": {
+        "reason": "structured evidence plus fetched source snapshot",
+        "score": 2
+      },
+      "kb_fit": {
+        "reason": "matches agent/eval KB scope",
+        "score": 2
+      },
+      "quality": {
+        "reason": "concrete eval artifacts or methodology signals present",
+        "score": 2
+      },
+      "recency": {
+        "reason": "evidence indicates 2025-2026 or actively updated source",
+        "score": 2
+      },
+      "source_authority": {
+        "reason": "primary repo or lab/source page",
+        "score": 2
+      }
+    },
+    "total_score": 10,
+    "url_check": {
+      "detail": "HEAD:200",
+      "ok": true
+    }
+  },
+  "schema": "awesome_evals.resource_manifest.v1",
+  "section": "9 \u00b7 Agent-specific evaluation (trajectories, tool use, multi-turn, world state, multi-agent, localization)",
+  "source_seam": "arXiv API plus Hugging Face Daily Papers metadata",
+  "title": "GUI vs. CLI: Execution Bottlenecks in Screen-Only and Skill-Mediated Computer-Use Agents",
+  "type": "paper/benchmark",
+  "url": "https://arxiv.org/abs/2606.24551",
+  "worker": {
+    "candidate_reason": "Clears the bar because it controls goals, states, verifiers, and permitted actions across 440 desktop tasks, isolating execution-layer bottlenecks instead of conflating task mix with interface modality.",
+    "evidence": "arXiv API metadata retrieved 2026-06-22T17:05:07Z: Computer-use agents can execute software tasks through either graphical interfaces or programmatic command interfaces, but existing evaluations confound interaction modality with differences in tasks, initial states, verifiers, and permitted actions. We introduce a matched execution-layer benchmark of 440 desktop tasks across 18 applications and 12 workflow categories, where screen-only GUI agents and skill-mediated CLI agents receive identical goals, states, and final-state verifiers while being restricted to modality-native actions. In this controlled setting, the strongest GUI agent reaches a 59.1% full pass rate, outperforming the strongest original-skill CLI agent at 48.2%; however, verifier-guided skill augmentation raises CLI success to 69.3%, showing that much of the CLI deficit comes from incomplete skill coverage rather than model capability alone. These results suggest that GUI and CLI expose different execution bottlenecks: GUI agents are limited by reliable grounded interaction over long-horizon workflows, whereas CLI agents are limited by the coverage and scalability of their skill interfaces. Hugging Face paper metadata links GitHub repo https://github.com/rebeccaz4/gui-vs-cli and records 28 upvotes.",
+    "summary": "Matched desktop benchmark separating GUI grounding bottlenecks from CLI skill-interface coverage.",
+    "url_check": {
+      "detail": "200",
+      "ok": true
+    }
+  }
+}
