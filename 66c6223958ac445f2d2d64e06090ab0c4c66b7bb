@@ -1,0 +1,180 @@
+{
+  "artifacts": {
+    "dispatcher_run_dir": "/Users/arthur/.codex/automations/awesome-evals-daily-dispatcher/runs/20260629T022315Z-apply",
+    "kb_validation": "/Users/arthur/.codex/automations/awesome-evals-daily-dispatcher/runs/20260629T022315Z-apply/kb-validation.json",
+    "promotion_plan": "/Users/arthur/.codex/automations/awesome-evals-daily-dispatcher/runs/20260629T022315Z-apply/promotion-plan.json",
+    "source_sync": "/Users/arthur/.codex/automations/awesome-evals-daily-dispatcher/runs/20260629T022315Z-apply/source-sync.json"
+  },
+  "commit": "66c6223958ac445f2d2d64e06090ab0c4c66b7bb",
+  "generated_at_utc": "2026-06-29T02:29:16Z",
+  "schema": "pouw.git-note.v1",
+  "task": "Promote reviewed awesome-evals candidates into local KB",
+  "upstream_sync_summary": {
+    "changed_file_count": 23,
+    "changed_files": [
+      {
+        "path": ".github/workflows/eval-scan.yml",
+        "status": "M"
+      },
+      {
+        "path": ".github/workflows/respond.yml",
+        "status": "M"
+      },
+      {
+        "path": "MENTIONS.md",
+        "status": "M"
+      },
+      {
+        "path": "README.md",
+        "status": "M"
+      },
+      {
+        "path": "manifests/resources.json",
+        "status": "D"
+      },
+      {
+        "path": "manifests/resources/agentprocessbench-diagnosing-step-level-process-quality-in-tool-using-agents.json",
+        "status": "D"
+      },
+      {
+        "path": "manifests/resources/aj-bench-benchmarking-agent-as-a-judge-for-environment-aware-evaluation.json",
+        "status": "D"
+      },
+      {
+        "path": "manifests/resources/babeljudge-measuring-llm-as-a-judge-reliability-across-languages-and-agent-trajectories.json",
+        "status": "D"
+      },
+      {
+        "path": "manifests/resources/claw-eval-towards-trustworthy-evaluation-of-autonomous-agents.json",
+        "status": "D"
+      },
+      {
+        "path": "manifests/resources/enterpriseclawbench-benchmarking-agents-from-real-workplace-sessions.json",
+        "status": "D"
+      },
+      {
+        "path": "manifests/resources/groundeval-a-deterministic-replacement-for-llm-as-judge-in-stateful-agent-evaluation.json",
+        "status": "D"
+      },
+      {
+        "path": "manifests/resources/hardening-agent-benchmarks-with-adversarial-hacker-fixer-loops.json",
+        "status": "D"
+      },
+      {
+        "path": "manifests/resources/traject-bench-a-trajectory-aware-benchmark-for-evaluating-agentic-tool-use.json",
+        "status": "D"
+      },
+      {
+        "path": "manifests/resources/weavebench-a-long-horizon-real-world-benchmark-for-computer-use-agents-with-hybrid-interface.json",
+        "status": "D"
+      },
+      {
+        "path": "notes/papers/agentprocessbench-diagnosing-step-level-process-quality-in-tool-using-agents.md",
+        "status": "D"
+      },
+      {
+        "path": "notes/papers/aj-bench-benchmarking-agent-as-a-judge-for-environment-aware-evaluation.md",
+        "status": "D"
+      },
+      {
+        "path": "notes/papers/babeljudge-measuring-llm-as-a-judge-reliability-across-languages-and-agent-trajectories.md",
+        "status": "D"
+      },
+      {
+        "path": "notes/papers/claw-eval-towards-trustworthy-evaluation-of-autonomous-agents.md",
+        "status": "D"
+      },
+      {
+        "path": "notes/papers/enterpriseclawbench-benchmarking-agents-from-real-workplace-sessions.md",
+        "status": "D"
+      },
+      {
+        "path": "notes/papers/groundeval-a-deterministic-replacement-for-llm-as-judge-in-stateful-agent-evaluation.md",
+        "status": "D"
+      },
+      {
+        "path": "notes/papers/hardening-agent-benchmarks-with-adversarial-hacker-fixer-loops.md",
+        "status": "D"
+      },
+      {
+        "path": "notes/papers/traject-bench-a-trajectory-aware-benchmark-for-evaluating-agentic-tool-use.md",
+        "status": "D"
+      },
+      {
+        "path": "notes/papers/weavebench-a-long-horizon-real-world-benchmark-for-computer-use-agents-with-hybrid-interface.md",
+        "status": "D"
+      }
+    ],
+    "commit_count": 3,
+    "commit_range": "d641c2ccdd60b823f124be1932214cc4bc39fc2c..54a392b65862165e2d5eef41d9d04c1675b4d66f",
+    "commits": [
+      {
+        "sha": "b2b329aa4c3fba9dadab4f44ec0b33bfd48802b3",
+        "subject": "Scan 2026-06-27: 6 new eval finds (#31)"
+      },
+      {
+        "sha": "34c4436594299352039089212d6a6e2d8817f244",
+        "subject": "Daily scan: post a Slack thread (started -> finds preview + PR link) (#32)"
+      },
+      {
+        "sha": "54a392b65862165e2d5eef41d9d04c1675b4d66f",
+        "subject": "Bypass Claude App-token exchange; post via GITHUB_TOKEN (#29)"
+      }
+    ],
+    "detected_item_count": 6,
+    "detected_items": [
+      {
+        "entry": "- **[Teaching agents product design at Vercel](https://vercel.com/blog/teaching-agents-product-design-at-vercel)** \u2014 Vercel \u2014 <https://vercel.com/blog/teaching-agents-product-design-at-vercel> \u00b7 *excellent* \u2014 **Score rule correctness separately from similarity-to-shipped-result \u2014 \"shipped code can contain a flaw that the agent should improve instead of reproduce\" \u2014 and run fixtures WITHOUT the skill as an explicit no-skill control baseline to verify the instruction is doing any causal work at all. Evals are drawn from real shipped examples with holdout sets hiding expected edits so coverage generalizes.** _(excerpt: \"We score rule correctness separately from similarity to the shipped result. Shipped code can contain a flaw that the agent should improve instead of reproduce. ... We also run fixtures without the skill to measure whether it changed the agent's behavior.\")_ \ud83c\udd95",
+        "file": "MENTIONS.md",
+        "title": "Teaching agents product design at Vercel",
+        "url": "https://vercel.com/blog/teaching-agents-product-design-at-vercel"
+      },
+      {
+        "entry": "- **[AISI Engineering Playbook](https://engineering-playbook.aisi.org.uk/)** \u2014 UK AISI \u2014 <https://www.aisi.gov.uk/blog/releasing-aisis-engineering-playbook> \u00b7 <https://engineering-playbook.aisi.org.uk/> \u00b7 *guide* \u2014 \ud83c\udd95 Open guide to production frontier-model eval infrastructure: five-layer stack (Evaluate \u00b7 Isolate \u00b7 Connect \u00b7 Run \u00b7 Scale) covering sandboxed untrusted code, audited provider routing, hosted open-weight inference, and the systems-of-working that tie them together. \"Much of this work is invisible, rarely documented, and developed from scratch by every team that attempts serious evaluation.\" The infrastructure layer surrounding Inspect AI, documented by the team that built and runs it.",
+        "file": "README.md",
+        "title": "AISI Engineering Playbook",
+        "url": "https://engineering-playbook.aisi.org.uk/"
+      },
+      {
+        "entry": "- **[Insights Generator: Systematic Corpus-Level Trace Diagnostics for LLM Agents](https://arxiv.org/abs/2605.21347)** \u2014 Scale AI \u2014 <https://arxiv.org/abs/2605.21347> \u00b7 *paper/tool* \u2014 \ud83c\udd95 Automated system that analyzes large corpora of agent execution traces to surface failure patterns and behavioral issues at scale; \"Human experts using IG reports improve scaffold performance by 30.4 pp over the unmodified baseline scaffold\" \u2014 nearly doubling the gain from the next-best system. Fills the gap between laborious per-trace inspection and aggregate benchmark scores that hide population-level failure modes.",
+        "file": "README.md",
+        "title": "Insights Generator: Systematic Corpus-Level Trace Diagnostics for LLM Agents",
+        "url": "https://arxiv.org/abs/2605.21347"
+      },
+      {
+        "entry": "- **[The Verification Horizon: No Silver Bullet for Coding Agent Rewards](https://arxiv.org/abs/2606.26300)** \u2014 Qwen Team (Alibaba) \u2014 <https://arxiv.org/abs/2606.26300> \u00b7 *paper* \u2014 \ud83c\udd95 The dynamic argument this section's static entries lack: \"no fixed reward function can remain effective as policy capability continues to grow; and verification must co-evolve with the generator.\" Taxonomizes four verification strategies (unit tests, interactive judge, user feedback, agentic evaluator) and shows each saturates or gets gamed as the policy improves \u2014 the moving-target argument for reward design.",
+        "file": "README.md",
+        "title": "The Verification Horizon: No Silver Bullet for Coding Agent Rewards",
+        "url": "https://arxiv.org/abs/2606.26300"
+      },
+      {
+        "entry": "- **[Running the Gauntlet: Re-evaluating the Capabilities of Agents Beyond Familiar Environments](https://arxiv.org/abs/2606.14397)** \u2014 Vysotskyi, Gal, Torr, Bibi et al. (Oxford) \u2014 <https://arxiv.org/abs/2606.14397> \u00b7 *benchmark* \u2014 \ud83c\udd95 **GauntletBench**: 100 vision-intensive tasks across five less-covered professional applications (Video Editor, Workflow Builder, 3D Modeller, Flight Analyser, Circuit Designer) requiring temporal, graphical, and 3D reasoning; \"state-of-the-art agent achieves only a 19.1% success rate\" vs. \"non-expert human annotators achieve over 80% success\" \u2014 a diagnostic gap in professional-tool computer-use not covered by existing desktop or web benchmarks.",
+        "file": "README.md",
+        "title": "Running the Gauntlet: Re-evaluating the Capabilities of Agents Beyond Familiar Environments",
+        "url": "https://arxiv.org/abs/2606.14397"
+      },
+      {
+        "entry": "- **[Introducing LifeSciBench](https://openai.com/index/introducing-life-sci-bench/)** \u2014 OpenAI \u2014 <https://openai.com/index/introducing-life-sci-bench/> \u00b7 *benchmark* \u2014 \ud83c\udd95 750 expert-authored life-science research tasks (7 workflows \u00d7 7 biological domains) graded by 19,020 rubric criteria from 173 PhD-level scientist contributors, independently validated by 453 expert reviewers; requires interpreting genomic sequence files, chemical structures, and experimental figures; best model (GPT-Rosalind) scores 36.1% overall \u2014 the largest expert-rubric-graded wet-lab-workflow agent benchmark.",
+        "file": "README.md",
+        "title": "Introducing LifeSciBench",
+        "url": "https://openai.com/index/introducing-life-sci-bench/"
+      }
+    ],
+    "head_after_merge": "f4ae23c724323a51061805a7b1252ad9e20b78eb",
+    "origin_main_after": "d641c2ccdd60b823f124be1932214cc4bc39fc2c",
+    "origin_main_before": "d641c2ccdd60b823f124be1932214cc4bc39fc2c",
+    "performed": true,
+    "safety_relevant_paths": [
+      ".github/workflows/eval-scan.yml",
+      ".github/workflows/respond.yml"
+    ],
+    "upstream_main_after": "54a392b65862165e2d5eef41d9d04c1675b4d66f",
+    "upstream_main_before": "4cf8544a202200f959cc41b38fcafbc5abbc3520"
+  },
+  "useful_work": [
+    "Applied only accept_for_local_kb review decisions.",
+    "Validated URL, duplicate, and diff gates before commit.",
+    "Preserved scan/review/promotion artifacts under the dispatcher run directory.",
+    "Synchronized upstream benchflow-ai/awesome-evals into the fork work branch before applying local KB additions."
+  ]
+}
