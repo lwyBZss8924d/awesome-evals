@@ -1,0 +1,17 @@
+{
+  "business_status": "succeeded",
+  "commit": "f4ae23c724323a51061805a7b1252ad9e20b78eb",
+  "commit_subject": "Merge remote-tracking branch 'refs/remotes/upstream/main' into kb/awesome-evals-daily-20260629T022315Z",
+  "created_at_utc": "2026-06-29T02:28:57Z",
+  "evidence": {
+    "note_command": "git notes --ref=commits add -F /tmp/pouw-awesome-evals-f4ae23c72432.json f4ae23c72432",
+    "pre_note_check": "git notes --ref=commits show f4ae23c72432 returned: no note found",
+    "verify_command": "git log --show-notes=commits --oneline -1 f4ae23c72432"
+  },
+  "hook_run_id": "stop:8:/Users/arthur/.codex-test/hooks.json",
+  "purpose": "closeout_guard_git_note_evidence",
+  "repo": "/Users/arthur/dev-space/knowledge-base/sources/ai-evaluation/awesome-evals",
+  "schema_version": 1,
+  "source_repo_worktree_modified": false,
+  "type": "pouw_git_note"
+}
