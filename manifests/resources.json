@@ -1,6 +1,6 @@
 {
-  "generated_at_utc": "2026-06-28T02:27:38Z",
-  "resource_count": 9,
+  "generated_at_utc": "2026-06-29T02:29:13Z",
+  "resource_count": 12,
   "resources": [
     {
       "id": "agentprocessbench-diagnosing-step-level-process-quality-in-tool-using-agents",
@@ -87,6 +87,20 @@
       "url": "https://arxiv.org/abs/2606.22737"
     },
     {
+      "id": "gui-vs-cli-execution-bottlenecks-in-screen-only-and-skill-mediated-computer-use-agents",
+      "manifest_path": "manifests/resources/gui-vs-cli-execution-bottlenecks-in-screen-only-and-skill-mediated-computer-use-agents.json",
+      "note_path": "notes/papers/gui-vs-cli-execution-bottlenecks-in-screen-only-and-skill-mediated-computer-use-agents.md",
+      "readme_line": 406,
+      "readme_path": "README.md",
+      "review_decision": "accept_for_local_kb",
+      "review_total_score": 10,
+      "section": "9 \u00b7 Agent-specific evaluation (trajectories, tool use, multi-turn, world state, multi-agent, localization)",
+      "source_seam": "arXiv API plus Hugging Face Daily Papers metadata",
+      "title": "GUI vs. CLI: Execution Bottlenecks in Screen-Only and Skill-Mediated Computer-Use Agents",
+      "type": "paper/benchmark",
+      "url": "https://arxiv.org/abs/2606.24551"
+    },
+    {
       "id": "hardening-agent-benchmarks-with-adversarial-hacker-fixer-loops",
       "manifest_path": "manifests/resources/hardening-agent-benchmarks-with-adversarial-hacker-fixer-loops.json",
       "note_path": "notes/papers/hardening-agent-benchmarks-with-adversarial-hacker-fixer-loops.md",
@@ -101,6 +115,20 @@
       "url": "https://arxiv.org/abs/2606.08960"
     },
     {
+      "id": "toolprivacybench-benchmarking-purpose-bound-privacy-in-tool-using-llm-agents",
+      "manifest_path": "manifests/resources/toolprivacybench-benchmarking-purpose-bound-privacy-in-tool-using-llm-agents.json",
+      "note_path": "notes/papers/toolprivacybench-benchmarking-purpose-bound-privacy-in-tool-using-llm-agents.md",
+      "readme_line": 437,
+      "readme_path": "README.md",
+      "review_decision": "accept_for_local_kb",
+      "review_total_score": 10,
+      "section": "10 \u00b7 Safety / adversarial evaluation (prompt injection, jailbreaks, action-authorization, benchmark auditing)",
+      "source_seam": "arXiv API latest agent-evaluation search",
+      "title": "ToolPrivacyBench: Benchmarking Purpose-Bound Privacy in Tool-Using LLM Agents",
+      "type": "paper/benchmark",
+      "url": "https://arxiv.org/abs/2606.28061"
+    },
+    {
       "id": "traject-bench-a-trajectory-aware-benchmark-for-evaluating-agentic-tool-use",
       "manifest_path": "manifests/resources/traject-bench-a-trajectory-aware-benchmark-for-evaluating-agentic-tool-use.json",
       "note_path": "notes/papers/traject-bench-a-trajectory-aware-benchmark-for-evaluating-agentic-tool-use.md",
@@ -113,6 +141,20 @@
       "title": "TRAJECT-Bench: A trajectory-aware benchmark for evaluating agentic tool use",
       "type": "paper/benchmark",
       "url": "https://www.amazon.science/publications/traject-bench-a-trajectory-aware-benchmark-for-evaluating-agentic-tool-use"
+    },
+    {
+      "id": "uncertainty-quantification-for-computer-use-agents-a-benchmark-across-vision-language-models",
+      "manifest_path": "manifests/resources/uncertainty-quantification-for-computer-use-agents-a-benchmark-across-vision-language-models.json",
+      "note_path": "notes/papers/uncertainty-quantification-for-computer-use-agents-a-benchmark-across-vision-language-models.md",
+      "readme_line": 407,
+      "readme_path": "README.md",
+      "review_decision": "accept_for_local_kb",
+      "review_total_score": 9,
+      "section": "9 \u00b7 Agent-specific evaluation (trajectories, tool use, multi-turn, world state, multi-agent, localization)",
+      "source_seam": "arXiv API latest computer-use-agent evaluation search",
+      "title": "Uncertainty Quantification for Computer-Use Agents: A Benchmark across Vision-Language Models and GUI Grounding Datasets",
+      "type": "paper/benchmark",
+      "url": "https://arxiv.org/abs/2606.25760"
     },
     {
       "id": "weavebench-a-long-horizon-real-world-benchmark-for-computer-use-agents-with-hybrid-interface",
