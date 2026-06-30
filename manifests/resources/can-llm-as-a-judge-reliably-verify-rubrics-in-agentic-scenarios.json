@@ -1,0 +1,59 @@
+{
+  "author": "Yangda Peng, Yunjia Qi, Hao Peng, Haotian Xia et al.",
+  "id": "can-llm-as-a-judge-reliably-verify-rubrics-in-agentic-scenarios",
+  "note": {
+    "path": "notes/papers/can-llm-as-a-judge-reliably-verify-rubrics-in-agentic-scenarios.md"
+  },
+  "readme": {
+    "entry": "- **[Can LLM-as-a-Judge Reliably Verify Rubrics in Agentic Scenarios?](https://arxiv.org/abs/2606.29920v1)** \u2014 Yangda Peng, Yunjia Qi, Hao Peng, Haotian Xia et al. \u2014 <https://arxiv.org/abs/2606.29920v1> \u00b7 *paper/dataset/code* \u2014 RuVerBench meta-evaluates LLM-as-judge rubric verification on deep-research and agentic-coding outputs. \ud83c\udd95",
+    "line": 323,
+    "path": "README.md"
+  },
+  "review": {
+    "decision": "accept_for_local_kb",
+    "hard_failures": [],
+    "reviewed_at_utc": "2026-06-30T02:28:22Z",
+    "scores": {
+      "factuality": {
+        "reason": "structured evidence plus fetched source snapshot",
+        "score": 2
+      },
+      "kb_fit": {
+        "reason": "matches agent/eval KB scope",
+        "score": 2
+      },
+      "quality": {
+        "reason": "concrete eval artifacts or methodology signals present",
+        "score": 2
+      },
+      "recency": {
+        "reason": "evidence indicates 2025-2026 or actively updated source",
+        "score": 2
+      },
+      "source_authority": {
+        "reason": "primary repo or lab/source page",
+        "score": 2
+      }
+    },
+    "total_score": 10,
+    "url_check": {
+      "detail": "HEAD:200",
+      "ok": true
+    }
+  },
+  "schema": "awesome_evals.resource_manifest.v1",
+  "section": "8 \u00b7 LLM-as-judge & verifiers (alignment, biases, verifiable vs judgeable)",
+  "source_seam": "arxiv_recent_llm_judge_metaeval; github_dataset_code_claim",
+  "title": "Can LLM-as-a-Judge Reliably Verify Rubrics in Agentic Scenarios?",
+  "type": "paper/dataset/code",
+  "url": "https://arxiv.org/abs/2606.29920v1",
+  "worker": {
+    "candidate_reason": "It tests the reliability of rubric verification in agentic settings rather than assuming judge scores are trustworthy, which is central to this repo\u2019s verifier guidance.",
+    "evidence": "arXiv metadata published 2026-06-29 in cs.CL | authors: Yangda Peng, Yunjia Qi, Hao Peng, Haotian Xia, Guanzhong He et al. | abstract evidence: Rubric-based scoring has become a widely used paradigm in model evaluation, typically with LLM-as-a-Judge (LaaJ) for rubric scoring. | abstract names RuVerBench with 2,458 human-labeled rubric-verification instances and dataset/code at github.com/THU-KEG/RuVerBench. | URL reachability used the arXiv API alternate link with explicit v1 because the versionless page returned 404 during vetting.",
+    "summary": "RuVerBench meta-evaluates LLM-as-judge rubric verification on deep-research and agentic-coding outputs.",
+    "url_check": {
+      "detail": "200",
+      "ok": true
+    }
+  }
+}

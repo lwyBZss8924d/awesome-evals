@@ -1,0 +1,59 @@
+{
+  "author": "Mengqi Yuan, Zilong Zhou, Xinzhuang Xiong, Weiming Wu et al.",
+  "id": "osworld2-0-benchmarking-computer-use-agents-on-long-horizon-real-world-tasks",
+  "note": {
+    "path": "notes/papers/osworld2-0-benchmarking-computer-use-agents-on-long-horizon-real-world-tasks.md"
+  },
+  "readme": {
+    "entry": "- **[OSWorld2.0: Benchmarking Computer Use Agents on Long-Horizon Real-World Tasks](https://arxiv.org/abs/2606.29537)** \u2014 Mengqi Yuan, Zilong Zhou, Xinzhuang Xiong, Weiming Wu et al. \u2014 <https://arxiv.org/abs/2606.29537> \u00b7 *paper/benchmark* \u2014 Long-horizon computer-use benchmark with realistic workflows, stateful profile data, partial scoring, and safety reporting. \ud83c\udd95",
+    "line": 409,
+    "path": "README.md"
+  },
+  "review": {
+    "decision": "accept_for_local_kb",
+    "hard_failures": [],
+    "reviewed_at_utc": "2026-06-30T02:28:21Z",
+    "scores": {
+      "factuality": {
+        "reason": "structured evidence plus fetched source snapshot",
+        "score": 2
+      },
+      "kb_fit": {
+        "reason": "matches agent/eval KB scope",
+        "score": 2
+      },
+      "quality": {
+        "reason": "concrete eval artifacts or methodology signals present",
+        "score": 2
+      },
+      "recency": {
+        "reason": "evidence indicates 2025-2026 or actively updated source",
+        "score": 2
+      },
+      "source_authority": {
+        "reason": "primary repo or lab/source page",
+        "score": 2
+      }
+    },
+    "total_score": 10,
+    "url_check": {
+      "detail": "HEAD:200",
+      "ok": true
+    }
+  },
+  "schema": "awesome_evals.resource_manifest.v1",
+  "section": "9 \u00b7 Agent-specific evaluation (trajectories, tool use, multi-turn, world state, multi-agent, localization)",
+  "source_seam": "arxiv_recent_agent_benchmarks; exa_agent_benchmark_search",
+  "title": "OSWorld2.0: Benchmarking Computer Use Agents on Long-Horizon Real-World Tasks",
+  "type": "paper/benchmark",
+  "url": "https://arxiv.org/abs/2606.29537",
+  "worker": {
+    "candidate_reason": "It extends OSWorld-style CUA evaluation toward hour-scale workflows and exposes bottlenecks that short desktop tasks and outcome-only scores can miss.",
+    "evidence": "arXiv metadata published 2026-06-28 in cs.AI | authors: Mengqi Yuan, Zilong Zhou, Xinzhuang Xiong, Weiming Wu, Jiayang Sun et al. | abstract evidence: Existing computer-use benchmarks fail to capture the realism, complexity, and long-horizon demands of real-world computer use, limiting their ability to reveal the limitations of frontier agents. | reports 108 workflows, median human completion around 1.6 hours, and 318 average tool calls in the primary agent setting.",
+    "summary": "Long-horizon computer-use benchmark with realistic workflows, stateful profile data, partial scoring, and safety reporting.",
+    "url_check": {
+      "detail": "200",
+      "ok": true
+    }
+  }
+}
