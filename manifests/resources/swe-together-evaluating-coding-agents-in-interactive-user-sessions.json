@@ -1,0 +1,59 @@
+{
+  "author": "Yifan Wu, Zhuokai Zhao, Songlin Li, Ho Hin Lee et al.",
+  "id": "swe-together-evaluating-coding-agents-in-interactive-user-sessions",
+  "note": {
+    "path": "notes/papers/swe-together-evaluating-coding-agents-in-interactive-user-sessions.md"
+  },
+  "readme": {
+    "entry": "- **[SWE-Together: Evaluating Coding Agents in Interactive User Sessions](https://arxiv.org/abs/2606.29957)** \u2014 Yifan Wu, Zhuokai Zhao, Songlin Li, Ho Hin Lee et al. \u2014 <https://arxiv.org/abs/2606.29957> \u00b7 *paper/benchmark* \u2014 Multi-turn coding-agent benchmark reconstructed from real user-agent sessions, scoring final correctness plus corrective feedback turns. \ud83c\udd95",
+    "line": 408,
+    "path": "README.md"
+  },
+  "review": {
+    "decision": "accept_for_local_kb",
+    "hard_failures": [],
+    "reviewed_at_utc": "2026-06-30T02:28:20Z",
+    "scores": {
+      "factuality": {
+        "reason": "structured evidence plus fetched source snapshot",
+        "score": 2
+      },
+      "kb_fit": {
+        "reason": "matches agent/eval KB scope",
+        "score": 2
+      },
+      "quality": {
+        "reason": "concrete eval artifacts or methodology signals present",
+        "score": 2
+      },
+      "recency": {
+        "reason": "evidence indicates 2025-2026 or actively updated source",
+        "score": 2
+      },
+      "source_authority": {
+        "reason": "primary repo or lab/source page",
+        "score": 2
+      }
+    },
+    "total_score": 10,
+    "url_check": {
+      "detail": "HEAD:200",
+      "ok": true
+    }
+  },
+  "schema": "awesome_evals.resource_manifest.v1",
+  "section": "9 \u00b7 Agent-specific evaluation (trajectories, tool use, multi-turn, world state, multi-agent, localization)",
+  "source_seam": "arxiv_recent_agent_benchmarks; hf_daily_papers_crosscheck",
+  "title": "SWE-Together: Evaluating Coding Agents in Interactive User Sessions",
+  "type": "paper/benchmark",
+  "url": "https://arxiv.org/abs/2606.29957",
+  "worker": {
+    "candidate_reason": "It directly addresses the static-task blind spot in SWE-agent evaluation by replaying interactive user clarification and correction across repository-level coding tasks.",
+    "evidence": "arXiv metadata published 2026-06-29 in cs.SE | authors: Yifan Wu, Zhuokai Zhao, Songlin Li, Ho Hin Lee, Jiacheng Zhu et al. | abstract evidence: Most coding-agent benchmarks are static: an agent receives a complete task description up front and is judged only by its final code. | curates 109 repository-level tasks from 11,260 recorded sessions and uses a reactive LLM-based user simulator.",
+    "summary": "Multi-turn coding-agent benchmark reconstructed from real user-agent sessions, scoring final correctness plus corrective feedback turns.",
+    "url_check": {
+      "detail": "200",
+      "ok": true
+    }
+  }
+}

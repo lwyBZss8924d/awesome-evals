@@ -1,6 +1,6 @@
 {
-  "generated_at_utc": "2026-06-29T02:29:13Z",
-  "resource_count": 12,
+  "generated_at_utc": "2026-06-30T02:28:22Z",
+  "resource_count": 15,
   "resources": [
     {
       "id": "agentprocessbench-diagnosing-step-level-process-quality-in-tool-using-agents",
@@ -43,6 +43,20 @@
       "title": "BabelJudge: Measuring LLM-as-a-Judge Reliability Across Languages and Agent Trajectories",
       "type": "paper/benchmark",
       "url": "https://arxiv.org/abs/2606.22329"
+    },
+    {
+      "id": "can-llm-as-a-judge-reliably-verify-rubrics-in-agentic-scenarios",
+      "manifest_path": "manifests/resources/can-llm-as-a-judge-reliably-verify-rubrics-in-agentic-scenarios.json",
+      "note_path": "notes/papers/can-llm-as-a-judge-reliably-verify-rubrics-in-agentic-scenarios.md",
+      "readme_line": 323,
+      "readme_path": "README.md",
+      "review_decision": "accept_for_local_kb",
+      "review_total_score": 10,
+      "section": "8 \u00b7 LLM-as-judge & verifiers (alignment, biases, verifiable vs judgeable)",
+      "source_seam": "arxiv_recent_llm_judge_metaeval; github_dataset_code_claim",
+      "title": "Can LLM-as-a-Judge Reliably Verify Rubrics in Agentic Scenarios?",
+      "type": "paper/dataset/code",
+      "url": "https://arxiv.org/abs/2606.29920v1"
     },
     {
       "id": "claw-eval-towards-trustworthy-evaluation-of-autonomous-agents",
@@ -113,6 +127,34 @@
       "title": "Hardening Agent Benchmarks with Adversarial Hacker-Fixer Loops",
       "type": "paper/benchmark-audit",
       "url": "https://arxiv.org/abs/2606.08960"
+    },
+    {
+      "id": "osworld2-0-benchmarking-computer-use-agents-on-long-horizon-real-world-tasks",
+      "manifest_path": "manifests/resources/osworld2-0-benchmarking-computer-use-agents-on-long-horizon-real-world-tasks.json",
+      "note_path": "notes/papers/osworld2-0-benchmarking-computer-use-agents-on-long-horizon-real-world-tasks.md",
+      "readme_line": 409,
+      "readme_path": "README.md",
+      "review_decision": "accept_for_local_kb",
+      "review_total_score": 10,
+      "section": "9 \u00b7 Agent-specific evaluation (trajectories, tool use, multi-turn, world state, multi-agent, localization)",
+      "source_seam": "arxiv_recent_agent_benchmarks; exa_agent_benchmark_search",
+      "title": "OSWorld2.0: Benchmarking Computer Use Agents on Long-Horizon Real-World Tasks",
+      "type": "paper/benchmark",
+      "url": "https://arxiv.org/abs/2606.29537"
+    },
+    {
+      "id": "swe-together-evaluating-coding-agents-in-interactive-user-sessions",
+      "manifest_path": "manifests/resources/swe-together-evaluating-coding-agents-in-interactive-user-sessions.json",
+      "note_path": "notes/papers/swe-together-evaluating-coding-agents-in-interactive-user-sessions.md",
+      "readme_line": 408,
+      "readme_path": "README.md",
+      "review_decision": "accept_for_local_kb",
+      "review_total_score": 10,
+      "section": "9 \u00b7 Agent-specific evaluation (trajectories, tool use, multi-turn, world state, multi-agent, localization)",
+      "source_seam": "arxiv_recent_agent_benchmarks; hf_daily_papers_crosscheck",
+      "title": "SWE-Together: Evaluating Coding Agents in Interactive User Sessions",
+      "type": "paper/benchmark",
+      "url": "https://arxiv.org/abs/2606.29957"
     },
     {
       "id": "toolprivacybench-benchmarking-purpose-bound-privacy-in-tool-using-llm-agents",
