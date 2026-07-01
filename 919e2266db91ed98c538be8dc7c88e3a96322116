@@ -1,0 +1,173 @@
+{
+  "artifacts": {
+    "dispatcher_run_dir": "/Users/arthur/.codex/automations/awesome-evals-daily-dispatcher/runs/20260701T022230Z-apply",
+    "kb_validation": "/Users/arthur/.codex/automations/awesome-evals-daily-dispatcher/runs/20260701T022230Z-apply/kb-validation.json",
+    "promotion_plan": "/Users/arthur/.codex/automations/awesome-evals-daily-dispatcher/runs/20260701T022230Z-apply/promotion-plan.json",
+    "source_sync": "/Users/arthur/.codex/automations/awesome-evals-daily-dispatcher/runs/20260701T022230Z-apply/source-sync.json"
+  },
+  "commit": "919e2266db91ed98c538be8dc7c88e3a96322116",
+  "generated_at_utc": "2026-07-01T02:28:06Z",
+  "schema": "pouw.git-note.v1",
+  "task": "Promote reviewed awesome-evals candidates into local KB",
+  "upstream_sync_summary": {
+    "changed_file_count": 34,
+    "changed_files": [
+      {
+        "path": ".github/workflows/eval-scan.yml",
+        "status": "M"
+      },
+      {
+        "path": ".github/workflows/respond.yml",
+        "status": "M"
+      },
+      {
+        "path": "README.md",
+        "status": "M"
+      },
+      {
+        "path": "manifests/resources.json",
+        "status": "D"
+      },
+      {
+        "path": "manifests/resources/agentprocessbench-diagnosing-step-level-process-quality-in-tool-using-agents.json",
+        "status": "D"
+      },
+      {
+        "path": "manifests/resources/aj-bench-benchmarking-agent-as-a-judge-for-environment-aware-evaluation.json",
+        "status": "D"
+      },
+      {
+        "path": "manifests/resources/babeljudge-measuring-llm-as-a-judge-reliability-across-languages-and-agent-trajectories.json",
+        "status": "D"
+      },
+      {
+        "path": "manifests/resources/can-llm-as-a-judge-reliably-verify-rubrics-in-agentic-scenarios.json",
+        "status": "D"
+      },
+      {
+        "path": "manifests/resources/claw-eval-towards-trustworthy-evaluation-of-autonomous-agents.json",
+        "status": "D"
+      },
+      {
+        "path": "manifests/resources/enterpriseclawbench-benchmarking-agents-from-real-workplace-sessions.json",
+        "status": "D"
+      },
+      {
+        "path": "manifests/resources/groundeval-a-deterministic-replacement-for-llm-as-judge-in-stateful-agent-evaluation.json",
+        "status": "D"
+      },
+      {
+        "path": "manifests/resources/gui-vs-cli-execution-bottlenecks-in-screen-only-and-skill-mediated-computer-use-agents.json",
+        "status": "D"
+      },
+      {
+        "path": "manifests/resources/hardening-agent-benchmarks-with-adversarial-hacker-fixer-loops.json",
+        "status": "D"
+      },
+      {
+        "path": "manifests/resources/osworld2-0-benchmarking-computer-use-agents-on-long-horizon-real-world-tasks.json",
+        "status": "D"
+      },
+      {
+        "path": "manifests/resources/swe-together-evaluating-coding-agents-in-interactive-user-sessions.json",
+        "status": "D"
+      },
+      {
+        "path": "manifests/resources/toolprivacybench-benchmarking-purpose-bound-privacy-in-tool-using-llm-agents.json",
+        "status": "D"
+      },
+      {
+        "path": "manifests/resources/traject-bench-a-trajectory-aware-benchmark-for-evaluating-agentic-tool-use.json",
+        "status": "D"
+      },
+      {
+        "path": "manifests/resources/uncertainty-quantification-for-computer-use-agents-a-benchmark-across-vision-language-models.json",
+        "status": "D"
+      },
+      {
+        "path": "manifests/resources/weavebench-a-long-horizon-real-world-benchmark-for-computer-use-agents-with-hybrid-interface.json",
+        "status": "D"
+      },
+      {
+        "path": "notes/papers/agentprocessbench-diagnosing-step-level-process-quality-in-tool-using-agents.md",
+        "status": "D"
+      },
+      {
+        "path": "notes/papers/aj-bench-benchmarking-agent-as-a-judge-for-environment-aware-evaluation.md",
+        "status": "D"
+      },
+      {
+        "path": "notes/papers/babeljudge-measuring-llm-as-a-judge-reliability-across-languages-and-agent-trajectories.md",
+        "status": "D"
+      },
+      {
+        "path": "notes/papers/can-llm-as-a-judge-reliably-verify-rubrics-in-agentic-scenarios.md",
+        "status": "D"
+      },
+      {
+        "path": "notes/papers/claw-eval-towards-trustworthy-evaluation-of-autonomous-agents.md",
+        "status": "D"
+      },
+      {
+        "path": "notes/papers/enterpriseclawbench-benchmarking-agents-from-real-workplace-sessions.md",
+        "status": "D"
+      },
+      {
+        "path": "notes/papers/groundeval-a-deterministic-replacement-for-llm-as-judge-in-stateful-agent-evaluation.md",
+        "status": "D"
+      },
+      {
+        "path": "notes/papers/gui-vs-cli-execution-bottlenecks-in-screen-only-and-skill-mediated-computer-use-agents.md",
+        "status": "D"
+      },
+      {
+        "path": "notes/papers/hardening-agent-benchmarks-with-adversarial-hacker-fixer-loops.md",
+        "status": "D"
+      },
+      {
+        "path": "notes/papers/osworld2-0-benchmarking-computer-use-agents-on-long-horizon-real-world-tasks.md",
+        "status": "D"
+      },
+      {
+        "path": "notes/papers/swe-together-evaluating-coding-agents-in-interactive-user-sessions.md",
+        "status": "D"
+      },
+      {
+        "path": "notes/papers/toolprivacybench-benchmarking-purpose-bound-privacy-in-tool-using-llm-agents.md",
+        "status": "D"
+      },
+      {
+        "path": "notes/papers/traject-bench-a-trajectory-aware-benchmark-for-evaluating-agentic-tool-use.md",
+        "status": "D"
+      },
+      {
+        "path": "notes/papers/uncertainty-quantification-for-computer-use-agents-a-benchmark-across-vision-language-models.md",
+        "status": "D"
+      },
+      {
+        "path": "notes/papers/weavebench-a-long-horizon-real-world-benchmark-for-computer-use-agents-with-hybrid-interface.md",
+        "status": "D"
+      }
+    ],
+    "commit_count": 0,
+    "commit_range": "1c8c169264b237dcb0d434d666d028d4f1e3fc1d..54a392b65862165e2d5eef41d9d04c1675b4d66f",
+    "commits": [],
+    "detected_item_count": 0,
+    "detected_items": [],
+    "head_after_merge": "1c8c169264b237dcb0d434d666d028d4f1e3fc1d",
+    "origin_main_after": "1c8c169264b237dcb0d434d666d028d4f1e3fc1d",
+    "origin_main_before": "1c8c169264b237dcb0d434d666d028d4f1e3fc1d",
+    "performed": false,
+    "safety_relevant_paths": [
+      ".github/workflows/eval-scan.yml",
+      ".github/workflows/respond.yml"
+    ],
+    "upstream_main_after": "54a392b65862165e2d5eef41d9d04c1675b4d66f",
+    "upstream_main_before": "54a392b65862165e2d5eef41d9d04c1675b4d66f"
+  },
+  "useful_work": [
+    "Applied only accept_for_local_kb review decisions.",
+    "Validated URL, duplicate, and diff gates before commit.",
+    "Preserved scan/review/promotion artifacts under the dispatcher run directory."
+  ]
+}
