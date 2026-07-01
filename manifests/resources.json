@@ -1,6 +1,6 @@
 {
-  "generated_at_utc": "2026-06-30T02:28:22Z",
-  "resource_count": 15,
+  "generated_at_utc": "2026-07-01T02:28:03Z",
+  "resource_count": 18,
   "resources": [
     {
       "id": "agentprocessbench-diagnosing-step-level-process-quality-in-tool-using-agents",
@@ -73,6 +73,20 @@
       "url": "https://arxiv.org/abs/2604.06132"
     },
     {
+      "id": "clawmark-a-living-world-benchmark-for-multi-turn-multi-day-multimodal-coworker-agents",
+      "manifest_path": "manifests/resources/clawmark-a-living-world-benchmark-for-multi-turn-multi-day-multimodal-coworker-agents.json",
+      "note_path": "notes/papers/clawmark-a-living-world-benchmark-for-multi-turn-multi-day-multimodal-coworker-agents.md",
+      "readme_line": 413,
+      "readme_path": "README.md",
+      "review_decision": "accept_for_local_kb",
+      "review_total_score": 10,
+      "section": "9 \u00b7 Agent-specific evaluation (trajectories, tool use, multi-turn, world state, multi-agent, localization)",
+      "source_seam": "Hugging Face Daily Papers discovery; arXiv API + Hugging Face paper read + Jina read",
+      "title": "ClawMark: A Living-World Benchmark for Multi-Turn, Multi-Day, Multimodal Coworker Agents",
+      "type": "paper/benchmark",
+      "url": "https://arxiv.org/abs/2604.23781v2"
+    },
+    {
       "id": "enterpriseclawbench-benchmarking-agents-from-real-workplace-sessions",
       "manifest_path": "manifests/resources/enterpriseclawbench-benchmarking-agents-from-real-workplace-sessions.json",
       "note_path": "notes/papers/enterpriseclawbench-benchmarking-agents-from-real-workplace-sessions.md",
@@ -129,6 +143,20 @@
       "url": "https://arxiv.org/abs/2606.08960"
     },
     {
+      "id": "mypcbench-a-benchmark-for-personally-intelligent-computer-use-agents",
+      "manifest_path": "manifests/resources/mypcbench-a-benchmark-for-personally-intelligent-computer-use-agents.json",
+      "note_path": "notes/papers/mypcbench-a-benchmark-for-personally-intelligent-computer-use-agents.md",
+      "readme_line": 412,
+      "readme_path": "README.md",
+      "review_decision": "accept_for_local_kb",
+      "review_total_score": 9,
+      "section": "9 \u00b7 Agent-specific evaluation (trajectories, tool use, multi-turn, world state, multi-agent, localization)",
+      "source_seam": "Hugging Face Daily Papers discovery; arXiv API + Jina read + project link from paper abstract",
+      "title": "MyPCBench: A Benchmark for Personally Intelligent Computer-Use Agents",
+      "type": "paper/benchmark/project",
+      "url": "https://arxiv.org/abs/2606.16748v1"
+    },
+    {
       "id": "osworld2-0-benchmarking-computer-use-agents-on-long-horizon-real-world-tasks",
       "manifest_path": "manifests/resources/osworld2-0-benchmarking-computer-use-agents-on-long-horizon-real-world-tasks.json",
       "note_path": "notes/papers/osworld2-0-benchmarking-computer-use-agents-on-long-horizon-real-world-tasks.md",
@@ -183,6 +211,20 @@
       "title": "TRAJECT-Bench: A trajectory-aware benchmark for evaluating agentic tool use",
       "type": "paper/benchmark",
       "url": "https://www.amazon.science/publications/traject-bench-a-trajectory-aware-benchmark-for-evaluating-agentic-tool-use"
+    },
+    {
+      "id": "tua-bench-a-benchmark-for-general-purpose-terminal-use-agents",
+      "manifest_path": "manifests/resources/tua-bench-a-benchmark-for-general-purpose-terminal-use-agents.json",
+      "note_path": "notes/papers/tua-bench-a-benchmark-for-general-purpose-terminal-use-agents.md",
+      "readme_line": 411,
+      "readme_path": "README.md",
+      "review_decision": "accept_for_local_kb",
+      "review_total_score": 10,
+      "section": "9 \u00b7 Agent-specific evaluation (trajectories, tool use, multi-turn, world state, multi-agent, localization)",
+      "source_seam": "new eval benchmarks/tools; arXiv API + Hugging Face Daily Papers read + Jina read",
+      "title": "TUA-Bench: A Benchmark for General-Purpose Terminal-Use Agents",
+      "type": "paper/benchmark",
+      "url": "https://arxiv.org/abs/2606.28480v1"
     },
     {
       "id": "uncertainty-quantification-for-computer-use-agents-a-benchmark-across-vision-language-models",

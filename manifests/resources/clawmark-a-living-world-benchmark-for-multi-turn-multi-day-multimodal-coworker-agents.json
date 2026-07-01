@@ -1,0 +1,59 @@
+{
+  "author": "Fanqing Meng, Lingxiao Du, Zijian Wu, Guanzheng Chen, Xiangyan Liu, Jiaqi Liao, Chonghe Jiang, Zhenglin Wan",
+  "id": "clawmark-a-living-world-benchmark-for-multi-turn-multi-day-multimodal-coworker-agents",
+  "note": {
+    "path": "notes/papers/clawmark-a-living-world-benchmark-for-multi-turn-multi-day-multimodal-coworker-agents.md"
+  },
+  "readme": {
+    "entry": "- **[ClawMark: A Living-World Benchmark for Multi-Turn, Multi-Day, Multimodal Coworker Agents](https://arxiv.org/abs/2604.23781v2)** \u2014 Fanqing Meng, Lingxiao Du, Zijian Wu, Guanzheng Chen, Xiangyan Liu, Jiaqi Liao, Chonghe Jiang, Zhenglin Wan \u2014 <https://arxiv.org/abs/2604.23781v2> \u00b7 *paper/benchmark* \u2014 Living-world coworker-agent benchmark with multi-turn, multi-day tasks, exogenous environment updates, multimodal evidence, and deterministic Python checkers. \ud83c\udd95",
+    "line": 413,
+    "path": "README.md"
+  },
+  "review": {
+    "decision": "accept_for_local_kb",
+    "hard_failures": [],
+    "reviewed_at_utc": "2026-07-01T02:28:03Z",
+    "scores": {
+      "factuality": {
+        "reason": "structured evidence plus fetched source snapshot",
+        "score": 2
+      },
+      "kb_fit": {
+        "reason": "matches agent/eval KB scope",
+        "score": 2
+      },
+      "quality": {
+        "reason": "concrete eval artifacts or methodology signals present",
+        "score": 2
+      },
+      "recency": {
+        "reason": "evidence indicates 2025-2026 or actively updated source",
+        "score": 2
+      },
+      "source_authority": {
+        "reason": "primary repo or lab/source page",
+        "score": 2
+      }
+    },
+    "total_score": 10,
+    "url_check": {
+      "detail": "HEAD:200",
+      "ok": true
+    }
+  },
+  "schema": "awesome_evals.resource_manifest.v1",
+  "section": "9 \u00b7 Agent-specific evaluation (trajectories, tool use, multi-turn, world state, multi-agent, localization)",
+  "source_seam": "Hugging Face Daily Papers discovery; arXiv API + Hugging Face paper read + Jina read",
+  "title": "ClawMark: A Living-World Benchmark for Multi-Turn, Multi-Day, Multimodal Coworker Agents",
+  "type": "paper/benchmark",
+  "url": "https://arxiv.org/abs/2604.23781v2",
+  "worker": {
+    "candidate_reason": "Clears the bar because it tests a capability missing from static single-episode agent benchmarks: persistent coworker workflows where environment state changes between turns; the release includes 100 tasks, 13 scenarios, five stateful services, and 1,537 deterministic post-state checkers without LLM-as-judge scoring.",
+    "evidence": "arXiv API metadata in discovery-arxiv.json plus hf-read-2604.23781.md and jina-read-clawmark.md report 100 tasks across 13 professional scenarios, five stateful services, 1,537 deterministic Python checkers, no LLM-as-judge during scoring, and strict task success of only 20.0% for the strongest system.",
+    "summary": "Living-world coworker-agent benchmark with multi-turn, multi-day tasks, exogenous environment updates, multimodal evidence, and deterministic Python checkers.",
+    "url_check": {
+      "detail": "200",
+      "ok": true
+    }
+  }
+}
