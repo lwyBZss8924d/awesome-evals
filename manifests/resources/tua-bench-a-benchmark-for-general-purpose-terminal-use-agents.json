@@ -1,0 +1,59 @@
+{
+  "author": "Shoufa Chen, Luyuan Wang, Xuan Yang, Zhiheng Liu, Yuren Cong, Yuanfeng Ji, Feiyan Zhou, Xiaohui Zhang",
+  "id": "tua-bench-a-benchmark-for-general-purpose-terminal-use-agents",
+  "note": {
+    "path": "notes/papers/tua-bench-a-benchmark-for-general-purpose-terminal-use-agents.md"
+  },
+  "readme": {
+    "entry": "- **[TUA-Bench: A Benchmark for General-Purpose Terminal-Use Agents](https://arxiv.org/abs/2606.28480v1)** \u2014 Shoufa Chen, Luyuan Wang, Xuan Yang, Zhiheng Liu, Yuren Cong, Yuanfeng Ji, Feiyan Zhou, Xiaohui Zhang \u2014 <https://arxiv.org/abs/2606.28480v1> \u00b7 *paper/benchmark* \u2014 Terminal-use benchmark with 120 real-world tasks across routine digital work and domain-expert scientific/engineering workflows, each scored by execution-based checks. \ud83c\udd95",
+    "line": 411,
+    "path": "README.md"
+  },
+  "review": {
+    "decision": "accept_for_local_kb",
+    "hard_failures": [],
+    "reviewed_at_utc": "2026-07-01T02:28:01Z",
+    "scores": {
+      "factuality": {
+        "reason": "structured evidence plus fetched source snapshot",
+        "score": 2
+      },
+      "kb_fit": {
+        "reason": "matches agent/eval KB scope",
+        "score": 2
+      },
+      "quality": {
+        "reason": "concrete eval artifacts or methodology signals present",
+        "score": 2
+      },
+      "recency": {
+        "reason": "evidence indicates 2025-2026 or actively updated source",
+        "score": 2
+      },
+      "source_authority": {
+        "reason": "primary repo or lab/source page",
+        "score": 2
+      }
+    },
+    "total_score": 10,
+    "url_check": {
+      "detail": "HEAD:200",
+      "ok": true
+    }
+  },
+  "schema": "awesome_evals.resource_manifest.v1",
+  "section": "9 \u00b7 Agent-specific evaluation (trajectories, tool use, multi-turn, world state, multi-agent, localization)",
+  "source_seam": "new eval benchmarks/tools; arXiv API + Hugging Face Daily Papers read + Jina read",
+  "title": "TUA-Bench: A Benchmark for General-Purpose Terminal-Use Agents",
+  "type": "paper/benchmark",
+  "url": "https://arxiv.org/abs/2606.28480v1",
+  "worker": {
+    "candidate_reason": "Clears the bar because it fills a gap between GUI computer-use and coding-only terminal benchmarks: tasks run in a real terminal with deterministic setup scripts and execution-based scoring, and the reported best frontier agent reaches 65.8% overall rather than saturating the benchmark.",
+    "evidence": "arXiv API metadata in discovery-arxiv.json and hf-read-2606.28480.md/Jina read report 120 tasks across five task families, deterministic setup scripts, execution-based scoring, and Claude Code with Claude Opus 4.8 max reasoning at 65.8% overall.",
+    "summary": "Terminal-use benchmark with 120 real-world tasks across routine digital work and domain-expert scientific/engineering workflows, each scored by execution-based checks.",
+    "url_check": {
+      "detail": "200",
+      "ok": true
+    }
+  }
+}
