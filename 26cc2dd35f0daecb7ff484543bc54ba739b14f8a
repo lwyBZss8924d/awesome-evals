@@ -1,0 +1,29 @@
+{
+  "artifact_type": "pouw_git_note",
+  "commit": "26cc2dd35f0daecb7ff484543bc54ba739b14f8a",
+  "created_at_utc": "2026-07-06T07:26:41Z",
+  "remote_boundaries": {
+    "origin": "https://github.com/lwyBZss8924d/awesome-evals.git",
+    "upstream": "https://github.com/benchflow-ai/awesome-evals.git",
+    "upstream_push": "disabled"
+  },
+  "repo": "awesome-evals",
+  "residual_risk": "No KB promotion applied in this commit; reviewed candidate promotion is a later commit.",
+  "schema_version": 1,
+  "summary": "Merged benchflow-ai/awesome-evals upstream main into the user fork branch and resolved README-only additive conflicts by preserving both fork and upstream entries.",
+  "validation": [
+    {
+      "command": "git diff --check",
+      "status": "passed"
+    },
+    {
+      "command": "awesome-evals-preflight.zsh --json",
+      "status": "passed"
+    },
+    {
+      "command": "awesome-evals-public-safety.zsh --json",
+      "status": "passed"
+    }
+  ],
+  "work_type": "upstream_sync"
+}
