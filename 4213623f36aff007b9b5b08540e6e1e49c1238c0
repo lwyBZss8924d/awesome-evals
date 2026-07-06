@@ -1,0 +1,57 @@
+{
+  "artifact_type": "pouw_git_note",
+  "generated_at_utc": "2026-07-06T07:29:43Z",
+  "repo": "awesome-evals",
+  "commit": "4213623f36aff007b9b5b08540e6e1e49c1238c0",
+  "branch": "kb/awesome-evals-daily-20260706T072425Z",
+  "work_type": "reviewed_kb_candidate_promotion",
+  "summary": "Promoted three reviewed AI-evaluation candidates into README, resource manifests, and ETL notes after upstream fork sync.",
+  "accepted_items": [
+    {
+      "title": "AgenticSTS: A Bounded-Memory Testbed for Long-Horizon LLM Agents",
+      "url": "https://arxiv.org/abs/2607.02255",
+      "decision": "accept_for_local_kb",
+      "score": 10
+    },
+    {
+      "title": "SkillCoach: Self-Evolving Rubrics for Evaluating and Enhancing Agentic Skill-Use",
+      "url": "https://arxiv.org/abs/2607.01874",
+      "decision": "accept_for_local_kb",
+      "score": 9
+    },
+    {
+      "title": "AgenticDataBench: A Comprehensive Benchmark for Data Agents",
+      "url": "https://arxiv.org/abs/2607.01647",
+      "decision": "accept_for_local_kb",
+      "score": 10
+    }
+  ],
+  "validations": [
+    {
+      "command": "git diff --check",
+      "outcome": "passed"
+    },
+    {
+      "command": "awesome-evals-validate-kb.zsh --check-urls --json",
+      "outcome": "passed",
+      "artifact": "kb-validation-after-apply.json"
+    },
+    {
+      "command": "awesome-evals-public-safety.zsh --repo --json",
+      "outcome": "passed",
+      "artifact": "public-safety-after-apply.json"
+    }
+  ],
+  "artifacts": {
+    "scan_run_dir": "/Users/arthur/.codex/automations/awesome-evals-main-manual/scan-runs/20260706T050934Z-apply",
+    "review_run_dir": "/Users/arthur/.codex/automations/awesome-evals-main-manual/review-runs/20260706T050934Z-apply",
+    "decisions": "promotion-decisions.jsonl",
+    "promotion_plan": "promotion-plan.apply.json"
+  },
+  "boundaries": {
+    "fork_only": true,
+    "upstream_pr_created": false,
+    "local_paths_in_public_pr": false
+  },
+  "residual_risk": "Final PR body and remote PR safety scan still run after this commit before merge."
+}
