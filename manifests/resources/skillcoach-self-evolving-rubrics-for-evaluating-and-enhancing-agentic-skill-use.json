@@ -1,0 +1,62 @@
+{
+  "author": "Jiayin Zhu, Kelong Mao, Yudong Guo, Dengbo He et al.",
+  "id": "skillcoach-self-evolving-rubrics-for-evaluating-and-enhancing-agentic-skill-use",
+  "note": {
+    "path": "notes/papers/skillcoach-self-evolving-rubrics-for-evaluating-and-enhancing-agentic-skill-use.md"
+  },
+  "readme": {
+    "entry": "- **[SkillCoach: Self-Evolving Rubrics for Evaluating and Enhancing Agentic Skill-Use](https://arxiv.org/abs/2607.01874)** \u2014 Jiayin Zhu, Kelong Mao, Yudong Guo, Dengbo He et al. \u2014 <https://arxiv.org/abs/2607.01874> \u00b7 *paper* \u2014 Agent-skill evaluation paper that derives process rubrics from rollouts and separates skill-use quality from final verifier success. \ud83c\udd95",
+    "line": 122,
+    "path": "README.md"
+  },
+  "review": {
+    "decision": "accept_for_local_kb",
+    "hard_failures": [],
+    "reviewed_at_utc": "2026-07-06T07:27:05Z",
+    "scores": {
+      "factuality": {
+        "reason": "structured evidence plus fetched source snapshot",
+        "score": 2
+      },
+      "kb_fit": {
+        "reason": "matches agent/eval KB scope",
+        "score": 2
+      },
+      "quality": {
+        "reason": "concrete eval artifacts or methodology signals present",
+        "score": 1
+      },
+      "recency": {
+        "reason": "evidence indicates 2025-2026 or actively updated source",
+        "score": 2
+      },
+      "source_authority": {
+        "reason": "primary repo or lab/source page",
+        "score": 2
+      }
+    },
+    "total_score": 9,
+    "url_check": {
+      "detail": "HEAD:200",
+      "ok": true
+    }
+  },
+  "schema": "awesome_evals.resource_manifest.v1",
+  "section": "3 \u00b7 The model / harness / skill decomposition",
+  "source_seam": "huggingface-daily-papers + arxiv-primary",
+  "title": "SkillCoach: Self-Evolving Rubrics for Evaluating and Enhancing Agentic Skill-Use",
+  "type": "paper",
+  "url": "https://arxiv.org/abs/2607.01874",
+  "worker": {
+    "candidate_reason": "Clears the bar because it targets a specific agent-evaluation blind spot: final success can hide distractor-skill selection, skipped steps, bad composition, and missing final checks; its four-dimension rubric provides a concrete process-evaluation method for skill repositories.",
+    "evidence": {
+      "fetched": "hf-info-2607.01874.txt",
+      "primary_arxiv": "arxiv-2607.01874.xml"
+    },
+    "summary": "Agent-skill evaluation paper that derives process rubrics from rollouts and separates skill-use quality from final verifier success.",
+    "url_check": {
+      "detail": "200",
+      "ok": true
+    }
+  }
+}
