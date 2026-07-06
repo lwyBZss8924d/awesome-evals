@@ -1,0 +1,50 @@
+{
+  "artifact_type": "pouw_git_note",
+  "generated_at_utc": "2026-07-06T07:35:27Z",
+  "repo": "awesome-evals",
+  "commit": "8de68ea4a9ebce4f38caf7f67e249d398a43ac2e",
+  "work_type": "fork_pr_merge_closeout",
+  "pr": {
+    "number": 9,
+    "url": "https://github.com/lwyBZss8924d/awesome-evals/pull/9"
+  },
+  "summary": "Merged fork PR containing upstream sync plus three reviewed AI-evaluation KB entries.",
+  "commits": {
+    "upstream_sync": "26cc2dd35f0daecb7ff484543bc54ba739b14f8a",
+    "reviewed_kb_promotion": "4213623f36aff007b9b5b08540e6e1e49c1238c0"
+  },
+  "validations": [
+    {
+      "command": "git diff --check",
+      "outcome": "passed"
+    },
+    {
+      "command": "awesome-evals-validate-kb.zsh --check-urls --json",
+      "outcome": "passed",
+      "artifact": "kb-validation-after-merge.json"
+    },
+    {
+      "command": "awesome-evals-public-safety.zsh --repo --json",
+      "outcome": "passed",
+      "artifact": "public-safety-after-merge.json"
+    },
+    {
+      "command": "awesome-evals-public-safety.zsh --text-file remote-pr-body.md --json",
+      "outcome": "passed",
+      "artifact": "public-safety-remote-pr-body.json"
+    }
+  ],
+  "artifacts": {
+    "scan_run_dir": "/Users/arthur/.codex/automations/awesome-evals-main-manual/scan-runs/20260706T050934Z-apply",
+    "review_run_dir": "/Users/arthur/.codex/automations/awesome-evals-main-manual/review-runs/20260706T050934Z-apply",
+    "pr_body": "fork-pr-body.apply.md",
+    "remote_pr_body": "remote-pr-body.md"
+  },
+  "boundaries": {
+    "fork_only": true,
+    "upstream_pr_created": false,
+    "merged_to_user_fork": true,
+    "local_paths_in_public_pr": false
+  },
+  "residual_risk": "None known for requested fork sync and reviewed local KB promotion."
+}
