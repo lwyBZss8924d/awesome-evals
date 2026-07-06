@@ -1,0 +1,66 @@
+{
+  "author": "Zhaoyan Sun, Shan Zhong, Daizhou Wen, Jiaxing Han et al.",
+  "id": "agenticdatabench-a-comprehensive-benchmark-for-data-agents",
+  "note": {
+    "path": "notes/papers/agenticdatabench-a-comprehensive-benchmark-for-data-agents.md"
+  },
+  "readme": {
+    "entry": "- **[AgenticDataBench: A Comprehensive Benchmark for Data Agents](https://arxiv.org/abs/2607.01647)** \u2014 Zhaoyan Sun, Shan Zhong, Daizhou Wen, Jiaxing Han et al. \u2014 <https://arxiv.org/abs/2607.01647> \u00b7 *paper/benchmark* \u2014 Comprehensive benchmark for data agents with realistic multi-domain data-science tasks, fine-grained labels, and an open testbed. \ud83c\udd95",
+    "line": 420,
+    "path": "README.md"
+  },
+  "review": {
+    "decision": "accept_for_local_kb",
+    "hard_failures": [],
+    "reviewed_at_utc": "2026-07-06T07:27:06Z",
+    "scores": {
+      "factuality": {
+        "reason": "structured evidence plus fetched source snapshot",
+        "score": 2
+      },
+      "kb_fit": {
+        "reason": "matches agent/eval KB scope",
+        "score": 2
+      },
+      "quality": {
+        "reason": "concrete eval artifacts or methodology signals present",
+        "score": 2
+      },
+      "recency": {
+        "reason": "evidence indicates 2025-2026 or actively updated source",
+        "score": 2
+      },
+      "source_authority": {
+        "reason": "primary repo or lab/source page",
+        "score": 2
+      }
+    },
+    "total_score": 10,
+    "url_check": {
+      "detail": "HEAD:200",
+      "ok": true
+    }
+  },
+  "schema": "awesome_evals.resource_manifest.v1",
+  "section": "9 \u00b7 Agent-specific evaluation (trajectories, tool use, multi-turn, world state, multi-agent, localization)",
+  "source_seam": "huggingface-daily-papers + arxiv-primary + github-metadata",
+  "title": "AgenticDataBench: A Comprehensive Benchmark for Data Agents",
+  "type": "paper/benchmark",
+  "url": "https://arxiv.org/abs/2607.01647",
+  "worker": {
+    "candidate_reason": "Clears the bar because it evaluates data agents at task and skill granularity across 15 domains, mixes real business tasks with skill-based generated tasks, and ships an open repository/dataset surface for reproducible agent benchmarking.",
+    "evidence": {
+      "dataset": "https://huggingface.co/datasets/shawnzzzh/AgenticDataBench",
+      "fetched": "hf-info-2607.01647.txt",
+      "github_metadata": "gh-AgenticDataBench-AgenticDataBench.json",
+      "github_repo": "https://github.com/AgenticDataBench/AgenticDataBench",
+      "primary_arxiv": "arxiv-2607.01647.xml",
+      "project_page": "https://agenticdatabench.github.io"
+    },
+    "summary": "Comprehensive benchmark for data agents with realistic multi-domain data-science tasks, fine-grained labels, and an open testbed.",
+    "url_check": {
+      "detail": "200",
+      "ok": true
+    }
+  }
+}

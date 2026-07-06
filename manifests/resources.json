@@ -1,7 +1,35 @@
 {
-  "generated_at_utc": "2026-07-01T02:28:03Z",
-  "resource_count": 18,
+  "generated_at_utc": "2026-07-06T07:27:13Z",
+  "resource_count": 21,
   "resources": [
+    {
+      "id": "agenticdatabench-a-comprehensive-benchmark-for-data-agents",
+      "manifest_path": "manifests/resources/agenticdatabench-a-comprehensive-benchmark-for-data-agents.json",
+      "note_path": "notes/papers/agenticdatabench-a-comprehensive-benchmark-for-data-agents.md",
+      "readme_line": 420,
+      "readme_path": "README.md",
+      "review_decision": "accept_for_local_kb",
+      "review_total_score": 10,
+      "section": "9 \u00b7 Agent-specific evaluation (trajectories, tool use, multi-turn, world state, multi-agent, localization)",
+      "source_seam": "huggingface-daily-papers + arxiv-primary + github-metadata",
+      "title": "AgenticDataBench: A Comprehensive Benchmark for Data Agents",
+      "type": "paper/benchmark",
+      "url": "https://arxiv.org/abs/2607.01647"
+    },
+    {
+      "id": "agenticsts-a-bounded-memory-testbed-for-long-horizon-llm-agents",
+      "manifest_path": "manifests/resources/agenticsts-a-bounded-memory-testbed-for-long-horizon-llm-agents.json",
+      "note_path": "notes/papers/agenticsts-a-bounded-memory-testbed-for-long-horizon-llm-agents.md",
+      "readme_line": 418,
+      "readme_path": "README.md",
+      "review_decision": "accept_for_local_kb",
+      "review_total_score": 10,
+      "section": "9 \u00b7 Agent-specific evaluation (trajectories, tool use, multi-turn, world state, multi-agent, localization)",
+      "source_seam": "huggingface-daily-papers + arxiv-primary + github-metadata",
+      "title": "AgenticSTS: A Bounded-Memory Testbed for Long-Horizon LLM Agents",
+      "type": "paper/benchmark",
+      "url": "https://arxiv.org/abs/2607.02255"
+    },
     {
       "id": "agentprocessbench-diagnosing-step-level-process-quality-in-tool-using-agents",
       "manifest_path": "manifests/resources/agentprocessbench-diagnosing-step-level-process-quality-in-tool-using-agents.json",
@@ -169,6 +197,20 @@
       "title": "OSWorld2.0: Benchmarking Computer Use Agents on Long-Horizon Real-World Tasks",
       "type": "paper/benchmark",
       "url": "https://arxiv.org/abs/2606.29537"
+    },
+    {
+      "id": "skillcoach-self-evolving-rubrics-for-evaluating-and-enhancing-agentic-skill-use",
+      "manifest_path": "manifests/resources/skillcoach-self-evolving-rubrics-for-evaluating-and-enhancing-agentic-skill-use.json",
+      "note_path": "notes/papers/skillcoach-self-evolving-rubrics-for-evaluating-and-enhancing-agentic-skill-use.md",
+      "readme_line": 122,
+      "readme_path": "README.md",
+      "review_decision": "accept_for_local_kb",
+      "review_total_score": 9,
+      "section": "3 \u00b7 The model / harness / skill decomposition",
+      "source_seam": "huggingface-daily-papers + arxiv-primary",
+      "title": "SkillCoach: Self-Evolving Rubrics for Evaluating and Enhancing Agentic Skill-Use",
+      "type": "paper",
+      "url": "https://arxiv.org/abs/2607.01874"
     },
     {
       "id": "swe-together-evaluating-coding-agents-in-interactive-user-sessions",
