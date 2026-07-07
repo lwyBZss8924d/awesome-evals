@@ -1,0 +1,59 @@
+{
+  "author": "Zhi Chen, Zhensu Sun, Yuling Shi, David Lo, Lingxiao Jiang",
+  "id": "are-performance-optimization-benchmarks-reliably-measuring-coding-agents",
+  "note": {
+    "path": "notes/papers/are-performance-optimization-benchmarks-reliably-measuring-coding-agents.md"
+  },
+  "readme": {
+    "entry": "- **[Are Performance-Optimization Benchmarks Reliably Measuring Coding Agents?](https://arxiv.org/abs/2607.01211)** \u2014 Zhi Chen, Zhensu Sun, Yuling Shi, David Lo, Lingxiao Jiang \u2014 <https://arxiv.org/abs/2607.01211> \u00b7 *paper/benchmark audit* \u2014 Audit of GSO, SWE-Perf, and SWE-fficiency showing runtime noise and scoring rules distort coding-agent leaderboards. \ud83c\udd95",
+    "line": 268,
+    "path": "README.md"
+  },
+  "review": {
+    "decision": "accept_for_local_kb",
+    "hard_failures": [],
+    "reviewed_at_utc": "2026-07-07T02:32:30Z",
+    "scores": {
+      "factuality": {
+        "reason": "structured evidence plus fetched source snapshot",
+        "score": 2
+      },
+      "kb_fit": {
+        "reason": "matches agent/eval KB scope",
+        "score": 2
+      },
+      "quality": {
+        "reason": "concrete eval artifacts or methodology signals present",
+        "score": 2
+      },
+      "recency": {
+        "reason": "evidence indicates 2025-2026 or actively updated source",
+        "score": 2
+      },
+      "source_authority": {
+        "reason": "primary repo or lab/source page",
+        "score": 2
+      }
+    },
+    "total_score": 10,
+    "url_check": {
+      "detail": "HEAD:200",
+      "ok": true
+    }
+  },
+  "schema": "awesome_evals.resource_manifest.v1",
+  "section": "## 6 \u00b7 Benchmark vs. eval (and benchmark integrity: contamination, saturation, label errors, leaderboard gaming)",
+  "source_seam": "Hugging Face recent papers / arXiv primary read",
+  "title": "Are Performance-Optimization Benchmarks Reliably Measuring Coding Agents?",
+  "type": "paper/benchmark audit",
+  "url": "https://arxiv.org/abs/2607.01211",
+  "worker": {
+    "candidate_reason": "Clears the bar because it replays 740 reference patches across four Google Cloud machine types and quantifies benchmark-validity failures, scoring-rule rank flips, and task saturation hidden by aggregate leaderboard scores.",
+    "evidence": "arXiv/HF read reports cross-machine replay-valid reference patches for only 39/102 GSO tasks, 11/140 SWE-Perf tasks, and 411/498 SWE-fficiency tasks; shared GSO/SWE-fficiency submissions disagree on 9/28 pairwise rankings; worst ten SWE-fficiency tasks carry 58.5%-82.8% score weight.",
+    "summary": "Audit of GSO, SWE-Perf, and SWE-fficiency showing runtime noise and scoring rules distort coding-agent leaderboards.",
+    "url_check": {
+      "detail": "200",
+      "ok": true
+    }
+  }
+}
