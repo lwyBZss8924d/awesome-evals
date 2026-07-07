@@ -1,0 +1,59 @@
+{
+  "author": "Yueqi Song, Lintang Sutawika, Jiarui Liu, Lindia Tjuatja, Jiayi Geng, Yunze Xiao, Daniel Lee, Aditya Bharat Soni, Vincent Lo, Xiang Yue, Graham Neubig",
+  "id": "pace-a-proxy-for-agentic-capability-evaluation",
+  "note": {
+    "path": "notes/papers/pace-a-proxy-for-agentic-capability-evaluation.md"
+  },
+  "readme": {
+    "entry": "- **[PACE: A Proxy for Agentic Capability Evaluation](https://arxiv.org/abs/2607.02032)** \u2014 Yueqi Song, Lintang Sutawika, Jiarui Liu, Lindia Tjuatja, Jiayi Geng, Yunze Xiao, Daniel Lee, Aditya Bharat Soni, Vincent Lo, Xiang Yue, Graham Neubig \u2014 <https://arxiv.org/abs/2607.02032> \u00b7 *paper/method* \u2014 PACE selects cheap non-agentic benchmark instances that predict expensive agentic benchmark scores. \ud83c\udd95",
+    "line": 234,
+    "path": "README.md"
+  },
+  "review": {
+    "decision": "accept_for_local_kb",
+    "hard_failures": [],
+    "reviewed_at_utc": "2026-07-07T02:32:31Z",
+    "scores": {
+      "factuality": {
+        "reason": "structured evidence plus fetched source snapshot",
+        "score": 2
+      },
+      "kb_fit": {
+        "reason": "matches agent/eval KB scope",
+        "score": 2
+      },
+      "quality": {
+        "reason": "concrete eval artifacts or methodology signals present",
+        "score": 1
+      },
+      "recency": {
+        "reason": "evidence indicates 2025-2026 or actively updated source",
+        "score": 2
+      },
+      "source_authority": {
+        "reason": "primary repo or lab/source page",
+        "score": 2
+      }
+    },
+    "total_score": 9,
+    "url_check": {
+      "detail": "HEAD:200",
+      "ok": true
+    }
+  },
+  "schema": "awesome_evals.resource_manifest.v1",
+  "section": "## 5 \u00b7 Evaluation infrastructure (the eval stack: datasets, scorers, online/offline, tracing, CI)",
+  "source_seam": "Hugging Face recent papers / arXiv primary read",
+  "title": "PACE: A Proxy for Agentic Capability Evaluation",
+  "type": "paper/method",
+  "url": "https://arxiv.org/abs/2607.02032",
+  "worker": {
+    "candidate_reason": "Clears the bar because it offers an operational cost-reduction method for agent evals, tested across 14 models, four agentic benchmarks, and 19 source benchmarks, reporting under 4% LOOCV MAE, Spearman correlation above 0.80, and around 85% pairwise ranking accuracy at less than 1% of full agent-eval cost.",
+    "evidence": "arXiv page states PACE builds PACE-Bench from compact subsets of non-agentic benchmark instances to predict GAIA, SWE-Bench Multimodal, SWE-Bench Verified, and SWT-Bench scores; abstract reports <4% MAE, >0.80 Spearman, ~85% pairwise model-ranking accuracy, and <1% full evaluation cost.",
+    "summary": "PACE selects cheap non-agentic benchmark instances that predict expensive agentic benchmark scores.",
+    "url_check": {
+      "detail": "200",
+      "ok": true
+    }
+  }
+}
