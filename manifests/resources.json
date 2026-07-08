@@ -1,6 +1,6 @@
 {
-  "generated_at_utc": "2026-07-07T02:32:32Z",
-  "resource_count": 24,
+  "generated_at_utc": "2026-07-08T02:27:56Z",
+  "resource_count": 27,
   "resources": [
     {
       "id": "agenticdatabench-a-comprehensive-benchmark-for-data-agents",
@@ -87,6 +87,20 @@
       "url": "https://arxiv.org/abs/2606.22329"
     },
     {
+      "id": "browsecomp-plus-a-more-fair-and-transparent-evaluation-benchmark-of-deep-research-agent",
+      "manifest_path": "manifests/resources/browsecomp-plus-a-more-fair-and-transparent-evaluation-benchmark-of-deep-research-agent.json",
+      "note_path": "notes/papers/browsecomp-plus-a-more-fair-and-transparent-evaluation-benchmark-of-deep-research-agent.md",
+      "readme_line": 270,
+      "readme_path": "README.md",
+      "review_decision": "accept_for_local_kb",
+      "review_total_score": 10,
+      "section": "## 6 \u00b7 Benchmark vs. eval (and benchmark integrity: contamination, saturation, label errors, leaderboard gaming)",
+      "source_seam": "hf papers + GitHub benchmark/tool discovery + arXiv",
+      "title": "BrowseComp-Plus: A More Fair and Transparent Evaluation Benchmark of Deep-Research Agent",
+      "type": "paper/benchmark/dataset/code",
+      "url": "https://arxiv.org/abs/2508.06600"
+    },
+    {
       "id": "can-llm-as-a-judge-reliably-verify-rubrics-in-agentic-scenarios",
       "manifest_path": "manifests/resources/can-llm-as-a-judge-reliably-verify-rubrics-in-agentic-scenarios.json",
       "note_path": "notes/papers/can-llm-as-a-judge-reliably-verify-rubrics-in-agentic-scenarios.md",
@@ -99,6 +113,20 @@
       "title": "Can LLM-as-a-Judge Reliably Verify Rubrics in Agentic Scenarios?",
       "type": "paper/dataset/code",
       "url": "https://arxiv.org/abs/2606.29920v1"
+    },
+    {
+      "id": "claw-eval-live-a-live-agent-benchmark-for-evolving-real-world-workflows",
+      "manifest_path": "manifests/resources/claw-eval-live-a-live-agent-benchmark-for-evolving-real-world-workflows.json",
+      "note_path": "notes/papers/claw-eval-live-a-live-agent-benchmark-for-evolving-real-world-workflows.md",
+      "readme_line": 425,
+      "readme_path": "README.md",
+      "review_decision": "accept_for_local_kb",
+      "review_total_score": 10,
+      "section": "## 9 \u00b7 Agent-specific evaluation (trajectories, tool use, multi-turn, world state, multi-agent, localization)",
+      "source_seam": "hf papers + arXiv + GitHub benchmark/tool discovery",
+      "title": "Claw-Eval-Live: A Live Agent Benchmark for Evolving Real-World Workflows",
+      "type": "paper/benchmark/code",
+      "url": "https://arxiv.org/abs/2604.28139"
     },
     {
       "id": "claw-eval-towards-trustworthy-evaluation-of-autonomous-agents",
@@ -337,6 +365,20 @@
       "title": "WeaveBench: A Long-Horizon, Real-World Benchmark for Computer-Use Agents with Hybrid Interfaces",
       "type": "paper/benchmark",
       "url": "https://arxiv.org/abs/2606.09426"
+    },
+    {
+      "id": "wildclawbench-a-benchmark-for-real-world-long-horizon-agent-evaluation",
+      "manifest_path": "manifests/resources/wildclawbench-a-benchmark-for-real-world-long-horizon-agent-evaluation.json",
+      "note_path": "notes/papers/wildclawbench-a-benchmark-for-real-world-long-horizon-agent-evaluation.md",
+      "readme_line": 423,
+      "readme_path": "README.md",
+      "review_decision": "accept_for_local_kb",
+      "review_total_score": 10,
+      "section": "## 9 \u00b7 Agent-specific evaluation (trajectories, tool use, multi-turn, world state, multi-agent, localization)",
+      "source_seam": "hf daily papers + arXiv + GitHub benchmark/tool discovery",
+      "title": "WildClawBench: A Benchmark for Real-World, Long-Horizon Agent Evaluation",
+      "type": "paper/benchmark/code/dataset",
+      "url": "https://arxiv.org/abs/2605.10912"
     }
   ],
   "schema": "awesome_evals.resources_index.v1"
