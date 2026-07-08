@@ -1,0 +1,59 @@
+{
+  "author": "Shuangrui Ding, Xuanlang Dai, Long Xing, Shengyuan Ding, Ziyu Liu, Yang JingYi, Penghui Yang, Zhixiong Zhang, Xilin Wei, Xinyu Fang, Yubo Ma, Haodong Duan, Jing Shao, Jiaqi Wang, Dahua Lin, Kai Chen, Yuhang Zang",
+  "id": "wildclawbench-a-benchmark-for-real-world-long-horizon-agent-evaluation",
+  "note": {
+    "path": "notes/papers/wildclawbench-a-benchmark-for-real-world-long-horizon-agent-evaluation.md"
+  },
+  "readme": {
+    "entry": "- **[WildClawBench: A Benchmark for Real-World, Long-Horizon Agent Evaluation](https://arxiv.org/abs/2605.10912)** \u2014 Shuangrui Ding, Xuanlang Dai, Long Xing, Shengyuan Ding, Ziyu Liu, Yang JingYi, Penghui Yang, Zhixiong Zhang, Xilin Wei, Xinyu Fang, Yubo Ma, Haodong Duan, Jing Shao, Jiaqi Wang, Dahua Lin, Kai Chen, Yuhang Zang \u2014 <https://arxiv.org/abs/2605.10912> \u00b7 *paper/benchmark/code/dataset* \u2014 Native-runtime benchmark with 60 long-horizon multimodal tasks across OpenClaw, Claude Code, Codex CLI, and Hermes Agent harnesses. \ud83c\udd95",
+    "line": 423,
+    "path": "README.md"
+  },
+  "review": {
+    "decision": "accept_for_local_kb",
+    "hard_failures": [],
+    "reviewed_at_utc": "2026-07-08T02:27:54Z",
+    "scores": {
+      "factuality": {
+        "reason": "structured evidence plus fetched source snapshot",
+        "score": 2
+      },
+      "kb_fit": {
+        "reason": "matches agent/eval KB scope",
+        "score": 2
+      },
+      "quality": {
+        "reason": "concrete eval artifacts or methodology signals present",
+        "score": 2
+      },
+      "recency": {
+        "reason": "evidence indicates 2025-2026 or actively updated source",
+        "score": 2
+      },
+      "source_authority": {
+        "reason": "primary repo or lab/source page",
+        "score": 2
+      }
+    },
+    "total_score": 10,
+    "url_check": {
+      "detail": "HEAD:200",
+      "ok": true
+    }
+  },
+  "schema": "awesome_evals.resource_manifest.v1",
+  "section": "## 9 \u00b7 Agent-specific evaluation (trajectories, tool use, multi-turn, world state, multi-agent, localization)",
+  "source_seam": "hf daily papers + arXiv + GitHub benchmark/tool discovery",
+  "title": "WildClawBench: A Benchmark for Real-World, Long-Horizon Agent Evaluation",
+  "type": "paper/benchmark/code/dataset",
+  "url": "https://arxiv.org/abs/2605.10912",
+  "worker": {
+    "candidate_reason": "Clears the bar because the paper, GitHub repo, HF dataset, Dockerized task assets, hybrid graders, and harness-comparison leaderboard expose reproducible evidence for real long-horizon agent evaluation rather than answer-only scoring.",
+    "evidence": "Retrieved HF paper metadata for 2605.10912, arXiv abstract, and InternLM/WildClawBench README. Evidence: 60 human-authored bilingual multimodal tasks; average roughly 8 minutes and 20+ tool calls; live OpenClaw plus Claude Code/Codex/Hermes harnesses; Docker isolation; grading mixes deterministic checks, environment-state auditing, and LLM/VLM semantic verification; GitHub search found InternLM/WildClawBench with 466 stars and pushed 2026-06-25.",
+    "summary": "Native-runtime benchmark with 60 long-horizon multimodal tasks across OpenClaw, Claude Code, Codex CLI, and Hermes Agent harnesses.",
+    "url_check": {
+      "detail": "200",
+      "ok": true
+    }
+  }
+}

@@ -1,0 +1,59 @@
+{
+  "author": "Chenxin Li, Zhengyang Tang, Huangxin Lin, Yunlong Lin, Shijue Huang, Shengyuan Liu, Bowen Ye, Rang Li, Lei Li, Benyou Wang, Yixuan Yuan",
+  "id": "claw-eval-live-a-live-agent-benchmark-for-evolving-real-world-workflows",
+  "note": {
+    "path": "notes/papers/claw-eval-live-a-live-agent-benchmark-for-evolving-real-world-workflows.md"
+  },
+  "readme": {
+    "entry": "- **[Claw-Eval-Live: A Live Agent Benchmark for Evolving Real-World Workflows](https://arxiv.org/abs/2604.28139)** \u2014 Chenxin Li, Zhengyang Tang, Huangxin Lin, Yunlong Lin, Shijue Huang, Shengyuan Liu, Bowen Ye, Rang Li, Lei Li, Benyou Wang, Yixuan Yuan \u2014 <https://arxiv.org/abs/2604.28139> \u00b7 *paper/benchmark/code* \u2014 Live workflow-agent benchmark that refreshes task construction from public workflow-demand signals while preserving reproducible released snapshots. \ud83c\udd95",
+    "line": 425,
+    "path": "README.md"
+  },
+  "review": {
+    "decision": "accept_for_local_kb",
+    "hard_failures": [],
+    "reviewed_at_utc": "2026-07-08T02:27:55Z",
+    "scores": {
+      "factuality": {
+        "reason": "structured evidence plus fetched source snapshot",
+        "score": 2
+      },
+      "kb_fit": {
+        "reason": "matches agent/eval KB scope",
+        "score": 2
+      },
+      "quality": {
+        "reason": "concrete eval artifacts or methodology signals present",
+        "score": 2
+      },
+      "recency": {
+        "reason": "evidence indicates 2025-2026 or actively updated source",
+        "score": 2
+      },
+      "source_authority": {
+        "reason": "primary repo or lab/source page",
+        "score": 2
+      }
+    },
+    "total_score": 10,
+    "url_check": {
+      "detail": "HEAD:200",
+      "ok": true
+    }
+  },
+  "schema": "awesome_evals.resource_manifest.v1",
+  "section": "## 9 \u00b7 Agent-specific evaluation (trajectories, tool use, multi-turn, world state, multi-agent, localization)",
+  "source_seam": "hf papers + arXiv + GitHub benchmark/tool discovery",
+  "title": "Claw-Eval-Live: A Live Agent Benchmark for Evolving Real-World Workflows",
+  "type": "paper/benchmark/code",
+  "url": "https://arxiv.org/abs/2604.28139",
+  "worker": {
+    "candidate_reason": "Clears the bar because it contributes a concrete live-benchmark construction loop: signal-to-task pipeline, 105 released tasks, controlled services/workspace fixtures, per-task graders, execution traces, audit logs, and family-level leaderboard diagnostics.",
+    "evidence": "Retrieved HF paper metadata for 2604.28139, arXiv abstract, and Claw-Eval-Live README. Evidence: 105 tasks across 17 workflow families; quarterly refresh design; ClawHub Top-500 demand signals; fixtures and graders per task; deterministic checks plus structured judges; execution traces, audit logs, service state, and post-run workspace artifacts; GitHub search found Claw-Eval-Live/Claw-Eval-Live with 43 stars and pushed 2026-06-17.",
+    "summary": "Live workflow-agent benchmark that refreshes task construction from public workflow-demand signals while preserving reproducible released snapshots.",
+    "url_check": {
+      "detail": "200",
+      "ok": true
+    }
+  }
+}
