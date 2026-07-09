@@ -1,0 +1,59 @@
+{
+  "author": "Evgeny Shilov",
+  "id": "rubench-a-repository-level-agentic-coding-benchmark-with-natively-authored-russian-task-spec",
+  "note": {
+    "path": "notes/papers/rubench-a-repository-level-agentic-coding-benchmark-with-natively-authored-russian-task-spec.md"
+  },
+  "readme": {
+    "entry": "- **[RuBench: A Repository-Level Agentic Coding Benchmark with Natively Authored Russian Task Specifications](https://arxiv.org/abs/2607.06411)** \u2014 Evgeny Shilov \u2014 <https://arxiv.org/abs/2607.06411> \u00b7 *benchmark/paper/repo* \u2014 Repository-level coding-agent benchmark with native Russian customer-style specs and withheld maintainer regression tests. \ud83c\udd95",
+    "line": 426,
+    "path": "README.md"
+  },
+  "review": {
+    "decision": "accept_for_local_kb",
+    "hard_failures": [],
+    "reviewed_at_utc": "2026-07-09T02:30:14Z",
+    "scores": {
+      "factuality": {
+        "reason": "structured evidence plus fetched source snapshot",
+        "score": 2
+      },
+      "kb_fit": {
+        "reason": "matches agent/eval KB scope",
+        "score": 2
+      },
+      "quality": {
+        "reason": "concrete eval artifacts or methodology signals present",
+        "score": 2
+      },
+      "recency": {
+        "reason": "evidence indicates 2025-2026 or actively updated source",
+        "score": 2
+      },
+      "source_authority": {
+        "reason": "primary repo or lab/source page",
+        "score": 2
+      }
+    },
+    "total_score": 10,
+    "url_check": {
+      "detail": "HEAD:200",
+      "ok": true
+    }
+  },
+  "schema": "awesome_evals.resource_manifest.v1",
+  "section": "9 - Agent-specific evaluation (trajectories, tool use, multi-turn, world state, multi-agent, localization)",
+  "source_seam": "new eval benchmarks/tools",
+  "title": "RuBench: A Repository-Level Agentic Coding Benchmark with Natively Authored Russian Task Specifications",
+  "type": "benchmark/paper/repo",
+  "url": "https://arxiv.org/abs/2607.06411",
+  "worker": {
+    "candidate_reason": "Clears the bar because it ships task metadata, trajectories, diffs, harness scripts, a SHA-256 oracle manifest, repeated product-agent runs, post-cutoff task evidence, and explicit statistical caveats rather than just leaderboard numbers.",
+    "evidence": "Retrieved arXiv metadata and GitHub eugeneshilow/rubench README: 25 tasks from aiohttp, aiogram, Laravel, NestJS, and Fastify; 4 product agent configurations with 3 runs each; 320 cell artifacts; task statements, metadata, full trajectories, final diffs, harness scripts, and withheld grading oracles committed by SHA-256 manifest.",
+    "summary": "Repository-level coding-agent benchmark with native Russian customer-style specs and withheld maintainer regression tests.",
+    "url_check": {
+      "detail": "200",
+      "ok": true
+    }
+  }
+}

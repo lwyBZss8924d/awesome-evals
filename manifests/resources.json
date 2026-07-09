@@ -1,6 +1,6 @@
 {
-  "generated_at_utc": "2026-07-08T02:27:56Z",
-  "resource_count": 27,
+  "generated_at_utc": "2026-07-09T02:30:15Z",
+  "resource_count": 30,
   "resources": [
     {
       "id": "agenticdatabench-a-comprehensive-benchmark-for-data-agents",
@@ -171,6 +171,20 @@
       "url": "https://arxiv.org/abs/2606.23654"
     },
     {
+      "id": "gatemem-benchmarking-memory-governance-in-multi-principal-shared-memory-agents",
+      "manifest_path": "manifests/resources/gatemem-benchmarking-memory-governance-in-multi-principal-shared-memory-agents.json",
+      "note_path": "notes/papers/gatemem-benchmarking-memory-governance-in-multi-principal-shared-memory-agents.md",
+      "readme_line": 461,
+      "readme_path": "README.md",
+      "review_decision": "accept_for_local_kb",
+      "review_total_score": 10,
+      "section": "10 - Safety / adversarial evaluation (prompt injection, jailbreaks, action-authorization, benchmark auditing)",
+      "source_seam": "new eval benchmarks/tools",
+      "title": "GateMem: Benchmarking Memory Governance in Multi-Principal Shared-Memory Agents",
+      "type": "benchmark/repo/paper",
+      "url": "https://github.com/rzhub/GateMem"
+    },
+    {
       "id": "groundeval-a-deterministic-replacement-for-llm-as-judge-in-stateful-agent-evaluation",
       "manifest_path": "manifests/resources/groundeval-a-deterministic-replacement-for-llm-as-judge-in-stateful-agent-evaluation.json",
       "note_path": "notes/papers/groundeval-a-deterministic-replacement-for-llm-as-judge-in-stateful-agent-evaluation.md",
@@ -213,6 +227,20 @@
       "url": "https://arxiv.org/abs/2606.08960"
     },
     {
+      "id": "more-convincing-not-more-correct-self-play-reward-hacking-of-reference-free-llm-judges",
+      "manifest_path": "manifests/resources/more-convincing-not-more-correct-self-play-reward-hacking-of-reference-free-llm-judges.json",
+      "note_path": "notes/papers/more-convincing-not-more-correct-self-play-reward-hacking-of-reference-free-llm-judges.md",
+      "readme_line": 332,
+      "readme_path": "README.md",
+      "review_decision": "accept_for_local_kb",
+      "review_total_score": 10,
+      "section": "8 - LLM-as-judge & verifiers (alignment, biases, verifiable vs judgeable)",
+      "source_seam": "new eval benchmarks/tools",
+      "title": "More Convincing, Not More Correct: Self-Play Reward Hacking of Reference-Free LLM Judges",
+      "type": "paper",
+      "url": "https://arxiv.org/abs/2607.05904"
+    },
+    {
       "id": "mypcbench-a-benchmark-for-personally-intelligent-computer-use-agents",
       "manifest_path": "manifests/resources/mypcbench-a-benchmark-for-personally-intelligent-computer-use-agents.json",
       "note_path": "notes/papers/mypcbench-a-benchmark-for-personally-intelligent-computer-use-agents.md",
@@ -253,6 +281,20 @@
       "title": "PACE: A Proxy for Agentic Capability Evaluation",
       "type": "paper/method",
       "url": "https://arxiv.org/abs/2607.02032"
+    },
+    {
+      "id": "rubench-a-repository-level-agentic-coding-benchmark-with-natively-authored-russian-task-spec",
+      "manifest_path": "manifests/resources/rubench-a-repository-level-agentic-coding-benchmark-with-natively-authored-russian-task-spec.json",
+      "note_path": "notes/papers/rubench-a-repository-level-agentic-coding-benchmark-with-natively-authored-russian-task-spec.md",
+      "readme_line": 426,
+      "readme_path": "README.md",
+      "review_decision": "accept_for_local_kb",
+      "review_total_score": 10,
+      "section": "9 - Agent-specific evaluation (trajectories, tool use, multi-turn, world state, multi-agent, localization)",
+      "source_seam": "new eval benchmarks/tools",
+      "title": "RuBench: A Repository-Level Agentic Coding Benchmark with Natively Authored Russian Task Specifications",
+      "type": "benchmark/paper/repo",
+      "url": "https://arxiv.org/abs/2607.06411"
     },
     {
       "id": "safety-testing-llm-agents-at-scale-from-risk-discovery-to-evidence-grounded-verification",
