@@ -1,0 +1,269 @@
+{
+  "artifacts": {
+    "dispatcher_run_dir": "/Users/arthur/.codex/automations/awesome-evals-daily-dispatcher/runs/20260709T022131Z-apply",
+    "kb_validation": "/Users/arthur/.codex/automations/awesome-evals-daily-dispatcher/runs/20260709T022131Z-apply/kb-validation.json",
+    "promotion_plan": "/Users/arthur/.codex/automations/awesome-evals-daily-dispatcher/runs/20260709T022131Z-apply/promotion-plan.json",
+    "source_sync": "/Users/arthur/.codex/automations/awesome-evals-daily-dispatcher/runs/20260709T022131Z-apply/source-sync.json"
+  },
+  "commit": "c70e0c27336d018f1970bf702dace8fcdfde4d9e",
+  "generated_at_utc": "2026-07-09T02:30:18Z",
+  "schema": "pouw.git-note.v1",
+  "task": "Promote reviewed awesome-evals candidates into local KB",
+  "upstream_sync_summary": {
+    "changed_file_count": 58,
+    "changed_files": [
+      {
+        "path": ".github/workflows/eval-scan.yml",
+        "status": "M"
+      },
+      {
+        "path": ".github/workflows/respond.yml",
+        "status": "M"
+      },
+      {
+        "path": "README.md",
+        "status": "M"
+      },
+      {
+        "path": "manifests/resources.json",
+        "status": "D"
+      },
+      {
+        "path": "manifests/resources/agenticdatabench-a-comprehensive-benchmark-for-data-agents.json",
+        "status": "D"
+      },
+      {
+        "path": "manifests/resources/agenticsts-a-bounded-memory-testbed-for-long-horizon-llm-agents.json",
+        "status": "D"
+      },
+      {
+        "path": "manifests/resources/agentprocessbench-diagnosing-step-level-process-quality-in-tool-using-agents.json",
+        "status": "D"
+      },
+      {
+        "path": "manifests/resources/aj-bench-benchmarking-agent-as-a-judge-for-environment-aware-evaluation.json",
+        "status": "D"
+      },
+      {
+        "path": "manifests/resources/are-performance-optimization-benchmarks-reliably-measuring-coding-agents.json",
+        "status": "D"
+      },
+      {
+        "path": "manifests/resources/babeljudge-measuring-llm-as-a-judge-reliability-across-languages-and-agent-trajectories.json",
+        "status": "D"
+      },
+      {
+        "path": "manifests/resources/browsecomp-plus-a-more-fair-and-transparent-evaluation-benchmark-of-deep-research-agent.json",
+        "status": "D"
+      },
+      {
+        "path": "manifests/resources/can-llm-as-a-judge-reliably-verify-rubrics-in-agentic-scenarios.json",
+        "status": "D"
+      },
+      {
+        "path": "manifests/resources/claw-eval-live-a-live-agent-benchmark-for-evolving-real-world-workflows.json",
+        "status": "D"
+      },
+      {
+        "path": "manifests/resources/claw-eval-towards-trustworthy-evaluation-of-autonomous-agents.json",
+        "status": "D"
+      },
+      {
+        "path": "manifests/resources/clawmark-a-living-world-benchmark-for-multi-turn-multi-day-multimodal-coworker-agents.json",
+        "status": "D"
+      },
+      {
+        "path": "manifests/resources/enterpriseclawbench-benchmarking-agents-from-real-workplace-sessions.json",
+        "status": "D"
+      },
+      {
+        "path": "manifests/resources/groundeval-a-deterministic-replacement-for-llm-as-judge-in-stateful-agent-evaluation.json",
+        "status": "D"
+      },
+      {
+        "path": "manifests/resources/gui-vs-cli-execution-bottlenecks-in-screen-only-and-skill-mediated-computer-use-agents.json",
+        "status": "D"
+      },
+      {
+        "path": "manifests/resources/hardening-agent-benchmarks-with-adversarial-hacker-fixer-loops.json",
+        "status": "D"
+      },
+      {
+        "path": "manifests/resources/mypcbench-a-benchmark-for-personally-intelligent-computer-use-agents.json",
+        "status": "D"
+      },
+      {
+        "path": "manifests/resources/osworld2-0-benchmarking-computer-use-agents-on-long-horizon-real-world-tasks.json",
+        "status": "D"
+      },
+      {
+        "path": "manifests/resources/pace-a-proxy-for-agentic-capability-evaluation.json",
+        "status": "D"
+      },
+      {
+        "path": "manifests/resources/safety-testing-llm-agents-at-scale-from-risk-discovery-to-evidence-grounded-verification.json",
+        "status": "D"
+      },
+      {
+        "path": "manifests/resources/skillcoach-self-evolving-rubrics-for-evaluating-and-enhancing-agentic-skill-use.json",
+        "status": "D"
+      },
+      {
+        "path": "manifests/resources/swe-together-evaluating-coding-agents-in-interactive-user-sessions.json",
+        "status": "D"
+      },
+      {
+        "path": "manifests/resources/toolprivacybench-benchmarking-purpose-bound-privacy-in-tool-using-llm-agents.json",
+        "status": "D"
+      },
+      {
+        "path": "manifests/resources/traject-bench-a-trajectory-aware-benchmark-for-evaluating-agentic-tool-use.json",
+        "status": "D"
+      },
+      {
+        "path": "manifests/resources/tua-bench-a-benchmark-for-general-purpose-terminal-use-agents.json",
+        "status": "D"
+      },
+      {
+        "path": "manifests/resources/uncertainty-quantification-for-computer-use-agents-a-benchmark-across-vision-language-models.json",
+        "status": "D"
+      },
+      {
+        "path": "manifests/resources/weavebench-a-long-horizon-real-world-benchmark-for-computer-use-agents-with-hybrid-interface.json",
+        "status": "D"
+      },
+      {
+        "path": "manifests/resources/wildclawbench-a-benchmark-for-real-world-long-horizon-agent-evaluation.json",
+        "status": "D"
+      },
+      {
+        "path": "notes/papers/agenticdatabench-a-comprehensive-benchmark-for-data-agents.md",
+        "status": "D"
+      },
+      {
+        "path": "notes/papers/agenticsts-a-bounded-memory-testbed-for-long-horizon-llm-agents.md",
+        "status": "D"
+      },
+      {
+        "path": "notes/papers/agentprocessbench-diagnosing-step-level-process-quality-in-tool-using-agents.md",
+        "status": "D"
+      },
+      {
+        "path": "notes/papers/aj-bench-benchmarking-agent-as-a-judge-for-environment-aware-evaluation.md",
+        "status": "D"
+      },
+      {
+        "path": "notes/papers/are-performance-optimization-benchmarks-reliably-measuring-coding-agents.md",
+        "status": "D"
+      },
+      {
+        "path": "notes/papers/babeljudge-measuring-llm-as-a-judge-reliability-across-languages-and-agent-trajectories.md",
+        "status": "D"
+      },
+      {
+        "path": "notes/papers/browsecomp-plus-a-more-fair-and-transparent-evaluation-benchmark-of-deep-research-agent.md",
+        "status": "D"
+      },
+      {
+        "path": "notes/papers/can-llm-as-a-judge-reliably-verify-rubrics-in-agentic-scenarios.md",
+        "status": "D"
+      },
+      {
+        "path": "notes/papers/claw-eval-live-a-live-agent-benchmark-for-evolving-real-world-workflows.md",
+        "status": "D"
+      },
+      {
+        "path": "notes/papers/claw-eval-towards-trustworthy-evaluation-of-autonomous-agents.md",
+        "status": "D"
+      },
+      {
+        "path": "notes/papers/clawmark-a-living-world-benchmark-for-multi-turn-multi-day-multimodal-coworker-agents.md",
+        "status": "D"
+      },
+      {
+        "path": "notes/papers/enterpriseclawbench-benchmarking-agents-from-real-workplace-sessions.md",
+        "status": "D"
+      },
+      {
+        "path": "notes/papers/groundeval-a-deterministic-replacement-for-llm-as-judge-in-stateful-agent-evaluation.md",
+        "status": "D"
+      },
+      {
+        "path": "notes/papers/gui-vs-cli-execution-bottlenecks-in-screen-only-and-skill-mediated-computer-use-agents.md",
+        "status": "D"
+      },
+      {
+        "path": "notes/papers/hardening-agent-benchmarks-with-adversarial-hacker-fixer-loops.md",
+        "status": "D"
+      },
+      {
+        "path": "notes/papers/mypcbench-a-benchmark-for-personally-intelligent-computer-use-agents.md",
+        "status": "D"
+      },
+      {
+        "path": "notes/papers/osworld2-0-benchmarking-computer-use-agents-on-long-horizon-real-world-tasks.md",
+        "status": "D"
+      },
+      {
+        "path": "notes/papers/pace-a-proxy-for-agentic-capability-evaluation.md",
+        "status": "D"
+      },
+      {
+        "path": "notes/papers/safety-testing-llm-agents-at-scale-from-risk-discovery-to-evidence-grounded-verification.md",
+        "status": "D"
+      },
+      {
+        "path": "notes/papers/skillcoach-self-evolving-rubrics-for-evaluating-and-enhancing-agentic-skill-use.md",
+        "status": "D"
+      },
+      {
+        "path": "notes/papers/swe-together-evaluating-coding-agents-in-interactive-user-sessions.md",
+        "status": "D"
+      },
+      {
+        "path": "notes/papers/toolprivacybench-benchmarking-purpose-bound-privacy-in-tool-using-llm-agents.md",
+        "status": "D"
+      },
+      {
+        "path": "notes/papers/traject-bench-a-trajectory-aware-benchmark-for-evaluating-agentic-tool-use.md",
+        "status": "D"
+      },
+      {
+        "path": "notes/papers/tua-bench-a-benchmark-for-general-purpose-terminal-use-agents.md",
+        "status": "D"
+      },
+      {
+        "path": "notes/papers/uncertainty-quantification-for-computer-use-agents-a-benchmark-across-vision-language-models.md",
+        "status": "D"
+      },
+      {
+        "path": "notes/papers/weavebench-a-long-horizon-real-world-benchmark-for-computer-use-agents-with-hybrid-interface.md",
+        "status": "D"
+      },
+      {
+        "path": "notes/papers/wildclawbench-a-benchmark-for-real-world-long-horizon-agent-evaluation.md",
+        "status": "D"
+      }
+    ],
+    "commit_count": 0,
+    "commit_range": "6a7f230ba6b1d4297f8ef4175ed9f1e4ececd089..ad3340049db0a44c886569d2f0b4c7e4f8d95162",
+    "commits": [],
+    "detected_item_count": 0,
+    "detected_items": [],
+    "head_after_merge": "6a7f230ba6b1d4297f8ef4175ed9f1e4ececd089",
+    "origin_main_after": "6a7f230ba6b1d4297f8ef4175ed9f1e4ececd089",
+    "origin_main_before": "6a7f230ba6b1d4297f8ef4175ed9f1e4ececd089",
+    "performed": false,
+    "safety_relevant_paths": [
+      ".github/workflows/eval-scan.yml",
+      ".github/workflows/respond.yml"
+    ],
+    "upstream_main_after": "ad3340049db0a44c886569d2f0b4c7e4f8d95162",
+    "upstream_main_before": "ad3340049db0a44c886569d2f0b4c7e4f8d95162"
+  },
+  "useful_work": [
+    "Applied only accept_for_local_kb review decisions.",
+    "Validated URL, duplicate, and diff gates before commit.",
+    "Preserved scan/review/promotion artifacts under the dispatcher run directory."
+  ]
+}
