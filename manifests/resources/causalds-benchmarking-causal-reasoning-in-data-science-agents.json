@@ -1,0 +1,59 @@
+{
+  "author": "Andrej Leban, Yuekai Sun",
+  "id": "causalds-benchmarking-causal-reasoning-in-data-science-agents",
+  "note": {
+    "path": "notes/papers/causalds-benchmarking-causal-reasoning-in-data-science-agents.md"
+  },
+  "readme": {
+    "entry": "- **[CausalDS: Benchmarking Causal Reasoning in Data-Science Agents](https://arxiv.org/abs/2607.08093)** \u2014 Andrej Leban, Yuekai Sun \u2014 <https://arxiv.org/abs/2607.08093> \u00b7 *paper/benchmark/code/dataset* \u2014 Generates file-backed causal data-science tasks from hidden structural causal models and scores estimation, uncertainty, tool use, and warranted abstention against private deterministic ground truth. \ud83c\udd95",
+    "line": 430,
+    "path": "README.md"
+  },
+  "review": {
+    "decision": "accept_for_local_kb",
+    "hard_failures": [],
+    "reviewed_at_utc": "2026-07-11T02:32:36Z",
+    "scores": {
+      "factuality": {
+        "reason": "structured evidence plus fetched source snapshot",
+        "score": 2
+      },
+      "kb_fit": {
+        "reason": "matches agent/eval KB scope",
+        "score": 2
+      },
+      "quality": {
+        "reason": "concrete eval artifacts or methodology signals present",
+        "score": 2
+      },
+      "recency": {
+        "reason": "evidence indicates 2025-2026 or actively updated source",
+        "score": 2
+      },
+      "source_authority": {
+        "reason": "primary repo or lab/source page",
+        "score": 2
+      }
+    },
+    "total_score": 10,
+    "url_check": {
+      "detail": "HEAD:200",
+      "ok": true
+    }
+  },
+  "schema": "awesome_evals.resource_manifest.v1",
+  "section": "9 \u00b7 Agent-specific evaluation (trajectories, tool use, multi-turn, world state, multi-agent, localization)",
+  "source_seam": "hugging-face-daily-papers+arxiv-primary+github-code",
+  "title": "CausalDS: Benchmarking Causal Reasoning in Data-Science Agents",
+  "type": "paper/benchmark/code/dataset",
+  "url": "https://arxiv.org/abs/2607.08093",
+  "worker": {
+    "candidate_reason": "It clears the bar by combining all three rungs of Pearl's hierarchy with realistic tabular workflows, synthetic contamination resistance, first-class non-identifiability, deterministic grading, and released code/data; the paper also evaluates six current agents and separates content correctness from abstention and tool-use efficiency.",
+    "evidence": "HF/arXiv paper and Apache-2.0 andleb/causalds repo retrieved: the reported dataset has 953 scenes with three observation variants; each task runs in a fresh network-disabled mini-swe-agent container; answers are file-backed and graded deterministically; code, generator, grader, main exam, and ablation datasets are released.",
+    "summary": "Generates file-backed causal data-science tasks from hidden structural causal models and scores estimation, uncertainty, tool use, and warranted abstention against private deterministic ground truth.",
+    "url_check": {
+      "detail": "200",
+      "ok": true
+    }
+  }
+}

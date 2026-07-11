@@ -1,0 +1,59 @@
+{
+  "author": "Jacky Kwok, Shulu Li, Pranav Atreya, Yuejiang Liu, Yixing Jiang, Chelsea Finn, Marco Pavone, Ion Stoica, Azalia Mirhoseini",
+  "id": "llm-as-a-verifier-a-general-purpose-verification-framework",
+  "note": {
+    "path": "notes/papers/llm-as-a-verifier-a-general-purpose-verification-framework.md"
+  },
+  "readme": {
+    "entry": "- **[LLM-as-a-Verifier: A General-Purpose Verification Framework](https://arxiv.org/abs/2607.05391)** \u2014 Jacky Kwok, Shulu Li, Pranav Atreya, Yuejiang Liu, Yixing Jiang, Chelsea Finn, Marco Pavone, Ion Stoica, Azalia Mirhoseini \u2014 <https://arxiv.org/abs/2607.05391> \u00b7 *paper/method* \u2014 Turns scoring-token probability distributions into continuous trajectory scores, then scales verification through repeated judgments, criterion decomposition, and a budget-aware pivot tournament. \ud83c\udd95",
+    "line": 333,
+    "path": "README.md"
+  },
+  "review": {
+    "decision": "accept_for_local_kb",
+    "hard_failures": [],
+    "reviewed_at_utc": "2026-07-11T02:32:35Z",
+    "scores": {
+      "factuality": {
+        "reason": "structured evidence plus fetched source snapshot",
+        "score": 2
+      },
+      "kb_fit": {
+        "reason": "matches agent/eval KB scope",
+        "score": 2
+      },
+      "quality": {
+        "reason": "concrete eval artifacts or methodology signals present",
+        "score": 2
+      },
+      "recency": {
+        "reason": "evidence indicates 2025-2026 or actively updated source",
+        "score": 2
+      },
+      "source_authority": {
+        "reason": "primary repo or lab/source page",
+        "score": 2
+      }
+    },
+    "total_score": 10,
+    "url_check": {
+      "detail": "HEAD:200",
+      "ok": true
+    }
+  },
+  "schema": "awesome_evals.resource_manifest.v1",
+  "section": "8 \u00b7 LLM-as-judge & verifiers (alignment, biases, verifiable vs judgeable)",
+  "source_seam": "alphaxiv-hot-feed+hugging-face-papers+arxiv-primary",
+  "title": "LLM-as-a-Verifier: A General-Purpose Verification Framework",
+  "type": "paper/method",
+  "url": "https://arxiv.org/abs/2607.05391",
+  "worker": {
+    "candidate_reason": "It clears the bar with a concrete verifier algorithm, controlled ablations over three verification-scaling axes, and cross-domain agent results rather than a generic judge prompt; it directly addresses tie rates, position bias, trajectory ranking, and dense feedback for RL.",
+    "evidence": "alphaXiv discovery was canonicalized to arXiv and the full HF/arXiv paper was read: the discrete judge baseline has a 27% Terminal-Bench tie rate; the method reports 86.5% on Terminal-Bench V2, 78.2% on SWE-Bench Verified, 87.4% trajectory-preference accuracy on RoboRewardBench, and 73.3% on MedAgentBench, with criteria-ensemble accuracy rising to 78.3%.",
+    "summary": "Turns scoring-token probability distributions into continuous trajectory scores, then scales verification through repeated judgments, criterion decomposition, and a budget-aware pivot tournament.",
+    "url_check": {
+      "detail": "200",
+      "ok": true
+    }
+  }
+}
