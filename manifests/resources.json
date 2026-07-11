@@ -1,6 +1,6 @@
 {
-  "generated_at_utc": "2026-07-09T02:30:15Z",
-  "resource_count": 30,
+  "generated_at_utc": "2026-07-11T02:32:36Z",
+  "resource_count": 33,
   "resources": [
     {
       "id": "agenticdatabench-a-comprehensive-benchmark-for-data-agents",
@@ -115,6 +115,20 @@
       "url": "https://arxiv.org/abs/2606.29920v1"
     },
     {
+      "id": "causalds-benchmarking-causal-reasoning-in-data-science-agents",
+      "manifest_path": "manifests/resources/causalds-benchmarking-causal-reasoning-in-data-science-agents.json",
+      "note_path": "notes/papers/causalds-benchmarking-causal-reasoning-in-data-science-agents.md",
+      "readme_line": 430,
+      "readme_path": "README.md",
+      "review_decision": "accept_for_local_kb",
+      "review_total_score": 10,
+      "section": "9 \u00b7 Agent-specific evaluation (trajectories, tool use, multi-turn, world state, multi-agent, localization)",
+      "source_seam": "hugging-face-daily-papers+arxiv-primary+github-code",
+      "title": "CausalDS: Benchmarking Causal Reasoning in Data-Science Agents",
+      "type": "paper/benchmark/code/dataset",
+      "url": "https://arxiv.org/abs/2607.08093"
+    },
+    {
       "id": "claw-eval-live-a-live-agent-benchmark-for-evolving-real-world-workflows",
       "manifest_path": "manifests/resources/claw-eval-live-a-live-agent-benchmark-for-evolving-real-world-workflows.json",
       "note_path": "notes/papers/claw-eval-live-a-live-agent-benchmark-for-evolving-real-world-workflows.md",
@@ -225,6 +239,20 @@
       "title": "Hardening Agent Benchmarks with Adversarial Hacker-Fixer Loops",
       "type": "paper/benchmark-audit",
       "url": "https://arxiv.org/abs/2606.08960"
+    },
+    {
+      "id": "llm-as-a-verifier-a-general-purpose-verification-framework",
+      "manifest_path": "manifests/resources/llm-as-a-verifier-a-general-purpose-verification-framework.json",
+      "note_path": "notes/papers/llm-as-a-verifier-a-general-purpose-verification-framework.md",
+      "readme_line": 333,
+      "readme_path": "README.md",
+      "review_decision": "accept_for_local_kb",
+      "review_total_score": 10,
+      "section": "8 \u00b7 LLM-as-judge & verifiers (alignment, biases, verifiable vs judgeable)",
+      "source_seam": "alphaxiv-hot-feed+hugging-face-papers+arxiv-primary",
+      "title": "LLM-as-a-Verifier: A General-Purpose Verification Framework",
+      "type": "paper/method",
+      "url": "https://arxiv.org/abs/2607.05391"
     },
     {
       "id": "more-convincing-not-more-correct-self-play-reward-hacking-of-reference-free-llm-judges",
@@ -393,6 +421,20 @@
       "title": "Uncertainty Quantification for Computer-Use Agents: A Benchmark across Vision-Language Models and GUI Grounding Datasets",
       "type": "paper/benchmark",
       "url": "https://arxiv.org/abs/2606.25760"
+    },
+    {
+      "id": "uniclawbench-a-universal-benchmark-for-proactive-agents-on-real-world-tasks",
+      "manifest_path": "manifests/resources/uniclawbench-a-universal-benchmark-for-proactive-agents-on-real-world-tasks.json",
+      "note_path": "notes/papers/uniclawbench-a-universal-benchmark-for-proactive-agents-on-real-world-tasks.md",
+      "readme_line": 428,
+      "readme_path": "README.md",
+      "review_decision": "accept_for_local_kb",
+      "review_total_score": 10,
+      "section": "9 \u00b7 Agent-specific evaluation (trajectories, tool use, multi-turn, world state, multi-agent, localization)",
+      "source_seam": "hugging-face-daily-papers+arxiv-primary+github-project",
+      "title": "UniClawBench: A Universal Benchmark for Proactive Agents on Real-World Tasks",
+      "type": "paper/benchmark/code",
+      "url": "https://arxiv.org/abs/2607.08768"
     },
     {
       "id": "weavebench-a-long-horizon-real-world-benchmark-for-computer-use-agents-with-hybrid-interface",

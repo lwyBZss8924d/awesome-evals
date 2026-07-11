@@ -1,0 +1,59 @@
+{
+  "author": "Zhekai Chen, Chengqi Duan, Kaiyue Sun, Bohao Li, Yuqing Wang, Manyuan Zhang, Xihui Liu",
+  "id": "uniclawbench-a-universal-benchmark-for-proactive-agents-on-real-world-tasks",
+  "note": {
+    "path": "notes/papers/uniclawbench-a-universal-benchmark-for-proactive-agents-on-real-world-tasks.md"
+  },
+  "readme": {
+    "entry": "- **[UniClawBench: A Universal Benchmark for Proactive Agents on Real-World Tasks](https://arxiv.org/abs/2607.08768)** \u2014 Zhekai Chen, Chengqi Duan, Kaiyue Sun, Bohao Li, Yuqing Wang, Manyuan Zhang, Xihui Liu \u2014 <https://arxiv.org/abs/2607.08768> \u00b7 *paper/benchmark/code* \u2014 A 400-task bilingual benchmark for proactive agents that runs real browser, CLI, file, and GUI work in fresh containers with closed-loop user feedback and hidden checkpoint grading. \ud83c\udd95",
+    "line": 428,
+    "path": "README.md"
+  },
+  "review": {
+    "decision": "accept_for_local_kb",
+    "hard_failures": [],
+    "reviewed_at_utc": "2026-07-11T02:32:34Z",
+    "scores": {
+      "factuality": {
+        "reason": "structured evidence plus fetched source snapshot",
+        "score": 2
+      },
+      "kb_fit": {
+        "reason": "matches agent/eval KB scope",
+        "score": 2
+      },
+      "quality": {
+        "reason": "concrete eval artifacts or methodology signals present",
+        "score": 2
+      },
+      "recency": {
+        "reason": "evidence indicates 2025-2026 or actively updated source",
+        "score": 2
+      },
+      "source_authority": {
+        "reason": "primary repo or lab/source page",
+        "score": 2
+      }
+    },
+    "total_score": 10,
+    "url_check": {
+      "detail": "HEAD:200",
+      "ok": true
+    }
+  },
+  "schema": "awesome_evals.resource_manifest.v1",
+  "section": "9 \u00b7 Agent-specific evaluation (trajectories, tool use, multi-turn, world state, multi-agent, localization)",
+  "source_seam": "hugging-face-daily-papers+arxiv-primary+github-project",
+  "title": "UniClawBench: A Universal Benchmark for Proactive Agents on Real-World Tasks",
+  "type": "paper/benchmark/code",
+  "url": "https://arxiv.org/abs/2607.08768",
+  "worker": {
+    "candidate_reason": "It clears the bar with a capability-driven taxonomy, a reproducible Docker runtime, public tasks and artifacts, and an explicit three-role design that prevents the user simulator from leaking hidden rubrics while still testing recovery across turns.",
+    "evidence": "HF/arXiv paper and MIT-licensed HKU-MMLab/UniClawBench repo retrieved: 400 tasks (200 English, 200 Chinese) across five capabilities; fresh Docker execution; hidden supervisor returns pass/continue/fail; public user simulator sees only visible trajectory plus sanitized status; repository ships tasks, runtimes, traces, artifacts, and leaderboard tooling.",
+    "summary": "A 400-task bilingual benchmark for proactive agents that runs real browser, CLI, file, and GUI work in fresh containers with closed-loop user feedback and hidden checkpoint grading.",
+    "url_check": {
+      "detail": "200",
+      "ok": true
+    }
+  }
+}
