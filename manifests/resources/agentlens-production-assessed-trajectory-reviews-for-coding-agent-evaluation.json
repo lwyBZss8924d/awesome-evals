@@ -1,0 +1,59 @@
+{
+  "author": "Andrey Podivilov, Vadim Lomshakov, Sergey Savin, Matvei Startsev, Roman Pozharskiy, Maksim Parshin, Sergey Nikolenko",
+  "id": "agentlens-production-assessed-trajectory-reviews-for-coding-agent-evaluation",
+  "note": {
+    "path": "notes/papers/agentlens-production-assessed-trajectory-reviews-for-coding-agent-evaluation.md"
+  },
+  "readme": {
+    "entry": "- **[AgentLens: Production-Assessed Trajectory Reviews for Coding Agent Evaluation](https://arxiv.org/abs/2607.06624)** \u2014 Andrey Podivilov, Vadim Lomshakov, Sergey Savin, Matvei Startsev, Roman Pozharskiy, Maksim Parshin, Sergey Nikolenko \u2014 <https://arxiv.org/abs/2607.06624> \u00b7 *paper/benchmark/code* \u2014 A 16-scenario, two-persona coding-agent benchmark that pairs formal repository checks with evidence-citing trajectory reviews, pairwise comparisons, bias/variance checks, and a nightly regression pipeline. \ud83c\udd95",
+    "line": 431,
+    "path": "README.md"
+  },
+  "review": {
+    "decision": "accept_for_local_kb",
+    "hard_failures": [],
+    "reviewed_at_utc": "2026-07-12T02:29:02Z",
+    "scores": {
+      "factuality": {
+        "reason": "structured evidence plus fetched source snapshot",
+        "score": 2
+      },
+      "kb_fit": {
+        "reason": "matches agent/eval KB scope",
+        "score": 2
+      },
+      "quality": {
+        "reason": "concrete eval artifacts or methodology signals present",
+        "score": 2
+      },
+      "recency": {
+        "reason": "evidence indicates 2025-2026 or actively updated source",
+        "score": 2
+      },
+      "source_authority": {
+        "reason": "primary repo or lab/source page",
+        "score": 2
+      }
+    },
+    "total_score": 10,
+    "url_check": {
+      "detail": "HEAD:200",
+      "ok": true
+    }
+  },
+  "schema": "awesome_evals.resource_manifest.v1",
+  "section": "## 9 \u00b7 Agent-specific evaluation (trajectories, tool use, multi-turn, world state, multi-agent, localization)",
+  "source_seam": "Hugging Face Daily Papers -> canonical arXiv paper -> GitHub code/repository evidence",
+  "title": "AgentLens: Production-Assessed Trajectory Reviews for Coding Agent Evaluation",
+  "type": "paper/benchmark/code",
+  "url": "https://arxiv.org/abs/2607.06624",
+  "worker": {
+    "candidate_reason": "It evaluates the whole interactive coding trajectory instead of only final test status, ships the runner/evaluator and scenario fold under Apache-2.0, derives tasks from developer interviews and consented anonymized production summaries, and reports concrete stability and judge-bias checks that practitioners can use when building regression evals.",
+    "evidence": "Retrieved arXiv metadata and the v1 PDF plus https://github.com/agent-lens/agent-lens-bench README and GitHub metadata. The released fold has 16 scenarios run with neutral and toxic personas (32 trajectories per agent); formal checks include tests, repository state, regex, build tasks, and static analysis; five LLM-review dimensions cite trajectory evidence; five repeated GLM-5.1 runs gave quality-index mean 67.28 and SD 0.94; cross-judge comparison disagreed on 23% of task-metric pairs and showed 18% own-family preference, which the paper flags as a close-model caveat. Human agreement evidence is preliminary and informal, so promotion should retain that caveat.",
+    "summary": "A 16-scenario, two-persona coding-agent benchmark that pairs formal repository checks with evidence-citing trajectory reviews, pairwise comparisons, bias/variance checks, and a nightly regression pipeline.",
+    "url_check": {
+      "detail": "200",
+      "ok": true
+    }
+  }
+}
