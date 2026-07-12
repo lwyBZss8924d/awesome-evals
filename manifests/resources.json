@@ -1,6 +1,6 @@
 {
-  "generated_at_utc": "2026-07-11T02:32:36Z",
-  "resource_count": 33,
+  "generated_at_utc": "2026-07-12T02:29:03Z",
+  "resource_count": 35,
   "resources": [
     {
       "id": "agenticdatabench-a-comprehensive-benchmark-for-data-agents",
@@ -29,6 +29,20 @@
       "title": "AgenticSTS: A Bounded-Memory Testbed for Long-Horizon LLM Agents",
       "type": "paper/benchmark",
       "url": "https://arxiv.org/abs/2607.02255"
+    },
+    {
+      "id": "agentlens-production-assessed-trajectory-reviews-for-coding-agent-evaluation",
+      "manifest_path": "manifests/resources/agentlens-production-assessed-trajectory-reviews-for-coding-agent-evaluation.json",
+      "note_path": "notes/papers/agentlens-production-assessed-trajectory-reviews-for-coding-agent-evaluation.md",
+      "readme_line": 431,
+      "readme_path": "README.md",
+      "review_decision": "accept_for_local_kb",
+      "review_total_score": 10,
+      "section": "## 9 \u00b7 Agent-specific evaluation (trajectories, tool use, multi-turn, world state, multi-agent, localization)",
+      "source_seam": "Hugging Face Daily Papers -> canonical arXiv paper -> GitHub code/repository evidence",
+      "title": "AgentLens: Production-Assessed Trajectory Reviews for Coding Agent Evaluation",
+      "type": "paper/benchmark/code",
+      "url": "https://arxiv.org/abs/2607.06624"
     },
     {
       "id": "agentprocessbench-diagnosing-step-level-process-quality-in-tool-using-agents",
@@ -85,6 +99,20 @@
       "title": "BabelJudge: Measuring LLM-as-a-Judge Reliability Across Languages and Agent Trajectories",
       "type": "paper/benchmark",
       "url": "https://arxiv.org/abs/2606.22329"
+    },
+    {
+      "id": "benchmark-test-time-scaling-of-general-llm-agents-general-agentbench",
+      "manifest_path": "manifests/resources/benchmark-test-time-scaling-of-general-llm-agents-general-agentbench.json",
+      "note_path": "notes/papers/benchmark-test-time-scaling-of-general-llm-agents-general-agentbench.md",
+      "readme_line": 432,
+      "readme_path": "README.md",
+      "review_decision": "accept_for_local_kb",
+      "review_total_score": 10,
+      "section": "## 9 \u00b7 Agent-specific evaluation (trajectories, tool use, multi-turn, world state, multi-agent, localization)",
+      "source_seam": "general agent-building post/project page -> canonical arXiv paper -> GitHub benchmark harness",
+      "title": "Benchmark Test-Time Scaling of General LLM Agents (General AgentBench)",
+      "type": "paper/benchmark/code",
+      "url": "https://arxiv.org/abs/2602.18998"
     },
     {
       "id": "browsecomp-plus-a-more-fair-and-transparent-evaluation-benchmark-of-deep-research-agent",
