@@ -1,0 +1,59 @@
+{
+  "author": "GigaAI team",
+  "id": "gigaworld-1-a-roadmap-to-build-world-models-for-robot-policy-evaluation",
+  "note": {
+    "path": "notes/papers/gigaworld-1-a-roadmap-to-build-world-models-for-robot-policy-evaluation.md"
+  },
+  "readme": {
+    "entry": "- **[GigaWorld-1: A Roadmap to Build World Models for Robot Policy Evaluation](https://arxiv.org/abs/2607.02642)** \u2014 GigaAI team \u2014 <https://arxiv.org/abs/2607.02642> \u00b7 *paper/benchmark/repo* \u2014 WMBench tests when video world models can serve as surrogate evaluators for robot policies by matching simulated rollouts to real executions across horizons, action encodings, and metrics. \ud83c\udd95",
+    "line": 435,
+    "path": "README.md"
+  },
+  "review": {
+    "decision": "accept_for_local_kb",
+    "hard_failures": [],
+    "reviewed_at_utc": "2026-07-13T02:29:40Z",
+    "scores": {
+      "factuality": {
+        "reason": "structured evidence plus fetched source snapshot",
+        "score": 2
+      },
+      "kb_fit": {
+        "reason": "matches agent/eval KB scope",
+        "score": 2
+      },
+      "quality": {
+        "reason": "concrete eval artifacts or methodology signals present",
+        "score": 2
+      },
+      "recency": {
+        "reason": "evidence indicates 2025-2026 or actively updated source",
+        "score": 2
+      },
+      "source_authority": {
+        "reason": "primary repo or lab/source page",
+        "score": 2
+      }
+    },
+    "total_score": 10,
+    "url_check": {
+      "detail": "HEAD:200",
+      "ok": true
+    }
+  },
+  "schema": "awesome_evals.resource_manifest.v1",
+  "section": "9 \u00b7 Agent-specific evaluation (trajectories, tool use, multi-turn, world state, multi-agent, localization)",
+  "source_seam": "Hugging Face Daily Papers and new benchmark/tool release",
+  "title": "GigaWorld-1: A Roadmap to Build World Models for Robot Policy Evaluation",
+  "type": "paper/benchmark/repo",
+  "url": "https://arxiv.org/abs/2607.02642",
+  "worker": {
+    "candidate_reason": "Provides rare empirical evidence for replacing costly real-world agent evaluation with learned environments: large paired-rollout analysis, explicit evaluator-design findings, public code/models/data, and actionable conclusions about horizon, action fidelity, memory, and evaluator-focused post-training.",
+    "evidence": "Retrieved the full Hugging Face paper markdown and the active Apache-2.0 open-gigaai/giga-world-1 repository. The paper analyzes 7 video world models, 4 action encodings, and more than 324,000 simulated policy rollouts paired with real executions; it reports that long-horizon action-faithful consistency matters more than short-term visual realism. Caveat: the repository marks WMBench as partially open-sourced, with 15 metrics, a leaderboard, and VLM judging available while additional benchmark pieces remain pending.",
+    "summary": "WMBench tests when video world models can serve as surrogate evaluators for robot policies by matching simulated rollouts to real executions across horizons, action encodings, and metrics.",
+    "url_check": {
+      "detail": "200",
+      "ok": true
+    }
+  }
+}
