@@ -1,6 +1,6 @@
 {
-  "generated_at_utc": "2026-07-12T02:29:03Z",
-  "resource_count": 35,
+  "generated_at_utc": "2026-07-13T02:29:41Z",
+  "resource_count": 38,
   "resources": [
     {
       "id": "agenticdatabench-a-comprehensive-benchmark-for-data-agents",
@@ -199,6 +199,20 @@
       "url": "https://arxiv.org/abs/2604.23781v2"
     },
     {
+      "id": "do-automated-evals-work",
+      "manifest_path": "manifests/resources/do-automated-evals-work.json",
+      "note_path": "notes/articles/do-automated-evals-work.md",
+      "readme_line": 235,
+      "readme_path": "README.md",
+      "review_decision": "accept_for_local_kb",
+      "review_total_score": 8,
+      "section": "5 \u00b7 Evaluation infrastructure (the eval stack: datasets, scorers, online/offline, tracing, CI)",
+      "source_seam": "known-author practitioner blog",
+      "title": "Do Automated Evals Work?",
+      "type": "blog/production study",
+      "url": "https://parlance-labs.com/blog/posts/auto-evals.html"
+    },
+    {
       "id": "enterpriseclawbench-benchmarking-agents-from-real-workplace-sessions",
       "manifest_path": "manifests/resources/enterpriseclawbench-benchmarking-agents-from-real-workplace-sessions.json",
       "note_path": "notes/papers/enterpriseclawbench-benchmarking-agents-from-real-workplace-sessions.md",
@@ -225,6 +239,20 @@
       "title": "GateMem: Benchmarking Memory Governance in Multi-Principal Shared-Memory Agents",
       "type": "benchmark/repo/paper",
       "url": "https://github.com/rzhub/GateMem"
+    },
+    {
+      "id": "gigaworld-1-a-roadmap-to-build-world-models-for-robot-policy-evaluation",
+      "manifest_path": "manifests/resources/gigaworld-1-a-roadmap-to-build-world-models-for-robot-policy-evaluation.json",
+      "note_path": "notes/papers/gigaworld-1-a-roadmap-to-build-world-models-for-robot-policy-evaluation.md",
+      "readme_line": 435,
+      "readme_path": "README.md",
+      "review_decision": "accept_for_local_kb",
+      "review_total_score": 10,
+      "section": "9 \u00b7 Agent-specific evaluation (trajectories, tool use, multi-turn, world state, multi-agent, localization)",
+      "source_seam": "Hugging Face Daily Papers and new benchmark/tool release",
+      "title": "GigaWorld-1: A Roadmap to Build World Models for Robot Policy Evaluation",
+      "type": "paper/benchmark/repo",
+      "url": "https://arxiv.org/abs/2607.02642"
     },
     {
       "id": "groundeval-a-deterministic-replacement-for-llm-as-judge-in-stateful-agent-evaluation",
@@ -267,6 +295,20 @@
       "title": "Hardening Agent Benchmarks with Adversarial Hacker-Fixer Loops",
       "type": "paper/benchmark-audit",
       "url": "https://arxiv.org/abs/2606.08960"
+    },
+    {
+      "id": "ideas-have-genomes-benchmarking-scientific-lineage-reasoning-and-lineage-grounded-idea-gener",
+      "manifest_path": "manifests/resources/ideas-have-genomes-benchmarking-scientific-lineage-reasoning-and-lineage-grounded-idea-gener.json",
+      "note_path": "notes/papers/ideas-have-genomes-benchmarking-scientific-lineage-reasoning-and-lineage-grounded-idea-gener.md",
+      "readme_line": 434,
+      "readme_path": "README.md",
+      "review_decision": "accept_for_local_kb",
+      "review_total_score": 10,
+      "section": "9 \u00b7 Agent-specific evaluation (trajectories, tool use, multi-turn, world state, multi-agent, localization)",
+      "source_seam": "Hugging Face Daily Papers and alphaXiv hot-paper discovery",
+      "title": "Ideas Have Genomes: Benchmarking Scientific Lineage Reasoning and Lineage-Grounded Idea Generation",
+      "type": "paper/benchmark/code",
+      "url": "https://arxiv.org/abs/2607.08758"
     },
     {
       "id": "llm-as-a-verifier-a-general-purpose-verification-framework",

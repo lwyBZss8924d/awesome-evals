@@ -1,0 +1,59 @@
+{
+  "author": "Parlance Labs",
+  "id": "do-automated-evals-work",
+  "note": {
+    "path": "notes/articles/do-automated-evals-work.md"
+  },
+  "readme": {
+    "entry": "- **[Do Automated Evals Work?](https://parlance-labs.com/blog/posts/auto-evals.html)** \u2014 Parlance Labs \u2014 <https://parlance-labs.com/blog/posts/auto-evals.html> \u00b7 *blog/production study* \u2014 Production study comparing automated error analysis with human review on 100 real agent traces; the best system recovered 87.2% of known failures but all systems missed product-context failures invisible in the trace. \ud83c\udd95",
+    "line": 235,
+    "path": "README.md"
+  },
+  "review": {
+    "decision": "accept_for_local_kb",
+    "hard_failures": [],
+    "reviewed_at_utc": "2026-07-13T02:29:39Z",
+    "scores": {
+      "factuality": {
+        "reason": "structured evidence plus fetched source snapshot",
+        "score": 2
+      },
+      "kb_fit": {
+        "reason": "matches agent/eval KB scope",
+        "score": 2
+      },
+      "quality": {
+        "reason": "concrete eval artifacts or methodology signals present",
+        "score": 1
+      },
+      "recency": {
+        "reason": "evidence indicates 2025-2026 or actively updated source",
+        "score": 2
+      },
+      "source_authority": {
+        "reason": "non-primary or less established source",
+        "score": 1
+      }
+    },
+    "total_score": 8,
+    "url_check": {
+      "detail": "HEAD:200",
+      "ok": true
+    }
+  },
+  "schema": "awesome_evals.resource_manifest.v1",
+  "section": "5 \u00b7 Evaluation infrastructure (the eval stack: datasets, scorers, online/offline, tracing, CI)",
+  "source_seam": "known-author practitioner blog",
+  "title": "Do Automated Evals Work?",
+  "type": "blog/production study",
+  "url": "https://parlance-labs.com/blog/posts/auto-evals.html",
+  "worker": {
+    "candidate_reason": "Clears the bar with a reproducible comparison design, real production data, explicit recall/precision/false-positive results across three eval platforms and three coding agents, and an actionable human-in-the-loop workflow for criteria drift.",
+    "evidence": "Retrieved the full primary post. A domain expert labeled 100 apartment-leasing-agent traces with 39 failures; six automated systems were tested on masked traces. Reported recall ranged from 74.4% to 87.2%, precision from 77.4% to 91.0%, and every system missed failures requiring undiscovered product context such as objection handling, SMS formatting, interruptions, and mandatory handoffs.",
+    "summary": "Production study comparing automated error analysis with human review on 100 real agent traces; the best system recovered 87.2% of known failures but all systems missed product-context failures invisible in the trace.",
+    "url_check": {
+      "detail": "200",
+      "ok": true
+    }
+  }
+}
