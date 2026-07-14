@@ -1,0 +1,59 @@
+{
+  "author": "Zongxia Li, Zhongzhi Li, Yucheng Shi, Ruhan Wang, Junyao Yang, Zhichao Liu, Xiyang Wu, Anhao Li, Yue Yu, Ninghao Liu, Lichao Sun, Haotao Mi, Leowei Liang",
+  "id": "long-horizon-terminal-bench-testing-the-limits-of-agents-on-long-horizon-terminal-tasks-with",
+  "note": {
+    "path": "notes/papers/long-horizon-terminal-bench-testing-the-limits-of-agents-on-long-horizon-terminal-tasks-with.md"
+  },
+  "readme": {
+    "entry": "- **[Long-Horizon-Terminal-Bench: Testing the Limits of Agents on Long-Horizon Terminal Tasks with Dense Reward-Based Grading](https://arxiv.org/abs/2607.08964)** \u2014 Zongxia Li, Zhongzhi Li, Yucheng Shi, Ruhan Wang, Junyao Yang, Zhichao Liu, Xiyang Wu, Anhao Li, Yue Yu, Ninghao Liu, Lichao Sun, Haotao Mi, Leowei Liang \u2014 <https://arxiv.org/abs/2607.08964> \u00b7 *paper / benchmark* \u2014 Introduces 46 containerized terminal tasks with deterministic subtask graders and dense partial credit for workflows averaging 231 episodes, 9.9M tokens, and 85.3 minutes per run. \ud83c\udd95",
+    "line": 436,
+    "path": "README.md"
+  },
+  "review": {
+    "decision": "accept_for_local_kb",
+    "hard_failures": [],
+    "reviewed_at_utc": "2026-07-14T02:31:53Z",
+    "scores": {
+      "factuality": {
+        "reason": "structured evidence plus fetched source snapshot",
+        "score": 2
+      },
+      "kb_fit": {
+        "reason": "matches agent/eval KB scope",
+        "score": 2
+      },
+      "quality": {
+        "reason": "concrete eval artifacts or methodology signals present",
+        "score": 2
+      },
+      "recency": {
+        "reason": "evidence indicates 2025-2026 or actively updated source",
+        "score": 2
+      },
+      "source_authority": {
+        "reason": "primary repo or lab/source page",
+        "score": 2
+      }
+    },
+    "total_score": 10,
+    "url_check": {
+      "detail": "HEAD:200",
+      "ok": true
+    }
+  },
+  "schema": "awesome_evals.resource_manifest.v1",
+  "section": "## 9 \u00b7 Agent-specific evaluation (trajectories, tool use, multi-turn, world state, multi-agent, localization)",
+  "source_seam": "Hugging Face Daily Papers / arXiv cs.AI RSS / new benchmark",
+  "title": "Long-Horizon-Terminal-Bench: Testing the Limits of Agents on Long-Horizon Terminal Tasks with Dense Reward-Based Grading",
+  "type": "paper / benchmark",
+  "url": "https://arxiv.org/abs/2607.08964",
+  "worker": {
+    "candidate_reason": "It measures sustained terminal-agent progress rather than only final pass/fail, releases a Harbor-compatible benchmark and harness, and validates the design across 15 frontier models on difficult scientific and engineering workflows.",
+    "evidence": "Primary arXiv text and the Hugging Face markdown paper were retrieved. The benchmark filters 120 candidate tasks down to 46 containerized Harbor tasks across nine categories, uses objective in-container checks over files, tests, outputs, and simulator state, and weights hidden stress cases more heavily than public checks. Fifteen models were evaluated; the strongest result was 15.2% pass@1 at reward >=0.95 and 10.9% at perfect reward, while 10 of 15 models passed zero tasks at perfect reward. Dense rewards expose near-miss progress that binary scoring collapses.",
+    "summary": "Introduces 46 containerized terminal tasks with deterministic subtask graders and dense partial credit for workflows averaging 231 episodes, 9.9M tokens, and 85.3 minutes per run.",
+    "url_check": {
+      "detail": "200",
+      "ok": true
+    }
+  }
+}

@@ -1,6 +1,6 @@
 {
-  "generated_at_utc": "2026-07-13T02:29:41Z",
-  "resource_count": 38,
+  "generated_at_utc": "2026-07-14T02:31:55Z",
+  "resource_count": 41,
   "resources": [
     {
       "id": "agenticdatabench-a-comprehensive-benchmark-for-data-agents",
@@ -227,6 +227,20 @@
       "url": "https://arxiv.org/abs/2606.23654"
     },
     {
+      "id": "failure-as-a-process-an-anatomy-of-cli-coding-agent-trajectories",
+      "manifest_path": "manifests/resources/failure-as-a-process-an-anatomy-of-cli-coding-agent-trajectories.json",
+      "note_path": "notes/papers/failure-as-a-process-an-anatomy-of-cli-coding-agent-trajectories.md",
+      "readme_line": 437,
+      "readme_path": "README.md",
+      "review_decision": "accept_for_local_kb",
+      "review_total_score": 9,
+      "section": "## 9 \u00b7 Agent-specific evaluation (trajectories, tool use, multi-turn, world state, multi-agent, localization)",
+      "source_seam": "arXiv cs.SE/cs.AI RSS / trajectory-analysis paper",
+      "title": "Failure as a Process: An Anatomy of CLI Coding Agent Trajectories",
+      "type": "paper / empirical trajectory study",
+      "url": "https://arxiv.org/abs/2607.09510"
+    },
+    {
       "id": "gatemem-benchmarking-memory-governance-in-multi-principal-shared-memory-agents",
       "manifest_path": "manifests/resources/gatemem-benchmarking-memory-governance-in-multi-principal-shared-memory-agents.json",
       "note_path": "notes/papers/gatemem-benchmarking-memory-governance-in-multi-principal-shared-memory-agents.md",
@@ -325,6 +339,20 @@
       "url": "https://arxiv.org/abs/2607.05391"
     },
     {
+      "id": "long-horizon-terminal-bench-testing-the-limits-of-agents-on-long-horizon-terminal-tasks-with",
+      "manifest_path": "manifests/resources/long-horizon-terminal-bench-testing-the-limits-of-agents-on-long-horizon-terminal-tasks-with.json",
+      "note_path": "notes/papers/long-horizon-terminal-bench-testing-the-limits-of-agents-on-long-horizon-terminal-tasks-with.md",
+      "readme_line": 436,
+      "readme_path": "README.md",
+      "review_decision": "accept_for_local_kb",
+      "review_total_score": 10,
+      "section": "## 9 \u00b7 Agent-specific evaluation (trajectories, tool use, multi-turn, world state, multi-agent, localization)",
+      "source_seam": "Hugging Face Daily Papers / arXiv cs.AI RSS / new benchmark",
+      "title": "Long-Horizon-Terminal-Bench: Testing the Limits of Agents on Long-Horizon Terminal Tasks with Dense Reward-Based Grading",
+      "type": "paper / benchmark",
+      "url": "https://arxiv.org/abs/2607.08964"
+    },
+    {
       "id": "more-convincing-not-more-correct-self-play-reward-hacking-of-reference-free-llm-judges",
       "manifest_path": "manifests/resources/more-convincing-not-more-correct-self-play-reward-hacking-of-reference-free-llm-judges.json",
       "note_path": "notes/papers/more-convincing-not-more-correct-self-play-reward-hacking-of-reference-free-llm-judges.md",
@@ -421,6 +449,20 @@
       "title": "SkillCoach: Self-Evolving Rubrics for Evaluating and Enhancing Agentic Skill-Use",
       "type": "paper",
       "url": "https://arxiv.org/abs/2607.01874"
+    },
+    {
+      "id": "slbench-evaluating-how-llm-agents-follow-logical-relations-in-skills",
+      "manifest_path": "manifests/resources/slbench-evaluating-how-llm-agents-follow-logical-relations-in-skills.json",
+      "note_path": "notes/papers/slbench-evaluating-how-llm-agents-follow-logical-relations-in-skills.md",
+      "readme_line": 473,
+      "readme_path": "README.md",
+      "review_decision": "accept_for_local_kb",
+      "review_total_score": 10,
+      "section": "## 10 \u00b7 Safety / adversarial evaluation (prompt injection, jailbreaks, action-authorization, benchmark auditing)",
+      "source_seam": "arXiv cs.CR/cs.SE RSS / new benchmark / agent-skill safety",
+      "title": "SLBench: Evaluating How LLM Agents Follow Logical Relations in Skills",
+      "type": "paper / benchmark / safety evaluation",
+      "url": "https://arxiv.org/abs/2607.09016"
     },
     {
       "id": "swe-together-evaluating-coding-agents-in-interactive-user-sessions",

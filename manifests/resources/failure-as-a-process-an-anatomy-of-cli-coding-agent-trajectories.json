@@ -1,0 +1,59 @@
+{
+  "author": "Xiangxin Zhao, Han Li, Shuaiting Li, Tianyi Zhao, Earl T. Barr, Federica Sarro, He Ye",
+  "id": "failure-as-a-process-an-anatomy-of-cli-coding-agent-trajectories",
+  "note": {
+    "path": "notes/papers/failure-as-a-process-an-anatomy-of-cli-coding-agent-trajectories.md"
+  },
+  "readme": {
+    "entry": "- **[Failure as a Process: An Anatomy of CLI Coding Agent Trajectories](https://arxiv.org/abs/2607.09510)** \u2014 Xiangxin Zhao, Han Li, Shuaiting Li, Tianyi Zhao, Earl T. Barr, Federica Sarro, He Ye \u2014 <https://arxiv.org/abs/2607.09510> \u00b7 *paper / empirical trajectory study* \u2014 Analyzes failure onset, lock-in, observability, and recovery across 1,794 manually annotated CLI-agent trajectories containing more than 63,000 execution steps. \ud83c\udd95",
+    "line": 437,
+    "path": "README.md"
+  },
+  "review": {
+    "decision": "accept_for_local_kb",
+    "hard_failures": [],
+    "reviewed_at_utc": "2026-07-14T02:31:55Z",
+    "scores": {
+      "factuality": {
+        "reason": "structured evidence plus fetched source snapshot",
+        "score": 2
+      },
+      "kb_fit": {
+        "reason": "matches agent/eval KB scope",
+        "score": 2
+      },
+      "quality": {
+        "reason": "concrete eval artifacts or methodology signals present",
+        "score": 1
+      },
+      "recency": {
+        "reason": "evidence indicates 2025-2026 or actively updated source",
+        "score": 2
+      },
+      "source_authority": {
+        "reason": "primary repo or lab/source page",
+        "score": 2
+      }
+    },
+    "total_score": 9,
+    "url_check": {
+      "detail": "HEAD:200",
+      "ok": true
+    }
+  },
+  "schema": "awesome_evals.resource_manifest.v1",
+  "section": "## 9 \u00b7 Agent-specific evaluation (trajectories, tool use, multi-turn, world state, multi-agent, localization)",
+  "source_seam": "arXiv cs.SE/cs.AI RSS / trajectory-analysis paper",
+  "title": "Failure as a Process: An Anatomy of CLI Coding Agent Trajectories",
+  "type": "paper / empirical trajectory study",
+  "url": "https://arxiv.org/abs/2607.09510",
+  "worker": {
+    "candidate_reason": "It supplies an unusually large human-audited trajectory dataset and a temporal failure framework showing why outcome-only success rates miss early decisive errors, unrecoverable execution, and fabricated success.",
+    "evidence": "Primary arXiv text and full Hugging Face markdown were retrieved. The study collected 3,843 Terminal-Bench trajectories from seven models across OpenHands, MiniSWE, and Terminus2, retained 1,794 complete valid runs, and manually analyzed over 63,000 steps. Among 1,184 failed runs, epistemic triggers account for 57.9% and false premises for 30.7%; 82% continue spending steps after recovery is impossible, and fabricated success appears in 26% of failed trajectories. Every failure label was human-verified, with Cohen's kappa 0.83 for root causes and weighted kappa at least 0.94 for temporal markers.",
+    "summary": "Analyzes failure onset, lock-in, observability, and recovery across 1,794 manually annotated CLI-agent trajectories containing more than 63,000 execution steps.",
+    "url_check": {
+      "detail": "200",
+      "ok": true
+    }
+  }
+}

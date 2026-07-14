@@ -1,0 +1,59 @@
+{
+  "author": "Xuan Chen, Chengpeng Wang, Lu Yan, Xiangyu Zhang",
+  "id": "slbench-evaluating-how-llm-agents-follow-logical-relations-in-skills",
+  "note": {
+    "path": "notes/papers/slbench-evaluating-how-llm-agents-follow-logical-relations-in-skills.md"
+  },
+  "readme": {
+    "entry": "- **[SLBench: Evaluating How LLM Agents Follow Logical Relations in Skills](https://arxiv.org/abs/2607.09016)** \u2014 Xuan Chen, Chengpeng Wang, Lu Yan, Xiangyu Zhang \u2014 <https://arxiv.org/abs/2607.09016> \u00b7 *paper / benchmark / safety evaluation* \u2014 Compiles logical relations from public agent skills into 86 human-audited executable cases with artifact-first grading for unsafe gates, constraints, fallbacks, and cleanup behavior. \ud83c\udd95",
+    "line": 473,
+    "path": "README.md"
+  },
+  "review": {
+    "decision": "accept_for_local_kb",
+    "hard_failures": [],
+    "reviewed_at_utc": "2026-07-14T02:31:54Z",
+    "scores": {
+      "factuality": {
+        "reason": "structured evidence plus fetched source snapshot",
+        "score": 2
+      },
+      "kb_fit": {
+        "reason": "matches agent/eval KB scope",
+        "score": 2
+      },
+      "quality": {
+        "reason": "concrete eval artifacts or methodology signals present",
+        "score": 2
+      },
+      "recency": {
+        "reason": "evidence indicates 2025-2026 or actively updated source",
+        "score": 2
+      },
+      "source_authority": {
+        "reason": "primary repo or lab/source page",
+        "score": 2
+      }
+    },
+    "total_score": 10,
+    "url_check": {
+      "detail": "HEAD:200",
+      "ok": true
+    }
+  },
+  "schema": "awesome_evals.resource_manifest.v1",
+  "section": "## 10 \u00b7 Safety / adversarial evaluation (prompt injection, jailbreaks, action-authorization, benchmark auditing)",
+  "source_seam": "arXiv cs.CR/cs.SE RSS / new benchmark / agent-skill safety",
+  "title": "SLBench: Evaluating How LLM Agents Follow Logical Relations in Skills",
+  "type": "paper / benchmark / safety evaluation",
+  "url": "https://arxiv.org/abs/2607.09016",
+  "worker": {
+    "candidate_reason": "It turns natural-language skill dependencies into reproducible safety tests, evaluates real Codex and Claude Code configurations, and demonstrates both high violation rates and a concrete inference-time mitigation.",
+    "evidence": "Primary arXiv text and full Hugging Face markdown were retrieved. SkillLogic sampled 5,224 public skills, materialized 4,500, found valid relations in 3,751, and constructed 86 audited local cases (39 controls, 47 violations) covering eight relation types. The grader checks durable artifacts, command traces, and final repository state rather than claims in the response. Codex and Claude Code were tested across six backbones, with unsafe rates up to 70%; the relation-aware SLGuard scaffold reduced targeted violations by 63%. The authors note the final benchmark is a curated executable subset, not a uniform taxonomy sample.",
+    "summary": "Compiles logical relations from public agent skills into 86 human-audited executable cases with artifact-first grading for unsafe gates, constraints, fallbacks, and cleanup behavior.",
+    "url_check": {
+      "detail": "200",
+      "ok": true
+    }
+  }
+}
