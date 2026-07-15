@@ -1,6 +1,6 @@
 {
-  "generated_at_utc": "2026-07-14T02:31:55Z",
-  "resource_count": 41,
+  "generated_at_utc": "2026-07-15T02:39:49Z",
+  "resource_count": 43,
   "resources": [
     {
       "id": "agenticdatabench-a-comprehensive-benchmark-for-data-agents",
@@ -353,6 +353,20 @@
       "url": "https://arxiv.org/abs/2607.08964"
     },
     {
+      "id": "more-compute-more-capability-why-ai-agent-evaluations-need-to-account-for-test-time-compute",
+      "manifest_path": "manifests/resources/more-compute-more-capability-why-ai-agent-evaluations-need-to-account-for-test-time-compute.json",
+      "note_path": "notes/articles/more-compute-more-capability-why-ai-agent-evaluations-need-to-account-for-test-time-compute.md",
+      "readme_line": 272,
+      "readme_path": "README.md",
+      "review_decision": "accept_for_local_kb",
+      "review_total_score": 9,
+      "section": "## 6 \u00b7 Benchmark vs. eval (and benchmark integrity: contamination, saturation, label errors, leaderboard gaming)",
+      "source_seam": "government and company evaluation research blogs",
+      "title": "More compute, more capability: Why AI agent evaluations need to account for test-time compute",
+      "type": "empirical research report",
+      "url": "https://www.aisi.gov.uk/blog/more-compute-more-capability-why-ai-agent-evals-need-to-account-for-test-time-compute"
+    },
+    {
       "id": "more-convincing-not-more-correct-self-play-reward-hacking-of-reference-free-llm-judges",
       "manifest_path": "manifests/resources/more-convincing-not-more-correct-self-play-reward-hacking-of-reference-free-llm-judges.json",
       "note_path": "notes/papers/more-convincing-not-more-correct-self-play-reward-hacking-of-reference-free-llm-judges.md",
@@ -407,6 +421,20 @@
       "title": "PACE: A Proxy for Agentic Capability Evaluation",
       "type": "paper/method",
       "url": "https://arxiv.org/abs/2607.02032"
+    },
+    {
+      "id": "rethinking-the-evaluation-of-harness-evolution-for-agents",
+      "manifest_path": "manifests/resources/rethinking-the-evaluation-of-harness-evolution-for-agents.json",
+      "note_path": "notes/papers/rethinking-the-evaluation-of-harness-evolution-for-agents.md",
+      "readme_line": 273,
+      "readme_path": "README.md",
+      "review_decision": "accept_for_local_kb",
+      "review_total_score": 10,
+      "section": "## 6 \u00b7 Benchmark vs. eval (and benchmark integrity: contamination, saturation, label errors, leaderboard gaming)",
+      "source_seam": "arXiv recent papers and agent-evaluation benchmark research",
+      "title": "Rethinking the Evaluation of Harness Evolution for Agents",
+      "type": "research paper and reproducibility code",
+      "url": "https://arxiv.org/abs/2607.12227"
     },
     {
       "id": "rubench-a-repository-level-agentic-coding-benchmark-with-natively-authored-russian-task-spec",

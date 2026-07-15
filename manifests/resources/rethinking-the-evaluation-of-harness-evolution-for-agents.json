@@ -1,0 +1,59 @@
+{
+  "author": "Yike Wang, Huaisheng Zhu, Zhengyu Hu, Yige Yuan, Zhengyu Chen, Shakti Senthil, Hannaneh Hajishirzi, Yulia Tsvetkov, Pradeep Dasigi, Teng Xiao",
+  "id": "rethinking-the-evaluation-of-harness-evolution-for-agents",
+  "note": {
+    "path": "notes/papers/rethinking-the-evaluation-of-harness-evolution-for-agents.md"
+  },
+  "readme": {
+    "entry": "- **[Rethinking the Evaluation of Harness Evolution for Agents](https://arxiv.org/abs/2607.12227)** \u2014 Yike Wang, Huaisheng Zhu, Zhengyu Hu, Yige Yuan, Zhengyu Chen, Shakti Senthil, Hannaneh Hajishirzi, Yulia Tsvetkov, Pradeep Dasigi, Teng Xiao \u2014 <https://arxiv.org/abs/2607.12227> \u00b7 *research paper and reproducibility code* \u2014 A matched-budget Terminal-Bench study finds that evolved agent harnesses do not consistently outperform simpler test-time scaling or generalize reliably to held-out tasks. \ud83c\udd95",
+    "line": 273,
+    "path": "README.md"
+  },
+  "review": {
+    "decision": "accept_for_local_kb",
+    "hard_failures": [],
+    "reviewed_at_utc": "2026-07-15T02:39:47Z",
+    "scores": {
+      "factuality": {
+        "reason": "structured evidence plus fetched source snapshot",
+        "score": 2
+      },
+      "kb_fit": {
+        "reason": "matches agent/eval KB scope",
+        "score": 2
+      },
+      "quality": {
+        "reason": "concrete eval artifacts or methodology signals present",
+        "score": 2
+      },
+      "recency": {
+        "reason": "evidence indicates 2025-2026 or actively updated source",
+        "score": 2
+      },
+      "source_authority": {
+        "reason": "primary repo or lab/source page",
+        "score": 2
+      }
+    },
+    "total_score": 10,
+    "url_check": {
+      "detail": "HEAD:200",
+      "ok": true
+    }
+  },
+  "schema": "awesome_evals.resource_manifest.v1",
+  "section": "## 6 \u00b7 Benchmark vs. eval (and benchmark integrity: contamination, saturation, label errors, leaderboard gaming)",
+  "source_seam": "arXiv recent papers and agent-evaluation benchmark research",
+  "title": "Rethinking the Evaluation of Harness Evolution for Agents",
+  "type": "research paper and reproducibility code",
+  "url": "https://arxiv.org/abs/2607.12227",
+  "worker": {
+    "candidate_reason": "It directly audits a fast-growing evaluation claim with held-out tasks, matched feedback and inference budgets, frontier models, multiple search baselines, and a public repository containing the evaluation split, scripts, configurations, and outputs.",
+    "evidence": "The paper compares parallel sampling, sequential refinement, harness evolution, and harness scaling on held-out Terminal-Bench 2.1 tasks using GPT-5.4 and Claude Opus 4.6 under matched feedback and inference budgets; its central result is that harness evolution does not consistently beat simple test-time scaling and shows limited held-out generalization. Code and experiment assets are published at https://github.com/rethinking-harness-evolution/code.",
+    "summary": "A matched-budget Terminal-Bench study finds that evolved agent harnesses do not consistently outperform simpler test-time scaling or generalize reliably to held-out tasks.",
+    "url_check": {
+      "detail": "200",
+      "ok": true
+    }
+  }
+}
