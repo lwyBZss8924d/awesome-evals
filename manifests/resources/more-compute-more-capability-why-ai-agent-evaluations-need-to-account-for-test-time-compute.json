@@ -1,0 +1,59 @@
+{
+  "author": "UK AI Security Institute, Science of Evaluations team",
+  "id": "more-compute-more-capability-why-ai-agent-evaluations-need-to-account-for-test-time-compute",
+  "note": {
+    "path": "notes/articles/more-compute-more-capability-why-ai-agent-evaluations-need-to-account-for-test-time-compute.md"
+  },
+  "readme": {
+    "entry": "- **[More compute, more capability: Why AI agent evaluations need to account for test-time compute](https://www.aisi.gov.uk/blog/more-compute-more-capability-why-ai-agent-evals-need-to-account-for-test-time-compute)** \u2014 UK AI Security Institute, Science of Evaluations team \u2014 <https://www.aisi.gov.uk/blog/more-compute-more-capability-why-ai-agent-evals-need-to-account-for-test-time-compute> \u00b7 *empirical research report* \u2014 UK AISI shows that agent capability is a curve over test-time compute: raising budgets from 1M to 10M tokens improved benchmark performance by roughly 22\u201325%. \ud83c\udd95",
+    "line": 272,
+    "path": "README.md"
+  },
+  "review": {
+    "decision": "accept_for_local_kb",
+    "hard_failures": [],
+    "reviewed_at_utc": "2026-07-15T02:39:46Z",
+    "scores": {
+      "factuality": {
+        "reason": "structured evidence plus fetched source snapshot",
+        "score": 2
+      },
+      "kb_fit": {
+        "reason": "matches agent/eval KB scope",
+        "score": 2
+      },
+      "quality": {
+        "reason": "concrete eval artifacts or methodology signals present",
+        "score": 2
+      },
+      "recency": {
+        "reason": "evidence indicates 2025-2026 or actively updated source",
+        "score": 2
+      },
+      "source_authority": {
+        "reason": "non-primary or less established source",
+        "score": 1
+      }
+    },
+    "total_score": 9,
+    "url_check": {
+      "detail": "HEAD:200",
+      "ok": true
+    }
+  },
+  "schema": "awesome_evals.resource_manifest.v1",
+  "section": "## 6 \u00b7 Benchmark vs. eval (and benchmark integrity: contamination, saturation, label errors, leaderboard gaming)",
+  "source_seam": "government and company evaluation research blogs",
+  "title": "More compute, more capability: Why AI agent evaluations need to account for test-time compute",
+  "type": "empirical research report",
+  "url": "https://www.aisi.gov.uk/blog/more-compute-more-capability-why-ai-agent-evals-need-to-account-for-test-time-compute",
+  "worker": {
+    "candidate_reason": "The study reports multi-benchmark token-budget sweeps, task-level reliability and efficiency analysis, and human-time-horizon comparisons, directly showing why fixed-budget agent scores can be censored lower bounds.",
+    "evidence": "About 8% of the cyber tasks were solved only at budgets of at least 10M tokens, some up to 50M; moving from 1M to 10M improved TerminalBench 2.0 and SWE-Bench Pro performance by about 25% and academic or math performance by about 22%, while the horizon analysis covered 211 METR software tasks and 78 AISI cyber tasks.",
+    "summary": "UK AISI shows that agent capability is a curve over test-time compute: raising budgets from 1M to 10M tokens improved benchmark performance by roughly 22\u201325%.",
+    "url_check": {
+      "detail": "200",
+      "ok": true
+    }
+  }
+}
