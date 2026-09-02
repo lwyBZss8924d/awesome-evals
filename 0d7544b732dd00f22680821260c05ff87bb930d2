@@ -1,0 +1,27 @@
+{
+  "schema_version": 1,
+  "type": "awesome_evals_fork_pr_merge_pouw",
+  "generated_at_utc": "2026-09-02T04:05:21Z",
+  "business_status": "complete",
+  "repository": "lwyBZss8924d/awesome-evals",
+  "pull_request": {
+    "number": 19,
+    "url": "https://github.com/lwyBZss8924d/awesome-evals/pull/19",
+    "state": "MERGED"
+  },
+  "merge_commit": "0d7544b732dd00f22680821260c05ff87bb930d2",
+  "reviewed_head": "fa4713b242ef9c7c60967fcc43c636078b25b47f",
+  "reviewed_head_is_ancestor": true,
+  "recovered_resource_count": 3,
+  "source_policy": {
+    "fork_push_only": true,
+    "upstream_pull_request_opened": false,
+    "upstream_push_disabled": true
+  },
+  "validation": {
+    "pull_request_merge_state_before": "CLEAN",
+    "pull_request_mergeable_before": "MERGEABLE",
+    "remote_main_contains_reviewed_head": true
+  },
+  "scheduler_status": "PAUSED"
+}
