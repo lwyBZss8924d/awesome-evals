@@ -1,0 +1,59 @@
+{
+  "author": "Hamel Husain",
+  "id": "it-s-hard-to-eval-is-a-product-smell",
+  "note": {
+    "path": "notes/articles/it-s-hard-to-eval-is-a-product-smell.md"
+  },
+  "readme": {
+    "entry": "- **[It\u2019s Hard to Eval Is a Product Smell](https://hamel.dev/blog/posts/eval-smell)** \u2014 Hamel Husain \u2014 <https://hamel.dev/blog/posts/eval-smell> \u00b7 *practitioner essay with worked product cases* \u2014 Three worked product redesigns show how provenance, trusted anchors, progressive disclosure, and accept/edit/reject units turn opaque AI artifacts into user-verifiable\u2014and therefore evaluable\u2014outputs. \ud83c\udd95",
+    "line": 140,
+    "path": "README.md"
+  },
+  "review": {
+    "decision": "accept_for_local_kb",
+    "hard_failures": [],
+    "reviewed_at_utc": "2026-07-16T02:39:15Z",
+    "scores": {
+      "factuality": {
+        "reason": "structured evidence plus fetched source snapshot",
+        "score": 2
+      },
+      "kb_fit": {
+        "reason": "matches agent/eval KB scope",
+        "score": 2
+      },
+      "quality": {
+        "reason": "concrete eval artifacts or methodology signals present",
+        "score": 2
+      },
+      "recency": {
+        "reason": "evidence indicates 2025-2026 or actively updated source",
+        "score": 2
+      },
+      "source_authority": {
+        "reason": "non-primary or less established source",
+        "score": 1
+      }
+    },
+    "total_score": 9,
+    "url_check": {
+      "detail": "HEAD:200",
+      "ok": true
+    }
+  },
+  "schema": "awesome_evals.resource_manifest.v1",
+  "section": "## 4 \u00b7 Observability & the output / eval space (the surfaces you can grade)",
+  "source_seam": "known author / practitioner blog",
+  "title": "It\u2019s Hard to Eval Is a Product Smell",
+  "type": "practitioner essay with worked product cases",
+  "url": "https://hamel.dev/blog/posts/eval-smell",
+  "worker": {
+    "candidate_reason": "Hamel Husain grounds the product-design-to-evalability link in three concrete workflows\u2014a data agent, curriculum builder, and medical-report system\u2014and supplies reusable interface patterns for making model work checkable rather than merely scoring final prose.",
+    "evidence": "The June 29, 2026 source describes three redesigns and four diagnostic questions: identify what users can check, choose trusted comparison anchors, expose expert heuristics, and decompose outputs into accept/edit/reject units; its medical workflow links contradictions and open questions back to page-level evidence before report generation.",
+    "summary": "Three worked product redesigns show how provenance, trusted anchors, progressive disclosure, and accept/edit/reject units turn opaque AI artifacts into user-verifiable\u2014and therefore evaluable\u2014outputs.",
+    "url_check": {
+      "detail": "200",
+      "ok": true
+    }
+  }
+}

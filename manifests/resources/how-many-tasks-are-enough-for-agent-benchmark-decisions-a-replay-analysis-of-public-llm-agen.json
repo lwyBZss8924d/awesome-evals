@@ -1,0 +1,59 @@
+{
+  "author": "Wei-Jung Huang",
+  "id": "how-many-tasks-are-enough-for-agent-benchmark-decisions-a-replay-analysis-of-public-llm-agen",
+  "note": {
+    "path": "notes/papers/how-many-tasks-are-enough-for-agent-benchmark-decisions-a-replay-analysis-of-public-llm-agen.md"
+  },
+  "readme": {
+    "entry": "- **[How Many Tasks Are Enough for Agent Benchmark Decisions? A Replay Analysis of Public LLM Agent Benchmarks](https://arxiv.org/abs/2607.12338)** \u2014 Wei-Jung Huang \u2014 <https://arxiv.org/abs/2607.12338> \u00b7 *research paper with reproducibility package* \u2014 Replay analysis over SWE-bench, AppWorld, and \u03c4-bench shows that partial-eval sufficiency spans 15%\u201390% (or fails by 95%); task fractions are meaningful only with decision-error, coverage, threshold, and unresolved-comparison rules. \ud83c\udd95",
+    "line": 287,
+    "path": "README.md"
+  },
+  "review": {
+    "decision": "accept_for_local_kb",
+    "hard_failures": [],
+    "reviewed_at_utc": "2026-07-16T02:39:17Z",
+    "scores": {
+      "factuality": {
+        "reason": "structured evidence plus fetched source snapshot",
+        "score": 2
+      },
+      "kb_fit": {
+        "reason": "matches agent/eval KB scope",
+        "score": 2
+      },
+      "quality": {
+        "reason": "concrete eval artifacts or methodology signals present",
+        "score": 2
+      },
+      "recency": {
+        "reason": "evidence indicates 2025-2026 or actively updated source",
+        "score": 2
+      },
+      "source_authority": {
+        "reason": "primary repo or lab/source page",
+        "score": 2
+      }
+    },
+    "total_score": 10,
+    "url_check": {
+      "detail": "HEAD:200",
+      "ok": true
+    }
+  },
+  "schema": "awesome_evals.resource_manifest.v1",
+  "section": "## 6 \u00b7 Benchmark vs. eval (and benchmark integrity: contamination, saturation, label errors, leaderboard gaming)",
+  "source_seam": "recent arXiv agent-evaluation methodology; canonicalized from discovery feeds",
+  "title": "How Many Tasks Are Enough for Agent Benchmark Decisions? A Replay Analysis of Public LLM Agent Benchmarks",
+  "type": "research paper with reproducibility package",
+  "url": "https://arxiv.org/abs/2607.12338",
+  "worker": {
+    "candidate_reason": "This new quantitative methodology turns partial benchmark evaluation into an explicit decision problem, tests it on public task-level records, reports sharp cross-benchmark variation and misleading cheap-first behavior, and ships a reproducibility repository with scripts, manifests, schemas, fixed seeds, and derived tables.",
+    "evidence": "The July 14, 2026 paper replays SWE-bench Lite/Verified, AppWorld, and \u03c4-bench and finds sufficient budgets ranging from 15% to 90%, with no sufficient budget by 95% for SWE-bench Lite under the primary rule. It also shows that cheap-first \u03c4-bench at 25% can use only 11.51% of cost while failing coverage completely, and that low decision error can coexist with 93.64% unresolved comparisons. The public MIT-licensed repository provides the replay package.",
+    "summary": "Replay analysis over SWE-bench, AppWorld, and \u03c4-bench shows that partial-eval sufficiency spans 15%\u201390% (or fails by 95%); task fractions are meaningful only with decision-error, coverage, threshold, and unresolved-comparison rules.",
+    "url_check": {
+      "detail": "200",
+      "ok": true
+    }
+  }
+}

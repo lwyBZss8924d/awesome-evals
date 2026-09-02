@@ -1,6 +1,6 @@
 {
-  "generated_at_utc": "2026-07-15T02:39:49Z",
-  "resource_count": 43,
+  "generated_at_utc": "2026-09-02T04:03:22Z",
+  "resource_count": 46,
   "resources": [
     {
       "id": "agenticdatabench-a-comprehensive-benchmark-for-data-agents",
@@ -199,6 +199,20 @@
       "url": "https://arxiv.org/abs/2604.23781v2"
     },
     {
+      "id": "continually-improving-our-agent-harness",
+      "manifest_path": "manifests/resources/continually-improving-our-agent-harness.json",
+      "note_path": "notes/articles/continually-improving-our-agent-harness.md",
+      "readme_line": 123,
+      "readme_path": "README.md",
+      "review_decision": "accept_for_local_kb",
+      "review_total_score": 8,
+      "section": "## 3 \u00b7 The model / harness / skill decomposition",
+      "source_seam": "company engineering blog; eval insight inside a general agent-building post",
+      "title": "Continually improving our agent harness",
+      "type": "production engineering case study",
+      "url": "https://cursor.com/blog/continually-improving-agent-harness"
+    },
+    {
       "id": "do-automated-evals-work",
       "manifest_path": "manifests/resources/do-automated-evals-work.json",
       "note_path": "notes/articles/do-automated-evals-work.md",
@@ -311,6 +325,20 @@
       "url": "https://arxiv.org/abs/2606.08960"
     },
     {
+      "id": "how-many-tasks-are-enough-for-agent-benchmark-decisions-a-replay-analysis-of-public-llm-agen",
+      "manifest_path": "manifests/resources/how-many-tasks-are-enough-for-agent-benchmark-decisions-a-replay-analysis-of-public-llm-agen.json",
+      "note_path": "notes/papers/how-many-tasks-are-enough-for-agent-benchmark-decisions-a-replay-analysis-of-public-llm-agen.md",
+      "readme_line": 287,
+      "readme_path": "README.md",
+      "review_decision": "accept_for_local_kb",
+      "review_total_score": 10,
+      "section": "## 6 \u00b7 Benchmark vs. eval (and benchmark integrity: contamination, saturation, label errors, leaderboard gaming)",
+      "source_seam": "recent arXiv agent-evaluation methodology; canonicalized from discovery feeds",
+      "title": "How Many Tasks Are Enough for Agent Benchmark Decisions? A Replay Analysis of Public LLM Agent Benchmarks",
+      "type": "research paper with reproducibility package",
+      "url": "https://arxiv.org/abs/2607.12338"
+    },
+    {
       "id": "ideas-have-genomes-benchmarking-scientific-lineage-reasoning-and-lineage-grounded-idea-gener",
       "manifest_path": "manifests/resources/ideas-have-genomes-benchmarking-scientific-lineage-reasoning-and-lineage-grounded-idea-gener.json",
       "note_path": "notes/papers/ideas-have-genomes-benchmarking-scientific-lineage-reasoning-and-lineage-grounded-idea-gener.md",
@@ -323,6 +351,20 @@
       "title": "Ideas Have Genomes: Benchmarking Scientific Lineage Reasoning and Lineage-Grounded Idea Generation",
       "type": "paper/benchmark/code",
       "url": "https://arxiv.org/abs/2607.08758"
+    },
+    {
+      "id": "it-s-hard-to-eval-is-a-product-smell",
+      "manifest_path": "manifests/resources/it-s-hard-to-eval-is-a-product-smell.json",
+      "note_path": "notes/articles/it-s-hard-to-eval-is-a-product-smell.md",
+      "readme_line": 140,
+      "readme_path": "README.md",
+      "review_decision": "accept_for_local_kb",
+      "review_total_score": 9,
+      "section": "## 4 \u00b7 Observability & the output / eval space (the surfaces you can grade)",
+      "source_seam": "known author / practitioner blog",
+      "title": "It\u2019s Hard to Eval Is a Product Smell",
+      "type": "practitioner essay with worked product cases",
+      "url": "https://hamel.dev/blog/posts/eval-smell"
     },
     {
       "id": "llm-as-a-verifier-a-general-purpose-verification-framework",

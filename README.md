@@ -11,7 +11,7 @@ Most "awesome" lists are link dumps. This one is **annotated and verified**: eve
 - **47 talks & podcasts transcribed and deep-noted** (verbatim + timestamps), and
 - **per-section gap audits** with adversarial verification.
 
-**443+ curated links · 149 deep reading notes** (see [`notes/`](notes/)). Machine-readable resource manifests live in [`manifests/resources.json`](manifests/resources.json) and [`manifests/resources/`](manifests/resources/). Markers: 🆕 = released/updated 2025–2026 · ⚠️ = caveat. Contributions welcome — see [CONTRIBUTING](CONTRIBUTING.md).
+**443+ curated links · 152 deep reading notes** (see [`notes/`](notes/)). Machine-readable resource manifests live in [`manifests/resources.json`](manifests/resources.json) and [`manifests/resources/`](manifests/resources/). Markers: 🆕 = released/updated 2025–2026 · ⚠️ = caveat. Contributions welcome — see [CONTRIBUTING](CONTRIBUTING.md).
 
 > 📘 **Playbook:** [**PATTERNS.md**](PATTERNS.md) — real, runnable code + worked examples for LLM-as-judge (aligned to humans), pass@k/pass^k, error analysis, trajectory & world-state grading, CI gating, verifiable rewards, and more.
 
@@ -120,6 +120,7 @@ Most "awesome" lists are link dumps. This one is **annotated and verified**: eve
 - **[Agent Harness Engineering](https://www.oreilly.com/radar/agent-harness-engineering/)** — Addy Osmani (O'Reilly Radar) — <https://www.oreilly.com/radar/agent-harness-engineering/> · *blog* — 'A decent model with a great harness beats a great model with a bad harness'; reframes agent failures as harness/config problems (traceable AGENTS.md rules). Names the converging harness primitives across coding agents. 🆕
 - **[What comes next with open models (weights / tools / harness decomposition)](https://www.interconnects.ai/p/the-next-phase-of-open-models)** — Nathan Lambert (Interconnects) — <https://www.interconnects.ai/p/the-next-phase-of-open-models> · *blog* — Lambert's written articulation (Mar 2026) of an AI system as weights + tools + harness — the written companion to the Turing Post interview already listed, with the explicit three-part decomposition. 🆕
 - **[SkillCoach: Self-Evolving Rubrics for Evaluating and Enhancing Agentic Skill-Use](https://arxiv.org/abs/2607.01874)** — Jiayin Zhu, Kelong Mao, Yudong Guo, Dengbo He et al. — <https://arxiv.org/abs/2607.01874> · *paper* — Agent-skill evaluation paper that derives process rubrics from rollouts and separates skill-use quality from final verifier success. 🆕
+- **[Continually improving our agent harness](https://cursor.com/blog/continually-improving-agent-harness)** — Cursor — <https://cursor.com/blog/continually-improving-agent-harness> · *production engineering case study* — Cursor’s production loop combines CursorBench with live A/B tests, code keep-rate, semantic user-satisfaction signals, and per-model tool-error baselines; a focused sprint cut unexpected tool-call errors by an order of magnitude. 🆕
 
 **Must-reads:** Lee (harness) · Brand (Quo vadis)
 
@@ -137,6 +138,7 @@ Most "awesome" lists are link dumps. This one is **annotated and verified**: eve
 - **[Inside the LLM Call: GenAI Observability with OpenTelemetry](https://opentelemetry.io/blog/2026/genai-observability/)** — OpenTelemetry (blog) — <https://opentelemetry.io/blog/2026/genai-observability/> · *blog* — Walkthrough of emitting and reading GenAI spans (token usage, finish reasons, tool calls) — concrete intro to the trace surface for practitioners not steeped in OTel. 🆕
 - **[W&B Weave — tracing & evaluation toolkit](https://docs.wandb.ai/weave)** — Weights & Biases — <https://docs.wandb.ai/weave> · *docs* — @weave.op trace trees (inputs/outputs/cost/latency) plus a scorer-based eval harness — a widely used surface for grading both traces and outputs. 🆕
 - **[Laminar — open-source observability for AI agents](https://laminar.sh/)** — Laminar — <https://laminar.sh/> · *tool* — OTel-native, agent-specific: transcript view, SQL-over-traces, and a rollout debugger — purpose-built for grading multi-step agent trajectories rather than single LLM calls. 🆕
+- **[It’s Hard to Eval Is a Product Smell](https://hamel.dev/blog/posts/eval-smell)** — Hamel Husain — <https://hamel.dev/blog/posts/eval-smell> · *practitioner essay with worked product cases* — Three worked product redesigns show how provenance, trusted anchors, progressive disclosure, and accept/edit/reject units turn opaque AI artifacts into user-verifiable—and therefore evaluable—outputs. 🆕
 
 **Must-reads:** Lee (eval infra) · Braintrust (three pillars)
 
@@ -282,6 +284,7 @@ Most "awesome" lists are link dumps. This one is **annotated and verified**: eve
 - **[RewardHackingAgents: Benchmarking Evaluation Integrity for LLM ML-Engineering Agents](https://arxiv.org/abs/2603.11337)** — Yonas Atinafu, Robin Cohen — <https://arxiv.org/abs/2603.11337> · *paper* — Treats evaluation integrity as a first-class benchmarked outcome instead of an assumption: two compromise vectors (evaluator tampering, train/test leakage) instrumented via patch tracking and runtime file-access logging; in natural agent runs evaluator-tampering attempts appear in ~50% of episodes, and evaluator locking eliminates them at a 25–31% median runtime overhead. 🆕
 - **[Benchmarking the Benchmarks: A Validity Audit of Tool-Calling Evaluation](https://arxiv.org/abs/2607.02577)** — Bhat, Vaghasiya, Mohsin, Aali — <https://arxiv.org/abs/2607.02577> · *paper (Jun/Jul 2026)* — Cross-benchmark validity audit of BFCL v4, τ²-Bench, LiveMCPBench, and MCP-Atlas across 496 expert-reviewed tasks. Key findings: "92 evaluator-human disagreements, corresponding to an 18.5% misalignment rate"; 23 repeated identical LiveMCPBench runs produce scores ranging from 57.9% to 76.8% — "a spread of 18.9 percentage points" large enough to flip leaderboard conclusions. Introduces Tool-Veritas and Harness Lab tooling for practitioners auditing their own benchmark choices. 🆕
 - **[Prediction: A Frontier Open Source LLM Will Be Released On 3rd December 2026](https://blog.doubleword.ai/frontier-os-llm)** — Jamie Dborin (Doubleword) — <https://blog.doubleword.ai/frontier-os-llm> · *blog* — Extrapolates the Artificial Analysis Intelligence Index across 18 constituent benchmarks to forecast the open-vs-closed capability gap; a naive fit of the headline index points to convergence by 3 Dec 2026, but the average per-benchmark lag holds steady at ~5 months — a worked cautionary case in reading trends off an aggregate leaderboard index rather than its components. 🆕
+- **[How Many Tasks Are Enough for Agent Benchmark Decisions? A Replay Analysis of Public LLM Agent Benchmarks](https://arxiv.org/abs/2607.12338)** — Wei-Jung Huang — <https://arxiv.org/abs/2607.12338> · *research paper with reproducibility package* — Replay analysis over SWE-bench, AppWorld, and τ-bench shows that partial-eval sufficiency spans 15%–90% (or fails by 95%); task fractions are meaningful only with decision-error, coverage, threshold, and unresolved-comparison rules. 🆕
 
 **Must-reads:** Press · Kapoor et al. · OpenAI (SWE-bench Verified) · Leaderboard Illusion
 
@@ -612,7 +615,7 @@ Most "awesome" lists are link dumps. This one is **annotated and verified**: eve
 
 ## Deep notes
 
-This repo ships **149 deep reading notes** in [`notes/`](notes/) — structured summaries with key points, **verbatim quotes**, and themes, for the highest-signal sources. Machine-readable resource links live in [`manifests/resources.json`](manifests/resources.json):
+This repo ships **152 deep reading notes** in [`notes/`](notes/) — structured summaries with key points, **verbatim quotes**, and themes, for the highest-signal sources. Machine-readable resource links live in [`manifests/resources.json`](manifests/resources.json):
 
 - [`notes/articles/`](notes/articles/) — blog posts & practitioner essays
 - [`notes/talks/`](notes/talks/) — 47 transcribed talks, podcasts & lectures (with `[mm:ss]` timestamps)
@@ -627,5 +630,4 @@ PRs welcome. Keep the bar high: **show your work** (real data/code/war-stories b
 [![CC0](https://licensebuttons.net/p/zero/1.0/88x31.png)](LICENSE)
 
 To the extent possible under law, [BenchFlow](https://benchflow.ai) and contributors have waived all copyright and related rights to this work (CC0 1.0). The linked resources remain under their respective licenses.
-
 
