@@ -1,0 +1,59 @@
+{
+  "author": "Cursor",
+  "id": "continually-improving-our-agent-harness",
+  "note": {
+    "path": "notes/articles/continually-improving-our-agent-harness.md"
+  },
+  "readme": {
+    "entry": "- **[Continually improving our agent harness](https://cursor.com/blog/continually-improving-agent-harness)** \u2014 Cursor \u2014 <https://cursor.com/blog/continually-improving-agent-harness> \u00b7 *production engineering case study* \u2014 Cursor\u2019s production loop combines CursorBench with live A/B tests, code keep-rate, semantic user-satisfaction signals, and per-model tool-error baselines; a focused sprint cut unexpected tool-call errors by an order of magnitude. \ud83c\udd95",
+    "line": 123,
+    "path": "README.md"
+  },
+  "review": {
+    "decision": "accept_for_local_kb",
+    "hard_failures": [],
+    "reviewed_at_utc": "2026-07-16T02:39:16Z",
+    "scores": {
+      "factuality": {
+        "reason": "structured evidence plus fetched source snapshot",
+        "score": 2
+      },
+      "kb_fit": {
+        "reason": "matches agent/eval KB scope",
+        "score": 2
+      },
+      "quality": {
+        "reason": "concrete eval artifacts or methodology signals present",
+        "score": 1
+      },
+      "recency": {
+        "reason": "evidence indicates 2025-2026 or actively updated source",
+        "score": 2
+      },
+      "source_authority": {
+        "reason": "non-primary or less established source",
+        "score": 1
+      }
+    },
+    "total_score": 8,
+    "url_check": {
+      "detail": "HEAD:200",
+      "ok": true
+    }
+  },
+  "schema": "awesome_evals.resource_manifest.v1",
+  "section": "## 3 \u00b7 The model / harness / skill decomposition",
+  "source_seam": "company engineering blog; eval insight inside a general agent-building post",
+  "title": "Continually improving our agent harness",
+  "type": "production engineering case study",
+  "url": "https://cursor.com/blog/continually-improving-agent-harness",
+  "worker": {
+    "candidate_reason": "The post exposes a concrete offline-to-online evaluation loop for a deployed coding agent, including a negative result that shelved a costlier summarizer, automated anomaly triage, and model-specific harness tuning\u2014high-signal evaluation evidence embedded inside a general agent-engineering post.",
+    "evidence": "The April 30, 2026 source pairs public benchmarks and CursorBench with production A/B tests, latency/token/tool/cache metrics, code keep-rate, LLM-classified follow-up satisfaction, and per-tool/per-model error baselines. It reports negligible quality gains from a more expensive summarizer and an order-of-magnitude reduction in unexpected tool-call errors after a focused sprint.",
+    "summary": "Cursor\u2019s production loop combines CursorBench with live A/B tests, code keep-rate, semantic user-satisfaction signals, and per-model tool-error baselines; a focused sprint cut unexpected tool-call errors by an order of magnitude.",
+    "url_check": {
+      "detail": "200",
+      "ok": true
+    }
+  }
+}
