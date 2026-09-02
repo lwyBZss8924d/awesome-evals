@@ -1,0 +1,50 @@
+{
+  "schema_version": 1,
+  "type": "awesome_evals_stranded_candidate_recovery_pouw",
+  "generated_at_utc": "2026-09-02T04:04:33Z",
+  "business_status": "complete",
+  "repository": "lwyBZss8924d/awesome-evals",
+  "branch": "kb/r1-recover-july16-20260902",
+  "commit": "fa4713b242ef9c7c60967fcc43c636078b25b47f",
+  "base_commit": "5ec0abd501ac17d0b2542ebce4d0ea841209e0c9",
+  "source_run_date": "2026-07-16",
+  "recovered_resources": [
+    {
+      "title": "It’s Hard to Eval Is a Product Smell",
+      "url": "https://hamel.dev/blog/posts/eval-smell",
+      "review_score": 9
+    },
+    {
+      "title": "Continually improving our agent harness",
+      "url": "https://cursor.com/blog/continually-improving-agent-harness",
+      "review_score": 8
+    },
+    {
+      "title": "How Many Tasks Are Enough for Agent Benchmark Decisions? A Replay Analysis of Public LLM Agent Benchmarks",
+      "url": "https://arxiv.org/abs/2607.12338",
+      "review_score": 10
+    }
+  ],
+  "public_evidence_repair": {
+    "legacy_note_drafts_initially_blocked": true,
+    "local_path_findings_removed": 11,
+    "published_evidence_shape": "summary_only"
+  },
+  "validation": {
+    "git_diff_check": "passed",
+    "kb_validation": "passed",
+    "accepted_count": 3,
+    "url_checks_passed": 3,
+    "public_safety": "passed",
+    "public_safety_scanned_files": 252,
+    "json_manifests": "passed",
+    "resource_manifest_count": 46,
+    "deep_reading_note_count": 152
+  },
+  "source_policy": {
+    "fork_push_only": true,
+    "upstream_pull_request_opened": false,
+    "upstream_push_disabled": true
+  },
+  "scheduler_status": "PAUSED"
+}
