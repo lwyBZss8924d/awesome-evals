@@ -1,0 +1,59 @@
+{
+  "author": "Nandi Subhrangshu et al.",
+  "id": "sop-bench-complex-industrial-sops-for-evaluating-llm-agents",
+  "note": {
+    "path": "notes/papers/sop-bench-complex-industrial-sops-for-evaluating-llm-agents.md"
+  },
+  "readme": {
+    "entry": "- **[SOP-Bench: Complex Industrial SOPs for Evaluating LLM Agents](https://www.amazon.science/publications/sop-bench-complex-industrial-sops-for-evaluating-llm-agents)** \u2014 Nandi Subhrangshu et al. \u2014 <https://www.amazon.science/publications/sop-bench-complex-industrial-sops-for-evaluating-llm-agents> \u00b7 *paper/benchmark/repo* \u2014 KDD 2026 benchmark with 2,000+ human-validated procedural tasks across 12 business domains, executable tools, and ground-truth completion outputs. \ud83c\udd95",
+    "line": 461,
+    "path": "README.md"
+  },
+  "review": {
+    "decision": "accept_for_local_kb",
+    "hard_failures": [],
+    "reviewed_at_utc": "2026-09-02T04:47:05Z",
+    "scores": {
+      "factuality": {
+        "reason": "structured evidence plus fetched source snapshot",
+        "score": 2
+      },
+      "kb_fit": {
+        "reason": "matches agent/eval KB scope",
+        "score": 2
+      },
+      "quality": {
+        "reason": "concrete eval artifacts or methodology signals present",
+        "score": 2
+      },
+      "recency": {
+        "reason": "evidence indicates 2025-2026 or actively updated source",
+        "score": 2
+      },
+      "source_authority": {
+        "reason": "non-primary or less established source",
+        "score": 1
+      }
+    },
+    "total_score": 9,
+    "url_check": {
+      "detail": "HEAD:200",
+      "ok": true
+    }
+  },
+  "schema": "awesome_evals.resource_manifest.v1",
+  "section": "## 9 \u00b7 Agent-specific evaluation (trajectories, tool use, multi-turn, world state, multi-agent, localization)",
+  "source_seam": "company research publication and benchmark repository",
+  "title": "SOP-Bench: Complex Industrial SOPs for Evaluating LLM Agents",
+  "type": "paper/benchmark/repo",
+  "url": "https://www.amazon.science/publications/sop-bench-complex-industrial-sops-for-evaluating-llm-agents",
+  "worker": {
+    "candidate_reason": "It turns real expert-authored SOPs into open, execution-scored agent tasks and directly tests tool orchestration, cross-domain robustness, and distractor sensitivity rather than relying on an LLM judge alone.",
+    "evidence": "The Amazon Science paper, companion article, public repository, and dataset describe more than 2,000 tasks derived from human expert SOPs in 12 domains; all generated artifacts were human-validated, agents execute domain tools against ground-truth outputs, and experiments span two agent architectures and 11 frontier models. Adding 20 plausible distractor tools nearly halved success, while the best model-agent pairing varied by domain, exposing both tool-selection fragility and the need to evaluate the full procedure.",
+    "summary": "KDD 2026 benchmark with 2,000+ human-validated procedural tasks across 12 business domains, executable tools, and ground-truth completion outputs.",
+    "url_check": {
+      "detail": "200",
+      "ok": true
+    }
+  }
+}

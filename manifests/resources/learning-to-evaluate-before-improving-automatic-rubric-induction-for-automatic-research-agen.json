@@ -1,0 +1,59 @@
+{
+  "author": "Xuehai Wang, Haowei Qin, Tongxin Liu, Junkai Li, Buqiang Xu, Jintian Zhang, Yijun Chen, Zirui Xue, and Shumin Deng",
+  "id": "learning-to-evaluate-before-improving-automatic-rubric-induction-for-automatic-research-agen",
+  "note": {
+    "path": "notes/papers/learning-to-evaluate-before-improving-automatic-rubric-induction-for-automatic-research-agen.md"
+  },
+  "readme": {
+    "entry": "- **[Learning to Evaluate Before Improving: Automatic Rubric Induction for Automatic Research Agents](https://arxiv.org/abs/2608.31076)** \u2014 Xuehai Wang, Haowei Qin, Tongxin Liu, Junkai Li, Buqiang Xu, Jintian Zhang, Yijun Chen, Zirui Xue, and Shumin Deng \u2014 <https://arxiv.org/abs/2608.31076> \u00b7 *paper/method/code* \u2014 AutoSciRub induces a literature- and data-grounded executable rubric before an open-ended research run, then verifies and revises criterion by criterion. \ud83c\udd95",
+    "line": 351,
+    "path": "README.md"
+  },
+  "review": {
+    "decision": "accept_for_local_kb",
+    "hard_failures": [],
+    "reviewed_at_utc": "2026-09-02T04:47:05Z",
+    "scores": {
+      "factuality": {
+        "reason": "structured evidence plus fetched source snapshot",
+        "score": 2
+      },
+      "kb_fit": {
+        "reason": "matches agent/eval KB scope",
+        "score": 2
+      },
+      "quality": {
+        "reason": "concrete eval artifacts or methodology signals present",
+        "score": 2
+      },
+      "recency": {
+        "reason": "evidence indicates 2025-2026 or actively updated source",
+        "score": 2
+      },
+      "source_authority": {
+        "reason": "primary repo or lab/source page",
+        "score": 2
+      }
+    },
+    "total_score": 10,
+    "url_check": {
+      "detail": "HEAD:200",
+      "ok": true
+    }
+  },
+  "schema": "awesome_evals.resource_manifest.v1",
+  "section": "## 8 \u00b7 LLM-as-judge & verifiers (alignment, biases, verifiable vs judgeable)",
+  "source_seam": "Hugging Face Daily Papers, canonical arXiv paper, and benchmark repository",
+  "title": "Learning to Evaluate Before Improving: Automatic Rubric Induction for Automatic Research Agents",
+  "type": "paper/method/code",
+  "url": "https://arxiv.org/abs/2608.31076",
+  "worker": {
+    "candidate_reason": "The method makes underspecified scientific success criteria explicit before execution and backs the idea with fixed-model, fixed-harness, cross-harness, and ablation comparisons rather than a single self-reported showcase.",
+    "evidence": "Across all 40 ResearchClawBench tasks, AutoSciRub improved three backbones under a fixed Codex harness by 2.38, 1.87, and 1.99 points and three harnesses under a fixed DeepSeek-V4-Flash backbone by 2.14, 3.11, and 3.60. On a random 20-task AstaBench subset it added 19.36, 12.61, and 18.38 points; an ablation rose from 17.25 without rubric guidance to 20.36 with the full method. The paper also reports scientific-core coverage declining from 3.35 to 3.07, so task-specific rubrics improved execution but did not reliably correct off-target scientific framing.",
+    "summary": "AutoSciRub induces a literature- and data-grounded executable rubric before an open-ended research run, then verifies and revises criterion by criterion.",
+    "url_check": {
+      "detail": "200",
+      "ok": true
+    }
+  }
+}

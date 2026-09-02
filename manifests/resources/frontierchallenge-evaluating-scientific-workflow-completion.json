@@ -1,0 +1,59 @@
+{
+  "author": "Apodex Team",
+  "id": "frontierchallenge-evaluating-scientific-workflow-completion",
+  "note": {
+    "path": "notes/papers/frontierchallenge-evaluating-scientific-workflow-completion.md"
+  },
+  "readme": {
+    "entry": "- **[FrontierChallenge: Evaluating Scientific Workflow Completion](https://arxiv.org/abs/2608.24979)** \u2014 Apodex Team \u2014 <https://arxiv.org/abs/2608.24979> \u00b7 *paper/benchmark/code* \u2014 A 97-task release of cross-domain scientific workflows grades complete, mutually consistent bundles of reports, code, tables, figures, and simulations. \ud83c\udd95",
+    "line": 462,
+    "path": "README.md"
+  },
+  "review": {
+    "decision": "accept_for_local_kb",
+    "hard_failures": [],
+    "reviewed_at_utc": "2026-09-02T04:47:05Z",
+    "scores": {
+      "factuality": {
+        "reason": "structured evidence plus fetched source snapshot",
+        "score": 2
+      },
+      "kb_fit": {
+        "reason": "matches agent/eval KB scope",
+        "score": 2
+      },
+      "quality": {
+        "reason": "concrete eval artifacts or methodology signals present",
+        "score": 2
+      },
+      "recency": {
+        "reason": "evidence indicates 2025-2026 or actively updated source",
+        "score": 2
+      },
+      "source_authority": {
+        "reason": "primary repo or lab/source page",
+        "score": 2
+      }
+    },
+    "total_score": 10,
+    "url_check": {
+      "detail": "HEAD:200",
+      "ok": true
+    }
+  },
+  "schema": "awesome_evals.resource_manifest.v1",
+  "section": "## 9 \u00b7 Agent-specific evaluation (trajectories, tool use, multi-turn, world state, multi-agent, localization)",
+  "source_seam": "Hugging Face Daily Papers and alphaXiv hot-paper discovery, grounded in arXiv text and repository docs",
+  "title": "FrontierChallenge: Evaluating Scientific Workflow Completion",
+  "type": "paper/benchmark/code",
+  "url": "https://arxiv.org/abs/2608.24979",
+  "worker": {
+    "candidate_reason": "Its all-deliverables completion gate and task-specific artifact checks expose the exact gap between plausible partial work and a genuinely finished workflow, including agents that confidently claim success after failing.",
+    "evidence": "The paper releases 97 of 300 workflows across six scientific domains and evaluates 12 frontier models under three scaffolds. Best pass rate was 20.6%; some domains reached average partial scores of 87.6 or 94.9 while full-pass rates remained 4% or 0%, and 75.5% of non-passing Claude Code trajectories still claimed completion. Graders inspect required files, numeric results, formats, code execution, and cross-artifact consistency; 77 tasks additionally repeat a model-based report-quality judgment three times, an important non-deterministic component to retain in review.",
+    "summary": "A 97-task release of cross-domain scientific workflows grades complete, mutually consistent bundles of reports, code, tables, figures, and simulations.",
+    "url_check": {
+      "detail": "200",
+      "ok": true
+    }
+  }
+}
