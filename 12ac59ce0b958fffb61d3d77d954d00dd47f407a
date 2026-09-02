@@ -1,0 +1,34 @@
+{
+  "schema_version": 1,
+  "type": "awesome_evals_upstream_sync_pouw",
+  "generated_at_utc": "2026-09-02T04:01:27Z",
+  "business_status": "complete",
+  "repository": "lwyBZss8924d/awesome-evals",
+  "branch": "kb/r1-upstream-sync-20260902",
+  "commit": "12ac59ce0b958fffb61d3d77d954d00dd47f407a",
+  "parents": [
+    "4fcefd72eede016a56740027bb8f934a9bc63453",
+    "1b8928b60a9d41cbab371610d741d39a3fd50860"
+  ],
+  "source_policy": {
+    "fork_push_only": true,
+    "origin": "https://github.com/lwyBZss8924d/awesome-evals.git",
+    "upstream": "https://github.com/benchflow-ai/awesome-evals.git",
+    "upstream_push_disabled": true
+  },
+  "preserved_fork_surfaces": [
+    "machine-readable resource manifests",
+    "149 deep reading notes",
+    "fork-only knowledge-base additions",
+    "GitHub Actions repository-owner guard"
+  ],
+  "validation": {
+    "git_diff_check": "passed",
+    "kb_validation": "passed",
+    "public_safety": "passed",
+    "public_safety_scanned_files": 246,
+    "json_manifests": "passed",
+    "workflow_yaml": "passed"
+  },
+  "scheduler_status": "PAUSED"
+}
