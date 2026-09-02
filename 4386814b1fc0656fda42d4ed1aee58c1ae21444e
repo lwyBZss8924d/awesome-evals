@@ -1,0 +1,34 @@
+{
+  "artifacts": {
+    "dispatcher_run_dir": "/Users/arthur/.codex/automations/awesome-evals-daily-dispatcher/runs/20260902T043255Z-apply",
+    "kb_validation": "/Users/arthur/.codex/automations/awesome-evals-daily-dispatcher/runs/20260902T043255Z-apply/kb-validation.json",
+    "promotion_plan": "/Users/arthur/.codex/automations/awesome-evals-daily-dispatcher/runs/20260902T043255Z-apply/promotion-plan.json",
+    "source_sync": "/Users/arthur/.codex/automations/awesome-evals-daily-dispatcher/runs/20260902T043255Z-apply/source-sync.json"
+  },
+  "commit": "4386814b1fc0656fda42d4ed1aee58c1ae21444e",
+  "generated_at_utc": "2026-09-02T04:47:08Z",
+  "schema": "pouw.git-note.v1",
+  "task": "Promote reviewed awesome-evals candidates into local KB",
+  "upstream_sync_summary": {
+    "changed_file_count": 0,
+    "changed_files": [],
+    "commit_count": 0,
+    "commit_range": "1b8928b60a9d41cbab371610d741d39a3fd50860..1b8928b60a9d41cbab371610d741d39a3fd50860",
+    "commits": [],
+    "detected_item_count": 0,
+    "detected_items": [],
+    "head_after_merge": "0d7544b732dd00f22680821260c05ff87bb930d2",
+    "merge_base": "1b8928b60a9d41cbab371610d741d39a3fd50860",
+    "origin_main_after": "0d7544b732dd00f22680821260c05ff87bb930d2",
+    "origin_main_before": "0d7544b732dd00f22680821260c05ff87bb930d2",
+    "performed": false,
+    "safety_relevant_paths": [],
+    "upstream_main_after": "1b8928b60a9d41cbab371610d741d39a3fd50860",
+    "upstream_main_before": "1b8928b60a9d41cbab371610d741d39a3fd50860"
+  },
+  "useful_work": [
+    "Applied only accept_for_local_kb review decisions.",
+    "Validated URL, duplicate, and diff gates before commit.",
+    "Preserved scan/review/promotion artifacts under the dispatcher run directory."
+  ]
+}
