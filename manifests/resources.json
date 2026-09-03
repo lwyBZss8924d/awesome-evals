@@ -1,6 +1,6 @@
 {
-  "generated_at_utc": "2026-09-02T04:47:06Z",
-  "resource_count": 49,
+  "generated_at_utc": "2026-09-03T04:40:47Z",
+  "resource_count": 52,
   "resources": [
     {
       "id": "agenticdatabench-a-comprehensive-benchmark-for-data-agents",
@@ -227,6 +227,20 @@
       "url": "https://parlance-labs.com/blog/posts/auto-evals.html"
     },
     {
+      "id": "earlyeval-cheaper-agent-evaluation-via-early-outcome-prediction",
+      "manifest_path": "manifests/resources/earlyeval-cheaper-agent-evaluation-via-early-outcome-prediction.json",
+      "note_path": "notes/papers/earlyeval-cheaper-agent-evaluation-via-early-outcome-prediction.md",
+      "readme_line": 244,
+      "readme_path": "README.md",
+      "review_decision": "accept_for_local_kb",
+      "review_total_score": 10,
+      "section": "5 \u00b7 Evaluation infrastructure (the eval stack: datasets, scorers, online/offline, tracing, CI)",
+      "source_seam": "new evaluation method paper via arXiv and Hugging Face Daily Papers",
+      "title": "EarlyEval: Cheaper Agent Evaluation via Early Outcome Prediction",
+      "type": "paper",
+      "url": "https://arxiv.org/abs/2609.02783"
+    },
+    {
       "id": "enterpriseclawbench-benchmarking-agents-from-real-workplace-sessions",
       "manifest_path": "manifests/resources/enterpriseclawbench-benchmarking-agents-from-real-workplace-sessions.json",
       "note_path": "notes/papers/enterpriseclawbench-benchmarking-agents-from-real-workplace-sessions.md",
@@ -367,6 +381,20 @@
       "url": "https://arxiv.org/abs/2607.08758"
     },
     {
+      "id": "incident-report-unsanctioned-agent-behaviour-during-cyber-testing",
+      "manifest_path": "manifests/resources/incident-report-unsanctioned-agent-behaviour-during-cyber-testing.json",
+      "note_path": "notes/articles/incident-report-unsanctioned-agent-behaviour-during-cyber-testing.md",
+      "readme_line": 503,
+      "readme_path": "README.md",
+      "review_decision": "accept_for_local_kb",
+      "review_total_score": 8,
+      "section": "10 \u00b7 Safety / adversarial evaluation (prompt injection, jailbreaks, action-authorization, benchmark auditing)",
+      "source_seam": "government evaluation incident report",
+      "title": "Incident Report: Unsanctioned Agent Behaviour During Cyber Testing",
+      "type": "incident report",
+      "url": "https://www.aisi.gov.uk/blog/incident-report-unsanctioned-agent-behaviour-during-cyber-testing"
+    },
+    {
       "id": "it-s-hard-to-eval-is-a-product-smell",
       "manifest_path": "manifests/resources/it-s-hard-to-eval-is-a-product-smell.json",
       "note_path": "notes/articles/it-s-hard-to-eval-is-a-product-smell.md",
@@ -491,6 +519,20 @@
       "title": "PACE: A Proxy for Agentic Capability Evaluation",
       "type": "paper/method",
       "url": "https://arxiv.org/abs/2607.02032"
+    },
+    {
+      "id": "patterns-and-problems-in-emerging-multiagent-systems",
+      "manifest_path": "manifests/resources/patterns-and-problems-in-emerging-multiagent-systems.json",
+      "note_path": "notes/articles/patterns-and-problems-in-emerging-multiagent-systems.md",
+      "readme_line": 464,
+      "readme_path": "README.md",
+      "review_decision": "accept_for_local_kb",
+      "review_total_score": 9,
+      "section": "9 \u00b7 Agent-specific evaluation (trajectories, tool use, multi-turn, world state, multi-agent, localization)",
+      "source_seam": "company research blog",
+      "title": "Patterns and Problems in Emerging Multiagent Systems",
+      "type": "research article",
+      "url": "https://www.anthropic.com/research/multiagent-systems"
     },
     {
       "id": "rethinking-the-evaluation-of-harness-evolution-for-agents",

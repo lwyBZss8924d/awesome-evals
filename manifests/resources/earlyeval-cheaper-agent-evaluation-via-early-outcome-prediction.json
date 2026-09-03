@@ -1,0 +1,59 @@
+{
+  "author": "Yuling Shi, Zhensu Sun, Junsen Dong, Chengcheng Wan, David Lo, Xiaodong Gu",
+  "id": "earlyeval-cheaper-agent-evaluation-via-early-outcome-prediction",
+  "note": {
+    "path": "notes/papers/earlyeval-cheaper-agent-evaluation-via-early-outcome-prediction.md"
+  },
+  "readme": {
+    "entry": "- **[EarlyEval: Cheaper Agent Evaluation via Early Outcome Prediction](https://arxiv.org/abs/2609.02783)** \u2014 Yuling Shi, Zhensu Sun, Junsen Dong, Chengcheng Wan, David Lo, Xiaodong Gu \u2014 <https://arxiv.org/abs/2609.02783> \u00b7 *paper* \u2014 EarlyEval predicts success or failure from intermediate agent trajectories and stops confidently decided runs, reducing within-task evaluation cost rather than only distilling the task set. \ud83c\udd95",
+    "line": 244,
+    "path": "README.md"
+  },
+  "review": {
+    "decision": "accept_for_local_kb",
+    "hard_failures": [],
+    "reviewed_at_utc": "2026-09-03T04:40:47Z",
+    "scores": {
+      "factuality": {
+        "reason": "structured evidence plus fetched source snapshot",
+        "score": 2
+      },
+      "kb_fit": {
+        "reason": "matches agent/eval KB scope",
+        "score": 2
+      },
+      "quality": {
+        "reason": "concrete eval artifacts or methodology signals present",
+        "score": 2
+      },
+      "recency": {
+        "reason": "evidence indicates 2025-2026 or actively updated source",
+        "score": 2
+      },
+      "source_authority": {
+        "reason": "primary repo or lab/source page",
+        "score": 2
+      }
+    },
+    "total_score": 10,
+    "url_check": {
+      "detail": "HEAD:200",
+      "ok": true
+    }
+  },
+  "schema": "awesome_evals.resource_manifest.v1",
+  "section": "5 \u00b7 Evaluation infrastructure (the eval stack: datasets, scorers, online/offline, tracing, CI)",
+  "source_seam": "new evaluation method paper via arXiv and Hugging Face Daily Papers",
+  "title": "EarlyEval: Cheaper Agent Evaluation via Early Outcome Prediction",
+  "type": "paper",
+  "url": "https://arxiv.org/abs/2609.02783",
+  "worker": {
+    "candidate_reason": "The paper evaluates a calibrated, leakage-controlled method across three agent benchmarks, reports accuracy and score-fidelity alongside token and step savings, and publishes a detailed code-only reproduction repository with its missing data artifacts disclosed.",
+    "evidence": "The paper uses paired LightGBM success and failure classifiers over behavioral, textual, and optional reference-solution features with calibrated stopping thresholds. Its evaluation covers 7,805 SWE-bench Verified trajectories from 16 base models, 6,757 TerminalBench trajectories from 37 agent configurations, and 7,116 Toolathlon trajectories from 22 base models; the abstract reports eliminating 13\u201326% of steps and up to 44.1% input and 29.4% output tokens at 89\u201397% prediction accuracy, with average resolve-rate changes of one to two percentage points. The linked repository publishes active experiment and reporting code but explicitly excludes raw trajectories and generated artifacts.",
+    "summary": "EarlyEval predicts success or failure from intermediate agent trajectories and stops confidently decided runs, reducing within-task evaluation cost rather than only distilling the task set.",
+    "url_check": {
+      "detail": "200",
+      "ok": true
+    }
+  }
+}
