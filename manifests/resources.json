@@ -1,6 +1,6 @@
 {
-  "generated_at_utc": "2026-09-03T04:40:47Z",
-  "resource_count": 52,
+  "generated_at_utc": "2026-09-05T03:48:16Z",
+  "resource_count": 55,
   "resources": [
     {
       "id": "agenticdatabench-a-comprehensive-benchmark-for-data-agents",
@@ -113,6 +113,20 @@
       "title": "Benchmark Test-Time Scaling of General LLM Agents (General AgentBench)",
       "type": "paper/benchmark/code",
       "url": "https://arxiv.org/abs/2602.18998"
+    },
+    {
+      "id": "benchmarking-llm-judges-for-mobile-agent-evaluation",
+      "manifest_path": "manifests/resources/benchmarking-llm-judges-for-mobile-agent-evaluation.json",
+      "note_path": "notes/papers/benchmarking-llm-judges-for-mobile-agent-evaluation.md",
+      "readme_line": 353,
+      "readme_path": "README.md",
+      "review_decision": "accept_for_local_kb",
+      "review_total_score": 10,
+      "section": "8 \u00b7 LLM-as-judge & verifiers (alignment, biases, verifiable vs judgeable)",
+      "source_seam": "alphaxiv-discovery / mobile-agent judge benchmarks",
+      "title": "Benchmarking LLM Judges for Mobile Agent Evaluation",
+      "type": "paper",
+      "url": "https://arxiv.org/abs/2608.11434"
     },
     {
       "id": "browsecomp-plus-a-more-fair-and-transparent-evaluation-benchmark-of-deep-research-agent",
@@ -365,6 +379,20 @@
       "title": "How Many Tasks Are Enough for Agent Benchmark Decisions? A Replay Analysis of Public LLM Agent Benchmarks",
       "type": "research paper with reproducibility package",
       "url": "https://arxiv.org/abs/2607.12338"
+    },
+    {
+      "id": "how-we-build-agent-environments-tasks",
+      "manifest_path": "manifests/resources/how-we-build-agent-environments-tasks.json",
+      "note_path": "notes/articles/how-we-build-agent-environments-tasks.md",
+      "readme_line": 314,
+      "readme_path": "README.md",
+      "review_decision": "accept_for_local_kb",
+      "review_total_score": 9,
+      "section": "7 \u00b7 Evals & RL environments (verifiers, reward design, difficulty calibration, lifecycle)",
+      "source_seam": "company engineering blogs / environment construction",
+      "title": "How We Build Agent Environments & Tasks",
+      "type": "article",
+      "url": "https://www.langchain.com/blog/building-agent-environments-and-tasks"
     },
     {
       "id": "ideas-have-genomes-benchmarking-scientific-lineage-reasoning-and-lineage-grounded-idea-gener",
@@ -631,6 +659,20 @@
       "title": "SWE-Together: Evaluating Coding Agents in Interactive User Sessions",
       "type": "paper/benchmark",
       "url": "https://arxiv.org/abs/2606.29957"
+    },
+    {
+      "id": "terminal-universe-turning-agent-trajectories-into-scalable-terminal-environments",
+      "manifest_path": "manifests/resources/terminal-universe-turning-agent-trajectories-into-scalable-terminal-environments.json",
+      "note_path": "notes/papers/terminal-universe-turning-agent-trajectories-into-scalable-terminal-environments.md",
+      "readme_line": 313,
+      "readme_path": "README.md",
+      "review_decision": "accept_for_local_kb",
+      "review_total_score": 10,
+      "section": "7 \u00b7 Evals & RL environments (verifiers, reward design, difficulty calibration, lifecycle)",
+      "source_seam": "Hugging Face Daily Papers / terminal environments",
+      "title": "Terminal-Universe: Turning Agent Trajectories into Scalable Terminal Environments",
+      "type": "paper",
+      "url": "https://arxiv.org/abs/2609.04148"
     },
     {
       "id": "toolprivacybench-benchmarking-purpose-bound-privacy-in-tool-using-llm-agents",

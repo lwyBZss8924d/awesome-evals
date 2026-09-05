@@ -1,0 +1,59 @@
+{
+  "author": "Ziqiang Wang et al.",
+  "id": "benchmarking-llm-judges-for-mobile-agent-evaluation",
+  "note": {
+    "path": "notes/papers/benchmarking-llm-judges-for-mobile-agent-evaluation.md"
+  },
+  "readme": {
+    "entry": "- **[Benchmarking LLM Judges for Mobile Agent Evaluation](https://arxiv.org/abs/2608.11434)** \u2014 Ziqiang Wang et al. \u2014 <https://arxiv.org/abs/2608.11434> \u00b7 *paper* \u2014 MobileJudgeBench evaluates judges on 931 human-annotated trajectories; sampled-screenshot baselines and backend-specific error analysis show why judge reliability must be measured before ranking agents or using judge rewards. \ud83c\udd95",
+    "line": 353,
+    "path": "README.md"
+  },
+  "review": {
+    "decision": "accept_for_local_kb",
+    "hard_failures": [],
+    "reviewed_at_utc": "2026-09-05T03:48:14Z",
+    "scores": {
+      "factuality": {
+        "reason": "structured evidence plus fetched source snapshot",
+        "score": 2
+      },
+      "kb_fit": {
+        "reason": "matches agent/eval KB scope",
+        "score": 2
+      },
+      "quality": {
+        "reason": "concrete eval artifacts or methodology signals present",
+        "score": 2
+      },
+      "recency": {
+        "reason": "evidence indicates 2025-2026 or actively updated source",
+        "score": 2
+      },
+      "source_authority": {
+        "reason": "primary repo or lab/source page",
+        "score": 2
+      }
+    },
+    "total_score": 10,
+    "url_check": {
+      "detail": "HEAD:200",
+      "ok": true
+    }
+  },
+  "schema": "awesome_evals.resource_manifest.v1",
+  "section": "8 \u00b7 LLM-as-judge & verifiers (alignment, biases, verifiable vs judgeable)",
+  "source_seam": "alphaxiv-discovery / mobile-agent judge benchmarks",
+  "title": "Benchmarking LLM Judges for Mobile Agent Evaluation",
+  "type": "paper",
+  "url": "https://arxiv.org/abs/2608.11434",
+  "worker": {
+    "candidate_reason": "Adds a mobile-specific meta-evaluation beyond the existing web-trajectory and judge entries: compares six judge methods against human labels, tests ranking fidelity, and connects false-positive/false-negative profiles to reward quality.",
+    "evidence": "Primary arXiv abstract and Sections 3\u20135 report 931 trajectories from six benchmarks, four agents and 68 apps, labeled independently by 2\u20134 annotators with 88.4% pairwise agreement. Section 5.1 compares six judge methods across five backends; a simple sampled-screenshot baseline is competitive with purpose-built methods. Section 5.2 links F1 and balanced accuracy to ranking and success-rate reliability. Its matched-accuracy training comparison is suggestive: the higher-precision judge wins under best-checkpoint selection but ties the other judge on the full set at the final checkpoint. Section 7 limits training evidence to AndroidWorld and one judge method; binary completion does not evaluate trajectory efficiency or partial progress.",
+    "summary": "MobileJudgeBench evaluates judges on 931 human-annotated trajectories; sampled-screenshot baselines and backend-specific error analysis show why judge reliability must be measured before ranking agents or using judge rewards.",
+    "url_check": {
+      "detail": "200",
+      "ok": true
+    }
+  }
+}

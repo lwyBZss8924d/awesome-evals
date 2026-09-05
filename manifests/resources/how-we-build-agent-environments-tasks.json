@@ -1,0 +1,59 @@
+{
+  "author": "Vivek Trivedy and Nick Hollon (LangChain)",
+  "id": "how-we-build-agent-environments-tasks",
+  "note": {
+    "path": "notes/articles/how-we-build-agent-environments-tasks.md"
+  },
+  "readme": {
+    "entry": "- **[How We Build Agent Environments & Tasks](https://www.langchain.com/blog/building-agent-environments-and-tasks)** \u2014 Vivek Trivedy and Nick Hollon (LangChain) \u2014 <https://www.langchain.com/blog/building-agent-environments-and-tasks> \u00b7 *article* \u2014 A trace-to-spec-to-Harbor workflow separates human review of task intent from environment generation, with reusable world knowledge, trajectory checks, and repeated difficulty calibration. \ud83c\udd95",
+    "line": 314,
+    "path": "README.md"
+  },
+  "review": {
+    "decision": "accept_for_local_kb",
+    "hard_failures": [],
+    "reviewed_at_utc": "2026-09-05T03:48:16Z",
+    "scores": {
+      "factuality": {
+        "reason": "structured evidence plus fetched source snapshot",
+        "score": 2
+      },
+      "kb_fit": {
+        "reason": "matches agent/eval KB scope",
+        "score": 2
+      },
+      "quality": {
+        "reason": "concrete eval artifacts or methodology signals present",
+        "score": 2
+      },
+      "recency": {
+        "reason": "evidence indicates 2025-2026 or actively updated source",
+        "score": 2
+      },
+      "source_authority": {
+        "reason": "non-primary or less established source",
+        "score": 1
+      }
+    },
+    "total_score": 9,
+    "url_check": {
+      "detail": "HEAD:200",
+      "ok": true
+    }
+  },
+  "schema": "awesome_evals.resource_manifest.v1",
+  "section": "7 \u00b7 Evals & RL environments (verifiers, reward design, difficulty calibration, lifecycle)",
+  "source_seam": "company engineering blogs / environment construction",
+  "title": "How We Build Agent Environments & Tasks",
+  "type": "article",
+  "url": "https://www.langchain.com/blog/building-agent-environments-and-tasks",
+  "worker": {
+    "candidate_reason": "A concrete practitioner method for constructing representative tasks: defines environment/input/scorer contracts, shares domain schemas across tasks, and catches leaky fixtures or trivial tasks by running agents and reviewing trajectories.",
+    "evidence": "LangChain\u2019s primary article, dated August 25, 2026, defines a task as input, environment and test script. Its task-spec and world-spec split centralizes human review while sharing service schemas, data-generation scripts and rubric guidance. The Spec2Task section produces Harbor-format tasks, executes agents, inspects trajectories for flaws such as answer placeholders, and compares model tiers to calibrate difficulty. Worked domains include GTM research, prompt optimization, code review and trace mining. The final sections retain human judgment for domain fidelity and difficulty, and require environments to evolve with production traffic. This is a worked engineering process; no quantified quality uplift or independently tested skill implementation is claimed.",
+    "summary": "A trace-to-spec-to-Harbor workflow separates human review of task intent from environment generation, with reusable world knowledge, trajectory checks, and repeated difficulty calibration.",
+    "url_check": {
+      "detail": "200",
+      "ok": true
+    }
+  }
+}
