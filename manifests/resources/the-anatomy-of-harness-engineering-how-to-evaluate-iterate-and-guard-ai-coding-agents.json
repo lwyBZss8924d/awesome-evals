@@ -1,0 +1,59 @@
+{
+  "author": "Taylor Mullen and Christian Gunderman (Google)",
+  "id": "the-anatomy-of-harness-engineering-how-to-evaluate-iterate-and-guard-ai-coding-agents",
+  "note": {
+    "path": "notes/articles/the-anatomy-of-harness-engineering-how-to-evaluate-iterate-and-guard-ai-coding-agents.md"
+  },
+  "readme": {
+    "entry": "- **[The Anatomy of Harness Engineering: How to Evaluate, Iterate, and Guard AI Coding Agents](https://developers.googleblog.com/en/the-anatomy-of-harness-engineering-how-to-evaluate-iterate-and-guard-ai-coding-agents)** \u2014 Taylor Mullen and Christian Gunderman (Google) \u2014 <https://developers.googleblog.com/en/the-anatomy-of-harness-engineering-how-to-evaluate-iterate-and-guard-ai-coding-agents> \u00b7 *blog* \u2014 Behavioral evals for coding harnesses: assert observable tool use, allow valid alternative paths, and track batch pass rates alongside end-to-end benchmarks. \ud83c\udd95",
+    "line": 124,
+    "path": "README.md"
+  },
+  "review": {
+    "decision": "accept_for_local_kb",
+    "hard_failures": [],
+    "reviewed_at_utc": "2026-09-12T09:02:51Z",
+    "scores": {
+      "factuality": {
+        "reason": "structured evidence plus fetched source snapshot",
+        "score": 2
+      },
+      "kb_fit": {
+        "reason": "matches agent/eval KB scope",
+        "score": 2
+      },
+      "quality": {
+        "reason": "concrete eval artifacts or methodology signals present",
+        "score": 2
+      },
+      "recency": {
+        "reason": "evidence indicates 2025-2026 or actively updated source",
+        "score": 2
+      },
+      "source_authority": {
+        "reason": "non-primary or less established source",
+        "score": 1
+      }
+    },
+    "total_score": 9,
+    "url_check": {
+      "detail": "HEAD:200",
+      "ok": true
+    }
+  },
+  "schema": "awesome_evals.resource_manifest.v1",
+  "section": "## 3 \u00b7 The model / harness / skill decomposition",
+  "source_seam": "company engineering blogs",
+  "title": "The Anatomy of Harness Engineering: How to Evaluate, Iterate, and Guard AI Coding Agents",
+  "type": "blog",
+  "url": "https://developers.googleblog.com/en/the-anatomy-of-harness-engineering-how-to-evaluate-iterate-and-guard-ai-coding-agents",
+  "worker": {
+    "candidate_reason": "Google engineers give a concrete pytest example that inspects tool calls and a failure-to-assertion workflow for prompt, tool-schema, and model changes. This supplies an actionable regression-testing method for the harness section, including treatment of nondeterminism and complex tasks.",
+    "evidence": "Retrieved the complete Google Developers Blog article dated 2026-09-09. In 'Writing a behavioral eval', the pytest example opens an Agent session, requests live weather, collects response.tool_calls, and asserts that SEARCH_WEB occurred; the target is an observable action rather than response-string equality. 'What to consider when building a behavioral suite' turns a recent failure into a narrow assertion, recommends flexible outcome assessment when complex tasks permit multiple valid paths, and tracks aggregate batch pass rates instead of gating on a single stochastic trial. The closing section explicitly keeps end-to-end benchmarks complementary. These are inspected source examples and engineering recommendations, not worker-executed tests or measured performance gains. The sample SDK code was not executed or independently API-validated; the article's timing suggestion is not promoted as a verified runtime. This fits the repository's trajectory pattern while retaining its caveat that rigid sequences penalize alternative correct solutions.",
+    "summary": "Behavioral evals for coding harnesses: assert observable tool use, allow valid alternative paths, and track batch pass rates alongside end-to-end benchmarks.",
+    "url_check": {
+      "detail": "200",
+      "ok": true
+    }
+  }
+}

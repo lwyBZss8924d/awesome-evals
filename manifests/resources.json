@@ -1,6 +1,6 @@
 {
-  "generated_at_utc": "2026-09-12T06:49:57Z",
-  "resource_count": 58,
+  "generated_at_utc": "2026-09-12T09:02:54Z",
+  "resource_count": 60,
   "resources": [
     {
       "id": "agenticdatabench-a-comprehensive-benchmark-for-data-agents",
@@ -715,6 +715,34 @@
       "title": "Terminal-Universe: Turning Agent Trajectories into Scalable Terminal Environments",
       "type": "paper",
       "url": "https://arxiv.org/abs/2609.04148"
+    },
+    {
+      "id": "the-anatomy-of-harness-engineering-how-to-evaluate-iterate-and-guard-ai-coding-agents",
+      "manifest_path": "manifests/resources/the-anatomy-of-harness-engineering-how-to-evaluate-iterate-and-guard-ai-coding-agents.json",
+      "note_path": "notes/articles/the-anatomy-of-harness-engineering-how-to-evaluate-iterate-and-guard-ai-coding-agents.md",
+      "readme_line": 124,
+      "readme_path": "README.md",
+      "review_decision": "accept_for_local_kb",
+      "review_total_score": 9,
+      "section": "## 3 \u00b7 The model / harness / skill decomposition",
+      "source_seam": "company engineering blogs",
+      "title": "The Anatomy of Harness Engineering: How to Evaluate, Iterate, and Guard AI Coding Agents",
+      "type": "blog",
+      "url": "https://developers.googleblog.com/en/the-anatomy-of-harness-engineering-how-to-evaluate-iterate-and-guard-ai-coding-agents"
+    },
+    {
+      "id": "the-double-measurement-confound-in-agent-benchmarks-de-scaffolding-ground-truth-scoring-and",
+      "manifest_path": "manifests/resources/the-double-measurement-confound-in-agent-benchmarks-de-scaffolding-ground-truth-scoring-and.json",
+      "note_path": "notes/papers/the-double-measurement-confound-in-agent-benchmarks-de-scaffolding-ground-truth-scoring-and.md",
+      "readme_line": 291,
+      "readme_path": "README.md",
+      "review_decision": "accept_for_local_kb",
+      "review_total_score": 10,
+      "section": "## 6 \u00b7 Benchmark vs. eval (and benchmark integrity: contamination, saturation, label errors, leaderboard gaming)",
+      "source_seam": "new evaluation benchmarks and measurement research",
+      "title": "The Double Measurement Confound in Agent Benchmarks: De-Scaffolding, Ground-Truth Scoring, and Reliability Beyond the Mean",
+      "type": "paper",
+      "url": "https://arxiv.org/abs/2609.09218"
     },
     {
       "id": "toolprivacybench-benchmarking-purpose-bound-privacy-in-tool-using-llm-agents",
