@@ -1,0 +1,59 @@
+{
+  "author": "Meghana Ashok, Samaneh Aminikhanghahi, Suren Gunturu, and Vidya Sagar Ravipati (AWS)",
+  "id": "monitoring-production-agent-lifecycle-with-aws-devops-agent-and-agentcore-evaluations",
+  "note": {
+    "path": "notes/articles/monitoring-production-agent-lifecycle-with-aws-devops-agent-and-agentcore-evaluations.md"
+  },
+  "readme": {
+    "entry": "- **[Monitoring production agent lifecycle with AWS DevOps Agent and AgentCore Evaluations](https://aws.amazon.com/blogs/machine-learning/monitoring-production-agent-lifecycle-with-aws-devops-agent-and-agentcore-evaluations)** \u2014 Meghana Ashok, Samaneh Aminikhanghahi, Suren Gunturu, and Vidya Sagar Ravipati (AWS) \u2014 <https://aws.amazon.com/blogs/machine-learning/monitoring-production-agent-lifecycle-with-aws-devops-agent-and-agentcore-evaluations> \u00b7 *engineering blog / worked example* \u2014 Worked airline-agent monitoring example connects sampled quality scores and trace drilldowns to infrastructure diagnosis; a missing model-invocation permission explains blank responses. \u26a0\ufe0f Vendor demonstration; judges require validation. \ud83c\udd95",
+    "line": 143,
+    "path": "README.md"
+  },
+  "review": {
+    "decision": "accept_for_local_kb",
+    "hard_failures": [],
+    "reviewed_at_utc": "2026-09-12T09:49:44Z",
+    "scores": {
+      "factuality": {
+        "reason": "structured evidence plus fetched source snapshot",
+        "score": 2
+      },
+      "kb_fit": {
+        "reason": "matches agent/eval KB scope",
+        "score": 2
+      },
+      "quality": {
+        "reason": "concrete eval artifacts or methodology signals present",
+        "score": 1
+      },
+      "recency": {
+        "reason": "evidence indicates 2025-2026 or actively updated source",
+        "score": 2
+      },
+      "source_authority": {
+        "reason": "non-primary or less established source",
+        "score": 1
+      }
+    },
+    "total_score": 8,
+    "url_check": {
+      "detail": "HEAD:200",
+      "ok": true
+    }
+  },
+  "schema": "awesome_evals.resource_manifest.v1",
+  "section": "4 \u00b7 Observability & the output / eval space (the surfaces you can grade)",
+  "source_seam": "eval insights inside general agent-building posts; company engineering blogs",
+  "title": "Monitoring production agent lifecycle with AWS DevOps Agent and AgentCore Evaluations",
+  "type": "engineering blog / worked example",
+  "url": "https://aws.amazon.com/blogs/machine-learning/monitoring-production-agent-lifecycle-with-aws-devops-agent-and-agentcore-evaluations",
+  "worker": {
+    "candidate_reason": "Provides a concrete airline-agent architecture, evaluation levels, sampled versus on-demand workflows, and a traced permission failure. It connects quality evaluation to operational diagnosis and explicitly documents the latency and coverage limits of asynchronous sampling.",
+    "evidence": "Read the AWS author page published 2026-09-11 via Exa on 2026-09-12. The article describes an airline reservation system with supervisor/specialist agents, a dashboard joining session, trace, and span evidence, background sampling for quality scoring, and on-demand evaluation for selected sessions. Its demonstrated incident follows a user request through AgentCore runtime to a denied Bedrock call: a missing bedrock:InvokeModel permission causes blank agent output. Quality scoring and infrastructure investigation therefore answer different questions. The article explicitly warns that asynchronous sampled evaluation can score a harmful response only after the user receives it. Treat its diagrams, evaluator definitions, and incident walkthrough as implementation evidence; example percentages and estimated debugging times are not controlled production measurements. Judge calibration and independent outcome validation are not established by this vendor demonstration.",
+    "summary": "Worked airline-agent monitoring example connects sampled quality scores and trace drilldowns to infrastructure diagnosis; a missing model-invocation permission explains blank responses. \u26a0\ufe0f Vendor demonstration; judges require validation.",
+    "url_check": {
+      "detail": "200",
+      "ok": true
+    }
+  }
+}

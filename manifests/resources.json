@@ -1,6 +1,6 @@
 {
-  "generated_at_utc": "2026-09-12T09:02:54Z",
-  "resource_count": 60,
+  "generated_at_utc": "2026-09-12T09:49:45Z",
+  "resource_count": 62,
   "resources": [
     {
       "id": "agenticdatabench-a-comprehensive-benchmark-for-data-agents",
@@ -99,6 +99,20 @@
       "title": "BabelJudge: Measuring LLM-as-a-Judge Reliability Across Languages and Agent Trajectories",
       "type": "paper/benchmark",
       "url": "https://arxiv.org/abs/2606.22329"
+    },
+    {
+      "id": "bench-an-environment-for-end-to-end-realistic-agent-construction",
+      "manifest_path": "manifests/resources/bench-an-environment-for-end-to-end-realistic-agent-construction.json",
+      "note_path": "notes/papers/bench-an-environment-for-end-to-end-realistic-agent-construction.md",
+      "readme_line": 473,
+      "readme_path": "README.md",
+      "review_decision": "accept_for_local_kb",
+      "review_total_score": 10,
+      "section": "9 \u00b7 Agent-specific evaluation (trajectories, tool use, multi-turn, world state, multi-agent, localization)",
+      "source_seam": "new eval benchmarks; company engineering blog",
+      "title": "\u03c4^\u03c4-Bench: An Environment for End-To-End, Realistic Agent Construction",
+      "type": "paper / benchmark",
+      "url": "https://arxiv.org/abs/2609.04611"
     },
     {
       "id": "benchmark-test-time-scaling-of-general-llm-agents-general-agentbench",
@@ -505,6 +519,20 @@
       "title": "Long-Horizon-Terminal-Bench: Testing the Limits of Agents on Long-Horizon Terminal Tasks with Dense Reward-Based Grading",
       "type": "paper / benchmark",
       "url": "https://arxiv.org/abs/2607.08964"
+    },
+    {
+      "id": "monitoring-production-agent-lifecycle-with-aws-devops-agent-and-agentcore-evaluations",
+      "manifest_path": "manifests/resources/monitoring-production-agent-lifecycle-with-aws-devops-agent-and-agentcore-evaluations.json",
+      "note_path": "notes/articles/monitoring-production-agent-lifecycle-with-aws-devops-agent-and-agentcore-evaluations.md",
+      "readme_line": 143,
+      "readme_path": "README.md",
+      "review_decision": "accept_for_local_kb",
+      "review_total_score": 8,
+      "section": "4 \u00b7 Observability & the output / eval space (the surfaces you can grade)",
+      "source_seam": "eval insights inside general agent-building posts; company engineering blogs",
+      "title": "Monitoring production agent lifecycle with AWS DevOps Agent and AgentCore Evaluations",
+      "type": "engineering blog / worked example",
+      "url": "https://aws.amazon.com/blogs/machine-learning/monitoring-production-agent-lifecycle-with-aws-devops-agent-and-agentcore-evaluations"
     },
     {
       "id": "more-compute-more-capability-why-ai-agent-evaluations-need-to-account-for-test-time-compute",
