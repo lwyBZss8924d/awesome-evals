@@ -1,6 +1,6 @@
 {
-  "generated_at_utc": "2026-09-05T03:48:16Z",
-  "resource_count": 55,
+  "generated_at_utc": "2026-09-12T06:49:57Z",
+  "resource_count": 58,
   "resources": [
     {
       "id": "agenticdatabench-a-comprehensive-benchmark-for-data-agents",
@@ -127,6 +127,20 @@
       "title": "Benchmarking LLM Judges for Mobile Agent Evaluation",
       "type": "paper",
       "url": "https://arxiv.org/abs/2608.11434"
+    },
+    {
+      "id": "benchshield-formal-model-backed-instrumentation-for-reward-integrity-in-llm-agent-evaluation",
+      "manifest_path": "manifests/resources/benchshield-formal-model-backed-instrumentation-for-reward-integrity-in-llm-agent-evaluation.json",
+      "note_path": "notes/papers/benchshield-formal-model-backed-instrumentation-for-reward-integrity-in-llm-agent-evaluation.md",
+      "readme_line": 289,
+      "readme_path": "README.md",
+      "review_decision": "accept_for_local_kb",
+      "review_total_score": 10,
+      "section": "6 \u00b7 Benchmark vs. eval (and benchmark integrity: contamination, saturation, label errors, leaderboard gaming)",
+      "source_seam": "alphaXiv recent agent-evaluation papers; primary arXiv HTML and metadata",
+      "title": "BenchShield: Formal Model-Backed Instrumentation for Reward Integrity in LLM-Agent Evaluation Infrastructure",
+      "type": "paper",
+      "url": "https://arxiv.org/abs/2609.11028"
     },
     {
       "id": "browsecomp-plus-a-more-fair-and-transparent-evaluation-benchmark-of-deep-research-agent",
@@ -267,6 +281,20 @@
       "title": "EnterpriseClawBench: Benchmarking Agents from Real Workplace Sessions",
       "type": "paper/benchmark",
       "url": "https://arxiv.org/abs/2606.23654"
+    },
+    {
+      "id": "evosafeharness-evolving-model-and-domain-specific-harnesses-for-securing-agents",
+      "manifest_path": "manifests/resources/evosafeharness-evolving-model-and-domain-specific-harnesses-for-securing-agents.json",
+      "note_path": "notes/papers/evosafeharness-evolving-model-and-domain-specific-harnesses-for-securing-agents.md",
+      "readme_line": 511,
+      "readme_path": "README.md",
+      "review_decision": "accept_for_local_kb",
+      "review_total_score": 10,
+      "section": "10 \u00b7 Safety / adversarial evaluation (prompt injection, jailbreaks, action-authorization, benchmark auditing)",
+      "source_seam": "Hugging Face Daily Papers 2026-09-11; primary arXiv HTML; GitHub implementation",
+      "title": "EvoSafeHarness: Evolving Model- and Domain-Specific Harnesses for Securing Agents",
+      "type": "paper",
+      "url": "https://arxiv.org/abs/2609.05903"
     },
     {
       "id": "failure-as-a-process-an-anatomy-of-cli-coding-agent-trajectories",
@@ -561,6 +589,20 @@
       "title": "Patterns and Problems in Emerging Multiagent Systems",
       "type": "research article",
       "url": "https://www.anthropic.com/research/multiagent-systems"
+    },
+    {
+      "id": "ready-or-not-reliable-enterprise-agent-deployment",
+      "manifest_path": "manifests/resources/ready-or-not-reliable-enterprise-agent-deployment.json",
+      "note_path": "notes/papers/ready-or-not-reliable-enterprise-agent-deployment.md",
+      "readme_line": 470,
+      "readme_path": "README.md",
+      "review_decision": "accept_for_local_kb",
+      "review_total_score": 10,
+      "section": "9 \u00b7 Agent-specific evaluation (trajectories, tool use, multi-turn, world state, multi-agent, localization)",
+      "source_seam": "alphaXiv recent agent-evaluation papers; primary arXiv HTML and metadata",
+      "title": "READY or Not: Reliable Enterprise Agent Deployment",
+      "type": "paper",
+      "url": "https://arxiv.org/abs/2609.02095"
     },
     {
       "id": "rethinking-the-evaluation-of-harness-evolution-for-agents",

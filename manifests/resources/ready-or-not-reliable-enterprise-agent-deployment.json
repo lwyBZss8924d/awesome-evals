@@ -1,0 +1,59 @@
+{
+  "author": "Veronica Chatrath et al. (Scale AI)",
+  "id": "ready-or-not-reliable-enterprise-agent-deployment",
+  "note": {
+    "path": "notes/papers/ready-or-not-reliable-enterprise-agent-deployment.md"
+  },
+  "readme": {
+    "entry": "- **[READY or Not: Reliable Enterprise Agent Deployment](https://arxiv.org/abs/2609.02095)** \u2014 Veronica Chatrath et al. (Scale AI) \u2014 <https://arxiv.org/abs/2609.02095> \u00b7 *paper* \u2014 Selects a human-oversight policy on development cases, then qualifies reliability on held-out cases while reporting review burden and cost; qualification remains conditional on declared reviewer assumptions. \ud83c\udd95",
+    "line": 470,
+    "path": "README.md"
+  },
+  "review": {
+    "decision": "accept_for_local_kb",
+    "hard_failures": [],
+    "reviewed_at_utc": "2026-09-12T06:49:56Z",
+    "scores": {
+      "factuality": {
+        "reason": "structured evidence plus fetched source snapshot",
+        "score": 2
+      },
+      "kb_fit": {
+        "reason": "matches agent/eval KB scope",
+        "score": 2
+      },
+      "quality": {
+        "reason": "concrete eval artifacts or methodology signals present",
+        "score": 2
+      },
+      "recency": {
+        "reason": "evidence indicates 2025-2026 or actively updated source",
+        "score": 2
+      },
+      "source_authority": {
+        "reason": "primary repo or lab/source page",
+        "score": 2
+      }
+    },
+    "total_score": 10,
+    "url_check": {
+      "detail": "HEAD:200",
+      "ok": true
+    }
+  },
+  "schema": "awesome_evals.resource_manifest.v1",
+  "section": "9 \u00b7 Agent-specific evaluation (trajectories, tool use, multi-turn, world state, multi-agent, localization)",
+  "source_seam": "alphaXiv recent agent-evaluation papers; primary arXiv HTML and metadata",
+  "title": "READY or Not: Reliable Enterprise Agent Deployment",
+  "type": "paper",
+  "url": "https://arxiv.org/abs/2609.02095",
+  "worker": {
+    "candidate_reason": "Provides a statistically explicit bridge from autonomous benchmark accuracy to the reliability, oversight burden, and cost of an operating human-agent system, including a worked case where similar autonomous scores lead to different review requirements.",
+    "evidence": "Primary arXiv v1, submitted 2026-09-02, was retrieved directly as https://arxiv.org/html/2609.02095v1. The paper separates workflow-specific success predicates from policy selection and qualification. Its clinical-audit case study contains 750 cases and 16 agent systems, with development and qualification partitions of 375 cases each. Section 5.6 reports systems at 72.8% and 72.5% autonomous accuracy requiring 39.2% and 29.6% review at a 76% reliability target under the evaluated oversight policy. Appendix B.1 computes a one-sided 95% exact Clopper-Pearson lower bound on accepted-case success and combines it with an assumed review-success rate; the main analysis assumes reviewer success of 0.90. Section 7 explicitly limits empirical validation to terminal accept-or-escalate policies, treats unmeasured reviewer effectiveness, latency, and cost as assumptions, and makes qualification population- and configuration-specific. Trajectory-changing intervention needs policy-in-the-loop evaluation. This is a methodology paper, not clinical deployment guidance or a universal agent certificate. The paper describes an open testbed, but no dedicated READY repository or independently reproduced implementation is claimed by this scan.",
+    "summary": "Selects a human-oversight policy on development cases, then qualifies reliability on held-out cases while reporting review burden and cost; qualification remains conditional on declared reviewer assumptions.",
+    "url_check": {
+      "detail": "200",
+      "ok": true
+    }
+  }
+}

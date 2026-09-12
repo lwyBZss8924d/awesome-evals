@@ -1,0 +1,59 @@
+{
+  "author": "Nanxi Li, Yingzi Ma, Yulong Cao, Edward Suh, Bo Li, Dawn Song, Chaowei Xiao",
+  "id": "evosafeharness-evolving-model-and-domain-specific-harnesses-for-securing-agents",
+  "note": {
+    "path": "notes/papers/evosafeharness-evolving-model-and-domain-specific-harnesses-for-securing-agents.md"
+  },
+  "readme": {
+    "entry": "- **[EvoSafeHarness: Evolving Model- and Domain-Specific Harnesses for Securing Agents](https://arxiv.org/abs/2609.05903)** \u2014 Nanxi Li, Yingzi Ma, Yulong Cao, Edward Suh, Bo Li, Dawn Song, Chaowei Xiao \u2014 <https://arxiv.org/abs/2609.05903> \u00b7 *paper* \u2014 Evaluates searched safety harnesses using separate utility and attack-success measures, held-out tests, transfer suites, and adversarial review designed to catch benchmark-specific rules. \ud83c\udd95",
+    "line": 511,
+    "path": "README.md"
+  },
+  "review": {
+    "decision": "accept_for_local_kb",
+    "hard_failures": [],
+    "reviewed_at_utc": "2026-09-12T06:49:57Z",
+    "scores": {
+      "factuality": {
+        "reason": "structured evidence plus fetched source snapshot",
+        "score": 2
+      },
+      "kb_fit": {
+        "reason": "matches agent/eval KB scope",
+        "score": 2
+      },
+      "quality": {
+        "reason": "concrete eval artifacts or methodology signals present",
+        "score": 2
+      },
+      "recency": {
+        "reason": "evidence indicates 2025-2026 or actively updated source",
+        "score": 2
+      },
+      "source_authority": {
+        "reason": "primary repo or lab/source page",
+        "score": 2
+      }
+    },
+    "total_score": 10,
+    "url_check": {
+      "detail": "HEAD:200",
+      "ok": true
+    }
+  },
+  "schema": "awesome_evals.resource_manifest.v1",
+  "section": "10 \u00b7 Safety / adversarial evaluation (prompt injection, jailbreaks, action-authorization, benchmark auditing)",
+  "source_seam": "Hugging Face Daily Papers 2026-09-11; primary arXiv HTML; GitHub implementation",
+  "title": "EvoSafeHarness: Evolving Model- and Domain-Specific Harnesses for Securing Agents",
+  "type": "paper",
+  "url": "https://arxiv.org/abs/2609.05903",
+  "worker": {
+    "candidate_reason": "A concrete study of how to evaluate an optimized agent harness without equating search-set gains with safety: it reports held-out and transfer tests, anti-overfitting ablations, adaptive attacks, and separate optimizer/evaluator resource accounting.",
+    "evidence": "Discovered in Hugging Face Daily Papers for 2026-09-11; hf papers info confirms arXiv 2609.05903, publication 2026-09-05, and the SaFo-Lab/EvoSafeHarness repository. The Hub read command returned only an SVG caption and was discarded; primary paper text was instead retrieved directly from https://arxiv.org/html/2609.05903v1. Sections 4-7 define a policy-plus-code harness, fresh-context adversarial review, and staged candidate evaluation. The paper evaluates direct and indirect attacks, benign utility, unchanged AgentDojo-to-AgentDyn transfer, and adaptive PAIR attacks; removing its Criticizer can preserve or improve search scores while reducing held-out scores by up to 31 points. Appendix H specifies a frozen 100-task DTAP split with 30 benign and 70 attack tasks and uncertainty analysis, so low observed attack success is bounded by the tested distribution. The official GitHub README documents system_prompt_transform/on_pre_tool_call/on_post_tool_call hooks, domain overlays, frozen splits, and a comparison runner. Live metadata shows an unarchived repository with 2 stars, 0 forks, and no detected license on 2026-09-12; external deployment adoption is unproven. Accepted as an empirical paper, not as an established tool recommendation. Reported performance and separation of search/test data were not independently reproduced.",
+    "summary": "Evaluates searched safety harnesses using separate utility and attack-success measures, held-out tests, transfer suites, and adversarial review designed to catch benchmark-specific rules.",
+    "url_check": {
+      "detail": "200",
+      "ok": true
+    }
+  }
+}

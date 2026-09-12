@@ -1,0 +1,59 @@
+{
+  "author": "Shenghan Zheng et al.",
+  "id": "benchshield-formal-model-backed-instrumentation-for-reward-integrity-in-llm-agent-evaluation",
+  "note": {
+    "path": "notes/papers/benchshield-formal-model-backed-instrumentation-for-reward-integrity-in-llm-agent-evaluation.md"
+  },
+  "readme": {
+    "entry": "- **[BenchShield: Formal Model-Backed Instrumentation for Reward Integrity in LLM-Agent Evaluation Infrastructure](https://arxiv.org/abs/2609.11028)** \u2014 Shenghan Zheng et al. \u2014 <https://arxiv.org/abs/2609.11028> \u00b7 *paper* \u2014 Models the reward lifecycle and combines static taint analysis with evidence-based runtime attribution to distinguish an exposed benchmark weakness from an agent actually exploiting it. \ud83c\udd95",
+    "line": 289,
+    "path": "README.md"
+  },
+  "review": {
+    "decision": "accept_for_local_kb",
+    "hard_failures": [],
+    "reviewed_at_utc": "2026-09-12T06:49:55Z",
+    "scores": {
+      "factuality": {
+        "reason": "structured evidence plus fetched source snapshot",
+        "score": 2
+      },
+      "kb_fit": {
+        "reason": "matches agent/eval KB scope",
+        "score": 2
+      },
+      "quality": {
+        "reason": "concrete eval artifacts or methodology signals present",
+        "score": 2
+      },
+      "recency": {
+        "reason": "evidence indicates 2025-2026 or actively updated source",
+        "score": 2
+      },
+      "source_authority": {
+        "reason": "primary repo or lab/source page",
+        "score": 2
+      }
+    },
+    "total_score": 10,
+    "url_check": {
+      "detail": "HEAD:200",
+      "ok": true
+    }
+  },
+  "schema": "awesome_evals.resource_manifest.v1",
+  "section": "6 \u00b7 Benchmark vs. eval (and benchmark integrity: contamination, saturation, label errors, leaderboard gaming)",
+  "source_seam": "alphaXiv recent agent-evaluation papers; primary arXiv HTML and metadata",
+  "title": "BenchShield: Formal Model-Backed Instrumentation for Reward Integrity in LLM-Agent Evaluation Infrastructure",
+  "type": "paper",
+  "url": "https://arxiv.org/abs/2609.11028",
+  "worker": {
+    "candidate_reason": "Adds a concrete benchmark-integrity method backed by an adjudicated trajectory corpus, formal lifecycle modeling, comparison with a scanner baseline, and measured runtime attribution; this directly complements the index's contamination and reward-hacking coverage.",
+    "evidence": "Primary arXiv v1, submitted 2026-09-10, was retrieved directly as https://arxiv.org/html/2609.11028v1. Sections 4-6 describe phase-aware static taint analysis and infrastructure-side runtime evidence over the reward lifecycle. The paper reports 456 human-adjudicated trajectories from more than 31,000 public runs; its runtime experiment covers 144 runnable cells, with 96% accuracy among cells receiving a verdict. Evidence-gap abstentions and false AgentViolation findings remain, so that percentage is not universal coverage. Section 7 states that environments must be transformed into BenchFlow form, the lifecycle may need extension, semantic action modeling introduces nondeterminism, and role-private noninterference is outside the checked claim. The paper attributes an implementation to BenchFlow; GitHub metadata confirms the linked active benchflow-ai/benchflow repository, but this scan does not treat framework popularity as adoption of BenchShield itself. Accepted as a paper on measurement integrity, with experimental results attributed to its authors; no benchmark or model was run by this scan.",
+    "summary": "Models the reward lifecycle and combines static taint analysis with evidence-based runtime attribution to distinguish an exposed benchmark weakness from an agent actually exploiting it.",
+    "url_check": {
+      "detail": "200",
+      "ok": true
+    }
+  }
+}
