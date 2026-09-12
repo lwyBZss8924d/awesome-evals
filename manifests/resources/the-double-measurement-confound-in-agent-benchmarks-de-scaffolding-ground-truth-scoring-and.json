@@ -1,0 +1,59 @@
+{
+  "author": "Yonghong Zhang, Shadi Motaali, Vu Phong Dinh, Avin Piroutiniya, Jorge E. L\u00f3pez de Vergara, Luis de Pedro, Ricardo Correia, Isabel M. Parra, and Yong Xie",
+  "id": "the-double-measurement-confound-in-agent-benchmarks-de-scaffolding-ground-truth-scoring-and",
+  "note": {
+    "path": "notes/papers/the-double-measurement-confound-in-agent-benchmarks-de-scaffolding-ground-truth-scoring-and.md"
+  },
+  "readme": {
+    "entry": "- **[The Double Measurement Confound in Agent Benchmarks: De-Scaffolding, Ground-Truth Scoring, and Reliability Beyond the Mean](https://arxiv.org/abs/2609.09218)** \u2014 Yonghong Zhang, Shadi Motaali, Vu Phong Dinh, Avin Piroutiniya, Jorge E. L\u00f3pez de Vergara, Luis de Pedro, Ricardo Correia, Isabel M. Parra, and Yong Xie \u2014 <https://arxiv.org/abs/2609.09218> \u00b7 *paper* \u2014 Audits scaffold-owned decisions and shape-based scoring jointly, then measures seeded outcome correctness and tail reliability. \u26a0\ufe0f Preprint; full intervention is confined to a stylized extraction benchmark. \ud83c\udd95",
+    "line": 291,
+    "path": "README.md"
+  },
+  "review": {
+    "decision": "accept_for_local_kb",
+    "hard_failures": [],
+    "reviewed_at_utc": "2026-09-12T09:02:51Z",
+    "scores": {
+      "factuality": {
+        "reason": "structured evidence plus fetched source snapshot",
+        "score": 2
+      },
+      "kb_fit": {
+        "reason": "matches agent/eval KB scope",
+        "score": 2
+      },
+      "quality": {
+        "reason": "concrete eval artifacts or methodology signals present",
+        "score": 2
+      },
+      "recency": {
+        "reason": "evidence indicates 2025-2026 or actively updated source",
+        "score": 2
+      },
+      "source_authority": {
+        "reason": "primary repo or lab/source page",
+        "score": 2
+      }
+    },
+    "total_score": 10,
+    "url_check": {
+      "detail": "HEAD:200",
+      "ok": true
+    }
+  },
+  "schema": "awesome_evals.resource_manifest.v1",
+  "section": "## 6 \u00b7 Benchmark vs. eval (and benchmark integrity: contamination, saturation, label errors, leaderboard gaming)",
+  "source_seam": "new evaluation benchmarks and measurement research",
+  "title": "The Double Measurement Confound in Agent Benchmarks: De-Scaffolding, Ground-Truth Scoring, and Reliability Beyond the Mean",
+  "type": "paper",
+  "url": "https://arxiv.org/abs/2609.09218",
+  "worker": {
+    "candidate_reason": "The paper supplies a paired scaffold/scorer intervention, fabricated-output probes, ground-truth grading, and explicit validity cards. Its retrospective self-audit explains why fixing only a scorer or only a scaffold can still conceal the intended capability, with clear limits on generalization.",
+    "evidence": "Verified canonical arXiv metadata and read the version-pinned primary HTML at https://arxiv.org/html/2609.09218v1, dated 2026-09-06. Sections 3\u20135 describe ComtradeBench as seeded, mock-API extraction with pagination, deduplication, summary-row filtering and retry decisions. A paired scaffold/scorer intervention contrasts scaffold-owned execution with model-owned decisions and shape scoring with regenerated ground-truth F1. The introduction reports that correct and fabricated record sets both received 0.987 under the original scorer; Appendix C.2 documents canned submissions through that scorer. The paper reports mean, worst-case, CVaR and threshold reliability rather than only a mean ranking, and publishes benchmark validity cards. Section 6 limits the full ownership intervention to one stylized domain and the main spectrum to five tasks across ten seeds; a larger re-emission task is excluded by a solvability audit. Exploratory quota experiments and point-in-time model endpoints are disclosed. These are author-reported experiments inspected in the paper, not independently replayed results or proof of cross-domain validity.",
+    "summary": "Audits scaffold-owned decisions and shape-based scoring jointly, then measures seeded outcome correctness and tail reliability. \u26a0\ufe0f Preprint; full intervention is confined to a stylized extraction benchmark.",
+    "url_check": {
+      "detail": "200",
+      "ok": true
+    }
+  }
+}
