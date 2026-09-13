@@ -1,6 +1,6 @@
 {
-  "generated_at_utc": "2026-09-12T09:49:45Z",
-  "resource_count": 62,
+  "generated_at_utc": "2026-09-13T02:28:20Z",
+  "resource_count": 65,
   "resources": [
     {
       "id": "agenticdatabench-a-comprehensive-benchmark-for-data-agents",
@@ -57,6 +57,20 @@
       "title": "AgentProcessBench: Diagnosing Step-Level Process Quality in Tool-Using Agents",
       "type": "paper/benchmark",
       "url": "https://arxiv.org/abs/2603.14465"
+    },
+    {
+      "id": "ai-agent-evaluation-in-production-traces-to-test-suites",
+      "manifest_path": "manifests/resources/ai-agent-evaluation-in-production-traces-to-test-suites.json",
+      "note_path": "notes/articles/ai-agent-evaluation-in-production-traces-to-test-suites.md",
+      "readme_line": 144,
+      "readme_path": "README.md",
+      "review_decision": "accept_for_local_kb",
+      "review_total_score": 9,
+      "section": "## 4 \u00b7 Observability & the output / eval space (the surfaces you can grade)",
+      "source_seam": "eval insights inside general agent-building posts",
+      "title": "AI Agent Evaluation in Production: Traces to Test Suites",
+      "type": "practitioner article / worked example",
+      "url": "https://slavadubrov.com/blog/2026/06/10/agent-evals-traces-to-test-suites"
     },
     {
       "id": "aj-bench-benchmarking-agent-as-a-judge-for-environment-aware-evaluation",
@@ -267,6 +281,20 @@
       "title": "Do Automated Evals Work?",
       "type": "blog/production study",
       "url": "https://parlance-labs.com/blog/posts/auto-evals.html"
+    },
+    {
+      "id": "dumatebench-evaluating-autonomous-agents-in-complex-real-world-workflows",
+      "manifest_path": "manifests/resources/dumatebench-evaluating-autonomous-agents-in-complex-real-world-workflows.json",
+      "note_path": "notes/papers/dumatebench-evaluating-autonomous-agents-in-complex-real-world-workflows.md",
+      "readme_line": 476,
+      "readme_path": "README.md",
+      "review_decision": "accept_for_local_kb",
+      "review_total_score": 10,
+      "section": "## 9 \u00b7 Agent-specific evaluation (trajectories, tool use, multi-turn, world state, multi-agent, localization)",
+      "source_seam": "new eval benchmarks/tools",
+      "title": "DuMateBench: Evaluating Autonomous Agents in Complex Real-World Workflows",
+      "type": "paper / benchmark",
+      "url": "https://arxiv.org/abs/2608.26546"
     },
     {
       "id": "earlyeval-cheaper-agent-evaluation-via-early-outcome-prediction",
@@ -561,6 +589,20 @@
       "title": "More Convincing, Not More Correct: Self-Play Reward Hacking of Reference-Free LLM Judges",
       "type": "paper",
       "url": "https://arxiv.org/abs/2607.05904"
+    },
+    {
+      "id": "mr-lhdr-a-benchmark-for-multimodal-real-world-long-horizon-deep-research-agents",
+      "manifest_path": "manifests/resources/mr-lhdr-a-benchmark-for-multimodal-real-world-long-horizon-deep-research-agents.json",
+      "note_path": "notes/papers/mr-lhdr-a-benchmark-for-multimodal-real-world-long-horizon-deep-research-agents.md",
+      "readme_line": 475,
+      "readme_path": "README.md",
+      "review_decision": "accept_for_local_kb",
+      "review_total_score": 10,
+      "section": "## 9 \u00b7 Agent-specific evaluation (trajectories, tool use, multi-turn, world state, multi-agent, localization)",
+      "source_seam": "new eval benchmarks/tools",
+      "title": "Mr.LHDR: A Benchmark for Multimodal Real-World Long-Horizon Deep Research Agents",
+      "type": "paper / benchmark",
+      "url": "https://arxiv.org/abs/2609.11318"
     },
     {
       "id": "mypcbench-a-benchmark-for-personally-intelligent-computer-use-agents",

@@ -1,0 +1,59 @@
+{
+  "author": "Zechun Niu, Yukun Zhao, et al.",
+  "id": "dumatebench-evaluating-autonomous-agents-in-complex-real-world-workflows",
+  "note": {
+    "path": "notes/papers/dumatebench-evaluating-autonomous-agents-in-complex-real-world-workflows.md"
+  },
+  "readme": {
+    "entry": "- **[DuMateBench: Evaluating Autonomous Agents in Complex Real-World Workflows](https://arxiv.org/abs/2608.26546)** \u2014 Zechun Niu, Yukun Zhao, et al. \u2014 <https://arxiv.org/abs/2608.26546> \u00b7 *paper / benchmark* \u2014 Session-derived workflow benchmark with restored context, fault-injected containers, and hybrid artifact grading. \u26a0\ufe0f LLM-judge components and dataset preparation are required. \ud83c\udd95",
+    "line": 476,
+    "path": "README.md"
+  },
+  "review": {
+    "decision": "accept_for_local_kb",
+    "hard_failures": [],
+    "reviewed_at_utc": "2026-09-13T02:28:18Z",
+    "scores": {
+      "factuality": {
+        "reason": "structured evidence plus fetched source snapshot",
+        "score": 2
+      },
+      "kb_fit": {
+        "reason": "matches agent/eval KB scope",
+        "score": 2
+      },
+      "quality": {
+        "reason": "concrete eval artifacts or methodology signals present",
+        "score": 2
+      },
+      "recency": {
+        "reason": "evidence indicates 2025-2026 or actively updated source",
+        "score": 2
+      },
+      "source_authority": {
+        "reason": "primary repo or lab/source page",
+        "score": 2
+      }
+    },
+    "total_score": 10,
+    "url_check": {
+      "detail": "HEAD:200",
+      "ok": true
+    }
+  },
+  "schema": "awesome_evals.resource_manifest.v1",
+  "section": "## 9 \u00b7 Agent-specific evaluation (trajectories, tool use, multi-turn, world state, multi-agent, localization)",
+  "source_seam": "new eval benchmarks/tools",
+  "title": "DuMateBench: Evaluating Autonomous Agents in Complex Real-World Workflows",
+  "type": "paper / benchmark",
+  "url": "https://arxiv.org/abs/2608.26546",
+  "worker": {
+    "candidate_reason": "Combines compositional productivity tasks with deliberately insufficient, unstable, and noisy execution conditions, making environment recovery part of evaluation. The primary paper, project site, and released runner documentation expose both task construction and practical execution limits.",
+    "evidence": "The August 27, 2026 arXiv v1 describes 200 tasks reconstructed from anonymized, privacy-screened production sessions, retaining pre-solution interaction history, persistent configurations, and workspace state; this is the authors' provenance claim. It specifies missing-resource, transient-failure, and workspace-noise conditions in Docker and hybrid deterministic/checklist plus artifact-specific LLM grading. The project site links https://github.com/baidubce/dumate-bench and the Annihi/dumate_bench Hugging Face dataset. GitHub README confirms runner/evaluator code and Harbor integration, but explains that the checked-in tasks are development examples and the full dataset is separate. Public tasks omit environment files and need template filling; the CLI requires a source checkout because its shared evaluator is not in the standalone wheel. A valid reward can represent a completed but failing task, so runner completion is distinct from task success. GitHub metadata showed an unarchived Apache-2.0 repository with five stars. No dataset download, setup, model run, or independent reproduction was performed.",
+    "summary": "Session-derived workflow benchmark with restored context, fault-injected containers, and hybrid artifact grading. \u26a0\ufe0f LLM-judge components and dataset preparation are required.",
+    "url_check": {
+      "detail": "200",
+      "ok": true
+    }
+  }
+}
