@@ -1,0 +1,59 @@
+{
+  "author": "Minghao Guo et al.",
+  "id": "mr-lhdr-a-benchmark-for-multimodal-real-world-long-horizon-deep-research-agents",
+  "note": {
+    "path": "notes/papers/mr-lhdr-a-benchmark-for-multimodal-real-world-long-horizon-deep-research-agents.md"
+  },
+  "readme": {
+    "entry": "- **[Mr.LHDR: A Benchmark for Multimodal Real-World Long-Horizon Deep Research Agents](https://arxiv.org/abs/2609.11318)** \u2014 Minghao Guo et al. \u2014 <https://arxiv.org/abs/2609.11318> \u00b7 *paper / benchmark* \u2014 Grades final answers and prerequisite-consistent intermediate conclusions in multimodal research responses. \u26a0\ufe0f Response-level grading does not verify actual tool-use traces. \ud83c\udd95",
+    "line": 475,
+    "path": "README.md"
+  },
+  "review": {
+    "decision": "accept_for_local_kb",
+    "hard_failures": [],
+    "reviewed_at_utc": "2026-09-13T02:28:17Z",
+    "scores": {
+      "factuality": {
+        "reason": "structured evidence plus fetched source snapshot",
+        "score": 2
+      },
+      "kb_fit": {
+        "reason": "matches agent/eval KB scope",
+        "score": 2
+      },
+      "quality": {
+        "reason": "concrete eval artifacts or methodology signals present",
+        "score": 2
+      },
+      "recency": {
+        "reason": "evidence indicates 2025-2026 or actively updated source",
+        "score": 2
+      },
+      "source_authority": {
+        "reason": "primary repo or lab/source page",
+        "score": 2
+      }
+    },
+    "total_score": 10,
+    "url_check": {
+      "detail": "HEAD:200",
+      "ok": true
+    }
+  },
+  "schema": "awesome_evals.resource_manifest.v1",
+  "section": "## 9 \u00b7 Agent-specific evaluation (trajectories, tool use, multi-turn, world state, multi-agent, localization)",
+  "source_seam": "new eval benchmarks/tools",
+  "title": "Mr.LHDR: A Benchmark for Multimodal Real-World Long-Horizon Deep Research Agents",
+  "type": "paper / benchmark",
+  "url": "https://arxiv.org/abs/2609.11318",
+  "worker": {
+    "candidate_reason": "Adds an explicit dependency graph to intermediate-conclusion grading, distinguishing a correct final answer from a fully supported submitted response. The paper defines the metrics and reports controlled visual-evidence ablations; released evaluation documentation makes the scoring procedure inspectable.",
+    "evidence": "Primary arXiv v1 submitted September 10, 2026, and its HTML paper describe 102 questions with hidden, annotated dependency graphs. OA measures final-answer correctness; SA requires the answer and all checklist conclusions; DACS withholds downstream credit if prerequisite conclusions are unsatisfied. The paper explicitly says these metrics grade conclusions stated in submitted responses, without observing latent reasoning or tool-use traces. GitHub API resolved the paper's Mr-LHDR-eval link to https://github.com/minghaoguo20/Mr-LHDR; its README documents separate run, LLM-judge, and score stages and links the public Hugging Face dataset. The main-results judge differs from the quick-start judge example, so comparable results require pinning the judge configuration. Retrieved repository metadata showed an unarchived Apache-2.0 repository with zero stars and zero forks; this proposal is for the research paper, with no demonstrated external software adoption. Source inspection only; benchmark results were not independently reproduced.",
+    "summary": "Grades final answers and prerequisite-consistent intermediate conclusions in multimodal research responses. \u26a0\ufe0f Response-level grading does not verify actual tool-use traces.",
+    "url_check": {
+      "detail": "200",
+      "ok": true
+    }
+  }
+}
