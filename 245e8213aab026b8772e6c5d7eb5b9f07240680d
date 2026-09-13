@@ -1,0 +1,47 @@
+{
+  "artifacts": {
+    "dispatcher_run_dir": "/Users/arthur/.codex/automations/awesome-evals-daily-dispatcher/runs/20260913T022218Z-apply",
+    "kb_validation": "/Users/arthur/.codex/automations/awesome-evals-daily-dispatcher/runs/20260913T022218Z-apply/kb-validation.json",
+    "promotion_plan": "/Users/arthur/.codex/automations/awesome-evals-daily-dispatcher/runs/20260913T022218Z-apply/promotion-plan.json",
+    "source_sync": "/Users/arthur/.codex/automations/awesome-evals-daily-dispatcher/runs/20260913T022218Z-apply/source-sync.json"
+  },
+  "business_status": "succeeded",
+  "commit": "245e8213aab026b8772e6c5d7eb5b9f07240680d",
+  "generated_at_utc": "2026-09-13T02:28:24Z",
+  "partner_sessions": [
+    {
+      "role": "scan_worker",
+      "session_id": "01a09892-ada3-7372-9c2c-cf1eee7c4b1a"
+    }
+  ],
+  "primary_session_id": "01a09892-69bb-79f3-b996-c9db18186455",
+  "schema": "pouw.git-note.v1",
+  "session_provenance_status": "complete",
+  "source_raw_session_ids": [
+    "01a09892-69bb-79f3-b996-c9db18186455",
+    "01a09892-ada3-7372-9c2c-cf1eee7c4b1a"
+  ],
+  "task": "Promote reviewed awesome-evals candidates into local KB",
+  "upstream_sync_summary": {
+    "changed_file_count": 0,
+    "changed_files": [],
+    "commit_count": 0,
+    "commit_range": "1b8928b60a9d41cbab371610d741d39a3fd50860..1b8928b60a9d41cbab371610d741d39a3fd50860",
+    "commits": [],
+    "detected_item_count": 0,
+    "detected_items": [],
+    "head_after_merge": "78521b560775dd3d84e956c9c28d70c15b3cbce6",
+    "merge_base": "1b8928b60a9d41cbab371610d741d39a3fd50860",
+    "origin_main_after": "78521b560775dd3d84e956c9c28d70c15b3cbce6",
+    "origin_main_before": "78521b560775dd3d84e956c9c28d70c15b3cbce6",
+    "performed": false,
+    "safety_relevant_paths": [],
+    "upstream_main_after": "1b8928b60a9d41cbab371610d741d39a3fd50860",
+    "upstream_main_before": "1b8928b60a9d41cbab371610d741d39a3fd50860"
+  },
+  "useful_work": [
+    "Applied only accept_for_local_kb review decisions.",
+    "Validated URL, duplicate, and diff gates before commit.",
+    "Preserved scan/review/promotion artifacts under the dispatcher run directory."
+  ]
+}
