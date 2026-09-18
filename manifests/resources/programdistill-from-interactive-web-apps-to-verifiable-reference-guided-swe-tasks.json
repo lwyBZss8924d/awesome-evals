@@ -1,0 +1,59 @@
+{
+  "author": "Kim, Jeonghye; Kim, Minseon; Kim, Young Jin et al.",
+  "id": "programdistill-from-interactive-web-apps-to-verifiable-reference-guided-swe-tasks",
+  "note": {
+    "path": "notes/papers/programdistill-from-interactive-web-apps-to-verifiable-reference-guided-swe-tasks.md"
+  },
+  "readme": {
+    "entry": "- **[ProgramDistill: From Interactive Web Apps to Verifiable Reference-Guided SWE Tasks](https://arxiv.org/abs/2609.18805)** \u2014 Kim, Jeonghye; Kim, Minseon; Kim, Young Jin et al. \u2014 <https://arxiv.org/abs/2609.18805> \u00b7 *paper* \u2014 Reference-guided web-app repair with replay-verified behaviors, prerequisite preservation, and controllable restoration depth. \u26a0\ufe0f Public benchmark release pending. \ud83c\udd95",
+    "line": 478,
+    "path": "README.md"
+  },
+  "review": {
+    "decision": "accept_for_local_kb",
+    "hard_failures": [],
+    "reviewed_at_utc": "2026-09-18T02:31:51Z",
+    "scores": {
+      "factuality": {
+        "reason": "structured evidence plus fetched source snapshot",
+        "score": 2
+      },
+      "kb_fit": {
+        "reason": "matches agent/eval KB scope",
+        "score": 2
+      },
+      "quality": {
+        "reason": "concrete eval artifacts or methodology signals present",
+        "score": 2
+      },
+      "recency": {
+        "reason": "evidence indicates 2025-2026 or actively updated source",
+        "score": 2
+      },
+      "source_authority": {
+        "reason": "primary repo or lab/source page",
+        "score": 2
+      }
+    },
+    "total_score": 10,
+    "url_check": {
+      "detail": "HEAD:200",
+      "ok": true
+    }
+  },
+  "schema": "awesome_evals.resource_manifest.v1",
+  "section": "## 9 \u00b7 Agent-specific evaluation (trajectories, tool use, multi-turn, world state, multi-agent, localization)",
+  "source_seam": "New eval benchmarks and methods; Hugging Face Daily Papers, 2026-09-17",
+  "title": "ProgramDistill: From Interactive Web Apps to Verifiable Reference-Guided SWE Tasks",
+  "type": "paper",
+  "url": "https://arxiv.org/abs/2609.18805",
+  "worker": {
+    "candidate_reason": "The paper specifies a concrete behavioral verifier and a task-construction validity test: the target must fail after masking while prerequisites still pass, then the gold repair must recover the lineage. This adds reference-guided repair and compositional difficulty to the existing trajectory and state-based evaluation resources. Curate as a research method, with the unreleased benchmark caveat.",
+    "evidence": "Primary text: https://arxiv.org/html/2609.18805v1, sections 2.2\u20132.4, 3.1\u20133.2 and 5. The verifier resets application/browser state and replays recorded actions without an LLM judge, checking the expected behavioral signals. Task validation requires a buildable masked application, preserved prerequisites, target failure, and recovery under the gold patch. Repair agents see the working reference through a browser, while reference source, grading traces and gold patches are hidden. Binary scoring requires the complete lineage; chain scoring credits recovered prefixes. The paper reports 1,975 verified behaviors across 26 applications and 4,063 constructed tasks; its nine-model partial-repair comparison uses ProgramDistill-300, not the entire generated inventory. Section 5 limits the study to self-contained web apps, structured browser observations rather than screenshot inputs, and a single construction model. Scores do not establish visual fidelity or external-service robustness. Abstract footnote 1 says a public benchmark release is still being prepared. Retrieved arXiv metadata identifies the September 16, 2026 paper by Jeonghye Kim and colleagues. These are author-reported methods and results, not independently reproduced measurements.",
+    "summary": "Reference-guided web-app repair with replay-verified behaviors, prerequisite preservation, and controllable restoration depth. \u26a0\ufe0f Public benchmark release pending.",
+    "url_check": {
+      "detail": "200",
+      "ok": true
+    }
+  }
+}
