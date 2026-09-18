@@ -1,0 +1,59 @@
+{
+  "author": "Zhang, Caiqi; Zhu, Xiaochen; Li, Chengzu et al.",
+  "id": "confidence-comes-from-experience-experiential-confidence-estimation-from-reasoning-to-agents",
+  "note": {
+    "path": "notes/papers/confidence-comes-from-experience-experiential-confidence-estimation-from-reasoning-to-agents.md"
+  },
+  "readme": {
+    "entry": "- **[Confidence Comes from Experience: Experiential Confidence Estimation from Reasoning to Agents](https://arxiv.org/abs/2609.17708)** \u2014 Zhang, Caiqi; Zhu, Xiaochen; Li, Chengzu et al. \u2014 <https://arxiv.org/abs/2609.17708> \u00b7 *paper* \u2014 Tests confidence in completed agent runs using independently graded past episodes, with task-disjoint evaluation and silent-failure analysis. \u26a0\ufe0f Requires outcome labels and recalibration as the actor changes. \ud83c\udd95",
+    "line": 479,
+    "path": "README.md"
+  },
+  "review": {
+    "decision": "accept_for_local_kb",
+    "hard_failures": [],
+    "reviewed_at_utc": "2026-09-18T02:31:51Z",
+    "scores": {
+      "factuality": {
+        "reason": "structured evidence plus fetched source snapshot",
+        "score": 2
+      },
+      "kb_fit": {
+        "reason": "matches agent/eval KB scope",
+        "score": 2
+      },
+      "quality": {
+        "reason": "concrete eval artifacts or methodology signals present",
+        "score": 1
+      },
+      "recency": {
+        "reason": "evidence indicates 2025-2026 or actively updated source",
+        "score": 2
+      },
+      "source_authority": {
+        "reason": "primary repo or lab/source page",
+        "score": 2
+      }
+    },
+    "total_score": 9,
+    "url_check": {
+      "detail": "HEAD:200",
+      "ok": true
+    }
+  },
+  "schema": "awesome_evals.resource_manifest.v1",
+  "section": "## 9 \u00b7 Agent-specific evaluation (trajectories, tool use, multi-turn, world state, multi-agent, localization)",
+  "source_seam": "New eval benchmarks and methods; Hugging Face Daily Papers, 2026-09-17",
+  "title": "Confidence Comes from Experience: Experiential Confidence Estimation from Reasoning to Agents",
+  "type": "paper",
+  "url": "https://arxiv.org/abs/2609.17708",
+  "worker": {
+    "candidate_reason": "A useful evaluation-method paper for agents that finish with plausible-looking but incorrect results. It separates confidence discrimination, calibration and selective prediction; compares supervision-matched baselines; and tests whether apparent gains disappear when outcome labels or failure visibility are misleading.",
+    "evidence": "Primary text: https://arxiv.org/html/2609.17708v1, sections 3\u20137 and appendices B\u2013C. XConf retrieves the actor's past graded episodes using task embeddings and stated confidence, calculates a historical hit rate, and combines it with a separate reflection on retrieved evidence. The original reflection is recorded before grading; outcome-informed lessons are confined to previously graded bank entries. Section 4 uses five-fold task-disjoint rotation and supervision-matched label-consuming baselines; it reports AUROC, ECE and AURC with bootstrap uncertainty, with chronological replay separately described in appendix H. Section 5.3 evaluates completed trajectories on ScienceWorld, AppWorld and SWE-bench Verified against single-rollout baselines. ALFWorld and WebShop are excluded from the main table because their visible failure signals saturate introspective baselines; appendix B discusses why that weakens them as confidence testbeds. Section 6 reports that self-generated outcome labels fail where an independent grading signal retains value. Section 7 acknowledges a self-consistency advantage on some votable factual recall tasks and leaves integration with self-evolving memory untested. Past episodes may become stale as the actor changes. One answer generation still involves retrieval and additional confidence/reflection work; it is not a claim of one total API call. Retrieved arXiv metadata dates the paper to September 15, 2026. No production deployment or independent reproduction is claimed.",
+    "summary": "Tests confidence in completed agent runs using independently graded past episodes, with task-disjoint evaluation and silent-failure analysis. \u26a0\ufe0f Requires outcome labels and recalibration as the actor changes.",
+    "url_check": {
+      "detail": "200",
+      "ok": true
+    }
+  }
+}

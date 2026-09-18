@@ -1,0 +1,59 @@
+{
+  "author": "Geng, Hejia; Huang, Zesen; Li, Haoyang et al.",
+  "id": "scienceide-turning-world-s-scientific-codebase-into-agent-learnable-environments",
+  "note": {
+    "path": "notes/papers/scienceide-turning-world-s-scientific-codebase-into-agent-learnable-environments.md"
+  },
+  "readme": {
+    "entry": "- **[ScienceIDE: Turning World's Scientific Codebase into Agent Learnable Environments](https://arxiv.org/abs/2609.19134)** \u2014 Geng, Hejia; Huang, Zesen; Li, Haoyang et al. \u2014 <https://arxiv.org/abs/2609.19134> \u00b7 *paper* \u2014 Scientific-agent evaluation with calibrated numerical checks, witness/baseline task validation, and explicit failure accounting. \u26a0\ufe0f Disclosed contamination and verification limits constrain score interpretation. \ud83c\udd95",
+    "line": 320,
+    "path": "README.md"
+  },
+  "review": {
+    "decision": "accept_for_local_kb",
+    "hard_failures": [],
+    "reviewed_at_utc": "2026-09-18T02:31:52Z",
+    "scores": {
+      "factuality": {
+        "reason": "structured evidence plus fetched source snapshot",
+        "score": 2
+      },
+      "kb_fit": {
+        "reason": "matches agent/eval KB scope",
+        "score": 2
+      },
+      "quality": {
+        "reason": "concrete eval artifacts or methodology signals present",
+        "score": 2
+      },
+      "recency": {
+        "reason": "evidence indicates 2025-2026 or actively updated source",
+        "score": 2
+      },
+      "source_authority": {
+        "reason": "primary repo or lab/source page",
+        "score": 2
+      }
+    },
+    "total_score": 10,
+    "url_check": {
+      "detail": "HEAD:200",
+      "ok": true
+    }
+  },
+  "schema": "awesome_evals.resource_manifest.v1",
+  "section": "## 7 \u00b7 Evals & RL environments (verifiers, reward design, difficulty calibration, lifecycle)",
+  "source_seam": "New eval benchmarks and methods; Hugging Face Daily Papers, 2026-09-17",
+  "title": "ScienceIDE: Turning World's Scientific Codebase into Agent Learnable Environments",
+  "type": "paper",
+  "url": "https://arxiv.org/abs/2609.19134",
+  "worker": {
+    "candidate_reason": "The paper gives a detailed, reusable verifier-design method for scientific software: justify tolerances against meaningful observables, demonstrate both a successful witness and a failing baseline, and distinguish scientific failure from infrastructure failure. Its explicit integrity disclosures also make it valuable for designing and auditing evaluation infrastructure. Inclusion is for the method and qualified research evidence, not a clean-benchmark or established-tool endorsement.",
+    "evidence": "Primary text: https://arxiv.org/html/2609.19134v1, sections 2.2\u20132.4, 3.1, 5 and appendices 8.1 and 9.1. Scientific checks select pointwise tolerances or physical invariants, align outputs by scientific identity, and require expert justification; measured variation is finite calibration evidence rather than a universal tolerance guarantee. Injected-repair admission requires a passing witness, a defective baseline with headroom, and an observable fault corrected by the reference repair. Harness failures remain ungraded, while valid budget exhaustion counts as failure. The paper separates the broad environment/task inventory from an 85-task ScienceIDE-Hard comparison of model\u2013harness systems under a one-hour budget. Section 5 restricts claims to reference-verifiable repair/implementation, leaves external audits and adversarial reward-hacking evaluation outstanding, and does not establish transfer to unseen codebases. Appendix 9.1 discloses historical upstream fetches: 21 confirmed successful fetches, 13 scored solved, and staging-script drift from declared isolation. It describes a corrected live-container allowlist and voiding confirmed fetch trials; this does not establish that the earlier campaign was controlled or contamination-free. Curate the verifier methodology while retaining these disclosures. The linked aitofound/ScienceIDE GitHub repository was retrieved with gh: public, unarchived, created September 11 and pushed September 17, 2026. Its presence is not evidence of independently verified adoption. No benchmark execution or independent result reproduction was performed.",
+    "summary": "Scientific-agent evaluation with calibrated numerical checks, witness/baseline task validation, and explicit failure accounting. \u26a0\ufe0f Disclosed contamination and verification limits constrain score interpretation.",
+    "url_check": {
+      "detail": "200",
+      "ok": true
+    }
+  }
+}

@@ -1,6 +1,6 @@
 {
-  "generated_at_utc": "2026-09-13T02:28:20Z",
-  "resource_count": 65,
+  "generated_at_utc": "2026-09-18T02:31:52Z",
+  "resource_count": 68,
   "resources": [
     {
       "id": "agenticdatabench-a-comprehensive-benchmark-for-data-agents",
@@ -253,6 +253,20 @@
       "title": "ClawMark: A Living-World Benchmark for Multi-Turn, Multi-Day, Multimodal Coworker Agents",
       "type": "paper/benchmark",
       "url": "https://arxiv.org/abs/2604.23781v2"
+    },
+    {
+      "id": "confidence-comes-from-experience-experiential-confidence-estimation-from-reasoning-to-agents",
+      "manifest_path": "manifests/resources/confidence-comes-from-experience-experiential-confidence-estimation-from-reasoning-to-agents.json",
+      "note_path": "notes/papers/confidence-comes-from-experience-experiential-confidence-estimation-from-reasoning-to-agents.md",
+      "readme_line": 479,
+      "readme_path": "README.md",
+      "review_decision": "accept_for_local_kb",
+      "review_total_score": 9,
+      "section": "## 9 \u00b7 Agent-specific evaluation (trajectories, tool use, multi-turn, world state, multi-agent, localization)",
+      "source_seam": "New eval benchmarks and methods; Hugging Face Daily Papers, 2026-09-17",
+      "title": "Confidence Comes from Experience: Experiential Confidence Estimation from Reasoning to Agents",
+      "type": "paper",
+      "url": "https://arxiv.org/abs/2609.17708"
     },
     {
       "id": "continually-improving-our-agent-harness",
@@ -661,6 +675,20 @@
       "url": "https://www.anthropic.com/research/multiagent-systems"
     },
     {
+      "id": "programdistill-from-interactive-web-apps-to-verifiable-reference-guided-swe-tasks",
+      "manifest_path": "manifests/resources/programdistill-from-interactive-web-apps-to-verifiable-reference-guided-swe-tasks.json",
+      "note_path": "notes/papers/programdistill-from-interactive-web-apps-to-verifiable-reference-guided-swe-tasks.md",
+      "readme_line": 478,
+      "readme_path": "README.md",
+      "review_decision": "accept_for_local_kb",
+      "review_total_score": 10,
+      "section": "## 9 \u00b7 Agent-specific evaluation (trajectories, tool use, multi-turn, world state, multi-agent, localization)",
+      "source_seam": "New eval benchmarks and methods; Hugging Face Daily Papers, 2026-09-17",
+      "title": "ProgramDistill: From Interactive Web Apps to Verifiable Reference-Guided SWE Tasks",
+      "type": "paper",
+      "url": "https://arxiv.org/abs/2609.18805"
+    },
+    {
       "id": "ready-or-not-reliable-enterprise-agent-deployment",
       "manifest_path": "manifests/resources/ready-or-not-reliable-enterprise-agent-deployment.json",
       "note_path": "notes/papers/ready-or-not-reliable-enterprise-agent-deployment.md",
@@ -715,6 +743,20 @@
       "title": "Safety Testing LLM Agents at Scale: From Risk Discovery to Evidence-Grounded Verification",
       "type": "paper/benchmark/tool",
       "url": "https://arxiv.org/abs/2607.01793"
+    },
+    {
+      "id": "scienceide-turning-world-s-scientific-codebase-into-agent-learnable-environments",
+      "manifest_path": "manifests/resources/scienceide-turning-world-s-scientific-codebase-into-agent-learnable-environments.json",
+      "note_path": "notes/papers/scienceide-turning-world-s-scientific-codebase-into-agent-learnable-environments.md",
+      "readme_line": 320,
+      "readme_path": "README.md",
+      "review_decision": "accept_for_local_kb",
+      "review_total_score": 10,
+      "section": "## 7 \u00b7 Evals & RL environments (verifiers, reward design, difficulty calibration, lifecycle)",
+      "source_seam": "New eval benchmarks and methods; Hugging Face Daily Papers, 2026-09-17",
+      "title": "ScienceIDE: Turning World's Scientific Codebase into Agent Learnable Environments",
+      "type": "paper",
+      "url": "https://arxiv.org/abs/2609.19134"
     },
     {
       "id": "skillcoach-self-evolving-rubrics-for-evaluating-and-enhancing-agentic-skill-use",
