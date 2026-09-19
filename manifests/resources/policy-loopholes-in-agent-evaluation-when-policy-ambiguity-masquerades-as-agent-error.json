@@ -1,0 +1,59 @@
+{
+  "author": "Hongliu Cao",
+  "id": "policy-loopholes-in-agent-evaluation-when-policy-ambiguity-masquerades-as-agent-error",
+  "note": {
+    "path": "notes/papers/policy-loopholes-in-agent-evaluation-when-policy-ambiguity-masquerades-as-agent-error.md"
+  },
+  "readme": {
+    "entry": "- **[Policy Loopholes in Agent Evaluation: When Policy Ambiguity Masquerades as Agent Error](https://arxiv.org/abs/2609.14400)** \u2014 Hongliu Cao \u2014 <https://arxiv.org/abs/2609.14400> \u00b7 *paper* \u2014 A policy-first audit of \u03c4\u00b2-bench separates ambiguous requirements from agent mistakes using clause analysis and failure traces. \u26a0\ufe0f Observational evidence from two domains. \ud83c\udd95",
+    "line": 294,
+    "path": "README.md"
+  },
+  "review": {
+    "decision": "accept_for_local_kb",
+    "hard_failures": [],
+    "reviewed_at_utc": "2026-09-19T02:27:06Z",
+    "scores": {
+      "factuality": {
+        "reason": "structured evidence plus fetched source snapshot",
+        "score": 2
+      },
+      "kb_fit": {
+        "reason": "matches agent/eval KB scope",
+        "score": 2
+      },
+      "quality": {
+        "reason": "concrete eval artifacts or methodology signals present",
+        "score": 2
+      },
+      "recency": {
+        "reason": "evidence indicates 2025-2026 or actively updated source",
+        "score": 2
+      },
+      "source_authority": {
+        "reason": "primary repo or lab/source page",
+        "score": 2
+      }
+    },
+    "total_score": 10,
+    "url_check": {
+      "detail": "HEAD:200",
+      "ok": true
+    }
+  },
+  "schema": "awesome_evals.resource_manifest.v1",
+  "section": "## 6 \u00b7 Benchmark vs. eval (and benchmark integrity: contamination, saturation, label errors, leaderboard gaming)",
+  "source_seam": "new_eval_benchmarks_and_methods",
+  "title": "Policy Loopholes in Agent Evaluation: When Policy Ambiguity Masquerades as Agent Error",
+  "type": "paper",
+  "url": "https://arxiv.org/abs/2609.14400",
+  "worker": {
+    "candidate_reason": "Adds a distinct benchmark-integrity failure mode: a defensible policy interpretation can disagree with the single gold trajectory. The paper supplies audit criteria, task-level results and worked cases, making it useful when designing policy-grounded graders.",
+    "evidence": "Read arXiv v1 (2026-09-13), especially \u00a7\u00a73\u20134 and Appendix A: https://arxiv.org/html/2609.14400v1 . The study audits airline and retail policies, then checks whether failing traces rely on defensible alternative readings. It reports 1,968 runs across three models with four trials per task. Airline results contrast with retail tool guards that prevent ambiguous actions. \u00a74.2 explicitly says policy complexity and enforcement cannot be disentangled from only two domains; the proposed mechanism remains a hypothesis. Published analysis inspected; experiments were not independently reproduced.",
+    "summary": "A policy-first audit of \u03c4\u00b2-bench separates ambiguous requirements from agent mistakes using clause analysis and failure traces. \u26a0\ufe0f Observational evidence from two domains.",
+    "url_check": {
+      "detail": "200",
+      "ok": true
+    }
+  }
+}

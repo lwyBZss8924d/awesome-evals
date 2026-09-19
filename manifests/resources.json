@@ -1,6 +1,6 @@
 {
-  "generated_at_utc": "2026-09-18T02:31:52Z",
-  "resource_count": 68,
+  "generated_at_utc": "2026-09-19T02:27:08Z",
+  "resource_count": 71,
   "resources": [
     {
       "id": "agenticdatabench-a-comprehensive-benchmark-for-data-agents",
@@ -339,6 +339,20 @@
       "url": "https://arxiv.org/abs/2606.23654"
     },
     {
+      "id": "evals-skills-for-coding-agents",
+      "manifest_path": "manifests/resources/evals-skills-for-coding-agents.json",
+      "note_path": "notes/articles/evals-skills-for-coding-agents.md",
+      "readme_line": 125,
+      "readme_path": "README.md",
+      "review_decision": "accept_for_local_kb",
+      "review_total_score": 8,
+      "section": "## 3 \u00b7 The model / harness / skill decomposition",
+      "source_seam": "known_authors_and_eval_tools",
+      "title": "Evals Skills for Coding Agents",
+      "type": "blog / skills resource",
+      "url": "https://hamel.dev/blog/posts/evals-skills"
+    },
+    {
       "id": "evosafeharness-evolving-model-and-domain-specific-harnesses-for-securing-agents",
       "manifest_path": "manifests/resources/evosafeharness-evolving-model-and-domain-specific-harnesses-for-securing-agents.json",
       "note_path": "notes/papers/evosafeharness-evolving-model-and-domain-specific-harnesses-for-securing-agents.md",
@@ -463,6 +477,20 @@
       "title": "How Many Tasks Are Enough for Agent Benchmark Decisions? A Replay Analysis of Public LLM Agent Benchmarks",
       "type": "research paper with reproducibility package",
       "url": "https://arxiv.org/abs/2607.12338"
+    },
+    {
+      "id": "how-we-benchmark-deep-agents",
+      "manifest_path": "manifests/resources/how-we-benchmark-deep-agents.json",
+      "note_path": "notes/articles/how-we-benchmark-deep-agents.md",
+      "readme_line": 248,
+      "readme_path": "README.md",
+      "review_decision": "accept_for_local_kb",
+      "review_total_score": 9,
+      "section": "## 5 \u00b7 Evaluation infrastructure (the eval stack: datasets, scorers, online/offline, tracing, CI)",
+      "source_seam": "company_engineering_blogs",
+      "title": "How We Benchmark Deep Agents",
+      "type": "blog",
+      "url": "https://www.langchain.com/blog/how-we-benchmark-deep-agents"
     },
     {
       "id": "how-we-build-agent-environments-tasks",
@@ -673,6 +701,20 @@
       "title": "Patterns and Problems in Emerging Multiagent Systems",
       "type": "research article",
       "url": "https://www.anthropic.com/research/multiagent-systems"
+    },
+    {
+      "id": "policy-loopholes-in-agent-evaluation-when-policy-ambiguity-masquerades-as-agent-error",
+      "manifest_path": "manifests/resources/policy-loopholes-in-agent-evaluation-when-policy-ambiguity-masquerades-as-agent-error.json",
+      "note_path": "notes/papers/policy-loopholes-in-agent-evaluation-when-policy-ambiguity-masquerades-as-agent-error.md",
+      "readme_line": 294,
+      "readme_path": "README.md",
+      "review_decision": "accept_for_local_kb",
+      "review_total_score": 10,
+      "section": "## 6 \u00b7 Benchmark vs. eval (and benchmark integrity: contamination, saturation, label errors, leaderboard gaming)",
+      "source_seam": "new_eval_benchmarks_and_methods",
+      "title": "Policy Loopholes in Agent Evaluation: When Policy Ambiguity Masquerades as Agent Error",
+      "type": "paper",
+      "url": "https://arxiv.org/abs/2609.14400"
     },
     {
       "id": "programdistill-from-interactive-web-apps-to-verifiable-reference-guided-swe-tasks",
