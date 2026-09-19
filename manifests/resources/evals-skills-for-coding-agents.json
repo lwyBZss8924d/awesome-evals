@@ -1,0 +1,59 @@
+{
+  "author": "Hamel Husain and Shreya Shankar",
+  "id": "evals-skills-for-coding-agents",
+  "note": {
+    "path": "notes/articles/evals-skills-for-coding-agents.md"
+  },
+  "readme": {
+    "entry": "- **[Evals Skills for Coding Agents](https://hamel.dev/blog/posts/evals-skills)** \u2014 Hamel Husain and Shreya Shankar \u2014 <https://hamel.dev/blog/posts/evals-skills> \u00b7 *blog / skills resource* \u2014 Reusable agent skills turn trace review, failure discovery and human-calibrated judging into concrete product-eval workflows. \u26a0\ufe0f Interactive review; repository has no declared license. \ud83c\udd95",
+    "line": 125,
+    "path": "README.md"
+  },
+  "review": {
+    "decision": "accept_for_local_kb",
+    "hard_failures": [],
+    "reviewed_at_utc": "2026-09-19T02:27:08Z",
+    "scores": {
+      "factuality": {
+        "reason": "structured evidence plus fetched source snapshot",
+        "score": 2
+      },
+      "kb_fit": {
+        "reason": "matches agent/eval KB scope",
+        "score": 2
+      },
+      "quality": {
+        "reason": "concrete eval artifacts or methodology signals present",
+        "score": 1
+      },
+      "recency": {
+        "reason": "evidence indicates 2025-2026 or actively updated source",
+        "score": 2
+      },
+      "source_authority": {
+        "reason": "non-primary or less established source",
+        "score": 1
+      }
+    },
+    "total_score": 8,
+    "url_check": {
+      "detail": "HEAD:200",
+      "ok": true
+    }
+  },
+  "schema": "awesome_evals.resource_manifest.v1",
+  "section": "## 3 \u00b7 The model / harness / skill decomposition",
+  "source_seam": "known_authors_and_eval_tools",
+  "title": "Evals Skills for Coding Agents",
+  "type": "blog / skills resource",
+  "url": "https://hamel.dev/blog/posts/evals-skills",
+  "worker": {
+    "candidate_reason": "Extends the section's general Agent Skills coverage with eval-specific procedures and inspectable source. Frozen repository files implement human-label data splits and judge calibration; dated GitHub metadata and an unaffiliated issue provide community-interest evidence beyond an author-only launch.",
+    "evidence": "Read the author article (published 2026-03-02, modified 2026-08-31) and ai-evals-course/evals-skills at commit 2edbc5b1b0dc91f74fcfa8fd8f7eaeb302e052ab. README and skills/validate-evaluator/SKILL.md specify disjoint training, development and held-out test data, TPR/TNR and bias correction. skills/error-discovery/SKILL.md explicitly requires an interactive session. GitHub API on 2026-09-19 reported 623 stars, 51 forks, archived=false and no declared license; issue #16 has author_association=NONE and requests a license. This supports community interest, not verified production adoption. Source read only; no package installation or skill execution.",
+    "summary": "Reusable agent skills turn trace review, failure discovery and human-calibrated judging into concrete product-eval workflows. \u26a0\ufe0f Interactive review; repository has no declared license.",
+    "url_check": {
+      "detail": "200",
+      "ok": true
+    }
+  }
+}

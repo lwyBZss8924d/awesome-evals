@@ -1,0 +1,59 @@
+{
+  "author": "Nick Hollon and Harrison Chase / LangChain",
+  "id": "how-we-benchmark-deep-agents",
+  "note": {
+    "path": "notes/articles/how-we-benchmark-deep-agents.md"
+  },
+  "readme": {
+    "entry": "- **[How We Benchmark Deep Agents](https://www.langchain.com/blog/how-we-benchmark-deep-agents)** \u2014 Nick Hollon and Harrison Chase / LangChain \u2014 <https://www.langchain.com/blog/how-we-benchmark-deep-agents> \u00b7 *blog* \u2014 LangChain describes environment-bound end-to-end evals, repeated trials, a frozen lite suite and deterministic capability tests for evaluating harness changes. \ud83c\udd95",
+    "line": 248,
+    "path": "README.md"
+  },
+  "review": {
+    "decision": "accept_for_local_kb",
+    "hard_failures": [],
+    "reviewed_at_utc": "2026-09-19T02:27:06Z",
+    "scores": {
+      "factuality": {
+        "reason": "structured evidence plus fetched source snapshot",
+        "score": 2
+      },
+      "kb_fit": {
+        "reason": "matches agent/eval KB scope",
+        "score": 2
+      },
+      "quality": {
+        "reason": "concrete eval artifacts or methodology signals present",
+        "score": 2
+      },
+      "recency": {
+        "reason": "evidence indicates 2025-2026 or actively updated source",
+        "score": 2
+      },
+      "source_authority": {
+        "reason": "non-primary or less established source",
+        "score": 1
+      }
+    },
+    "total_score": 9,
+    "url_check": {
+      "detail": "HEAD:200",
+      "ok": true
+    }
+  },
+  "schema": "awesome_evals.resource_manifest.v1",
+  "section": "## 5 \u00b7 Evaluation infrastructure (the eval stack: datasets, scorers, online/offline, tracing, CI)",
+  "source_seam": "company_engineering_blogs",
+  "title": "How We Benchmark Deep Agents",
+  "type": "blog",
+  "url": "https://www.langchain.com/blog/how-we-benchmark-deep-agents",
+  "worker": {
+    "candidate_reason": "A first-party engineering account with concrete task packaging and evaluation practices: inspect produced artifacts, cover different kinds of work and use benchmarks alongside fast capability checks. It connects evaluation design to decisions about removing harness middleware and simplifying prompts.",
+    "evidence": "Read the 2026-07-23 engineering article, sections End-to-end evals with Harbor, What works for us and Iterate with confidence. It defines tasks through an environment, instructions and a grading script; grades resulting artifacts/state; and describes repeated trials, a frozen lite subset and capability tests. The concrete example is assessing todo-list middleware removal and prompt reduction for Deep Agents 0.7. These are the authors' reported practices and proposed changes, not independent proof of gains. Numerical speed/cost and leaderboard claims are intentionally omitted from the annotation.",
+    "summary": "LangChain describes environment-bound end-to-end evals, repeated trials, a frozen lite suite and deterministic capability tests for evaluating harness changes.",
+    "url_check": {
+      "detail": "200",
+      "ok": true
+    }
+  }
+}
