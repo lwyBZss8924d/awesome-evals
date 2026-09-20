@@ -1,0 +1,59 @@
+{
+  "author": "Daniel Shea and Se\u00e1n Roche",
+  "id": "jev-as-a-judge-for-agent-evals",
+  "note": {
+    "path": "notes/articles/jev-as-a-judge-for-agent-evals.md"
+  },
+  "readme": {
+    "entry": "- **[Jev-as-a-Judge for Agent Evals](https://www.langchain.com/blog/jev-agent-evals-langsmith)** \u2014 Daniel Shea and Se\u00e1n Roche \u2014 <https://www.langchain.com/blog/jev-agent-evals-langsmith> \u00b7 *engineering blog / empirical judge comparison* \u2014 A fixed-trace judge experiment separates human-label agreement from repeated-score variance; useful protocol example with only five distinct cases and limited version control. \ud83c\udd95",
+    "line": 366,
+    "path": "README.md"
+  },
+  "review": {
+    "decision": "accept_for_local_kb",
+    "hard_failures": [],
+    "reviewed_at_utc": "2026-09-20T02:29:45Z",
+    "scores": {
+      "factuality": {
+        "reason": "structured evidence plus fetched source snapshot",
+        "score": 2
+      },
+      "kb_fit": {
+        "reason": "matches agent/eval KB scope",
+        "score": 2
+      },
+      "quality": {
+        "reason": "concrete eval artifacts or methodology signals present",
+        "score": 2
+      },
+      "recency": {
+        "reason": "evidence indicates 2025-2026 or actively updated source",
+        "score": 2
+      },
+      "source_authority": {
+        "reason": "non-primary or less established source",
+        "score": 1
+      }
+    },
+    "total_score": 9,
+    "url_check": {
+      "detail": "HEAD:200",
+      "ok": true
+    }
+  },
+  "schema": "awesome_evals.resource_manifest.v1",
+  "section": "8 \u00b7 LLM-as-judge & verifiers (alignment, biases, verifiable vs judgeable)",
+  "source_seam": "company engineering blogs; new evaluation models/tools",
+  "title": "Jev-as-a-Judge for Agent Evals",
+  "type": "engineering blog / empirical judge comparison",
+  "url": "https://www.langchain.com/blog/jev-agent-evals-langsmith",
+  "worker": {
+    "candidate_reason": "Offers an inspectable experiment and repository for distinguishing evaluator repeatability from correctness; merits inclusion as a bounded case study with explicit caveats.",
+    "evidence": "Published 2026-09-20. Five frozen weather-agent traces are each judged 100 times; one reviewer supplies binary labels. Continuous-score variance measures repeatability, not correctness. The article and danielgshea/jev-as-a-judge README disclose the small corpus, provider-default sampling, and an unavailable Jev service version. The blog swaps the Choice/Noul example outputs; the repository table gives the coherent mapping. Treat the comparison as a pilot, not general judge accuracy or a causal architecture result. Linked code and result assets are available; no personal replay was performed.",
+    "summary": "A fixed-trace judge experiment separates human-label agreement from repeated-score variance; useful protocol example with only five distinct cases and limited version control.",
+    "url_check": {
+      "detail": "200",
+      "ok": true
+    }
+  }
+}

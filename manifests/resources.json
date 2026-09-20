@@ -1,6 +1,6 @@
 {
-  "generated_at_utc": "2026-09-19T02:27:08Z",
-  "resource_count": 71,
+  "generated_at_utc": "2026-09-20T02:29:45Z",
+  "resource_count": 74,
   "resources": [
     {
       "id": "agenticdatabench-a-comprehensive-benchmark-for-data-agents",
@@ -169,6 +169,20 @@
       "title": "BenchShield: Formal Model-Backed Instrumentation for Reward Integrity in LLM-Agent Evaluation Infrastructure",
       "type": "paper",
       "url": "https://arxiv.org/abs/2609.11028"
+    },
+    {
+      "id": "beyond-outcomes-dual-view-relational-learning-for-efficient-agent-benchmarking",
+      "manifest_path": "manifests/resources/beyond-outcomes-dual-view-relational-learning-for-efficient-agent-benchmarking.json",
+      "note_path": "notes/papers/beyond-outcomes-dual-view-relational-learning-for-efficient-agent-benchmarking.md",
+      "readme_line": 297,
+      "readme_path": "README.md",
+      "review_decision": "accept_for_local_kb",
+      "review_total_score": 10,
+      "section": "6 \u00b7 Benchmark vs. eval (and benchmark integrity: contamination, saturation, label errors, leaderboard gaming)",
+      "source_seam": "new eval benchmarks/tools; canonical arXiv paper",
+      "title": "Beyond Outcomes: Dual-View Relational Learning for Efficient Agent Benchmarking",
+      "type": "paper / evaluation methodology",
+      "url": "https://arxiv.org/abs/2609.18909"
     },
     {
       "id": "browsecomp-plus-a-more-fair-and-transparent-evaluation-benchmark-of-deep-research-agent",
@@ -549,6 +563,20 @@
       "url": "https://hamel.dev/blog/posts/eval-smell"
     },
     {
+      "id": "jev-as-a-judge-for-agent-evals",
+      "manifest_path": "manifests/resources/jev-as-a-judge-for-agent-evals.json",
+      "note_path": "notes/articles/jev-as-a-judge-for-agent-evals.md",
+      "readme_line": 366,
+      "readme_path": "README.md",
+      "review_decision": "accept_for_local_kb",
+      "review_total_score": 9,
+      "section": "8 \u00b7 LLM-as-judge & verifiers (alignment, biases, verifiable vs judgeable)",
+      "source_seam": "company engineering blogs; new evaluation models/tools",
+      "title": "Jev-as-a-Judge for Agent Evals",
+      "type": "engineering blog / empirical judge comparison",
+      "url": "https://www.langchain.com/blog/jev-agent-evals-langsmith"
+    },
+    {
       "id": "learning-to-evaluate-before-improving-automatic-rubric-induction-for-automatic-research-agen",
       "manifest_path": "manifests/resources/learning-to-evaluate-before-improving-automatic-rubric-induction-for-automatic-research-agen.json",
       "note_path": "notes/papers/learning-to-evaluate-before-improving-automatic-rubric-induction-for-automatic-research-agen.md",
@@ -589,6 +617,20 @@
       "title": "Long-Horizon-Terminal-Bench: Testing the Limits of Agents on Long-Horizon Terminal Tasks with Dense Reward-Based Grading",
       "type": "paper / benchmark",
       "url": "https://arxiv.org/abs/2607.08964"
+    },
+    {
+      "id": "measuring-and-improving-coding-audit-realism-with-deployment-resources",
+      "manifest_path": "manifests/resources/measuring-and-improving-coding-audit-realism-with-deployment-resources.json",
+      "note_path": "notes/articles/measuring-and-improving-coding-audit-realism-with-deployment-resources.md",
+      "readme_line": 526,
+      "readme_path": "README.md",
+      "review_decision": "accept_for_local_kb",
+      "review_total_score": 9,
+      "section": "10 \u00b7 Safety / adversarial evaluation (prompt injection, jailbreaks, action-authorization, benchmark auditing)",
+      "source_seam": "company research/engineering blogs",
+      "title": "Measuring and improving coding audit realism with deployment resources",
+      "type": "research blog / empirical evaluation study",
+      "url": "https://alignment.anthropic.com/2026/coding-audit-realism"
     },
     {
       "id": "monitoring-production-agent-lifecycle-with-aws-devops-agent-and-agentcore-evaluations",
