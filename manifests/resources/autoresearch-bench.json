@@ -1,0 +1,59 @@
+{
+  "author": "Emulated",
+  "id": "autoresearch-bench",
+  "note": {
+    "path": "notes/papers/autoresearch-bench.md"
+  },
+  "readme": {
+    "entry": "- **[Autoresearch Bench](https://www.autoresearch-bench.com/)** \u2014 Emulated \u2014 <https://www.autoresearch-bench.com/> \u00b7 *benchmark/blog* \u2014 Iterative research-agent evaluation with time budgets, separate grading, and public/private score comparisons. \u26a0\ufe0f Best-private scoring and excluded failed runs limit reliability conclusions. \ud83c\udd95",
+    "line": 487,
+    "path": "README.md"
+  },
+  "review": {
+    "decision": "accept_for_local_kb",
+    "hard_failures": [],
+    "reviewed_at_utc": "2026-09-21T02:28:30Z",
+    "scores": {
+      "factuality": {
+        "reason": "structured evidence plus fetched source snapshot",
+        "score": 2
+      },
+      "kb_fit": {
+        "reason": "matches agent/eval KB scope",
+        "score": 2
+      },
+      "quality": {
+        "reason": "concrete eval artifacts or methodology signals present",
+        "score": 2
+      },
+      "recency": {
+        "reason": "evidence indicates 2025-2026 or actively updated source",
+        "score": 2
+      },
+      "source_authority": {
+        "reason": "non-primary or less established source",
+        "score": 1
+      }
+    },
+    "total_score": 9,
+    "url_check": {
+      "detail": "HEAD:200",
+      "ok": true
+    }
+  },
+  "schema": "awesome_evals.resource_manifest.v1",
+  "section": "9 \u00b7 Agent-specific evaluation (trajectories, tool use, multi-turn, world state, multi-agent, localization)",
+  "source_seam": "new_eval_benchmarks_tools",
+  "title": "Autoresearch Bench",
+  "type": "benchmark/blog",
+  "url": "https://www.autoresearch-bench.com/",
+  "worker": {
+    "candidate_reason": "Primary project documentation exposes the scoring protocol and its caveats, giving practitioners a concrete way to examine experimental progress, overfitting, and grader isolation.",
+    "evidence": "The September 1, 2026 project article describes isolated workspaces and an external grader in a separate sandbox. Many tasks retain a private score; final scoring uses the best private result. Failed runs are excluded from aggregate curves and rankings. Cross-task normalization uses frozen divisors and equal task weights. These choices support studying iterative optimization but do not establish deployment reliability. The text-only leaderboard did not expose run-level data, so no live ranking or model-performance number is proposed.",
+    "summary": "Iterative research-agent evaluation with time budgets, separate grading, and public/private score comparisons. \u26a0\ufe0f Best-private scoring and excluded failed runs limit reliability conclusions.",
+    "url_check": {
+      "detail": "200",
+      "ok": true
+    }
+  }
+}

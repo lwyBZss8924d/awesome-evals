@@ -1,6 +1,6 @@
 {
-  "generated_at_utc": "2026-09-20T02:29:45Z",
-  "resource_count": 74,
+  "generated_at_utc": "2026-09-21T02:28:31Z",
+  "resource_count": 77,
   "resources": [
     {
       "id": "agenticdatabench-a-comprehensive-benchmark-for-data-agents",
@@ -99,6 +99,20 @@
       "title": "Are Performance-Optimization Benchmarks Reliably Measuring Coding Agents?",
       "type": "paper/benchmark audit",
       "url": "https://arxiv.org/abs/2607.01211"
+    },
+    {
+      "id": "autoresearch-bench",
+      "manifest_path": "manifests/resources/autoresearch-bench.json",
+      "note_path": "notes/papers/autoresearch-bench.md",
+      "readme_line": 487,
+      "readme_path": "README.md",
+      "review_decision": "accept_for_local_kb",
+      "review_total_score": 9,
+      "section": "9 \u00b7 Agent-specific evaluation (trajectories, tool use, multi-turn, world state, multi-agent, localization)",
+      "source_seam": "new_eval_benchmarks_tools",
+      "title": "Autoresearch Bench",
+      "type": "benchmark/blog",
+      "url": "https://www.autoresearch-bench.com/"
     },
     {
       "id": "babeljudge-measuring-llm-as-a-judge-reliability-across-languages-and-agent-trajectories",
@@ -339,6 +353,20 @@
       "url": "https://arxiv.org/abs/2609.02783"
     },
     {
+      "id": "efficient-benchmarking-of-ai-agents",
+      "manifest_path": "manifests/resources/efficient-benchmarking-of-ai-agents.json",
+      "note_path": "notes/papers/efficient-benchmarking-of-ai-agents.md",
+      "readme_line": 298,
+      "readme_path": "README.md",
+      "review_decision": "accept_for_local_kb",
+      "review_total_score": 10,
+      "section": "6 \u00b7 Benchmark vs. eval (and benchmark integrity: contamination, saturation, label errors, leaderboard gaming)",
+      "source_seam": "new_eval_benchmarks_tools",
+      "title": "Efficient Benchmarking of AI Agents",
+      "type": "paper",
+      "url": "https://arxiv.org/abs/2603.23749"
+    },
+    {
       "id": "enterpriseclawbench-benchmarking-agents-from-real-workplace-sessions",
       "manifest_path": "manifests/resources/enterpriseclawbench-benchmarking-agents-from-real-workplace-sessions.json",
       "note_path": "notes/papers/enterpriseclawbench-benchmarking-agents-from-real-workplace-sessions.md",
@@ -519,6 +547,20 @@
       "title": "How We Build Agent Environments & Tasks",
       "type": "article",
       "url": "https://www.langchain.com/blog/building-agent-environments-and-tasks"
+    },
+    {
+      "id": "how-we-build-evals-for-deep-agents",
+      "manifest_path": "manifests/resources/how-we-build-evals-for-deep-agents.json",
+      "note_path": "notes/articles/how-we-build-evals-for-deep-agents.md",
+      "readme_line": 486,
+      "readme_path": "README.md",
+      "review_decision": "accept_for_local_kb",
+      "review_total_score": 9,
+      "section": "9 \u00b7 Agent-specific evaluation (trajectories, tool use, multi-turn, world state, multi-agent, localization)",
+      "source_seam": "company_engineering_blogs",
+      "title": "How we build evals for Deep Agents",
+      "type": "blog",
+      "url": "https://www.langchain.com/blog/how-we-build-evals-for-deep-agents"
     },
     {
       "id": "ideas-have-genomes-benchmarking-scientific-lineage-reasoning-and-lineage-grounded-idea-gener",
