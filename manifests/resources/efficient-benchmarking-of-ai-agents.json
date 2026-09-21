@@ -1,0 +1,59 @@
+{
+  "author": "Franck Ndzomga",
+  "id": "efficient-benchmarking-of-ai-agents",
+  "note": {
+    "path": "notes/papers/efficient-benchmarking-of-ai-agents.md"
+  },
+  "readme": {
+    "entry": "- **[Efficient Benchmarking of AI Agents](https://arxiv.org/abs/2603.23749)** \u2014 Franck Ndzomga \u2014 <https://arxiv.org/abs/2603.23749> \u00b7 *paper* \u2014 Historical task-difficulty filtering for cheaper agent rankings under scaffold and temporal shift. \u26a0\ufe0f Ranking fidelity does not imply calibrated capability scores. \ud83c\udd95",
+    "line": 298,
+    "path": "README.md"
+  },
+  "review": {
+    "decision": "accept_for_local_kb",
+    "hard_failures": [],
+    "reviewed_at_utc": "2026-09-21T02:28:31Z",
+    "scores": {
+      "factuality": {
+        "reason": "structured evidence plus fetched source snapshot",
+        "score": 2
+      },
+      "kb_fit": {
+        "reason": "matches agent/eval KB scope",
+        "score": 2
+      },
+      "quality": {
+        "reason": "concrete eval artifacts or methodology signals present",
+        "score": 2
+      },
+      "recency": {
+        "reason": "evidence indicates 2025-2026 or actively updated source",
+        "score": 2
+      },
+      "source_authority": {
+        "reason": "primary repo or lab/source page",
+        "score": 2
+      }
+    },
+    "total_score": 10,
+    "url_check": {
+      "detail": "HEAD:200",
+      "ok": true
+    }
+  },
+  "schema": "awesome_evals.resource_manifest.v1",
+  "section": "6 \u00b7 Benchmark vs. eval (and benchmark integrity: contamination, saturation, label errors, leaderboard gaming)",
+  "source_seam": "new_eval_benchmarks_tools",
+  "title": "Efficient Benchmarking of AI Agents",
+  "type": "paper",
+  "url": "https://arxiv.org/abs/2603.23749",
+  "worker": {
+    "candidate_reason": "Primary paper supplies nested validation, matched-budget baselines, failure cases, and linked code/data, making reduced-suite selection assessable beyond a generic cost-saving claim.",
+    "evidence": "Version 1, submitted March 24, 2026, selects tasks with historical pass rates between 30 and 70 percent using training folds only. Sections 3.4 and 4 compare held-out scaffolds and temporal arrivals. Sections 5.1 and 6 retain full-suite checks for drift and capability jumps; the method fails when too few tasks have intermediate difficulty, illustrated by SciCode. Cost estimates assume linear scaling with task count. The linked public repository exists and is unarchived; experiments were not replayed.",
+    "summary": "Historical task-difficulty filtering for cheaper agent rankings under scaffold and temporal shift. \u26a0\ufe0f Ranking fidelity does not imply calibrated capability scores.",
+    "url_check": {
+      "detail": "200",
+      "ok": true
+    }
+  }
+}

@@ -1,0 +1,59 @@
+{
+  "author": "Vivek Trivedy, Mason Daugherty, Eugene Yurtsev, Harrison Chase (LangChain)",
+  "id": "how-we-build-evals-for-deep-agents",
+  "note": {
+    "path": "notes/articles/how-we-build-evals-for-deep-agents.md"
+  },
+  "readme": {
+    "entry": "- **[How we build evals for Deep Agents](https://www.langchain.com/blog/how-we-build-evals-for-deep-agents)** \u2014 Vivek Trivedy, Mason Daugherty, Eugene Yurtsev, Harrison Chase (LangChain) \u2014 <https://www.langchain.com/blog/how-we-build-evals-for-deep-agents> \u00b7 *blog* \u2014 Capability-tagged evals from production traces, with correctness checked before trajectory efficiency; separates SDK plumbing tests from model capability scoring. \ud83c\udd95",
+    "line": 486,
+    "path": "README.md"
+  },
+  "review": {
+    "decision": "accept_for_local_kb",
+    "hard_failures": [],
+    "reviewed_at_utc": "2026-09-21T02:28:29Z",
+    "scores": {
+      "factuality": {
+        "reason": "structured evidence plus fetched source snapshot",
+        "score": 2
+      },
+      "kb_fit": {
+        "reason": "matches agent/eval KB scope",
+        "score": 2
+      },
+      "quality": {
+        "reason": "concrete eval artifacts or methodology signals present",
+        "score": 2
+      },
+      "recency": {
+        "reason": "evidence indicates 2025-2026 or actively updated source",
+        "score": 2
+      },
+      "source_authority": {
+        "reason": "non-primary or less established source",
+        "score": 1
+      }
+    },
+    "total_score": 9,
+    "url_check": {
+      "detail": "HEAD:200",
+      "ok": true
+    }
+  },
+  "schema": "awesome_evals.resource_manifest.v1",
+  "section": "9 \u00b7 Agent-specific evaluation (trajectories, tool use, multi-turn, world state, multi-agent, localization)",
+  "source_seam": "company_engineering_blogs",
+  "title": "How we build evals for Deep Agents",
+  "type": "blog",
+  "url": "https://www.langchain.com/blog/how-we-build-evals-for-deep-agents",
+  "worker": {
+    "candidate_reason": "A concrete engineering account with an inspectable eval suite, behavior taxonomy, metric definitions, and CI workflow; complements the existing benchmark-results article with how the tests are designed.",
+    "evidence": "The March 26, 2026 article describes trace-derived cases, capability tags, assertions versus semantic judges, and a solve-rate metric that becomes zero on incorrect outcomes. Its current linked eval README confirms end-to-end trajectories, correctness/efficiency scoring, and Harbor integration. The article explains that ideal trajectories are approximations for open-ended work; efficiency baselines should not be mistaken for unique valid solutions. Source inspection only; no evals executed.",
+    "summary": "Capability-tagged evals from production traces, with correctness checked before trajectory efficiency; separates SDK plumbing tests from model capability scoring.",
+    "url_check": {
+      "detail": "200",
+      "ok": true
+    }
+  }
+}
