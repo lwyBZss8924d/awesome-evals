@@ -1,0 +1,28 @@
+{
+  "artifacts": {
+    "dispatcher_run_dir": "/Users/arthur/.codex/automations/awesome-evals-daily-dispatcher/runs/20260921T022218Z-apply",
+    "fork_pr": "https://github.com/lwyBZss8924d/awesome-evals/pull/30"
+  },
+  "business_status": "succeeded",
+  "commit": "a6a4d08db673a954c125fe331548d83efc478359",
+  "generated_at_utc": "2026-09-21T02:28:48Z",
+  "partner_sessions": [
+    {
+      "role": "scan_worker",
+      "session_id": "01a0c1c5-9499-7b61-a137-114ec4edb5a8"
+    }
+  ],
+  "primary_session_id": "01a09892-69bb-79f3-b996-c9db18186455",
+  "schema": "pouw.git-note.v1",
+  "session_provenance_status": "complete",
+  "source_raw_session_ids": [
+    "01a09892-69bb-79f3-b996-c9db18186455",
+    "01a0c1c5-9499-7b61-a137-114ec4edb5a8"
+  ],
+  "task": "Close out fork PR merge for awesome-evals daily automation",
+  "useful_work": [
+    "Pushed only to the lwyBZss8924d fork.",
+    "Created and merged a PR against the fork main branch.",
+    "Did not create an upstream benchflow PR."
+  ]
+}
